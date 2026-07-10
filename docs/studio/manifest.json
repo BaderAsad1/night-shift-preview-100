@@ -4,7 +4,7 @@
   "count": 100,
   "traitLibrary": {
     "name": "Neon Nocturne",
-    "source": "Approved 12-founder calibration",
+    "source": "Approved modular calibration",
     "palette": {
       "ink": "#020102",
       "presentationLime": "#d0f708"
@@ -16,352 +16,263 @@
       "glow": "Restricted to founder supernatural eye and pumpkin cutouts"
     },
     "rules": [
-      "Founder core pixels are immutable",
-      "Signals occupy registered negative-space-safe zones",
+      "Head/face and outfit/neck modules are independently registered",
+      "Every published pairing is unique before atmosphere is applied",
+      "Atmosphere occupies registered negative-space-safe zones",
       "No cross, crucifix, pentagram, or religious reference",
       "No text, logo, signature, or watermark"
     ],
-    "traitCount": 82,
+    "moduleCount": 34,
+    "possibleCorePairings": 144,
+    "possibleCombinations": 1440,
     "categories": {
-      "Head": [
+      "Head / Face": [
         {
-          "code": "HD01",
-          "name": "Raven Wave"
+          "code": "HF01",
+          "name": "Raven Hollow",
+          "components": {
+            "hair": "Raven Wave",
+            "eyes": "Hollow Ovals",
+            "mouth": "Twin Fangs"
+          }
         },
         {
-          "code": "HD02",
-          "name": "Pumpkin Crown"
+          "code": "HF02",
+          "name": "Pumpkin Glow",
+          "components": {
+            "hair": "Pumpkin Crown",
+            "eyes": "Soft Glow",
+            "mouth": "Jagged Grin"
+          }
         },
         {
-          "code": "HD03",
-          "name": "Midnight Slick"
+          "code": "HF03",
+          "name": "Midnight Fade",
+          "components": {
+            "hair": "Midnight Slick",
+            "eyes": "Shadow Fade",
+            "mouth": "Twin Fangs"
+          }
         },
         {
-          "code": "HD04",
-          "name": "Living Flame"
+          "code": "HF04",
+          "name": "Flame Lashes",
+          "components": {
+            "hair": "Living Flame",
+            "eyes": "Long Lashes",
+            "mouth": "Crooked Fangs"
+          }
         },
         {
-          "code": "HD05",
-          "name": "Stitched Crop"
+          "code": "HF05",
+          "name": "Stitched X",
+          "components": {
+            "hair": "Stitched Crop",
+            "eyes": "X Glow",
+            "mouth": "Twin Fangs"
+          }
         },
         {
-          "code": "HD06",
-          "name": "Little Horns"
+          "code": "HF06",
+          "name": "Horned Anger",
+          "components": {
+            "hair": "Little Horns",
+            "eyes": "Angry Arches",
+            "mouth": "Crooked Fangs"
+          }
         },
         {
-          "code": "HD07",
-          "name": "Mummy Wraps"
+          "code": "HF07",
+          "name": "Mummy Glow",
+          "components": {
+            "hair": "Mummy Wraps",
+            "eyes": "Soft Glow",
+            "mouth": "Tiny Fangs"
+          }
         },
         {
-          "code": "HD08",
-          "name": "Coven Hat"
+          "code": "HF08",
+          "name": "Coven Hollow",
+          "components": {
+            "hair": "Coven Hat",
+            "eyes": "Hollow Ovals",
+            "mouth": "Twin Fangs"
+          }
         },
         {
-          "code": "HD09",
-          "name": "Spectral Wave"
+          "code": "HF09",
+          "name": "Spectral Hollow",
+          "components": {
+            "hair": "Spectral Wave",
+            "eyes": "Hollow Ovals",
+            "mouth": "Tiny Fangs"
+          }
         },
         {
-          "code": "HD10",
-          "name": "Raven Wave"
+          "code": "HF10",
+          "name": "Raven Hypno",
+          "components": {
+            "hair": "Raven Wave",
+            "eyes": "Hypno Spirals",
+            "mouth": "Twin Fangs"
+          }
         },
         {
-          "code": "HD11",
-          "name": "Pom Beanie"
+          "code": "HF11",
+          "name": "Beanie Hollow",
+          "components": {
+            "hair": "Pom Beanie",
+            "eyes": "Hollow Ovals",
+            "mouth": "Twin Fangs"
+          }
         },
         {
-          "code": "HD12",
-          "name": "Webbed Wave"
+          "code": "HF12",
+          "name": "Webbed Hollow",
+          "components": {
+            "hair": "Webbed Wave",
+            "eyes": "Hollow Ovals",
+            "mouth": "Crooked Fangs"
+          }
         }
       ],
-      "Eyes": [
+      "Outfit / Neck": [
         {
-          "code": "EY01",
-          "name": "Hollow Ovals"
+          "code": "OT01",
+          "name": "Skull Tux + Skull Bow",
+          "components": {
+            "outfit": "Skull Tux",
+            "neck": "Skull Bow"
+          }
         },
         {
-          "code": "EY02",
-          "name": "Soft Glow"
+          "code": "OT02",
+          "name": "High Collar + Soft Bow",
+          "components": {
+            "outfit": "High Collar",
+            "neck": "Soft Bow"
+          }
         },
         {
-          "code": "EY03",
-          "name": "Shadow Fade"
+          "code": "OT03",
+          "name": "High Collar + Medallion",
+          "components": {
+            "outfit": "High Collar",
+            "neck": "Round Medallion"
+          }
         },
         {
-          "code": "EY04",
-          "name": "Long Lashes"
+          "code": "OT04",
+          "name": "Striped Knit + Choker",
+          "components": {
+            "outfit": "Striped Knit",
+            "neck": "Black Choker"
+          }
         },
         {
-          "code": "EY05",
-          "name": "X Glow"
+          "code": "OT05",
+          "name": "Undertaker Shirt + Buttons",
+          "components": {
+            "outfit": "Undertaker Shirt",
+            "neck": "Double Buttons"
+          }
         },
         {
-          "code": "EY06",
-          "name": "Angry Arches"
+          "code": "OT06",
+          "name": "Winged Cape + Medallion",
+          "components": {
+            "outfit": "Winged Cape",
+            "neck": "Round Medallion"
+          }
         },
         {
-          "code": "EY07",
-          "name": "Soft Glow"
+          "code": "OT07",
+          "name": "Wrapped Tunic",
+          "components": {
+            "outfit": "Wrapped Tunic",
+            "neck": "No Neckpiece"
+          }
         },
         {
-          "code": "EY08",
-          "name": "Hollow Ovals"
+          "code": "OT08",
+          "name": "Coven Coat + Slim Scarf",
+          "components": {
+            "outfit": "Coven Coat",
+            "neck": "Slim Scarf"
+          }
         },
         {
-          "code": "EY09",
-          "name": "Hollow Ovals"
+          "code": "OT09",
+          "name": "Chain Crewneck + Loose Chain",
+          "components": {
+            "outfit": "Chain Crewneck",
+            "neck": "Loose Chain"
+          }
         },
         {
-          "code": "EY10",
-          "name": "Hypno Spirals"
+          "code": "OT10",
+          "name": "Velvet Jacket + Soft Bow",
+          "components": {
+            "outfit": "Velvet Jacket",
+            "neck": "Soft Bow"
+          }
         },
         {
-          "code": "EY11",
-          "name": "Hollow Ovals"
+          "code": "OT11",
+          "name": "Skeleton Hoodie",
+          "components": {
+            "outfit": "Skeleton Hoodie",
+            "neck": "No Neckpiece"
+          }
         },
         {
-          "code": "EY12",
-          "name": "Hollow Ovals"
+          "code": "OT12",
+          "name": "High Collar + Medallion",
+          "components": {
+            "outfit": "High Collar",
+            "neck": "Round Medallion"
+          }
         }
       ],
-      "Mouth": [
+      "Atmosphere": [
         {
-          "code": "MT01",
-          "name": "Twin Fangs"
+          "code": "AT01",
+          "name": "Clean Air"
         },
         {
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "code": "MT05",
-          "name": "Twin Fangs"
-        },
-        {
-          "code": "MT06",
-          "name": "Crooked Fangs"
-        },
-        {
-          "code": "MT07",
-          "name": "Tiny Fangs"
-        },
-        {
-          "code": "MT08",
-          "name": "Twin Fangs"
-        },
-        {
-          "code": "MT09",
-          "name": "Tiny Fangs"
-        },
-        {
-          "code": "MT10",
-          "name": "Twin Fangs"
-        },
-        {
-          "code": "MT11",
-          "name": "Twin Fangs"
-        },
-        {
-          "code": "MT12",
-          "name": "Crooked Fangs"
-        }
-      ],
-      "Outfit": [
-        {
-          "code": "OF01",
-          "name": "Skull Tux"
-        },
-        {
-          "code": "OF02",
-          "name": "High Collar"
-        },
-        {
-          "code": "OF03",
-          "name": "High Collar"
-        },
-        {
-          "code": "OF04",
-          "name": "Striped Knit"
-        },
-        {
-          "code": "OF05",
-          "name": "Undertaker Shirt"
-        },
-        {
-          "code": "OF06",
-          "name": "Winged Cape"
-        },
-        {
-          "code": "OF07",
-          "name": "Wrapped Tunic"
-        },
-        {
-          "code": "OF08",
-          "name": "Coven Coat"
-        },
-        {
-          "code": "OF09",
-          "name": "Chain Crewneck"
-        },
-        {
-          "code": "OF10",
-          "name": "Velvet Jacket"
-        },
-        {
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
-        },
-        {
-          "code": "OF12",
-          "name": "High Collar"
-        }
-      ],
-      "Neck": [
-        {
-          "code": "NK01",
-          "name": "Skull Bow"
-        },
-        {
-          "code": "NK02",
-          "name": "Soft Bow"
-        },
-        {
-          "code": "NK03",
-          "name": "Round Medallion"
-        },
-        {
-          "code": "NK04",
-          "name": "Black Choker"
-        },
-        {
-          "code": "NK05",
-          "name": "Double Buttons"
-        },
-        {
-          "code": "NK06",
-          "name": "Round Medallion"
-        },
-        {
-          "code": "NK07",
-          "name": "No Neckpiece"
-        },
-        {
-          "code": "NK08",
-          "name": "Slim Scarf"
-        },
-        {
-          "code": "NK09",
-          "name": "Loose Chain"
-        },
-        {
-          "code": "NK10",
-          "name": "Soft Bow"
-        },
-        {
-          "code": "NK11",
-          "name": "No Neckpiece"
-        },
-        {
-          "code": "NK12",
-          "name": "Round Medallion"
-        }
-      ],
-      "Extra": [
-        {
-          "code": "EX01",
-          "name": "Clean Frame"
-        },
-        {
-          "code": "EX02",
-          "name": "Clean Frame"
-        },
-        {
-          "code": "EX03",
-          "name": "Clean Frame"
-        },
-        {
-          "code": "EX04",
-          "name": "Clean Frame"
-        },
-        {
-          "code": "EX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "code": "EX06",
-          "name": "Bat Wings"
-        },
-        {
-          "code": "EX07",
-          "name": "Clean Frame"
-        },
-        {
-          "code": "EX08",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "code": "EX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "code": "EX10",
-          "name": "Clean Frame"
-        },
-        {
-          "code": "EX11",
-          "name": "Clean Frame"
-        },
-        {
-          "code": "EX12",
-          "name": "Hanging Spider"
-        }
-      ],
-      "Signal": [
-        {
-          "code": "MD01",
-          "name": "Founder Clean"
-        },
-        {
-          "code": "MD02",
+          "code": "AT02",
           "name": "Left Bat Signal"
         },
         {
-          "code": "MD03",
+          "code": "AT03",
           "name": "Right Bat Signal"
         },
         {
-          "code": "MD04",
+          "code": "AT04",
           "name": "Static Shards"
         },
         {
-          "code": "MD05",
+          "code": "AT05",
           "name": "Night Wisps"
         },
         {
-          "code": "MD06",
+          "code": "AT06",
           "name": "Spider Drop"
         },
         {
-          "code": "MD07",
+          "code": "AT07",
           "name": "Comet Sparks"
         },
         {
-          "code": "MD08",
+          "code": "AT08",
           "name": "Orbit Dots"
         },
         {
-          "code": "MD09",
+          "code": "AT09",
           "name": "Falling Pixels"
         },
         {
-          "code": "MD10",
+          "code": "AT10",
           "name": "Twin Moths"
         }
       ]
@@ -375,10 +286,19 @@
       "accent": "#ff405b",
       "motto": "Old blood, new rules.",
       "image": "studio/001.png",
-      "founder": 1,
+      "modules": {
+        "head": 1,
+        "torso": 1,
+        "atmosphere": 1
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF01",
+          "name": "Raven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD01",
           "name": "Raven Wave"
         },
@@ -393,6 +313,11 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT01",
+          "name": "Skull Tux + Skull Bow"
+        },
+        {
           "category": "Outfit",
           "code": "OF01",
           "name": "Skull Tux"
@@ -403,14 +328,9 @@
           "name": "Skull Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX01",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Atmosphere",
+          "code": "AT01",
+          "name": "Clean Air"
         }
       ]
     },
@@ -421,10 +341,19 @@
       "accent": "#35e7ff",
       "motto": "Stay bright after dark.",
       "image": "studio/002.png",
-      "founder": 2,
+      "modules": {
+        "head": 2,
+        "torso": 2,
+        "atmosphere": 2
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF02",
+          "name": "Pumpkin Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD02",
           "name": "Pumpkin Crown"
         },
@@ -439,6 +368,11 @@
           "name": "Jagged Grin"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT02",
+          "name": "High Collar + Soft Bow"
+        },
+        {
           "category": "Outfit",
           "code": "OF02",
           "name": "High Collar"
@@ -449,14 +383,9 @@
           "name": "Soft Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX02",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Atmosphere",
+          "code": "AT02",
+          "name": "Left Bat Signal"
         }
       ]
     },
@@ -467,10 +396,19 @@
       "accent": "#9bdcff",
       "motto": "Calm is a superpower.",
       "image": "studio/003.png",
-      "founder": 3,
+      "modules": {
+        "head": 3,
+        "torso": 3,
+        "atmosphere": 3
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF03",
+          "name": "Midnight Fade"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD03",
           "name": "Midnight Slick"
         },
@@ -485,6 +423,11 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT03",
+          "name": "High Collar + Medallion"
+        },
+        {
           "category": "Outfit",
           "code": "OF03",
           "name": "High Collar"
@@ -495,14 +438,9 @@
           "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX03",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Atmosphere",
+          "code": "AT03",
+          "name": "Right Bat Signal"
         }
       ]
     },
@@ -513,10 +451,19 @@
       "accent": "#ff7a32",
       "motto": "The city is ours at night.",
       "image": "studio/004.png",
-      "founder": 4,
+      "modules": {
+        "head": 4,
+        "torso": 4,
+        "atmosphere": 4
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF04",
+          "name": "Flame Lashes"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD04",
           "name": "Living Flame"
         },
@@ -531,6 +478,11 @@
           "name": "Crooked Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT04",
+          "name": "Striped Knit + Choker"
+        },
+        {
           "category": "Outfit",
           "code": "OF04",
           "name": "Striped Knit"
@@ -541,14 +493,9 @@
           "name": "Black Choker"
         },
         {
-          "category": "Extra",
-          "code": "EX04",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Atmosphere",
+          "code": "AT04",
+          "name": "Static Shards"
         }
       ]
     },
@@ -559,10 +506,19 @@
       "accent": "#a576ff",
       "motto": "Broadcast from the void.",
       "image": "studio/005.png",
-      "founder": 5,
+      "modules": {
+        "head": 5,
+        "torso": 5,
+        "atmosphere": 5
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF05",
+          "name": "Stitched X"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD05",
           "name": "Stitched Crop"
         },
@@ -577,6 +533,16 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Head Extra",
+          "code": "HX05",
+          "name": "Brow Stitches"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT05",
+          "name": "Undertaker Shirt + Buttons"
+        },
+        {
           "category": "Outfit",
           "code": "OF05",
           "name": "Undertaker Shirt"
@@ -587,14 +553,9 @@
           "name": "Double Buttons"
         },
         {
-          "category": "Extra",
-          "code": "EX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Atmosphere",
+          "code": "AT05",
+          "name": "Night Wisps"
         }
       ]
     },
@@ -605,10 +566,19 @@
       "accent": "#d8ff4f",
       "motto": "Instinct over etiquette.",
       "image": "studio/006.png",
-      "founder": 6,
+      "modules": {
+        "head": 6,
+        "torso": 6,
+        "atmosphere": 6
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF06",
+          "name": "Horned Anger"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD06",
           "name": "Little Horns"
         },
@@ -623,6 +593,16 @@
           "name": "Crooked Fangs"
         },
         {
+          "category": "Head Extra",
+          "code": "HX06",
+          "name": "Bat Wings"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT06",
+          "name": "Winged Cape + Medallion"
+        },
+        {
           "category": "Outfit",
           "code": "OF06",
           "name": "Winged Cape"
@@ -633,14 +613,9 @@
           "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX06",
-          "name": "Bat Wings"
-        },
-        {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Atmosphere",
+          "code": "AT06",
+          "name": "Spider Drop"
         }
       ]
     },
@@ -651,10 +626,19 @@
       "accent": "#ff405b",
       "motto": "Old blood, new rules.",
       "image": "studio/007.png",
-      "founder": 7,
+      "modules": {
+        "head": 7,
+        "torso": 7,
+        "atmosphere": 7
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD07",
           "name": "Mummy Wraps"
         },
@@ -669,6 +653,11 @@
           "name": "Tiny Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT07",
+          "name": "Wrapped Tunic"
+        },
+        {
           "category": "Outfit",
           "code": "OF07",
           "name": "Wrapped Tunic"
@@ -679,14 +668,9 @@
           "name": "No Neckpiece"
         },
         {
-          "category": "Extra",
-          "code": "EX07",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Atmosphere",
+          "code": "AT07",
+          "name": "Comet Sparks"
         }
       ]
     },
@@ -697,10 +681,19 @@
       "accent": "#35e7ff",
       "motto": "Stay bright after dark.",
       "image": "studio/008.png",
-      "founder": 8,
+      "modules": {
+        "head": 8,
+        "torso": 8,
+        "atmosphere": 8
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF08",
+          "name": "Coven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD08",
           "name": "Coven Hat"
         },
@@ -715,6 +708,11 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT08",
+          "name": "Coven Coat + Slim Scarf"
+        },
+        {
           "category": "Outfit",
           "code": "OF08",
           "name": "Coven Coat"
@@ -725,14 +723,14 @@
           "name": "Slim Scarf"
         },
         {
-          "category": "Extra",
-          "code": "EX08",
-          "name": "Pumpkin Lantern"
+          "category": "Atmosphere",
+          "code": "AT08",
+          "name": "Orbit Dots"
         },
         {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Companion",
+          "code": "CP08",
+          "name": "Pumpkin Lantern"
         }
       ]
     },
@@ -743,10 +741,19 @@
       "accent": "#9bdcff",
       "motto": "Calm is a superpower.",
       "image": "studio/009.png",
-      "founder": 9,
+      "modules": {
+        "head": 9,
+        "torso": 9,
+        "atmosphere": 9
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF09",
+          "name": "Spectral Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD09",
           "name": "Spectral Wave"
         },
@@ -761,6 +768,16 @@
           "name": "Tiny Fangs"
         },
         {
+          "category": "Head Extra",
+          "code": "HX09",
+          "name": "Smoke Halo"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT09",
+          "name": "Chain Crewneck + Loose Chain"
+        },
+        {
           "category": "Outfit",
           "code": "OF09",
           "name": "Chain Crewneck"
@@ -771,14 +788,9 @@
           "name": "Loose Chain"
         },
         {
-          "category": "Extra",
-          "code": "EX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Atmosphere",
+          "code": "AT09",
+          "name": "Falling Pixels"
         }
       ]
     },
@@ -789,10 +801,19 @@
       "accent": "#ff7a32",
       "motto": "The city is ours at night.",
       "image": "studio/010.png",
-      "founder": 10,
+      "modules": {
+        "head": 10,
+        "torso": 10,
+        "atmosphere": 10
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF10",
+          "name": "Raven Hypno"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD10",
           "name": "Raven Wave"
         },
@@ -807,6 +828,11 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT10",
+          "name": "Velvet Jacket + Soft Bow"
+        },
+        {
           "category": "Outfit",
           "code": "OF10",
           "name": "Velvet Jacket"
@@ -817,14 +843,9 @@
           "name": "Soft Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX10",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Atmosphere",
+          "code": "AT10",
+          "name": "Twin Moths"
         }
       ]
     },
@@ -835,10 +856,19 @@
       "accent": "#a576ff",
       "motto": "Broadcast from the void.",
       "image": "studio/011.png",
-      "founder": 11,
+      "modules": {
+        "head": 11,
+        "torso": 11,
+        "atmosphere": 1
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF11",
+          "name": "Beanie Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD11",
           "name": "Pom Beanie"
         },
@@ -853,6 +883,11 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT11",
+          "name": "Skeleton Hoodie"
+        },
+        {
           "category": "Outfit",
           "code": "OF11",
           "name": "Skeleton Hoodie"
@@ -863,14 +898,9 @@
           "name": "No Neckpiece"
         },
         {
-          "category": "Extra",
-          "code": "EX11",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Atmosphere",
+          "code": "AT01",
+          "name": "Clean Air"
         }
       ]
     },
@@ -881,10 +911,19 @@
       "accent": "#d8ff4f",
       "motto": "Instinct over etiquette.",
       "image": "studio/012.png",
-      "founder": 12,
+      "modules": {
+        "head": 12,
+        "torso": 12,
+        "atmosphere": 2
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF12",
+          "name": "Webbed Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD12",
           "name": "Webbed Wave"
         },
@@ -899,6 +938,16 @@
           "name": "Crooked Fangs"
         },
         {
+          "category": "Head Extra",
+          "code": "HX12",
+          "name": "Hanging Spider"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT12",
+          "name": "High Collar + Medallion"
+        },
+        {
           "category": "Outfit",
           "code": "OF12",
           "name": "High Collar"
@@ -909,14 +958,9 @@
           "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX12",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Signal",
-          "code": "MD01",
-          "name": "Founder Clean"
+          "category": "Atmosphere",
+          "code": "AT02",
+          "name": "Left Bat Signal"
         }
       ]
     },
@@ -927,10 +971,19 @@
       "accent": "#ff405b",
       "motto": "Old blood, new rules.",
       "image": "studio/013.png",
-      "founder": 1,
+      "modules": {
+        "head": 1,
+        "torso": 6,
+        "atmosphere": 3
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF01",
+          "name": "Raven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD01",
           "name": "Raven Wave"
         },
@@ -945,24 +998,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT06",
+          "name": "Winged Cape + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF06",
+          "name": "Winged Cape"
         },
         {
           "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "code": "NK06",
+          "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX01",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD02",
-          "name": "Left Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT03",
+          "name": "Right Bat Signal"
         }
       ]
     },
@@ -973,10 +1026,19 @@
       "accent": "#35e7ff",
       "motto": "Stay bright after dark.",
       "image": "studio/014.png",
-      "founder": 2,
+      "modules": {
+        "head": 2,
+        "torso": 7,
+        "atmosphere": 4
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF02",
+          "name": "Pumpkin Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD02",
           "name": "Pumpkin Crown"
         },
@@ -991,24 +1053,24 @@
           "name": "Jagged Grin"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT07",
+          "name": "Wrapped Tunic"
+        },
+        {
           "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
+          "code": "OF07",
+          "name": "Wrapped Tunic"
         },
         {
           "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "code": "NK07",
+          "name": "No Neckpiece"
         },
         {
-          "category": "Extra",
-          "code": "EX02",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD02",
-          "name": "Left Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT04",
+          "name": "Static Shards"
         }
       ]
     },
@@ -1019,10 +1081,19 @@
       "accent": "#9bdcff",
       "motto": "Calm is a superpower.",
       "image": "studio/015.png",
-      "founder": 3,
+      "modules": {
+        "head": 3,
+        "torso": 8,
+        "atmosphere": 5
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF03",
+          "name": "Midnight Fade"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD03",
           "name": "Midnight Slick"
         },
@@ -1037,24 +1108,29 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT08",
+          "name": "Coven Coat + Slim Scarf"
+        },
+        {
           "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
+          "code": "OF08",
+          "name": "Coven Coat"
         },
         {
           "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "code": "NK08",
+          "name": "Slim Scarf"
         },
         {
-          "category": "Extra",
-          "code": "EX03",
-          "name": "Clean Frame"
+          "category": "Atmosphere",
+          "code": "AT05",
+          "name": "Night Wisps"
         },
         {
-          "category": "Signal",
-          "code": "MD02",
-          "name": "Left Bat Signal"
+          "category": "Companion",
+          "code": "CP08",
+          "name": "Pumpkin Lantern"
         }
       ]
     },
@@ -1065,10 +1141,19 @@
       "accent": "#ff7a32",
       "motto": "The city is ours at night.",
       "image": "studio/016.png",
-      "founder": 4,
+      "modules": {
+        "head": 4,
+        "torso": 9,
+        "atmosphere": 6
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF04",
+          "name": "Flame Lashes"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD04",
           "name": "Living Flame"
         },
@@ -1083,24 +1168,24 @@
           "name": "Crooked Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT09",
+          "name": "Chain Crewneck + Loose Chain"
+        },
+        {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF09",
+          "name": "Chain Crewneck"
         },
         {
           "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "code": "NK09",
+          "name": "Loose Chain"
         },
         {
-          "category": "Extra",
-          "code": "EX04",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD02",
-          "name": "Left Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT06",
+          "name": "Spider Drop"
         }
       ]
     },
@@ -1111,10 +1196,19 @@
       "accent": "#a576ff",
       "motto": "Broadcast from the void.",
       "image": "studio/017.png",
-      "founder": 5,
+      "modules": {
+        "head": 5,
+        "torso": 10,
+        "atmosphere": 7
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF05",
+          "name": "Stitched X"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD05",
           "name": "Stitched Crop"
         },
@@ -1129,24 +1223,29 @@
           "name": "Twin Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
-        },
-        {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
-        },
-        {
-          "category": "Extra",
-          "code": "EX05",
+          "category": "Head Extra",
+          "code": "HX05",
           "name": "Brow Stitches"
         },
         {
-          "category": "Signal",
-          "code": "MD02",
-          "name": "Left Bat Signal"
+          "category": "Outfit / Neck",
+          "code": "OT10",
+          "name": "Velvet Jacket + Soft Bow"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF10",
+          "name": "Velvet Jacket"
+        },
+        {
+          "category": "Neck",
+          "code": "NK10",
+          "name": "Soft Bow"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT07",
+          "name": "Comet Sparks"
         }
       ]
     },
@@ -1157,10 +1256,19 @@
       "accent": "#d8ff4f",
       "motto": "Instinct over etiquette.",
       "image": "studio/018.png",
-      "founder": 6,
+      "modules": {
+        "head": 6,
+        "torso": 11,
+        "atmosphere": 8
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF06",
+          "name": "Horned Anger"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD06",
           "name": "Little Horns"
         },
@@ -1175,24 +1283,29 @@
           "name": "Crooked Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
-        },
-        {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX06",
+          "category": "Head Extra",
+          "code": "HX06",
           "name": "Bat Wings"
         },
         {
-          "category": "Signal",
-          "code": "MD02",
-          "name": "Left Bat Signal"
+          "category": "Outfit / Neck",
+          "code": "OT11",
+          "name": "Skeleton Hoodie"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF11",
+          "name": "Skeleton Hoodie"
+        },
+        {
+          "category": "Neck",
+          "code": "NK11",
+          "name": "No Neckpiece"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT08",
+          "name": "Orbit Dots"
         }
       ]
     },
@@ -1203,10 +1316,19 @@
       "accent": "#ff405b",
       "motto": "Old blood, new rules.",
       "image": "studio/019.png",
-      "founder": 7,
+      "modules": {
+        "head": 7,
+        "torso": 12,
+        "atmosphere": 9
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD07",
           "name": "Mummy Wraps"
         },
@@ -1221,24 +1343,24 @@
           "name": "Tiny Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT12",
+          "name": "High Collar + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF12",
+          "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "code": "NK12",
+          "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX07",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD02",
-          "name": "Left Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT09",
+          "name": "Falling Pixels"
         }
       ]
     },
@@ -1249,10 +1371,19 @@
       "accent": "#35e7ff",
       "motto": "Stay bright after dark.",
       "image": "studio/020.png",
-      "founder": 8,
+      "modules": {
+        "head": 8,
+        "torso": 1,
+        "atmosphere": 10
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF08",
+          "name": "Coven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD08",
           "name": "Coven Hat"
         },
@@ -1267,24 +1398,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT01",
+          "name": "Skull Tux + Skull Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF01",
+          "name": "Skull Tux"
         },
         {
           "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "code": "NK01",
+          "name": "Skull Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX08",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "category": "Signal",
-          "code": "MD02",
-          "name": "Left Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT10",
+          "name": "Twin Moths"
         }
       ]
     },
@@ -1295,10 +1426,19 @@
       "accent": "#9bdcff",
       "motto": "Calm is a superpower.",
       "image": "studio/021.png",
-      "founder": 9,
+      "modules": {
+        "head": 9,
+        "torso": 2,
+        "atmosphere": 1
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF09",
+          "name": "Spectral Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD09",
           "name": "Spectral Wave"
         },
@@ -1313,24 +1453,29 @@
           "name": "Tiny Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
-        },
-        {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
-        },
-        {
-          "category": "Extra",
-          "code": "EX09",
+          "category": "Head Extra",
+          "code": "HX09",
           "name": "Smoke Halo"
         },
         {
-          "category": "Signal",
-          "code": "MD02",
-          "name": "Left Bat Signal"
+          "category": "Outfit / Neck",
+          "code": "OT02",
+          "name": "High Collar + Soft Bow"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF02",
+          "name": "High Collar"
+        },
+        {
+          "category": "Neck",
+          "code": "NK02",
+          "name": "Soft Bow"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT01",
+          "name": "Clean Air"
         }
       ]
     },
@@ -1341,10 +1486,19 @@
       "accent": "#ff7a32",
       "motto": "The city is ours at night.",
       "image": "studio/022.png",
-      "founder": 10,
+      "modules": {
+        "head": 10,
+        "torso": 3,
+        "atmosphere": 2
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF10",
+          "name": "Raven Hypno"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD10",
           "name": "Raven Wave"
         },
@@ -1359,23 +1513,23 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT03",
+          "name": "High Collar + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF03",
+          "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "code": "NK03",
+          "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX10",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD02",
+          "category": "Atmosphere",
+          "code": "AT02",
           "name": "Left Bat Signal"
         }
       ]
@@ -1387,10 +1541,19 @@
       "accent": "#a576ff",
       "motto": "Broadcast from the void.",
       "image": "studio/023.png",
-      "founder": 11,
+      "modules": {
+        "head": 11,
+        "torso": 4,
+        "atmosphere": 3
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF11",
+          "name": "Beanie Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD11",
           "name": "Pom Beanie"
         },
@@ -1405,24 +1568,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT04",
+          "name": "Striped Knit + Choker"
+        },
+        {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF04",
+          "name": "Striped Knit"
         },
         {
           "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "code": "NK04",
+          "name": "Black Choker"
         },
         {
-          "category": "Extra",
-          "code": "EX11",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD02",
-          "name": "Left Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT03",
+          "name": "Right Bat Signal"
         }
       ]
     },
@@ -1433,10 +1596,19 @@
       "accent": "#d8ff4f",
       "motto": "Instinct over etiquette.",
       "image": "studio/024.png",
-      "founder": 12,
+      "modules": {
+        "head": 12,
+        "torso": 5,
+        "atmosphere": 4
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF12",
+          "name": "Webbed Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD12",
           "name": "Webbed Wave"
         },
@@ -1451,24 +1623,29 @@
           "name": "Crooked Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
-        },
-        {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX12",
+          "category": "Head Extra",
+          "code": "HX12",
           "name": "Hanging Spider"
         },
         {
-          "category": "Signal",
-          "code": "MD02",
-          "name": "Left Bat Signal"
+          "category": "Outfit / Neck",
+          "code": "OT05",
+          "name": "Undertaker Shirt + Buttons"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF05",
+          "name": "Undertaker Shirt"
+        },
+        {
+          "category": "Neck",
+          "code": "NK05",
+          "name": "Double Buttons"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT04",
+          "name": "Static Shards"
         }
       ]
     },
@@ -1479,10 +1656,19 @@
       "accent": "#ff405b",
       "motto": "Old blood, new rules.",
       "image": "studio/025.png",
-      "founder": 1,
+      "modules": {
+        "head": 1,
+        "torso": 11,
+        "atmosphere": 5
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF01",
+          "name": "Raven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD01",
           "name": "Raven Wave"
         },
@@ -1497,24 +1683,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT11",
+          "name": "Skeleton Hoodie"
+        },
+        {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF11",
+          "name": "Skeleton Hoodie"
         },
         {
           "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "code": "NK11",
+          "name": "No Neckpiece"
         },
         {
-          "category": "Extra",
-          "code": "EX01",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD03",
-          "name": "Right Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT05",
+          "name": "Night Wisps"
         }
       ]
     },
@@ -1525,10 +1711,19 @@
       "accent": "#35e7ff",
       "motto": "Stay bright after dark.",
       "image": "studio/026.png",
-      "founder": 2,
+      "modules": {
+        "head": 2,
+        "torso": 12,
+        "atmosphere": 6
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF02",
+          "name": "Pumpkin Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD02",
           "name": "Pumpkin Crown"
         },
@@ -1543,24 +1738,24 @@
           "name": "Jagged Grin"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT12",
+          "name": "High Collar + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF02",
+          "code": "OF12",
           "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "code": "NK12",
+          "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX02",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD03",
-          "name": "Right Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT06",
+          "name": "Spider Drop"
         }
       ]
     },
@@ -1571,10 +1766,19 @@
       "accent": "#9bdcff",
       "motto": "Calm is a superpower.",
       "image": "studio/027.png",
-      "founder": 3,
+      "modules": {
+        "head": 3,
+        "torso": 1,
+        "atmosphere": 7
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF03",
+          "name": "Midnight Fade"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD03",
           "name": "Midnight Slick"
         },
@@ -1589,24 +1793,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT01",
+          "name": "Skull Tux + Skull Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
+          "code": "OF01",
+          "name": "Skull Tux"
         },
         {
           "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "code": "NK01",
+          "name": "Skull Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX03",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD03",
-          "name": "Right Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT07",
+          "name": "Comet Sparks"
         }
       ]
     },
@@ -1617,10 +1821,19 @@
       "accent": "#ff7a32",
       "motto": "The city is ours at night.",
       "image": "studio/028.png",
-      "founder": 4,
+      "modules": {
+        "head": 4,
+        "torso": 2,
+        "atmosphere": 8
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF04",
+          "name": "Flame Lashes"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD04",
           "name": "Living Flame"
         },
@@ -1635,24 +1848,24 @@
           "name": "Crooked Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT02",
+          "name": "High Collar + Soft Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF02",
+          "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "code": "NK02",
+          "name": "Soft Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX04",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD03",
-          "name": "Right Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT08",
+          "name": "Orbit Dots"
         }
       ]
     },
@@ -1663,10 +1876,19 @@
       "accent": "#a576ff",
       "motto": "Broadcast from the void.",
       "image": "studio/029.png",
-      "founder": 5,
+      "modules": {
+        "head": 5,
+        "torso": 3,
+        "atmosphere": 9
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF05",
+          "name": "Stitched X"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD05",
           "name": "Stitched Crop"
         },
@@ -1681,24 +1903,29 @@
           "name": "Twin Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
-        },
-        {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
-        },
-        {
-          "category": "Extra",
-          "code": "EX05",
+          "category": "Head Extra",
+          "code": "HX05",
           "name": "Brow Stitches"
         },
         {
-          "category": "Signal",
-          "code": "MD03",
-          "name": "Right Bat Signal"
+          "category": "Outfit / Neck",
+          "code": "OT03",
+          "name": "High Collar + Medallion"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF03",
+          "name": "High Collar"
+        },
+        {
+          "category": "Neck",
+          "code": "NK03",
+          "name": "Round Medallion"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT09",
+          "name": "Falling Pixels"
         }
       ]
     },
@@ -1709,10 +1936,19 @@
       "accent": "#d8ff4f",
       "motto": "Instinct over etiquette.",
       "image": "studio/030.png",
-      "founder": 6,
+      "modules": {
+        "head": 6,
+        "torso": 4,
+        "atmosphere": 10
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF06",
+          "name": "Horned Anger"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD06",
           "name": "Little Horns"
         },
@@ -1727,24 +1963,29 @@
           "name": "Crooked Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
-        },
-        {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX06",
+          "category": "Head Extra",
+          "code": "HX06",
           "name": "Bat Wings"
         },
         {
-          "category": "Signal",
-          "code": "MD03",
-          "name": "Right Bat Signal"
+          "category": "Outfit / Neck",
+          "code": "OT04",
+          "name": "Striped Knit + Choker"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF04",
+          "name": "Striped Knit"
+        },
+        {
+          "category": "Neck",
+          "code": "NK04",
+          "name": "Black Choker"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT10",
+          "name": "Twin Moths"
         }
       ]
     },
@@ -1755,10 +1996,19 @@
       "accent": "#ff405b",
       "motto": "Old blood, new rules.",
       "image": "studio/031.png",
-      "founder": 7,
+      "modules": {
+        "head": 7,
+        "torso": 5,
+        "atmosphere": 1
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD07",
           "name": "Mummy Wraps"
         },
@@ -1773,24 +2023,24 @@
           "name": "Tiny Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT05",
+          "name": "Undertaker Shirt + Buttons"
+        },
+        {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF05",
+          "name": "Undertaker Shirt"
         },
         {
           "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "code": "NK05",
+          "name": "Double Buttons"
         },
         {
-          "category": "Extra",
-          "code": "EX07",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD03",
-          "name": "Right Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT01",
+          "name": "Clean Air"
         }
       ]
     },
@@ -1801,10 +2051,19 @@
       "accent": "#35e7ff",
       "motto": "Stay bright after dark.",
       "image": "studio/032.png",
-      "founder": 8,
+      "modules": {
+        "head": 8,
+        "torso": 6,
+        "atmosphere": 2
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF08",
+          "name": "Coven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD08",
           "name": "Coven Hat"
         },
@@ -1819,24 +2078,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT06",
+          "name": "Winged Cape + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF06",
+          "name": "Winged Cape"
         },
         {
           "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "code": "NK06",
+          "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX08",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "category": "Signal",
-          "code": "MD03",
-          "name": "Right Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT02",
+          "name": "Left Bat Signal"
         }
       ]
     },
@@ -1847,10 +2106,19 @@
       "accent": "#9bdcff",
       "motto": "Calm is a superpower.",
       "image": "studio/033.png",
-      "founder": 9,
+      "modules": {
+        "head": 9,
+        "torso": 7,
+        "atmosphere": 3
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF09",
+          "name": "Spectral Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD09",
           "name": "Spectral Wave"
         },
@@ -1865,23 +2133,28 @@
           "name": "Tiny Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
-        },
-        {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
-        },
-        {
-          "category": "Extra",
-          "code": "EX09",
+          "category": "Head Extra",
+          "code": "HX09",
           "name": "Smoke Halo"
         },
         {
-          "category": "Signal",
-          "code": "MD03",
+          "category": "Outfit / Neck",
+          "code": "OT07",
+          "name": "Wrapped Tunic"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF07",
+          "name": "Wrapped Tunic"
+        },
+        {
+          "category": "Neck",
+          "code": "NK07",
+          "name": "No Neckpiece"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT03",
           "name": "Right Bat Signal"
         }
       ]
@@ -1893,10 +2166,19 @@
       "accent": "#ff7a32",
       "motto": "The city is ours at night.",
       "image": "studio/034.png",
-      "founder": 10,
+      "modules": {
+        "head": 10,
+        "torso": 8,
+        "atmosphere": 4
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF10",
+          "name": "Raven Hypno"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD10",
           "name": "Raven Wave"
         },
@@ -1911,24 +2193,29 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT08",
+          "name": "Coven Coat + Slim Scarf"
+        },
+        {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF08",
+          "name": "Coven Coat"
         },
         {
           "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "code": "NK08",
+          "name": "Slim Scarf"
         },
         {
-          "category": "Extra",
-          "code": "EX10",
-          "name": "Clean Frame"
+          "category": "Atmosphere",
+          "code": "AT04",
+          "name": "Static Shards"
         },
         {
-          "category": "Signal",
-          "code": "MD03",
-          "name": "Right Bat Signal"
+          "category": "Companion",
+          "code": "CP08",
+          "name": "Pumpkin Lantern"
         }
       ]
     },
@@ -1939,10 +2226,19 @@
       "accent": "#a576ff",
       "motto": "Broadcast from the void.",
       "image": "studio/035.png",
-      "founder": 11,
+      "modules": {
+        "head": 11,
+        "torso": 9,
+        "atmosphere": 5
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF11",
+          "name": "Beanie Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD11",
           "name": "Pom Beanie"
         },
@@ -1957,24 +2253,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT09",
+          "name": "Chain Crewneck + Loose Chain"
+        },
+        {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF09",
+          "name": "Chain Crewneck"
         },
         {
           "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "code": "NK09",
+          "name": "Loose Chain"
         },
         {
-          "category": "Extra",
-          "code": "EX11",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD03",
-          "name": "Right Bat Signal"
+          "category": "Atmosphere",
+          "code": "AT05",
+          "name": "Night Wisps"
         }
       ]
     },
@@ -1985,10 +2281,19 @@
       "accent": "#d8ff4f",
       "motto": "Instinct over etiquette.",
       "image": "studio/036.png",
-      "founder": 12,
+      "modules": {
+        "head": 12,
+        "torso": 10,
+        "atmosphere": 7
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF12",
+          "name": "Webbed Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD12",
           "name": "Webbed Wave"
         },
@@ -2003,24 +2308,29 @@
           "name": "Crooked Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
-        },
-        {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX12",
+          "category": "Head Extra",
+          "code": "HX12",
           "name": "Hanging Spider"
         },
         {
-          "category": "Signal",
-          "code": "MD03",
-          "name": "Right Bat Signal"
+          "category": "Outfit / Neck",
+          "code": "OT10",
+          "name": "Velvet Jacket + Soft Bow"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF10",
+          "name": "Velvet Jacket"
+        },
+        {
+          "category": "Neck",
+          "code": "NK10",
+          "name": "Soft Bow"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT07",
+          "name": "Comet Sparks"
         }
       ]
     },
@@ -2031,10 +2341,19 @@
       "accent": "#ff405b",
       "motto": "Old blood, new rules.",
       "image": "studio/037.png",
-      "founder": 1,
+      "modules": {
+        "head": 1,
+        "torso": 4,
+        "atmosphere": 7
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF01",
+          "name": "Raven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD01",
           "name": "Raven Wave"
         },
@@ -2049,24 +2368,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT04",
+          "name": "Striped Knit + Choker"
+        },
+        {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF04",
+          "name": "Striped Knit"
         },
         {
           "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "code": "NK04",
+          "name": "Black Choker"
         },
         {
-          "category": "Extra",
-          "code": "EX01",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD04",
-          "name": "Static Shards"
+          "category": "Atmosphere",
+          "code": "AT07",
+          "name": "Comet Sparks"
         }
       ]
     },
@@ -2077,10 +2396,19 @@
       "accent": "#35e7ff",
       "motto": "Stay bright after dark.",
       "image": "studio/038.png",
-      "founder": 2,
+      "modules": {
+        "head": 2,
+        "torso": 5,
+        "atmosphere": 8
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF02",
+          "name": "Pumpkin Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD02",
           "name": "Pumpkin Crown"
         },
@@ -2095,24 +2423,24 @@
           "name": "Jagged Grin"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT05",
+          "name": "Undertaker Shirt + Buttons"
+        },
+        {
           "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
+          "code": "OF05",
+          "name": "Undertaker Shirt"
         },
         {
           "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "code": "NK05",
+          "name": "Double Buttons"
         },
         {
-          "category": "Extra",
-          "code": "EX02",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD04",
-          "name": "Static Shards"
+          "category": "Atmosphere",
+          "code": "AT08",
+          "name": "Orbit Dots"
         }
       ]
     },
@@ -2123,10 +2451,19 @@
       "accent": "#9bdcff",
       "motto": "Calm is a superpower.",
       "image": "studio/039.png",
-      "founder": 3,
+      "modules": {
+        "head": 3,
+        "torso": 6,
+        "atmosphere": 9
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF03",
+          "name": "Midnight Fade"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD03",
           "name": "Midnight Slick"
         },
@@ -2141,24 +2478,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT06",
+          "name": "Winged Cape + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
+          "code": "OF06",
+          "name": "Winged Cape"
         },
         {
           "category": "Neck",
-          "code": "NK03",
+          "code": "NK06",
           "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX03",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD04",
-          "name": "Static Shards"
+          "category": "Atmosphere",
+          "code": "AT09",
+          "name": "Falling Pixels"
         }
       ]
     },
@@ -2169,10 +2506,19 @@
       "accent": "#ff7a32",
       "motto": "The city is ours at night.",
       "image": "studio/040.png",
-      "founder": 4,
+      "modules": {
+        "head": 4,
+        "torso": 7,
+        "atmosphere": 10
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF04",
+          "name": "Flame Lashes"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD04",
           "name": "Living Flame"
         },
@@ -2187,24 +2533,24 @@
           "name": "Crooked Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT07",
+          "name": "Wrapped Tunic"
+        },
+        {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF07",
+          "name": "Wrapped Tunic"
         },
         {
           "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "code": "NK07",
+          "name": "No Neckpiece"
         },
         {
-          "category": "Extra",
-          "code": "EX04",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD04",
-          "name": "Static Shards"
+          "category": "Atmosphere",
+          "code": "AT10",
+          "name": "Twin Moths"
         }
       ]
     },
@@ -2215,10 +2561,19 @@
       "accent": "#a576ff",
       "motto": "Broadcast from the void.",
       "image": "studio/041.png",
-      "founder": 5,
+      "modules": {
+        "head": 5,
+        "torso": 8,
+        "atmosphere": 1
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF05",
+          "name": "Stitched X"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD05",
           "name": "Stitched Crop"
         },
@@ -2233,24 +2588,34 @@
           "name": "Twin Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
-        },
-        {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
-        },
-        {
-          "category": "Extra",
-          "code": "EX05",
+          "category": "Head Extra",
+          "code": "HX05",
           "name": "Brow Stitches"
         },
         {
-          "category": "Signal",
-          "code": "MD04",
-          "name": "Static Shards"
+          "category": "Outfit / Neck",
+          "code": "OT08",
+          "name": "Coven Coat + Slim Scarf"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Neck",
+          "code": "NK08",
+          "name": "Slim Scarf"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT01",
+          "name": "Clean Air"
+        },
+        {
+          "category": "Companion",
+          "code": "CP08",
+          "name": "Pumpkin Lantern"
         }
       ]
     },
@@ -2261,10 +2626,19 @@
       "accent": "#d8ff4f",
       "motto": "Instinct over etiquette.",
       "image": "studio/042.png",
-      "founder": 6,
+      "modules": {
+        "head": 6,
+        "torso": 9,
+        "atmosphere": 2
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF06",
+          "name": "Horned Anger"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD06",
           "name": "Little Horns"
         },
@@ -2279,24 +2653,29 @@
           "name": "Crooked Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
-        },
-        {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX06",
+          "category": "Head Extra",
+          "code": "HX06",
           "name": "Bat Wings"
         },
         {
-          "category": "Signal",
-          "code": "MD04",
-          "name": "Static Shards"
+          "category": "Outfit / Neck",
+          "code": "OT09",
+          "name": "Chain Crewneck + Loose Chain"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF09",
+          "name": "Chain Crewneck"
+        },
+        {
+          "category": "Neck",
+          "code": "NK09",
+          "name": "Loose Chain"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT02",
+          "name": "Left Bat Signal"
         }
       ]
     },
@@ -2307,10 +2686,19 @@
       "accent": "#ff405b",
       "motto": "Old blood, new rules.",
       "image": "studio/043.png",
-      "founder": 7,
+      "modules": {
+        "head": 7,
+        "torso": 10,
+        "atmosphere": 3
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD07",
           "name": "Mummy Wraps"
         },
@@ -2325,24 +2713,24 @@
           "name": "Tiny Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT10",
+          "name": "Velvet Jacket + Soft Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF10",
+          "name": "Velvet Jacket"
         },
         {
           "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "code": "NK10",
+          "name": "Soft Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX07",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD04",
-          "name": "Static Shards"
+          "category": "Atmosphere",
+          "code": "AT03",
+          "name": "Right Bat Signal"
         }
       ]
     },
@@ -2353,10 +2741,19 @@
       "accent": "#35e7ff",
       "motto": "Stay bright after dark.",
       "image": "studio/044.png",
-      "founder": 8,
+      "modules": {
+        "head": 8,
+        "torso": 11,
+        "atmosphere": 4
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF08",
+          "name": "Coven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD08",
           "name": "Coven Hat"
         },
@@ -2371,23 +2768,23 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT11",
+          "name": "Skeleton Hoodie"
+        },
+        {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF11",
+          "name": "Skeleton Hoodie"
         },
         {
           "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "code": "NK11",
+          "name": "No Neckpiece"
         },
         {
-          "category": "Extra",
-          "code": "EX08",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "category": "Signal",
-          "code": "MD04",
+          "category": "Atmosphere",
+          "code": "AT04",
           "name": "Static Shards"
         }
       ]
@@ -2399,10 +2796,19 @@
       "accent": "#9bdcff",
       "motto": "Calm is a superpower.",
       "image": "studio/045.png",
-      "founder": 9,
+      "modules": {
+        "head": 9,
+        "torso": 12,
+        "atmosphere": 6
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF09",
+          "name": "Spectral Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD09",
           "name": "Spectral Wave"
         },
@@ -2417,24 +2823,29 @@
           "name": "Tiny Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
-        },
-        {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
-        },
-        {
-          "category": "Extra",
-          "code": "EX09",
+          "category": "Head Extra",
+          "code": "HX09",
           "name": "Smoke Halo"
         },
         {
-          "category": "Signal",
-          "code": "MD04",
-          "name": "Static Shards"
+          "category": "Outfit / Neck",
+          "code": "OT12",
+          "name": "High Collar + Medallion"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF12",
+          "name": "High Collar"
+        },
+        {
+          "category": "Neck",
+          "code": "NK12",
+          "name": "Round Medallion"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT06",
+          "name": "Spider Drop"
         }
       ]
     },
@@ -2445,10 +2856,19 @@
       "accent": "#ff7a32",
       "motto": "The city is ours at night.",
       "image": "studio/046.png",
-      "founder": 10,
+      "modules": {
+        "head": 10,
+        "torso": 1,
+        "atmosphere": 6
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF10",
+          "name": "Raven Hypno"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD10",
           "name": "Raven Wave"
         },
@@ -2463,24 +2883,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT01",
+          "name": "Skull Tux + Skull Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF01",
+          "name": "Skull Tux"
         },
         {
           "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "code": "NK01",
+          "name": "Skull Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX10",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD04",
-          "name": "Static Shards"
+          "category": "Atmosphere",
+          "code": "AT06",
+          "name": "Spider Drop"
         }
       ]
     },
@@ -2491,10 +2911,19 @@
       "accent": "#a576ff",
       "motto": "Broadcast from the void.",
       "image": "studio/047.png",
-      "founder": 11,
+      "modules": {
+        "head": 11,
+        "torso": 2,
+        "atmosphere": 7
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF11",
+          "name": "Beanie Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD11",
           "name": "Pom Beanie"
         },
@@ -2509,24 +2938,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT02",
+          "name": "High Collar + Soft Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF02",
+          "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "code": "NK02",
+          "name": "Soft Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX11",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD04",
-          "name": "Static Shards"
+          "category": "Atmosphere",
+          "code": "AT07",
+          "name": "Comet Sparks"
         }
       ]
     },
@@ -2537,10 +2966,19 @@
       "accent": "#d8ff4f",
       "motto": "Instinct over etiquette.",
       "image": "studio/048.png",
-      "founder": 12,
+      "modules": {
+        "head": 12,
+        "torso": 3,
+        "atmosphere": 8
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF12",
+          "name": "Webbed Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD12",
           "name": "Webbed Wave"
         },
@@ -2555,24 +2993,29 @@
           "name": "Crooked Fangs"
         },
         {
+          "category": "Head Extra",
+          "code": "HX12",
+          "name": "Hanging Spider"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT03",
+          "name": "High Collar + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF12",
+          "code": "OF03",
           "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK12",
+          "code": "NK03",
           "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX12",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Signal",
-          "code": "MD04",
-          "name": "Static Shards"
+          "category": "Atmosphere",
+          "code": "AT08",
+          "name": "Orbit Dots"
         }
       ]
     },
@@ -2583,10 +3026,19 @@
       "accent": "#ff405b",
       "motto": "Old blood, new rules.",
       "image": "studio/049.png",
-      "founder": 1,
+      "modules": {
+        "head": 1,
+        "torso": 9,
+        "atmosphere": 9
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF01",
+          "name": "Raven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD01",
           "name": "Raven Wave"
         },
@@ -2601,24 +3053,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT09",
+          "name": "Chain Crewneck + Loose Chain"
+        },
+        {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF09",
+          "name": "Chain Crewneck"
         },
         {
           "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "code": "NK09",
+          "name": "Loose Chain"
         },
         {
-          "category": "Extra",
-          "code": "EX01",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD05",
-          "name": "Night Wisps"
+          "category": "Atmosphere",
+          "code": "AT09",
+          "name": "Falling Pixels"
         }
       ]
     },
@@ -2629,10 +3081,19 @@
       "accent": "#35e7ff",
       "motto": "Stay bright after dark.",
       "image": "studio/050.png",
-      "founder": 2,
+      "modules": {
+        "head": 2,
+        "torso": 10,
+        "atmosphere": 10
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF02",
+          "name": "Pumpkin Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD02",
           "name": "Pumpkin Crown"
         },
@@ -2647,24 +3108,24 @@
           "name": "Jagged Grin"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT10",
+          "name": "Velvet Jacket + Soft Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
+          "code": "OF10",
+          "name": "Velvet Jacket"
         },
         {
           "category": "Neck",
-          "code": "NK02",
+          "code": "NK10",
           "name": "Soft Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX02",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD05",
-          "name": "Night Wisps"
+          "category": "Atmosphere",
+          "code": "AT10",
+          "name": "Twin Moths"
         }
       ]
     },
@@ -2675,10 +3136,19 @@
       "accent": "#9bdcff",
       "motto": "Calm is a superpower.",
       "image": "studio/051.png",
-      "founder": 3,
+      "modules": {
+        "head": 3,
+        "torso": 11,
+        "atmosphere": 1
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF03",
+          "name": "Midnight Fade"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD03",
           "name": "Midnight Slick"
         },
@@ -2693,24 +3163,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT11",
+          "name": "Skeleton Hoodie"
+        },
+        {
           "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
+          "code": "OF11",
+          "name": "Skeleton Hoodie"
         },
         {
           "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "code": "NK11",
+          "name": "No Neckpiece"
         },
         {
-          "category": "Extra",
-          "code": "EX03",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD05",
-          "name": "Night Wisps"
+          "category": "Atmosphere",
+          "code": "AT01",
+          "name": "Clean Air"
         }
       ]
     },
@@ -2721,10 +3191,19 @@
       "accent": "#ff7a32",
       "motto": "The city is ours at night.",
       "image": "studio/052.png",
-      "founder": 4,
+      "modules": {
+        "head": 4,
+        "torso": 12,
+        "atmosphere": 2
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF04",
+          "name": "Flame Lashes"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD04",
           "name": "Living Flame"
         },
@@ -2739,24 +3218,24 @@
           "name": "Crooked Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT12",
+          "name": "High Collar + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF12",
+          "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "code": "NK12",
+          "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX04",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD05",
-          "name": "Night Wisps"
+          "category": "Atmosphere",
+          "code": "AT02",
+          "name": "Left Bat Signal"
         }
       ]
     },
@@ -2767,10 +3246,19 @@
       "accent": "#a576ff",
       "motto": "Broadcast from the void.",
       "image": "studio/053.png",
-      "founder": 5,
+      "modules": {
+        "head": 5,
+        "torso": 1,
+        "atmosphere": 3
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF05",
+          "name": "Stitched X"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD05",
           "name": "Stitched Crop"
         },
@@ -2785,24 +3273,29 @@
           "name": "Twin Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
-        },
-        {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
-        },
-        {
-          "category": "Extra",
-          "code": "EX05",
+          "category": "Head Extra",
+          "code": "HX05",
           "name": "Brow Stitches"
         },
         {
-          "category": "Signal",
-          "code": "MD05",
-          "name": "Night Wisps"
+          "category": "Outfit / Neck",
+          "code": "OT01",
+          "name": "Skull Tux + Skull Bow"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF01",
+          "name": "Skull Tux"
+        },
+        {
+          "category": "Neck",
+          "code": "NK01",
+          "name": "Skull Bow"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT03",
+          "name": "Right Bat Signal"
         }
       ]
     },
@@ -2813,10 +3306,19 @@
       "accent": "#d8ff4f",
       "motto": "Instinct over etiquette.",
       "image": "studio/054.png",
-      "founder": 6,
+      "modules": {
+        "head": 6,
+        "torso": 2,
+        "atmosphere": 4
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF06",
+          "name": "Horned Anger"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD06",
           "name": "Little Horns"
         },
@@ -2831,24 +3333,29 @@
           "name": "Crooked Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
-        },
-        {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX06",
+          "category": "Head Extra",
+          "code": "HX06",
           "name": "Bat Wings"
         },
         {
-          "category": "Signal",
-          "code": "MD05",
-          "name": "Night Wisps"
+          "category": "Outfit / Neck",
+          "code": "OT02",
+          "name": "High Collar + Soft Bow"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF02",
+          "name": "High Collar"
+        },
+        {
+          "category": "Neck",
+          "code": "NK02",
+          "name": "Soft Bow"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT04",
+          "name": "Static Shards"
         }
       ]
     },
@@ -2859,10 +3366,19 @@
       "accent": "#ff405b",
       "motto": "Old blood, new rules.",
       "image": "studio/055.png",
-      "founder": 7,
+      "modules": {
+        "head": 7,
+        "torso": 3,
+        "atmosphere": 5
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD07",
           "name": "Mummy Wraps"
         },
@@ -2877,23 +3393,23 @@
           "name": "Tiny Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT03",
+          "name": "High Collar + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF03",
+          "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "code": "NK03",
+          "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX07",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD05",
+          "category": "Atmosphere",
+          "code": "AT05",
           "name": "Night Wisps"
         }
       ]
@@ -2905,10 +3421,19 @@
       "accent": "#35e7ff",
       "motto": "Stay bright after dark.",
       "image": "studio/056.png",
-      "founder": 8,
+      "modules": {
+        "head": 8,
+        "torso": 4,
+        "atmosphere": 6
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF08",
+          "name": "Coven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD08",
           "name": "Coven Hat"
         },
@@ -2923,24 +3448,24 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT04",
+          "name": "Striped Knit + Choker"
+        },
+        {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF04",
+          "name": "Striped Knit"
         },
         {
           "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "code": "NK04",
+          "name": "Black Choker"
         },
         {
-          "category": "Extra",
-          "code": "EX08",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "category": "Signal",
-          "code": "MD05",
-          "name": "Night Wisps"
+          "category": "Atmosphere",
+          "code": "AT06",
+          "name": "Spider Drop"
         }
       ]
     },
@@ -2951,10 +3476,79 @@
       "accent": "#9bdcff",
       "motto": "Calm is a superpower.",
       "image": "studio/057.png",
-      "founder": 10,
+      "modules": {
+        "head": 9,
+        "torso": 5,
+        "atmosphere": 7
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF09",
+          "name": "Spectral Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD09",
+          "name": "Spectral Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT09",
+          "name": "Tiny Fangs"
+        },
+        {
+          "category": "Head Extra",
+          "code": "HX09",
+          "name": "Smoke Halo"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT05",
+          "name": "Undertaker Shirt + Buttons"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF05",
+          "name": "Undertaker Shirt"
+        },
+        {
+          "category": "Neck",
+          "code": "NK05",
+          "name": "Double Buttons"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT07",
+          "name": "Comet Sparks"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Night Shift #058",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "studio/058.png",
+      "modules": {
+        "head": 10,
+        "torso": 6,
+        "atmosphere": 8
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF10",
+          "name": "Raven Hypno"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD10",
           "name": "Raven Wave"
         },
@@ -2969,38 +3563,47 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT06",
+          "name": "Winged Cape + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF06",
+          "name": "Winged Cape"
         },
         {
           "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "code": "NK06",
+          "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX10",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD05",
-          "name": "Night Wisps"
+          "category": "Atmosphere",
+          "code": "AT08",
+          "name": "Orbit Dots"
         }
       ]
     },
     {
-      "id": 58,
-      "name": "Night Shift #058",
-      "house": "Asphalt Fangs",
-      "accent": "#ff7a32",
-      "motto": "The city is ours at night.",
-      "image": "studio/058.png",
-      "founder": 11,
+      "id": 59,
+      "name": "Night Shift #059",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "studio/059.png",
+      "modules": {
+        "head": 11,
+        "torso": 7,
+        "atmosphere": 9
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF11",
+          "name": "Beanie Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD11",
           "name": "Pom Beanie"
         },
@@ -3015,38 +3618,47 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT07",
+          "name": "Wrapped Tunic"
+        },
+        {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF07",
+          "name": "Wrapped Tunic"
         },
         {
           "category": "Neck",
-          "code": "NK11",
+          "code": "NK07",
           "name": "No Neckpiece"
         },
         {
-          "category": "Extra",
-          "code": "EX11",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD05",
-          "name": "Night Wisps"
+          "category": "Atmosphere",
+          "code": "AT09",
+          "name": "Falling Pixels"
         }
       ]
     },
     {
-      "id": 59,
-      "name": "Night Shift #059",
-      "house": "Black Signal",
-      "accent": "#a576ff",
-      "motto": "Broadcast from the void.",
-      "image": "studio/059.png",
-      "founder": 12,
+      "id": 60,
+      "name": "Night Shift #060",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "studio/060.png",
+      "modules": {
+        "head": 12,
+        "torso": 8,
+        "atmosphere": 10
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF12",
+          "name": "Webbed Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD12",
           "name": "Webbed Wave"
         },
@@ -3061,38 +3673,57 @@
           "name": "Crooked Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
-        },
-        {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX12",
+          "category": "Head Extra",
+          "code": "HX12",
           "name": "Hanging Spider"
         },
         {
-          "category": "Signal",
-          "code": "MD05",
-          "name": "Night Wisps"
+          "category": "Outfit / Neck",
+          "code": "OT08",
+          "name": "Coven Coat + Slim Scarf"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Neck",
+          "code": "NK08",
+          "name": "Slim Scarf"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT10",
+          "name": "Twin Moths"
+        },
+        {
+          "category": "Companion",
+          "code": "CP08",
+          "name": "Pumpkin Lantern"
         }
       ]
     },
     {
-      "id": 60,
-      "name": "Night Shift #060",
-      "house": "Wild Bite",
-      "accent": "#d8ff4f",
-      "motto": "Instinct over etiquette.",
-      "image": "studio/060.png",
-      "founder": 1,
+      "id": 61,
+      "name": "Night Shift #061",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "studio/061.png",
+      "modules": {
+        "head": 1,
+        "torso": 2,
+        "atmosphere": 1
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF01",
+          "name": "Raven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD01",
           "name": "Raven Wave"
         },
@@ -3107,38 +3738,47 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT02",
+          "name": "High Collar + Soft Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF02",
+          "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "code": "NK02",
+          "name": "Soft Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX01",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD06",
-          "name": "Spider Drop"
+          "category": "Atmosphere",
+          "code": "AT01",
+          "name": "Clean Air"
         }
       ]
     },
     {
-      "id": 61,
-      "name": "Night Shift #061",
-      "house": "Velvet Court",
-      "accent": "#ff405b",
-      "motto": "Old blood, new rules.",
-      "image": "studio/061.png",
-      "founder": 2,
+      "id": 62,
+      "name": "Night Shift #062",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "studio/062.png",
+      "modules": {
+        "head": 2,
+        "torso": 3,
+        "atmosphere": 2
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF02",
+          "name": "Pumpkin Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD02",
           "name": "Pumpkin Crown"
         },
@@ -3153,38 +3793,47 @@
           "name": "Jagged Grin"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT03",
+          "name": "High Collar + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF02",
+          "code": "OF03",
           "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "code": "NK03",
+          "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX02",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD06",
-          "name": "Spider Drop"
+          "category": "Atmosphere",
+          "code": "AT02",
+          "name": "Left Bat Signal"
         }
       ]
     },
     {
-      "id": 62,
-      "name": "Night Shift #062",
-      "house": "Neon Vein",
-      "accent": "#35e7ff",
-      "motto": "Stay bright after dark.",
-      "image": "studio/062.png",
-      "founder": 3,
+      "id": 63,
+      "name": "Night Shift #063",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "studio/063.png",
+      "modules": {
+        "head": 3,
+        "torso": 4,
+        "atmosphere": 3
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF03",
+          "name": "Midnight Fade"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD03",
           "name": "Midnight Slick"
         },
@@ -3199,38 +3848,47 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT04",
+          "name": "Striped Knit + Choker"
+        },
+        {
           "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
+          "code": "OF04",
+          "name": "Striped Knit"
         },
         {
           "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "code": "NK04",
+          "name": "Black Choker"
         },
         {
-          "category": "Extra",
-          "code": "EX03",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD06",
-          "name": "Spider Drop"
+          "category": "Atmosphere",
+          "code": "AT03",
+          "name": "Right Bat Signal"
         }
       ]
     },
     {
-      "id": 63,
-      "name": "Night Shift #063",
-      "house": "Cold Blood",
-      "accent": "#9bdcff",
-      "motto": "Calm is a superpower.",
-      "image": "studio/063.png",
-      "founder": 4,
+      "id": 64,
+      "name": "Night Shift #064",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "studio/064.png",
+      "modules": {
+        "head": 4,
+        "torso": 5,
+        "atmosphere": 4
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF04",
+          "name": "Flame Lashes"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD04",
           "name": "Living Flame"
         },
@@ -3245,38 +3903,47 @@
           "name": "Crooked Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT05",
+          "name": "Undertaker Shirt + Buttons"
+        },
+        {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF05",
+          "name": "Undertaker Shirt"
         },
         {
           "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "code": "NK05",
+          "name": "Double Buttons"
         },
         {
-          "category": "Extra",
-          "code": "EX04",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD06",
-          "name": "Spider Drop"
+          "category": "Atmosphere",
+          "code": "AT04",
+          "name": "Static Shards"
         }
       ]
     },
     {
-      "id": 64,
-      "name": "Night Shift #064",
-      "house": "Asphalt Fangs",
-      "accent": "#ff7a32",
-      "motto": "The city is ours at night.",
-      "image": "studio/064.png",
-      "founder": 5,
+      "id": 65,
+      "name": "Night Shift #065",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "studio/065.png",
+      "modules": {
+        "head": 5,
+        "torso": 6,
+        "atmosphere": 5
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF05",
+          "name": "Stitched X"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD05",
           "name": "Stitched Crop"
         },
@@ -3291,38 +3958,52 @@
           "name": "Twin Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
-        },
-        {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
-        },
-        {
-          "category": "Extra",
-          "code": "EX05",
+          "category": "Head Extra",
+          "code": "HX05",
           "name": "Brow Stitches"
         },
         {
-          "category": "Signal",
-          "code": "MD06",
-          "name": "Spider Drop"
+          "category": "Outfit / Neck",
+          "code": "OT06",
+          "name": "Winged Cape + Medallion"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF06",
+          "name": "Winged Cape"
+        },
+        {
+          "category": "Neck",
+          "code": "NK06",
+          "name": "Round Medallion"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT05",
+          "name": "Night Wisps"
         }
       ]
     },
     {
-      "id": 65,
-      "name": "Night Shift #065",
-      "house": "Black Signal",
-      "accent": "#a576ff",
-      "motto": "Broadcast from the void.",
-      "image": "studio/065.png",
-      "founder": 6,
+      "id": 66,
+      "name": "Night Shift #066",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "studio/066.png",
+      "modules": {
+        "head": 6,
+        "torso": 7,
+        "atmosphere": 6
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF06",
+          "name": "Horned Anger"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD06",
           "name": "Little Horns"
         },
@@ -3337,50 +4018,14 @@
           "name": "Crooked Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
-        },
-        {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX06",
+          "category": "Head Extra",
+          "code": "HX06",
           "name": "Bat Wings"
         },
         {
-          "category": "Signal",
-          "code": "MD06",
-          "name": "Spider Drop"
-        }
-      ]
-    },
-    {
-      "id": 66,
-      "name": "Night Shift #066",
-      "house": "Wild Bite",
-      "accent": "#d8ff4f",
-      "motto": "Instinct over etiquette.",
-      "image": "studio/066.png",
-      "founder": 7,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD07",
-          "name": "Mummy Wraps"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY07",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT07",
-          "name": "Tiny Fangs"
+          "category": "Outfit / Neck",
+          "code": "OT07",
+          "name": "Wrapped Tunic"
         },
         {
           "category": "Outfit",
@@ -3393,13 +4038,8 @@
           "name": "No Neckpiece"
         },
         {
-          "category": "Extra",
-          "code": "EX07",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD06",
+          "category": "Atmosphere",
+          "code": "AT06",
           "name": "Spider Drop"
         }
       ]
@@ -3411,470 +4051,19 @@
       "accent": "#ff405b",
       "motto": "Old blood, new rules.",
       "image": "studio/067.png",
-      "founder": 8,
+      "modules": {
+        "head": 7,
+        "torso": 8,
+        "atmosphere": 7
+      },
       "traits": [
         {
-          "category": "Head",
-          "code": "HD08",
-          "name": "Coven Hat"
+          "category": "Head / Face",
+          "code": "HF07",
+          "name": "Mummy Glow"
         },
         {
-          "category": "Eyes",
-          "code": "EY08",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT08",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
-        },
-        {
-          "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
-        },
-        {
-          "category": "Extra",
-          "code": "EX08",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "category": "Signal",
-          "code": "MD06",
-          "name": "Spider Drop"
-        }
-      ]
-    },
-    {
-      "id": 68,
-      "name": "Night Shift #068",
-      "house": "Neon Vein",
-      "accent": "#35e7ff",
-      "motto": "Stay bright after dark.",
-      "image": "studio/068.png",
-      "founder": 9,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD09",
-          "name": "Spectral Wave"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY09",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT09",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
-        },
-        {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
-        },
-        {
-          "category": "Extra",
-          "code": "EX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "category": "Signal",
-          "code": "MD06",
-          "name": "Spider Drop"
-        }
-      ]
-    },
-    {
-      "id": 69,
-      "name": "Night Shift #069",
-      "house": "Cold Blood",
-      "accent": "#9bdcff",
-      "motto": "Calm is a superpower.",
-      "image": "studio/069.png",
-      "founder": 10,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD10",
-          "name": "Raven Wave"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY10",
-          "name": "Hypno Spirals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT10",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
-        },
-        {
-          "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
-        },
-        {
-          "category": "Extra",
-          "code": "EX10",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD06",
-          "name": "Spider Drop"
-        }
-      ]
-    },
-    {
-      "id": 70,
-      "name": "Night Shift #070",
-      "house": "Asphalt Fangs",
-      "accent": "#ff7a32",
-      "motto": "The city is ours at night.",
-      "image": "studio/070.png",
-      "founder": 11,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD11",
-          "name": "Pom Beanie"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY11",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT11",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
-        },
-        {
-          "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
-        },
-        {
-          "category": "Extra",
-          "code": "EX11",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD06",
-          "name": "Spider Drop"
-        }
-      ]
-    },
-    {
-      "id": 71,
-      "name": "Night Shift #071",
-      "house": "Black Signal",
-      "accent": "#a576ff",
-      "motto": "Broadcast from the void.",
-      "image": "studio/071.png",
-      "founder": 1,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD01",
-          "name": "Raven Wave"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY01",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT01",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
-        },
-        {
-          "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
-        },
-        {
-          "category": "Extra",
-          "code": "EX01",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD07",
-          "name": "Comet Sparks"
-        }
-      ]
-    },
-    {
-      "id": 72,
-      "name": "Night Shift #072",
-      "house": "Wild Bite",
-      "accent": "#d8ff4f",
-      "motto": "Instinct over etiquette.",
-      "image": "studio/072.png",
-      "founder": 2,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD02",
-          "name": "Pumpkin Crown"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY02",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
-        },
-        {
-          "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
-        },
-        {
-          "category": "Extra",
-          "code": "EX02",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD07",
-          "name": "Comet Sparks"
-        }
-      ]
-    },
-    {
-      "id": 73,
-      "name": "Night Shift #073",
-      "house": "Velvet Court",
-      "accent": "#ff405b",
-      "motto": "Old blood, new rules.",
-      "image": "studio/073.png",
-      "founder": 3,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD03",
-          "name": "Midnight Slick"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY03",
-          "name": "Shadow Fade"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
-        },
-        {
-          "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX03",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD07",
-          "name": "Comet Sparks"
-        }
-      ]
-    },
-    {
-      "id": 74,
-      "name": "Night Shift #074",
-      "house": "Neon Vein",
-      "accent": "#35e7ff",
-      "motto": "Stay bright after dark.",
-      "image": "studio/074.png",
-      "founder": 4,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD04",
-          "name": "Living Flame"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY04",
-          "name": "Long Lashes"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
-        },
-        {
-          "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
-        },
-        {
-          "category": "Extra",
-          "code": "EX04",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD07",
-          "name": "Comet Sparks"
-        }
-      ]
-    },
-    {
-      "id": 75,
-      "name": "Night Shift #075",
-      "house": "Cold Blood",
-      "accent": "#9bdcff",
-      "motto": "Calm is a superpower.",
-      "image": "studio/075.png",
-      "founder": 5,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD05",
-          "name": "Stitched Crop"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY05",
-          "name": "X Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT05",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
-        },
-        {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
-        },
-        {
-          "category": "Extra",
-          "code": "EX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "category": "Signal",
-          "code": "MD07",
-          "name": "Comet Sparks"
-        }
-      ]
-    },
-    {
-      "id": 76,
-      "name": "Night Shift #076",
-      "house": "Asphalt Fangs",
-      "accent": "#ff7a32",
-      "motto": "The city is ours at night.",
-      "image": "studio/076.png",
-      "founder": 6,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD06",
-          "name": "Little Horns"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY06",
-          "name": "Angry Arches"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT06",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
-        },
-        {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX06",
-          "name": "Bat Wings"
-        },
-        {
-          "category": "Signal",
-          "code": "MD07",
-          "name": "Comet Sparks"
-        }
-      ]
-    },
-    {
-      "id": 77,
-      "name": "Night Shift #077",
-      "house": "Black Signal",
-      "accent": "#a576ff",
-      "motto": "Broadcast from the void.",
-      "image": "studio/077.png",
-      "founder": 7,
-      "traits": [
-        {
-          "category": "Head",
+          "category": "Hair / Headwear",
           "code": "HD07",
           "name": "Mummy Wraps"
         },
@@ -3889,6 +4078,356 @@
           "name": "Tiny Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT08",
+          "name": "Coven Coat + Slim Scarf"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Neck",
+          "code": "NK08",
+          "name": "Slim Scarf"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT07",
+          "name": "Comet Sparks"
+        },
+        {
+          "category": "Companion",
+          "code": "CP08",
+          "name": "Pumpkin Lantern"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Night Shift #068",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "studio/068.png",
+      "modules": {
+        "head": 8,
+        "torso": 9,
+        "atmosphere": 8
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF08",
+          "name": "Coven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD08",
+          "name": "Coven Hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY08",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT08",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT09",
+          "name": "Chain Crewneck + Loose Chain"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF09",
+          "name": "Chain Crewneck"
+        },
+        {
+          "category": "Neck",
+          "code": "NK09",
+          "name": "Loose Chain"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT08",
+          "name": "Orbit Dots"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Night Shift #069",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "studio/069.png",
+      "modules": {
+        "head": 9,
+        "torso": 10,
+        "atmosphere": 9
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF09",
+          "name": "Spectral Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD09",
+          "name": "Spectral Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT09",
+          "name": "Tiny Fangs"
+        },
+        {
+          "category": "Head Extra",
+          "code": "HX09",
+          "name": "Smoke Halo"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT10",
+          "name": "Velvet Jacket + Soft Bow"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF10",
+          "name": "Velvet Jacket"
+        },
+        {
+          "category": "Neck",
+          "code": "NK10",
+          "name": "Soft Bow"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT09",
+          "name": "Falling Pixels"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Night Shift #070",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "studio/070.png",
+      "modules": {
+        "head": 10,
+        "torso": 11,
+        "atmosphere": 10
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF10",
+          "name": "Raven Hypno"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD10",
+          "name": "Raven Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT10",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT11",
+          "name": "Skeleton Hoodie"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF11",
+          "name": "Skeleton Hoodie"
+        },
+        {
+          "category": "Neck",
+          "code": "NK11",
+          "name": "No Neckpiece"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT10",
+          "name": "Twin Moths"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Night Shift #071",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "studio/071.png",
+      "modules": {
+        "head": 11,
+        "torso": 12,
+        "atmosphere": 1
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF11",
+          "name": "Beanie Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD11",
+          "name": "Pom Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY11",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT11",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT12",
+          "name": "High Collar + Medallion"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF12",
+          "name": "High Collar"
+        },
+        {
+          "category": "Neck",
+          "code": "NK12",
+          "name": "Round Medallion"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT01",
+          "name": "Clean Air"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Night Shift #072",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "studio/072.png",
+      "modules": {
+        "head": 12,
+        "torso": 1,
+        "atmosphere": 2
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF12",
+          "name": "Webbed Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD12",
+          "name": "Webbed Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY12",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT12",
+          "name": "Crooked Fangs"
+        },
+        {
+          "category": "Head Extra",
+          "code": "HX12",
+          "name": "Hanging Spider"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT01",
+          "name": "Skull Tux + Skull Bow"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF01",
+          "name": "Skull Tux"
+        },
+        {
+          "category": "Neck",
+          "code": "NK01",
+          "name": "Skull Bow"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT02",
+          "name": "Left Bat Signal"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Night Shift #073",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "studio/073.png",
+      "modules": {
+        "head": 1,
+        "torso": 7,
+        "atmosphere": 3
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF01",
+          "name": "Raven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD01",
+          "name": "Raven Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY01",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT07",
+          "name": "Wrapped Tunic"
+        },
+        {
           "category": "Outfit",
           "code": "OF07",
           "name": "Wrapped Tunic"
@@ -3899,13 +4438,238 @@
           "name": "No Neckpiece"
         },
         {
-          "category": "Extra",
-          "code": "EX07",
-          "name": "Clean Frame"
+          "category": "Atmosphere",
+          "code": "AT03",
+          "name": "Right Bat Signal"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Night Shift #074",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "studio/074.png",
+      "modules": {
+        "head": 2,
+        "torso": 8,
+        "atmosphere": 4
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF02",
+          "name": "Pumpkin Glow"
         },
         {
-          "category": "Signal",
-          "code": "MD07",
+          "category": "Hair / Headwear",
+          "code": "HD02",
+          "name": "Pumpkin Crown"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY02",
+          "name": "Soft Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT02",
+          "name": "Jagged Grin"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT08",
+          "name": "Coven Coat + Slim Scarf"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Neck",
+          "code": "NK08",
+          "name": "Slim Scarf"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT04",
+          "name": "Static Shards"
+        },
+        {
+          "category": "Companion",
+          "code": "CP08",
+          "name": "Pumpkin Lantern"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Night Shift #075",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "studio/075.png",
+      "modules": {
+        "head": 3,
+        "torso": 9,
+        "atmosphere": 5
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF03",
+          "name": "Midnight Fade"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD03",
+          "name": "Midnight Slick"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY03",
+          "name": "Shadow Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT03",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT09",
+          "name": "Chain Crewneck + Loose Chain"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF09",
+          "name": "Chain Crewneck"
+        },
+        {
+          "category": "Neck",
+          "code": "NK09",
+          "name": "Loose Chain"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT05",
+          "name": "Night Wisps"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Night Shift #076",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "studio/076.png",
+      "modules": {
+        "head": 4,
+        "torso": 10,
+        "atmosphere": 6
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF04",
+          "name": "Flame Lashes"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD04",
+          "name": "Living Flame"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY04",
+          "name": "Long Lashes"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT04",
+          "name": "Crooked Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT10",
+          "name": "Velvet Jacket + Soft Bow"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF10",
+          "name": "Velvet Jacket"
+        },
+        {
+          "category": "Neck",
+          "code": "NK10",
+          "name": "Soft Bow"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT06",
+          "name": "Spider Drop"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Night Shift #077",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "studio/077.png",
+      "modules": {
+        "head": 5,
+        "torso": 11,
+        "atmosphere": 7
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF05",
+          "name": "Stitched X"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD05",
+          "name": "Stitched Crop"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY05",
+          "name": "X Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT05",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Head Extra",
+          "code": "HX05",
+          "name": "Brow Stitches"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT11",
+          "name": "Skeleton Hoodie"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF11",
+          "name": "Skeleton Hoodie"
+        },
+        {
+          "category": "Neck",
+          "code": "NK11",
+          "name": "No Neckpiece"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT07",
           "name": "Comet Sparks"
         }
       ]
@@ -3917,470 +4681,19 @@
       "accent": "#d8ff4f",
       "motto": "Instinct over etiquette.",
       "image": "studio/078.png",
-      "founder": 8,
+      "modules": {
+        "head": 6,
+        "torso": 12,
+        "atmosphere": 8
+      },
       "traits": [
         {
-          "category": "Head",
-          "code": "HD08",
-          "name": "Coven Hat"
+          "category": "Head / Face",
+          "code": "HF06",
+          "name": "Horned Anger"
         },
         {
-          "category": "Eyes",
-          "code": "EY08",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT08",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
-        },
-        {
-          "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
-        },
-        {
-          "category": "Extra",
-          "code": "EX08",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "category": "Signal",
-          "code": "MD07",
-          "name": "Comet Sparks"
-        }
-      ]
-    },
-    {
-      "id": 79,
-      "name": "Night Shift #079",
-      "house": "Velvet Court",
-      "accent": "#ff405b",
-      "motto": "Old blood, new rules.",
-      "image": "studio/079.png",
-      "founder": 9,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD09",
-          "name": "Spectral Wave"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY09",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT09",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
-        },
-        {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
-        },
-        {
-          "category": "Extra",
-          "code": "EX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "category": "Signal",
-          "code": "MD07",
-          "name": "Comet Sparks"
-        }
-      ]
-    },
-    {
-      "id": 80,
-      "name": "Night Shift #080",
-      "house": "Neon Vein",
-      "accent": "#35e7ff",
-      "motto": "Stay bright after dark.",
-      "image": "studio/080.png",
-      "founder": 10,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD10",
-          "name": "Raven Wave"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY10",
-          "name": "Hypno Spirals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT10",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
-        },
-        {
-          "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
-        },
-        {
-          "category": "Extra",
-          "code": "EX10",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD07",
-          "name": "Comet Sparks"
-        }
-      ]
-    },
-    {
-      "id": 81,
-      "name": "Night Shift #081",
-      "house": "Cold Blood",
-      "accent": "#9bdcff",
-      "motto": "Calm is a superpower.",
-      "image": "studio/081.png",
-      "founder": 11,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD11",
-          "name": "Pom Beanie"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY11",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT11",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
-        },
-        {
-          "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
-        },
-        {
-          "category": "Extra",
-          "code": "EX11",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD07",
-          "name": "Comet Sparks"
-        }
-      ]
-    },
-    {
-      "id": 82,
-      "name": "Night Shift #082",
-      "house": "Asphalt Fangs",
-      "accent": "#ff7a32",
-      "motto": "The city is ours at night.",
-      "image": "studio/082.png",
-      "founder": 12,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD12",
-          "name": "Webbed Wave"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY12",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT12",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
-        },
-        {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX12",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Signal",
-          "code": "MD07",
-          "name": "Comet Sparks"
-        }
-      ]
-    },
-    {
-      "id": 83,
-      "name": "Night Shift #083",
-      "house": "Black Signal",
-      "accent": "#a576ff",
-      "motto": "Broadcast from the void.",
-      "image": "studio/083.png",
-      "founder": 1,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD01",
-          "name": "Raven Wave"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY01",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT01",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
-        },
-        {
-          "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
-        },
-        {
-          "category": "Extra",
-          "code": "EX01",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD08",
-          "name": "Orbit Dots"
-        }
-      ]
-    },
-    {
-      "id": 84,
-      "name": "Night Shift #084",
-      "house": "Wild Bite",
-      "accent": "#d8ff4f",
-      "motto": "Instinct over etiquette.",
-      "image": "studio/084.png",
-      "founder": 2,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD02",
-          "name": "Pumpkin Crown"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY02",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
-        },
-        {
-          "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
-        },
-        {
-          "category": "Extra",
-          "code": "EX02",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD08",
-          "name": "Orbit Dots"
-        }
-      ]
-    },
-    {
-      "id": 85,
-      "name": "Night Shift #085",
-      "house": "Velvet Court",
-      "accent": "#ff405b",
-      "motto": "Old blood, new rules.",
-      "image": "studio/085.png",
-      "founder": 3,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD03",
-          "name": "Midnight Slick"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY03",
-          "name": "Shadow Fade"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
-        },
-        {
-          "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX03",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD08",
-          "name": "Orbit Dots"
-        }
-      ]
-    },
-    {
-      "id": 86,
-      "name": "Night Shift #086",
-      "house": "Neon Vein",
-      "accent": "#35e7ff",
-      "motto": "Stay bright after dark.",
-      "image": "studio/086.png",
-      "founder": 4,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD04",
-          "name": "Living Flame"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY04",
-          "name": "Long Lashes"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
-        },
-        {
-          "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
-        },
-        {
-          "category": "Extra",
-          "code": "EX04",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD08",
-          "name": "Orbit Dots"
-        }
-      ]
-    },
-    {
-      "id": 87,
-      "name": "Night Shift #087",
-      "house": "Cold Blood",
-      "accent": "#9bdcff",
-      "motto": "Calm is a superpower.",
-      "image": "studio/087.png",
-      "founder": 5,
-      "traits": [
-        {
-          "category": "Head",
-          "code": "HD05",
-          "name": "Stitched Crop"
-        },
-        {
-          "category": "Eyes",
-          "code": "EY05",
-          "name": "X Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT05",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
-        },
-        {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
-        },
-        {
-          "category": "Extra",
-          "code": "EX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "category": "Signal",
-          "code": "MD08",
-          "name": "Orbit Dots"
-        }
-      ]
-    },
-    {
-      "id": 88,
-      "name": "Night Shift #088",
-      "house": "Asphalt Fangs",
-      "accent": "#ff7a32",
-      "motto": "The city is ours at night.",
-      "image": "studio/088.png",
-      "founder": 6,
-      "traits": [
-        {
-          "category": "Head",
+          "category": "Hair / Headwear",
           "code": "HD06",
           "name": "Little Horns"
         },
@@ -4395,38 +4708,52 @@
           "name": "Crooked Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
-        },
-        {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX06",
+          "category": "Head Extra",
+          "code": "HX06",
           "name": "Bat Wings"
         },
         {
-          "category": "Signal",
-          "code": "MD08",
+          "category": "Outfit / Neck",
+          "code": "OT12",
+          "name": "High Collar + Medallion"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF12",
+          "name": "High Collar"
+        },
+        {
+          "category": "Neck",
+          "code": "NK12",
+          "name": "Round Medallion"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT08",
           "name": "Orbit Dots"
         }
       ]
     },
     {
-      "id": 89,
-      "name": "Night Shift #089",
-      "house": "Black Signal",
-      "accent": "#a576ff",
-      "motto": "Broadcast from the void.",
-      "image": "studio/089.png",
-      "founder": 7,
+      "id": 79,
+      "name": "Night Shift #079",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "studio/079.png",
+      "modules": {
+        "head": 7,
+        "torso": 1,
+        "atmosphere": 9
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD07",
           "name": "Mummy Wraps"
         },
@@ -4441,38 +4768,47 @@
           "name": "Tiny Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT01",
+          "name": "Skull Tux + Skull Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF01",
+          "name": "Skull Tux"
         },
         {
           "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "code": "NK01",
+          "name": "Skull Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX07",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD08",
-          "name": "Orbit Dots"
+          "category": "Atmosphere",
+          "code": "AT09",
+          "name": "Falling Pixels"
         }
       ]
     },
     {
-      "id": 90,
-      "name": "Night Shift #090",
-      "house": "Wild Bite",
-      "accent": "#d8ff4f",
-      "motto": "Instinct over etiquette.",
-      "image": "studio/090.png",
-      "founder": 8,
+      "id": 80,
+      "name": "Night Shift #080",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "studio/080.png",
+      "modules": {
+        "head": 8,
+        "torso": 2,
+        "atmosphere": 10
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF08",
+          "name": "Coven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD08",
           "name": "Coven Hat"
         },
@@ -4487,38 +4823,47 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT02",
+          "name": "High Collar + Soft Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF02",
+          "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "code": "NK02",
+          "name": "Soft Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX08",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "category": "Signal",
-          "code": "MD08",
-          "name": "Orbit Dots"
+          "category": "Atmosphere",
+          "code": "AT10",
+          "name": "Twin Moths"
         }
       ]
     },
     {
-      "id": 91,
-      "name": "Night Shift #091",
-      "house": "Velvet Court",
-      "accent": "#ff405b",
-      "motto": "Old blood, new rules.",
-      "image": "studio/091.png",
-      "founder": 9,
+      "id": 81,
+      "name": "Night Shift #081",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "studio/081.png",
+      "modules": {
+        "head": 9,
+        "torso": 3,
+        "atmosphere": 1
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF09",
+          "name": "Spectral Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD09",
           "name": "Spectral Wave"
         },
@@ -4533,38 +4878,52 @@
           "name": "Tiny Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
-        },
-        {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
-        },
-        {
-          "category": "Extra",
-          "code": "EX09",
+          "category": "Head Extra",
+          "code": "HX09",
           "name": "Smoke Halo"
         },
         {
-          "category": "Signal",
-          "code": "MD08",
-          "name": "Orbit Dots"
+          "category": "Outfit / Neck",
+          "code": "OT03",
+          "name": "High Collar + Medallion"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF03",
+          "name": "High Collar"
+        },
+        {
+          "category": "Neck",
+          "code": "NK03",
+          "name": "Round Medallion"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT01",
+          "name": "Clean Air"
         }
       ]
     },
     {
-      "id": 92,
-      "name": "Night Shift #092",
-      "house": "Neon Vein",
-      "accent": "#35e7ff",
-      "motto": "Stay bright after dark.",
-      "image": "studio/092.png",
-      "founder": 10,
+      "id": 82,
+      "name": "Night Shift #082",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "studio/082.png",
+      "modules": {
+        "head": 10,
+        "torso": 4,
+        "atmosphere": 2
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF10",
+          "name": "Raven Hypno"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD10",
           "name": "Raven Wave"
         },
@@ -4579,38 +4938,47 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT04",
+          "name": "Striped Knit + Choker"
+        },
+        {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF04",
+          "name": "Striped Knit"
         },
         {
           "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "code": "NK04",
+          "name": "Black Choker"
         },
         {
-          "category": "Extra",
-          "code": "EX10",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD08",
-          "name": "Orbit Dots"
+          "category": "Atmosphere",
+          "code": "AT02",
+          "name": "Left Bat Signal"
         }
       ]
     },
     {
-      "id": 93,
-      "name": "Night Shift #093",
-      "house": "Cold Blood",
-      "accent": "#9bdcff",
-      "motto": "Calm is a superpower.",
-      "image": "studio/093.png",
-      "founder": 11,
+      "id": 83,
+      "name": "Night Shift #083",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "studio/083.png",
+      "modules": {
+        "head": 11,
+        "torso": 5,
+        "atmosphere": 3
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF11",
+          "name": "Beanie Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD11",
           "name": "Pom Beanie"
         },
@@ -4625,38 +4993,47 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT05",
+          "name": "Undertaker Shirt + Buttons"
+        },
+        {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF05",
+          "name": "Undertaker Shirt"
         },
         {
           "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "code": "NK05",
+          "name": "Double Buttons"
         },
         {
-          "category": "Extra",
-          "code": "EX11",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD08",
-          "name": "Orbit Dots"
+          "category": "Atmosphere",
+          "code": "AT03",
+          "name": "Right Bat Signal"
         }
       ]
     },
     {
-      "id": 94,
-      "name": "Night Shift #094",
-      "house": "Asphalt Fangs",
-      "accent": "#ff7a32",
-      "motto": "The city is ours at night.",
-      "image": "studio/094.png",
-      "founder": 12,
+      "id": 84,
+      "name": "Night Shift #084",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "studio/084.png",
+      "modules": {
+        "head": 12,
+        "torso": 6,
+        "atmosphere": 4
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF12",
+          "name": "Webbed Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD12",
           "name": "Webbed Wave"
         },
@@ -4671,38 +5048,52 @@
           "name": "Crooked Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
-        },
-        {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
-        },
-        {
-          "category": "Extra",
-          "code": "EX12",
+          "category": "Head Extra",
+          "code": "HX12",
           "name": "Hanging Spider"
         },
         {
-          "category": "Signal",
-          "code": "MD08",
-          "name": "Orbit Dots"
+          "category": "Outfit / Neck",
+          "code": "OT06",
+          "name": "Winged Cape + Medallion"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF06",
+          "name": "Winged Cape"
+        },
+        {
+          "category": "Neck",
+          "code": "NK06",
+          "name": "Round Medallion"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT04",
+          "name": "Static Shards"
         }
       ]
     },
     {
-      "id": 95,
-      "name": "Night Shift #095",
-      "house": "Black Signal",
-      "accent": "#a576ff",
-      "motto": "Broadcast from the void.",
-      "image": "studio/095.png",
-      "founder": 1,
+      "id": 85,
+      "name": "Night Shift #085",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "studio/085.png",
+      "modules": {
+        "head": 1,
+        "torso": 12,
+        "atmosphere": 5
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF01",
+          "name": "Raven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD01",
           "name": "Raven Wave"
         },
@@ -4717,38 +5108,47 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT12",
+          "name": "High Collar + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF12",
+          "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "code": "NK12",
+          "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX01",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD09",
-          "name": "Falling Pixels"
+          "category": "Atmosphere",
+          "code": "AT05",
+          "name": "Night Wisps"
         }
       ]
     },
     {
-      "id": 96,
-      "name": "Night Shift #096",
-      "house": "Wild Bite",
-      "accent": "#d8ff4f",
-      "motto": "Instinct over etiquette.",
-      "image": "studio/096.png",
-      "founder": 2,
+      "id": 86,
+      "name": "Night Shift #086",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "studio/086.png",
+      "modules": {
+        "head": 2,
+        "torso": 1,
+        "atmosphere": 6
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF02",
+          "name": "Pumpkin Glow"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD02",
           "name": "Pumpkin Crown"
         },
@@ -4763,38 +5163,47 @@
           "name": "Jagged Grin"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT01",
+          "name": "Skull Tux + Skull Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
+          "code": "OF01",
+          "name": "Skull Tux"
         },
         {
           "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "code": "NK01",
+          "name": "Skull Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX02",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD09",
-          "name": "Falling Pixels"
+          "category": "Atmosphere",
+          "code": "AT06",
+          "name": "Spider Drop"
         }
       ]
     },
     {
-      "id": 97,
-      "name": "Night Shift #097",
-      "house": "Velvet Court",
-      "accent": "#ff405b",
-      "motto": "Old blood, new rules.",
-      "image": "studio/097.png",
-      "founder": 3,
+      "id": 87,
+      "name": "Night Shift #087",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "studio/087.png",
+      "modules": {
+        "head": 3,
+        "torso": 2,
+        "atmosphere": 7
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF03",
+          "name": "Midnight Fade"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD03",
           "name": "Midnight Slick"
         },
@@ -4809,38 +5218,47 @@
           "name": "Twin Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT02",
+          "name": "High Collar + Soft Bow"
+        },
+        {
           "category": "Outfit",
-          "code": "OF03",
+          "code": "OF02",
           "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "code": "NK02",
+          "name": "Soft Bow"
         },
         {
-          "category": "Extra",
-          "code": "EX03",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD09",
-          "name": "Falling Pixels"
+          "category": "Atmosphere",
+          "code": "AT07",
+          "name": "Comet Sparks"
         }
       ]
     },
     {
-      "id": 98,
-      "name": "Night Shift #098",
-      "house": "Neon Vein",
-      "accent": "#35e7ff",
-      "motto": "Stay bright after dark.",
-      "image": "studio/098.png",
-      "founder": 4,
+      "id": 88,
+      "name": "Night Shift #088",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "studio/088.png",
+      "modules": {
+        "head": 4,
+        "torso": 3,
+        "atmosphere": 8
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF04",
+          "name": "Flame Lashes"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD04",
           "name": "Living Flame"
         },
@@ -4855,38 +5273,47 @@
           "name": "Crooked Fangs"
         },
         {
+          "category": "Outfit / Neck",
+          "code": "OT03",
+          "name": "High Collar + Medallion"
+        },
+        {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF03",
+          "name": "High Collar"
         },
         {
           "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "code": "NK03",
+          "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX04",
-          "name": "Clean Frame"
-        },
-        {
-          "category": "Signal",
-          "code": "MD09",
-          "name": "Falling Pixels"
+          "category": "Atmosphere",
+          "code": "AT08",
+          "name": "Orbit Dots"
         }
       ]
     },
     {
-      "id": 99,
-      "name": "Night Shift #099",
-      "house": "Cold Blood",
-      "accent": "#9bdcff",
-      "motto": "Calm is a superpower.",
-      "image": "studio/099.png",
-      "founder": 5,
+      "id": 89,
+      "name": "Night Shift #089",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "studio/089.png",
+      "modules": {
+        "head": 5,
+        "torso": 4,
+        "atmosphere": 9
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF05",
+          "name": "Stitched X"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD05",
           "name": "Stitched Crop"
         },
@@ -4901,38 +5328,52 @@
           "name": "Twin Fangs"
         },
         {
-          "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
-        },
-        {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
-        },
-        {
-          "category": "Extra",
-          "code": "EX05",
+          "category": "Head Extra",
+          "code": "HX05",
           "name": "Brow Stitches"
         },
         {
-          "category": "Signal",
-          "code": "MD09",
+          "category": "Outfit / Neck",
+          "code": "OT04",
+          "name": "Striped Knit + Choker"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF04",
+          "name": "Striped Knit"
+        },
+        {
+          "category": "Neck",
+          "code": "NK04",
+          "name": "Black Choker"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT09",
           "name": "Falling Pixels"
         }
       ]
     },
     {
-      "id": 100,
-      "name": "Night Shift #100",
-      "house": "Asphalt Fangs",
-      "accent": "#ff7a32",
-      "motto": "The city is ours at night.",
-      "image": "studio/100.png",
-      "founder": 6,
+      "id": 90,
+      "name": "Night Shift #090",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "studio/090.png",
+      "modules": {
+        "head": 6,
+        "torso": 5,
+        "atmosphere": 10
+      },
       "traits": [
         {
-          "category": "Head",
+          "category": "Head / Face",
+          "code": "HF06",
+          "name": "Horned Anger"
+        },
+        {
+          "category": "Hair / Headwear",
           "code": "HD06",
           "name": "Little Horns"
         },
@@ -4947,6 +5388,71 @@
           "name": "Crooked Fangs"
         },
         {
+          "category": "Head Extra",
+          "code": "HX06",
+          "name": "Bat Wings"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT05",
+          "name": "Undertaker Shirt + Buttons"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF05",
+          "name": "Undertaker Shirt"
+        },
+        {
+          "category": "Neck",
+          "code": "NK05",
+          "name": "Double Buttons"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT10",
+          "name": "Twin Moths"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Night Shift #091",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "studio/091.png",
+      "modules": {
+        "head": 7,
+        "torso": 6,
+        "atmosphere": 1
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD07",
+          "name": "Mummy Wraps"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY07",
+          "name": "Soft Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT07",
+          "name": "Tiny Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT06",
+          "name": "Winged Cape + Medallion"
+        },
+        {
           "category": "Outfit",
           "code": "OF06",
           "name": "Winged Cape"
@@ -4957,14 +5463,524 @@
           "name": "Round Medallion"
         },
         {
-          "category": "Extra",
-          "code": "EX06",
-          "name": "Bat Wings"
+          "category": "Atmosphere",
+          "code": "AT01",
+          "name": "Clean Air"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Night Shift #092",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "studio/092.png",
+      "modules": {
+        "head": 8,
+        "torso": 7,
+        "atmosphere": 2
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF08",
+          "name": "Coven Hollow"
         },
         {
-          "category": "Signal",
-          "code": "MD09",
+          "category": "Hair / Headwear",
+          "code": "HD08",
+          "name": "Coven Hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY08",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT08",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT07",
+          "name": "Wrapped Tunic"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF07",
+          "name": "Wrapped Tunic"
+        },
+        {
+          "category": "Neck",
+          "code": "NK07",
+          "name": "No Neckpiece"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT02",
+          "name": "Left Bat Signal"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Night Shift #093",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "studio/093.png",
+      "modules": {
+        "head": 9,
+        "torso": 8,
+        "atmosphere": 3
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF09",
+          "name": "Spectral Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD09",
+          "name": "Spectral Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT09",
+          "name": "Tiny Fangs"
+        },
+        {
+          "category": "Head Extra",
+          "code": "HX09",
+          "name": "Smoke Halo"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT08",
+          "name": "Coven Coat + Slim Scarf"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Neck",
+          "code": "NK08",
+          "name": "Slim Scarf"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT03",
+          "name": "Right Bat Signal"
+        },
+        {
+          "category": "Companion",
+          "code": "CP08",
+          "name": "Pumpkin Lantern"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Night Shift #094",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "studio/094.png",
+      "modules": {
+        "head": 10,
+        "torso": 9,
+        "atmosphere": 4
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF10",
+          "name": "Raven Hypno"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD10",
+          "name": "Raven Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT10",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT09",
+          "name": "Chain Crewneck + Loose Chain"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF09",
+          "name": "Chain Crewneck"
+        },
+        {
+          "category": "Neck",
+          "code": "NK09",
+          "name": "Loose Chain"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT04",
+          "name": "Static Shards"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Night Shift #095",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "studio/095.png",
+      "modules": {
+        "head": 11,
+        "torso": 10,
+        "atmosphere": 5
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF11",
+          "name": "Beanie Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD11",
+          "name": "Pom Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY11",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT11",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT10",
+          "name": "Velvet Jacket + Soft Bow"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF10",
+          "name": "Velvet Jacket"
+        },
+        {
+          "category": "Neck",
+          "code": "NK10",
+          "name": "Soft Bow"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT05",
+          "name": "Night Wisps"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Night Shift #096",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "studio/096.png",
+      "modules": {
+        "head": 12,
+        "torso": 11,
+        "atmosphere": 7
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF12",
+          "name": "Webbed Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD12",
+          "name": "Webbed Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY12",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT12",
+          "name": "Crooked Fangs"
+        },
+        {
+          "category": "Head Extra",
+          "code": "HX12",
+          "name": "Hanging Spider"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT11",
+          "name": "Skeleton Hoodie"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF11",
+          "name": "Skeleton Hoodie"
+        },
+        {
+          "category": "Neck",
+          "code": "NK11",
+          "name": "No Neckpiece"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT07",
+          "name": "Comet Sparks"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "name": "Night Shift #097",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "studio/097.png",
+      "modules": {
+        "head": 1,
+        "torso": 5,
+        "atmosphere": 7
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF01",
+          "name": "Raven Hollow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD01",
+          "name": "Raven Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY01",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT05",
+          "name": "Undertaker Shirt + Buttons"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF05",
+          "name": "Undertaker Shirt"
+        },
+        {
+          "category": "Neck",
+          "code": "NK05",
+          "name": "Double Buttons"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT07",
+          "name": "Comet Sparks"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Night Shift #098",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "studio/098.png",
+      "modules": {
+        "head": 2,
+        "torso": 6,
+        "atmosphere": 8
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF02",
+          "name": "Pumpkin Glow"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD02",
+          "name": "Pumpkin Crown"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY02",
+          "name": "Soft Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT02",
+          "name": "Jagged Grin"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT06",
+          "name": "Winged Cape + Medallion"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF06",
+          "name": "Winged Cape"
+        },
+        {
+          "category": "Neck",
+          "code": "NK06",
+          "name": "Round Medallion"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT08",
+          "name": "Orbit Dots"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "name": "Night Shift #099",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "studio/099.png",
+      "modules": {
+        "head": 3,
+        "torso": 7,
+        "atmosphere": 9
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF03",
+          "name": "Midnight Fade"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD03",
+          "name": "Midnight Slick"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY03",
+          "name": "Shadow Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT03",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT07",
+          "name": "Wrapped Tunic"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF07",
+          "name": "Wrapped Tunic"
+        },
+        {
+          "category": "Neck",
+          "code": "NK07",
+          "name": "No Neckpiece"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT09",
           "name": "Falling Pixels"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "name": "Night Shift #100",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "studio/100.png",
+      "modules": {
+        "head": 4,
+        "torso": 8,
+        "atmosphere": 10
+      },
+      "traits": [
+        {
+          "category": "Head / Face",
+          "code": "HF04",
+          "name": "Flame Lashes"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "HD04",
+          "name": "Living Flame"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY04",
+          "name": "Long Lashes"
+        },
+        {
+          "category": "Mouth",
+          "code": "MT04",
+          "name": "Crooked Fangs"
+        },
+        {
+          "category": "Outfit / Neck",
+          "code": "OT08",
+          "name": "Coven Coat + Slim Scarf"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Neck",
+          "code": "NK08",
+          "name": "Slim Scarf"
+        },
+        {
+          "category": "Atmosphere",
+          "code": "AT10",
+          "name": "Twin Moths"
+        },
+        {
+          "category": "Companion",
+          "code": "CP08",
+          "name": "Pumpkin Lantern"
         }
       ]
     }

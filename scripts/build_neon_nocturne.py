@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Build the Neon Nocturne edition from the approved calibration sheet.
+"""Build the expanded Neon Nocturne edition from approved pixel modules.
 
-The twelve approved founder portraits remain pixel-for-pixel intact. Collection
-variation is added only in registered negative-space-safe zones around them, so
-the core anatomy, expression, clothing and line quality cannot drift.
+The calibration sheet supplies twelve head/face modules and twelve torso/neck
+modules. They are registered independently and recombined with atmosphere
+traits, producing real core variation while preserving the approved pixels.
 """
 
 from __future__ import annotations
@@ -60,10 +60,26 @@ MODIFIERS = [
     ("MD10", "Twin Moths"),
 ]
 
-CATEGORY_CODES = {
-    "Head": "HD", "Eyes": "EY", "Mouth": "MT", "Outfit": "OF",
-    "Neck": "NK", "Extra": "EX",
-}
+HEAD_MODULE_NAMES = [
+    "Raven Hollow", "Pumpkin Glow", "Midnight Fade", "Flame Lashes",
+    "Stitched X", "Horned Anger", "Mummy Glow", "Coven Hollow",
+    "Spectral Hollow", "Raven Hypno", "Beanie Hollow", "Webbed Hollow",
+]
+
+TORSO_MODULE_NAMES = [
+    "Skull Tux + Skull Bow", "High Collar + Soft Bow",
+    "High Collar + Medallion", "Striped Knit + Choker",
+    "Undertaker Shirt + Buttons", "Winged Cape + Medallion",
+    "Wrapped Tunic", "Coven Coat + Slim Scarf",
+    "Chain Crewneck + Loose Chain", "Velvet Jacket + Soft Bow",
+    "Skeleton Hoodie", "High Collar + Medallion",
+]
+
+# Each head ends at a slightly different vertical landmark. These registered
+# cuts preserve faces, fangs, hats and head-specific effects without carrying
+# the original lower outfit into the recombined portrait.
+HEAD_BOTTOMS = [735, 805, 745, 710, 720, 760, 790, 735, 740, 735, 735, 740]
+TORSO_START = 675
 
 
 def split_cells(sheet: Image.Image) -> list[Image.Image]:
@@ -178,16 +194,83 @@ def draw_modifier(code: str, variant: int) -> Image.Image:
     return image
 
 
-def trait_records(founder_index: int, modifier_code: str, modifier_name: str):
-    values = FOUNDER_TRAITS[founder_index]
-    records = []
-    for index, (category, prefix) in enumerate(CATEGORY_CODES.items()):
-        records.append({
-            "category": category,
-            "code": f"{prefix}{founder_index + 1:02d}",
-            "name": values[index],
-        })
-    records.append({"category": "Signal", "code": modifier_code, "name": modifier_name})
+def keep_alpha(image: Image.Image, predicate) -> Image.Image:
+    result = image.copy()
+    source = image.getchannel("A")
+    target = Image.new("L", image.size, 0)
+    src = source.load()
+    dst = target.load()
+    for y in range(image.height):
+        for x in range(image.width):
+            if predicate(x, y):
+                dst[x, y] = src[x, y]
+    result.putalpha(target)
+    return result
+
+
+def make_head_module(founder: Image.Image, index: int) -> Image.Image:
+    bottom = HEAD_BOTTOMS[index]
+
+    def keep(x: int, y: int) -> bool:
+        if y <= bottom:
+            return True
+        # Preserve head-owned effects that extend below the normal neck cut.
+        if index == 5 and y <= 825 and (x < 270 or x > 750):
+            return True
+        if index == 8 and (x < 245 or x > 785):
+            return True
+        if index == 11 and x < 285:
+            return True
+        return False
+
+    return keep_alpha(founder, keep)
+
+
+def make_torso_module(founder: Image.Image, index: int) -> Image.Image:
+    def keep(x: int, y: int) -> bool:
+        if y >= TORSO_START:
+            return True
+        # The lantern belongs to the Coven torso module and begins above the
+        # shared shoulder landmark.
+        return index == 7 and x < 330 and y >= 515
+
+    return keep_alpha(founder, keep)
+
+
+def assemble(head: Image.Image, torso: Image.Image, head_index: int, atmosphere_index: int) -> Image.Image:
+    image = torso.copy()
+    alpha = image.getchannel("A")
+    # Knock out donor head pixels from the torso layer. This lets the selected
+    # head's lime negative space remain clean rather than revealing a second
+    # face underneath it.
+    clear = ImageDraw.Draw(alpha)
+    clear.rectangle((150, 0, 875, HEAD_BOTTOMS[head_index]), fill=0)
+    image.putalpha(alpha)
+    image.alpha_composite(head)
+    modifier_code, _ = MODIFIERS[atmosphere_index]
+    image.alpha_composite(draw_modifier(modifier_code, head_index + atmosphere_index))
+    return image
+
+
+def trait_records(head_index: int, torso_index: int, atmosphere_index: int):
+    head_values = FOUNDER_TRAITS[head_index]
+    torso_values = FOUNDER_TRAITS[torso_index]
+    modifier_code, modifier_name = MODIFIERS[atmosphere_index]
+    records = [
+        {"category": "Head / Face", "code": f"HF{head_index + 1:02d}", "name": HEAD_MODULE_NAMES[head_index]},
+        {"category": "Hair / Headwear", "code": f"HD{head_index + 1:02d}", "name": head_values[0]},
+        {"category": "Eyes", "code": f"EY{head_index + 1:02d}", "name": head_values[1]},
+        {"category": "Mouth", "code": f"MT{head_index + 1:02d}", "name": head_values[2]},
+        {"category": "Outfit / Neck", "code": f"OT{torso_index + 1:02d}", "name": TORSO_MODULE_NAMES[torso_index]},
+        {"category": "Outfit", "code": f"OF{torso_index + 1:02d}", "name": torso_values[3]},
+        {"category": "Neck", "code": f"NK{torso_index + 1:02d}", "name": torso_values[4]},
+        {"category": "Atmosphere", "code": modifier_code.replace("MD", "AT"), "name": modifier_name.replace("Founder Clean", "Clean Air")},
+    ]
+    head_extra = head_values[5]
+    if head_extra in {"Brow Stitches", "Bat Wings", "Smoke Halo", "Hanging Spider"}:
+        records.insert(4, {"category": "Head Extra", "code": f"HX{head_index + 1:02d}", "name": head_extra})
+    if torso_index == 7:
+        records.append({"category": "Companion", "code": "CP08", "name": "Pumpkin Lantern"})
     return records
 
 
@@ -203,24 +286,29 @@ def main() -> None:
 
     sheet = Image.open(args.source)
     founders = [extract_ink(cell) for cell in split_cells(sheet)]
-    combinations = [(founder, 0) for founder in range(12)]
-    for modifier in range(1, len(MODIFIERS)):
-        for founder in range(12):
-            modifier_code = MODIFIERS[modifier][0]
-            # Do not double the founder's defining atmosphere/companion.
-            if founder == 11 and modifier_code == "MD06":
-                continue
-            if founder == 8 and modifier_code == "MD05":
-                continue
-            combinations.append((founder, modifier))
+    heads = [make_head_module(founder, index) for index, founder in enumerate(founders)]
+    torsos = [make_torso_module(founder, index) for index, founder in enumerate(founders)]
+
+    # Latin-square offsets balance every head and torso across the collection.
+    # The first twelve recreate the approved founders; every later character
+    # changes its core head/torso pairing before atmosphere is considered.
+    offsets = [0, 5, 10, 3, 8, 1, 6, 11, 4, 9, 2, 7]
+    combinations = []
+    for block, offset in enumerate(offsets):
+        for head_index in range(12):
+            torso_index = (head_index + offset) % 12
+            atmosphere_index = len(combinations) % len(MODIFIERS)
+            if head_index == 8 and MODIFIERS[atmosphere_index][0] == "MD05":
+                atmosphere_index = (atmosphere_index + 1) % len(MODIFIERS)
+            if head_index == 11 and MODIFIERS[atmosphere_index][0] == "MD06":
+                atmosphere_index = (atmosphere_index + 1) % len(MODIFIERS)
+            combinations.append((head_index, torso_index, atmosphere_index))
     combinations = combinations[:args.limit]
 
     hashes = set()
     records = []
-    for number, (founder_index, modifier_index) in enumerate(combinations, 1):
-        image = founders[founder_index].copy()
-        modifier_code, modifier_name = MODIFIERS[modifier_index]
-        image.alpha_composite(draw_modifier(modifier_code, founder_index + modifier_index))
+    for number, (head_index, torso_index, atmosphere_index) in enumerate(combinations, 1):
+        image = assemble(heads[head_index], torsos[torso_index], head_index, atmosphere_index)
         digest = hashlib.sha256(image.tobytes()).hexdigest()
         if digest in hashes:
             raise SystemExit(f"Duplicate art at #{number:03d}")
@@ -235,21 +323,33 @@ def main() -> None:
             "accent": house["accent"],
             "motto": house["motto"],
             "image": f"studio/{filename}",
-            "founder": founder_index + 1,
-            "traits": trait_records(founder_index, modifier_code, modifier_name),
+            "modules": {"head": head_index + 1, "torso": torso_index + 1, "atmosphere": atmosphere_index + 1},
+            "traits": trait_records(head_index, torso_index, atmosphere_index),
         })
 
-    categories = {}
-    for category, prefix in CATEGORY_CODES.items():
-        seen = {}
-        index = list(CATEGORY_CODES).index(category)
-        for founder, values in enumerate(FOUNDER_TRAITS, 1):
-            seen[f"{prefix}{founder:02d}"] = values[index]
-        categories[category] = [{"code": code, "name": name} for code, name in seen.items()]
-    categories["Signal"] = [{"code": code, "name": name} for code, name in MODIFIERS]
+    categories = {
+        "Head / Face": [
+            {
+                "code": f"HF{index + 1:02d}", "name": HEAD_MODULE_NAMES[index],
+                "components": {"hair": values[0], "eyes": values[1], "mouth": values[2]},
+            }
+            for index, values in enumerate(FOUNDER_TRAITS)
+        ],
+        "Outfit / Neck": [
+            {
+                "code": f"OT{index + 1:02d}", "name": TORSO_MODULE_NAMES[index],
+                "components": {"outfit": values[3], "neck": values[4]},
+            }
+            for index, values in enumerate(FOUNDER_TRAITS)
+        ],
+        "Atmosphere": [
+            {"code": code.replace("MD", "AT"), "name": name.replace("Founder Clean", "Clean Air")}
+            for code, name in MODIFIERS
+        ],
+    }
     library = {
         "name": "Neon Nocturne",
-        "source": "Approved 12-founder calibration",
+        "source": "Approved modular calibration",
         "palette": {"ink": "#020102", "presentationLime": LIME},
         "rendering": {
             "output": "1024x1024 RGBA PNG",
@@ -258,12 +358,15 @@ def main() -> None:
             "glow": "Restricted to founder supernatural eye and pumpkin cutouts",
         },
         "rules": [
-            "Founder core pixels are immutable",
-            "Signals occupy registered negative-space-safe zones",
+            "Head/face and outfit/neck modules are independently registered",
+            "Every published pairing is unique before atmosphere is applied",
+            "Atmosphere occupies registered negative-space-safe zones",
             "No cross, crucifix, pentagram, or religious reference",
             "No text, logo, signature, or watermark",
         ],
-        "traitCount": sum(len(values) for values in categories.values()),
+        "moduleCount": sum(len(values) for values in categories.values()),
+        "possibleCorePairings": len(heads) * len(torsos),
+        "possibleCombinations": len(heads) * len(torsos) * len(MODIFIERS),
         "categories": categories,
     }
     manifest = {
@@ -274,7 +377,10 @@ def main() -> None:
         "characters": records,
     }
     (args.output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
-    print(f"Built {len(records)} portraits from 12 approved founders and {len(MODIFIERS)} registered signals")
+    print(
+        f"Built {len(records)} portraits from {len(heads)} head modules, {len(torsos)} torso modules "
+        f"and {len(MODIFIERS)} atmospheres ({library['possibleCombinations']} possible combinations)"
+    )
 
 
 if __name__ == "__main__":

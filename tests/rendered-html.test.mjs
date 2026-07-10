@@ -54,6 +54,11 @@ test("ships both one-bit comparison sets and static gallery", async () => {
   assert.equal(studioManifest.count, 100);
   assert.equal(new Set(studioManifest.characters.map(character => character.id)).size, 100);
   assert.equal(new Set(studioManifest.characters.map(character => JSON.stringify(character.traits))).size, 100);
+  assert.equal(studioManifest.traitLibrary.moduleCount, 34);
+  assert.equal(studioManifest.traitLibrary.possibleCorePairings, 144);
+  assert.equal(studioManifest.traitLibrary.possibleCombinations, 1440);
+  assert.equal(new Set(studioManifest.characters.map(character => `${character.modules.head}-${character.modules.torso}`)).size, 100);
+  assert.equal(new Set(studioManifest.characters.map(character => character.modules.atmosphere)).size, 10);
   const traitNames = studioManifest.characters.flatMap(character => character.traits.map(trait => trait.name.toLowerCase()));
   assert.equal(traitNames.some(name => /cross|crucifix|religious|pentagram/.test(name)), false);
   assert.match(docsHtml, /SELECT RENDER STYLE/);
