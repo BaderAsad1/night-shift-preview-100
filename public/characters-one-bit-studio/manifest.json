@@ -3,277 +3,486 @@
   "edition": "Neon Nocturne",
   "count": 100,
   "traitLibrary": {
-    "name": "Neon Nocturne",
-    "source": "Approved modular calibration",
+    "name": "Neon Nocturne \u2014 Complete Archetype System",
+    "sources": [
+      "neon-nocturne-calibration.png",
+      "neon-nocturne-expansion-a.png",
+      "neon-nocturne-expansion-b.png",
+      "neon-nocturne-motifs.png"
+    ],
     "palette": {
       "ink": "#020102",
       "presentationLime": "#d0f708"
     },
     "rendering": {
       "output": "1024x1024 RGBA PNG",
-      "lineLanguage": "Fine hand-authored pixel steps with solid ink masses",
-      "anatomy": "Fixed three-quarter vampire bust, oversized near ear and oval eyes",
-      "glow": "Restricted to founder supernatural eye and pumpkin cutouts"
+      "architecture": "Complete portrait plus curated illustrated motif",
+      "compositing": "Motif is erased inside a solid silhouette-protection matte"
     },
     "rules": [
-      "Head/face and outfit/neck modules are independently registered",
-      "Every published pairing is unique before atmosphere is applied",
-      "Atmosphere occupies registered negative-space-safe zones",
-      "No cross, crucifix, pentagram, or religious reference",
+      "Complete portraits are never split into head or torso layers",
+      "Only curated hand-drawn night motifs are used",
+      "Motifs cannot erase, mask, or overpaint portrait pixels",
+      "Motif library is limited to nature, nocturnal objects, and creatures",
       "No text, logo, signature, or watermark"
     ],
-    "moduleCount": 34,
-    "possibleCorePairings": 144,
-    "possibleCombinations": 1440,
+    "moduleCount": 67,
+    "collectionTarget": 6666,
+    "possibleCombinations": 7128,
+    "reserveCombinations": 462,
     "categories": {
-      "Head / Face": [
+      "Archetype": [
         {
-          "code": "HF01",
-          "name": "Raven Hollow",
+          "code": "AR01",
+          "name": "Raven Tux",
           "components": {
-            "hair": "Raven Wave",
+            "silhouette": "Raven Wave",
             "eyes": "Hollow Ovals",
-            "mouth": "Twin Fangs"
+            "outfit": "Skull Tux"
           }
         },
         {
-          "code": "HF02",
-          "name": "Pumpkin Glow",
+          "code": "AR02",
+          "name": "Pumpkin Regent",
           "components": {
-            "hair": "Pumpkin Crown",
+            "silhouette": "Pumpkin Crown",
             "eyes": "Soft Glow",
-            "mouth": "Jagged Grin"
+            "outfit": "High Collar"
           }
         },
         {
-          "code": "HF03",
-          "name": "Midnight Fade",
+          "code": "AR03",
+          "name": "Midnight Medallion",
           "components": {
-            "hair": "Midnight Slick",
+            "silhouette": "Midnight Slick",
             "eyes": "Shadow Fade",
-            "mouth": "Twin Fangs"
+            "outfit": "Medallion Cape"
           }
         },
         {
-          "code": "HF04",
-          "name": "Flame Lashes",
+          "code": "AR04",
+          "name": "Flame Knit",
           "components": {
-            "hair": "Living Flame",
+            "silhouette": "Living Flame",
             "eyes": "Long Lashes",
-            "mouth": "Crooked Fangs"
+            "outfit": "Striped Knit"
           }
         },
         {
-          "code": "HF05",
-          "name": "Stitched X",
+          "code": "AR05",
+          "name": "Stitched Undertaker",
           "components": {
-            "hair": "Stitched Crop",
+            "silhouette": "Stitched Crop",
             "eyes": "X Glow",
-            "mouth": "Twin Fangs"
+            "outfit": "Undertaker Shirt"
           }
         },
         {
-          "code": "HF06",
-          "name": "Horned Anger",
+          "code": "AR06",
+          "name": "Horned Wing",
           "components": {
-            "hair": "Little Horns",
+            "silhouette": "Little Horns",
             "eyes": "Angry Arches",
-            "mouth": "Crooked Fangs"
+            "outfit": "Winged Cape"
           }
         },
         {
-          "code": "HF07",
-          "name": "Mummy Glow",
+          "code": "AR07",
+          "name": "Mummy Wrap",
           "components": {
-            "hair": "Mummy Wraps",
+            "silhouette": "Mummy Wraps",
             "eyes": "Soft Glow",
-            "mouth": "Tiny Fangs"
+            "outfit": "Wrapped Tunic"
           }
         },
         {
-          "code": "HF08",
-          "name": "Coven Hollow",
+          "code": "AR08",
+          "name": "Coven Courier",
           "components": {
-            "hair": "Coven Hat",
+            "silhouette": "Coven Hat",
             "eyes": "Hollow Ovals",
-            "mouth": "Twin Fangs"
+            "outfit": "Coven Coat + Lantern"
           }
         },
         {
-          "code": "HF09",
-          "name": "Spectral Hollow",
+          "code": "AR09",
+          "name": "Spectral Chain",
           "components": {
-            "hair": "Spectral Wave",
+            "silhouette": "Spectral Wave",
             "eyes": "Hollow Ovals",
-            "mouth": "Tiny Fangs"
+            "outfit": "Chain Crewneck"
           }
         },
         {
-          "code": "HF10",
-          "name": "Raven Hypno",
+          "code": "AR10",
+          "name": "Hypno Velvet",
           "components": {
-            "hair": "Raven Wave",
+            "silhouette": "Raven Wave",
             "eyes": "Hypno Spirals",
-            "mouth": "Twin Fangs"
+            "outfit": "Velvet Jacket"
           }
         },
         {
-          "code": "HF11",
-          "name": "Beanie Hollow",
+          "code": "AR11",
+          "name": "Beanie Bones",
           "components": {
-            "hair": "Pom Beanie",
+            "silhouette": "Pom Beanie",
             "eyes": "Hollow Ovals",
-            "mouth": "Twin Fangs"
+            "outfit": "Skeleton Hoodie"
           }
         },
         {
-          "code": "HF12",
-          "name": "Webbed Hollow",
+          "code": "AR12",
+          "name": "Webbed Court",
           "components": {
-            "hair": "Webbed Wave",
+            "silhouette": "Webbed Wave",
             "eyes": "Hollow Ovals",
-            "mouth": "Crooked Fangs"
+            "outfit": "High Collar"
+          }
+        },
+        {
+          "code": "AR13",
+          "name": "Goggle Aviator",
+          "components": {
+            "silhouette": "Flight Goggles",
+            "eyes": "Hollow Ovals",
+            "outfit": "Fur Flight Jacket"
+          }
+        },
+        {
+          "code": "AR14",
+          "name": "Neon Visor",
+          "components": {
+            "silhouette": "Retro Visor",
+            "eyes": "Visor Glow",
+            "outfit": "Utility Coat"
+          }
+        },
+        {
+          "code": "AR15",
+          "name": "Moth Velvet",
+          "components": {
+            "silhouette": "Moth Antennae",
+            "eyes": "Dark Glow",
+            "outfit": "Velvet Cape"
+          }
+        },
+        {
+          "code": "AR16",
+          "name": "Wolf Varsity",
+          "components": {
+            "silhouette": "Wolf Ears",
+            "eyes": "Hollow Ovals",
+            "outfit": "Varsity Jacket"
+          }
+        },
+        {
+          "code": "AR17",
+          "name": "Rain Runner",
+          "components": {
+            "silhouette": "Deep Rain Hood",
+            "eyes": "Hollow Ovals",
+            "outfit": "Technical Shell"
+          }
+        },
+        {
+          "code": "AR18",
+          "name": "Geometric Bob",
+          "components": {
+            "silhouette": "Sleek Bob",
+            "eyes": "Hollow Ovals",
+            "outfit": "Geometric Collar"
+          }
+        },
+        {
+          "code": "AR19",
+          "name": "Bat Courier",
+          "components": {
+            "silhouette": "Bat Courier Helmet",
+            "eyes": "Hollow Ovals",
+            "outfit": "Messenger Rig"
+          }
+        },
+        {
+          "code": "AR20",
+          "name": "Night Rider",
+          "components": {
+            "silhouette": "High Pompadour",
+            "eyes": "Hollow Ovals",
+            "outfit": "Biker Jacket"
+          }
+        },
+        {
+          "code": "AR21",
+          "name": "Broadcast Headset",
+          "components": {
+            "silhouette": "Oversized Headphones",
+            "eyes": "Hollow Ovals",
+            "outfit": "Broadcast Jacket"
+          }
+        },
+        {
+          "code": "AR22",
+          "name": "Quilted Moonclip",
+          "components": {
+            "silhouette": "Moonclip Bob",
+            "eyes": "Hollow Ovals",
+            "outfit": "Quilted Coat"
+          }
+        },
+        {
+          "code": "AR23",
+          "name": "Spike Armor",
+          "components": {
+            "silhouette": "Spiked Crest",
+            "eyes": "Hollow Ovals",
+            "outfit": "Armored Vest"
+          }
+        },
+        {
+          "code": "AR24",
+          "name": "Roundglass Cardigan",
+          "components": {
+            "silhouette": "Round Glasses",
+            "eyes": "Lens Glow",
+            "outfit": "Knit Cardigan"
+          }
+        },
+        {
+          "code": "AR25",
+          "name": "Noir Detective",
+          "components": {
+            "silhouette": "Broad Fedora",
+            "eyes": "Hollow Ovals",
+            "outfit": "Trench Collar"
+          }
+        },
+        {
+          "code": "AR26",
+          "name": "Arcade Racer",
+          "components": {
+            "silhouette": "Compact Race Helmet",
+            "eyes": "Full Visor Glow",
+            "outfit": "Racing Jacket"
+          }
+        },
+        {
+          "code": "AR27",
+          "name": "Deep-Sea Captain",
+          "components": {
+            "silhouette": "Captain Cap",
+            "eyes": "Hollow Ovals",
+            "outfit": "Heavy Pea Coat"
+          }
+        },
+        {
+          "code": "AR28",
+          "name": "Wild Inventor",
+          "components": {
+            "silhouette": "Wild Side Hair + Goggles",
+            "eyes": "Hollow Ovals",
+            "outfit": "Tool Apron"
+          }
+        },
+        {
+          "code": "AR29",
+          "name": "Silent Film Star",
+          "components": {
+            "silhouette": "Finger-Wave Hair",
+            "eyes": "Long Lashes",
+            "outfit": "Fur Collar"
+          }
+        },
+        {
+          "code": "AR30",
+          "name": "Desert Nomad",
+          "components": {
+            "silhouette": "Wrapped Goggles",
+            "eyes": "Goggle Glow",
+            "outfit": "Desert Scarf"
+          }
+        },
+        {
+          "code": "AR31",
+          "name": "Botanical Keeper",
+          "components": {
+            "silhouette": "Leaf Crown",
+            "eyes": "Hollow Ovals",
+            "outfit": "Work Overalls"
+          }
+        },
+        {
+          "code": "AR32",
+          "name": "Synth Shade",
+          "components": {
+            "silhouette": "Angular Shades",
+            "eyes": "Shade Reflection",
+            "outfit": "Stage Coat"
+          }
+        },
+        {
+          "code": "AR33",
+          "name": "Ice Climber",
+          "components": {
+            "silhouette": "Fur Climber Cap",
+            "eyes": "Hollow Ovals",
+            "outfit": "Padded Parka"
+          }
+        },
+        {
+          "code": "AR34",
+          "name": "Street Magician",
+          "components": {
+            "silhouette": "Tall Top Hat",
+            "eyes": "Hollow Ovals",
+            "outfit": "Patterned Vest"
+          }
+        },
+        {
+          "code": "AR35",
+          "name": "Graffiti Courier",
+          "components": {
+            "silhouette": "Backward Cap",
+            "eyes": "Hollow Ovals",
+            "outfit": "Oversized Hoodie"
+          }
+        },
+        {
+          "code": "AR36",
+          "name": "Chess Strategist",
+          "components": {
+            "silhouette": "Center-Part Hair + Glasses",
+            "eyes": "Lens Glow",
+            "outfit": "Sharp Blazer"
           }
         }
       ],
-      "Outfit / Neck": [
+      "Night Motif": [
         {
-          "code": "OT01",
-          "name": "Skull Tux + Skull Bow",
-          "components": {
-            "outfit": "Skull Tux",
-            "neck": "Skull Bow"
-          }
+          "code": "MO01",
+          "name": "Crescent Moon"
         },
         {
-          "code": "OT02",
-          "name": "High Collar + Soft Bow",
-          "components": {
-            "outfit": "High Collar",
-            "neck": "Soft Bow"
-          }
+          "code": "MO02",
+          "name": "Crater Moon"
         },
         {
-          "code": "OT03",
-          "name": "High Collar + Medallion",
-          "components": {
-            "outfit": "High Collar",
-            "neck": "Round Medallion"
-          }
+          "code": "MO03",
+          "name": "Bat Trio"
         },
         {
-          "code": "OT04",
-          "name": "Striped Knit + Choker",
-          "components": {
-            "outfit": "Striped Knit",
-            "neck": "Black Choker"
-          }
+          "code": "MO04",
+          "name": "Hanging Spider"
         },
         {
-          "code": "OT05",
-          "name": "Undertaker Shirt + Buttons",
-          "components": {
-            "outfit": "Undertaker Shirt",
-            "neck": "Double Buttons"
-          }
+          "code": "MO05",
+          "name": "Luna Moths"
         },
         {
-          "code": "OT06",
-          "name": "Winged Cape + Medallion",
-          "components": {
-            "outfit": "Winged Cape",
-            "neck": "Round Medallion"
-          }
+          "code": "MO06",
+          "name": "Curling Fog"
         },
         {
-          "code": "OT07",
-          "name": "Wrapped Tunic",
-          "components": {
-            "outfit": "Wrapped Tunic",
-            "neck": "No Neckpiece"
-          }
+          "code": "MO07",
+          "name": "Black Cat"
         },
         {
-          "code": "OT08",
-          "name": "Coven Coat + Slim Scarf",
-          "components": {
-            "outfit": "Coven Coat",
-            "neck": "Slim Scarf"
-          }
+          "code": "MO08",
+          "name": "Perched Crow"
         },
         {
-          "code": "OT09",
-          "name": "Chain Crewneck + Loose Chain",
-          "components": {
-            "outfit": "Chain Crewneck",
-            "neck": "Loose Chain"
-          }
+          "code": "MO09",
+          "name": "Mushroom Cluster"
         },
         {
-          "code": "OT10",
-          "name": "Velvet Jacket + Soft Bow",
-          "components": {
-            "outfit": "Velvet Jacket",
-            "neck": "Soft Bow"
-          }
+          "code": "MO10",
+          "name": "Thorn Leaves"
         },
         {
-          "code": "OT11",
-          "name": "Skeleton Hoodie",
-          "components": {
-            "outfit": "Skeleton Hoodie",
-            "neck": "No Neckpiece"
-          }
+          "code": "MO11",
+          "name": "Floating Eyes"
         },
         {
-          "code": "OT12",
-          "name": "High Collar + Medallion",
-          "components": {
-            "outfit": "High Collar",
-            "neck": "Round Medallion"
-          }
+          "code": "MO12",
+          "name": "Pumpkin Lantern"
+        },
+        {
+          "code": "MO13",
+          "name": "Night Comet"
+        },
+        {
+          "code": "MO14",
+          "name": "Storm Cloud"
+        },
+        {
+          "code": "MO15",
+          "name": "Wolf Paw"
+        },
+        {
+          "code": "MO16",
+          "name": "Old Cassette"
+        },
+        {
+          "code": "MO17",
+          "name": "Pocket Radio"
+        },
+        {
+          "code": "MO18",
+          "name": "Potion Bottle"
+        },
+        {
+          "code": "MO19",
+          "name": "Coiled Snake"
+        },
+        {
+          "code": "MO20",
+          "name": "Night Beetle"
+        },
+        {
+          "code": "MO21",
+          "name": "Ornate Key"
+        },
+        {
+          "code": "MO22",
+          "name": "Tiny Ghost"
         }
       ],
-      "Atmosphere": [
+      "Motif Layout": [
         {
-          "code": "AT01",
-          "name": "Clean Air"
+          "code": "LY01",
+          "name": "Upper Left"
         },
         {
-          "code": "AT02",
-          "name": "Left Bat Signal"
+          "code": "LY02",
+          "name": "Upper Right"
         },
         {
-          "code": "AT03",
-          "name": "Right Bat Signal"
+          "code": "LY03",
+          "name": "Middle Left"
         },
         {
-          "code": "AT04",
-          "name": "Static Shards"
+          "code": "LY04",
+          "name": "Middle Right"
         },
         {
-          "code": "AT05",
-          "name": "Night Wisps"
+          "code": "LY05",
+          "name": "Lower Left"
         },
         {
-          "code": "AT06",
-          "name": "Spider Drop"
+          "code": "LY06",
+          "name": "Lower Right"
         },
         {
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "code": "LY07",
+          "name": "Twin Upper"
         },
         {
-          "code": "AT08",
-          "name": "Orbit Dots"
+          "code": "LY08",
+          "name": "Twin Sides"
         },
         {
-          "code": "AT09",
-          "name": "Falling Pixels"
-        },
-        {
-          "code": "AT10",
-          "name": "Twin Moths"
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     }
@@ -287,19 +496,19 @@
       "motto": "Old blood, new rules.",
       "image": "studio/001.png",
       "modules": {
-        "head": 1,
-        "torso": 1,
-        "atmosphere": 1
+        "archetype": 1,
+        "motif": 1,
+        "layout": 1
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF01",
-          "name": "Raven Hollow"
+          "category": "Archetype",
+          "code": "AR01",
+          "name": "Raven Tux"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD01",
+          "category": "Silhouette / Headwear",
+          "code": "SH01",
           "name": "Raven Wave"
         },
         {
@@ -308,29 +517,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT01",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT01",
-          "name": "Skull Tux + Skull Bow"
-        },
-        {
           "category": "Outfit",
           "code": "OF01",
           "name": "Skull Tux"
         },
         {
-          "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "category": "Night Motif",
+          "code": "MO01",
+          "name": "Crescent Moon"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT01",
-          "name": "Clean Air"
+          "category": "Motif Layout",
+          "code": "LY01",
+          "name": "Upper Left"
         }
       ]
     },
@@ -342,19 +541,19 @@
       "motto": "Stay bright after dark.",
       "image": "studio/002.png",
       "modules": {
-        "head": 2,
-        "torso": 2,
-        "atmosphere": 2
+        "archetype": 2,
+        "motif": 2,
+        "layout": 9
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF02",
-          "name": "Pumpkin Glow"
+          "category": "Archetype",
+          "code": "AR02",
+          "name": "Pumpkin Regent"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD02",
+          "category": "Silhouette / Headwear",
+          "code": "SH02",
           "name": "Pumpkin Crown"
         },
         {
@@ -363,29 +562,19 @@
           "name": "Soft Glow"
         },
         {
-          "category": "Mouth",
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT02",
-          "name": "High Collar + Soft Bow"
-        },
-        {
           "category": "Outfit",
           "code": "OF02",
           "name": "High Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO02",
+          "name": "Crater Moon"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT02",
-          "name": "Left Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     },
@@ -397,19 +586,19 @@
       "motto": "Calm is a superpower.",
       "image": "studio/003.png",
       "modules": {
-        "head": 3,
-        "torso": 3,
-        "atmosphere": 3
+        "archetype": 3,
+        "motif": 4,
+        "layout": 8
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF03",
-          "name": "Midnight Fade"
+          "category": "Archetype",
+          "code": "AR03",
+          "name": "Midnight Medallion"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD03",
+          "category": "Silhouette / Headwear",
+          "code": "SH03",
           "name": "Midnight Slick"
         },
         {
@@ -418,29 +607,19 @@
           "name": "Shadow Fade"
         },
         {
-          "category": "Mouth",
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT03",
-          "name": "High Collar + Medallion"
-        },
-        {
           "category": "Outfit",
           "code": "OF03",
-          "name": "High Collar"
+          "name": "Medallion Cape"
         },
         {
-          "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO04",
+          "name": "Hanging Spider"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT03",
-          "name": "Right Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY08",
+          "name": "Twin Sides"
         }
       ]
     },
@@ -452,19 +631,19 @@
       "motto": "The city is ours at night.",
       "image": "studio/004.png",
       "modules": {
-        "head": 4,
-        "torso": 4,
-        "atmosphere": 4
+        "archetype": 4,
+        "motif": 6,
+        "layout": 7
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF04",
-          "name": "Flame Lashes"
+          "category": "Archetype",
+          "code": "AR04",
+          "name": "Flame Knit"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD04",
+          "category": "Silhouette / Headwear",
+          "code": "SH04",
           "name": "Living Flame"
         },
         {
@@ -473,29 +652,19 @@
           "name": "Long Lashes"
         },
         {
-          "category": "Mouth",
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT04",
-          "name": "Striped Knit + Choker"
-        },
-        {
           "category": "Outfit",
           "code": "OF04",
           "name": "Striped Knit"
         },
         {
-          "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "category": "Night Motif",
+          "code": "MO06",
+          "name": "Curling Fog"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT04",
-          "name": "Static Shards"
+          "category": "Motif Layout",
+          "code": "LY07",
+          "name": "Twin Upper"
         }
       ]
     },
@@ -507,19 +676,19 @@
       "motto": "Broadcast from the void.",
       "image": "studio/005.png",
       "modules": {
-        "head": 5,
-        "torso": 5,
-        "atmosphere": 5
+        "archetype": 5,
+        "motif": 8,
+        "layout": 6
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF05",
-          "name": "Stitched X"
+          "category": "Archetype",
+          "code": "AR05",
+          "name": "Stitched Undertaker"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD05",
+          "category": "Silhouette / Headwear",
+          "code": "SH05",
           "name": "Stitched Crop"
         },
         {
@@ -528,34 +697,19 @@
           "name": "X Glow"
         },
         {
-          "category": "Mouth",
-          "code": "MT05",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT05",
-          "name": "Undertaker Shirt + Buttons"
-        },
-        {
           "category": "Outfit",
           "code": "OF05",
           "name": "Undertaker Shirt"
         },
         {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
+          "category": "Night Motif",
+          "code": "MO08",
+          "name": "Perched Crow"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT05",
-          "name": "Night Wisps"
+          "category": "Motif Layout",
+          "code": "LY06",
+          "name": "Lower Right"
         }
       ]
     },
@@ -567,19 +721,19 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/006.png",
       "modules": {
-        "head": 6,
-        "torso": 6,
-        "atmosphere": 6
+        "archetype": 6,
+        "motif": 10,
+        "layout": 5
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF06",
-          "name": "Horned Anger"
+          "category": "Archetype",
+          "code": "AR06",
+          "name": "Horned Wing"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD06",
+          "category": "Silhouette / Headwear",
+          "code": "SH06",
           "name": "Little Horns"
         },
         {
@@ -588,34 +742,19 @@
           "name": "Angry Arches"
         },
         {
-          "category": "Mouth",
-          "code": "MT06",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX06",
-          "name": "Bat Wings"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT06",
-          "name": "Winged Cape + Medallion"
-        },
-        {
           "category": "Outfit",
           "code": "OF06",
           "name": "Winged Cape"
         },
         {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO10",
+          "name": "Thorn Leaves"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT06",
-          "name": "Spider Drop"
+          "category": "Motif Layout",
+          "code": "LY05",
+          "name": "Lower Left"
         }
       ]
     },
@@ -627,19 +766,19 @@
       "motto": "Old blood, new rules.",
       "image": "studio/007.png",
       "modules": {
-        "head": 7,
-        "torso": 7,
-        "atmosphere": 7
+        "archetype": 7,
+        "motif": 12,
+        "layout": 4
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF07",
-          "name": "Mummy Glow"
+          "category": "Archetype",
+          "code": "AR07",
+          "name": "Mummy Wrap"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD07",
+          "category": "Silhouette / Headwear",
+          "code": "SH07",
           "name": "Mummy Wraps"
         },
         {
@@ -648,29 +787,19 @@
           "name": "Soft Glow"
         },
         {
-          "category": "Mouth",
-          "code": "MT07",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT07",
-          "name": "Wrapped Tunic"
-        },
-        {
           "category": "Outfit",
           "code": "OF07",
           "name": "Wrapped Tunic"
         },
         {
-          "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO12",
+          "name": "Pumpkin Lantern"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "category": "Motif Layout",
+          "code": "LY04",
+          "name": "Middle Right"
         }
       ]
     },
@@ -682,19 +811,19 @@
       "motto": "Stay bright after dark.",
       "image": "studio/008.png",
       "modules": {
-        "head": 8,
-        "torso": 8,
-        "atmosphere": 8
+        "archetype": 8,
+        "motif": 14,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF08",
-          "name": "Coven Hollow"
+          "category": "Archetype",
+          "code": "AR08",
+          "name": "Coven Courier"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD08",
+          "category": "Silhouette / Headwear",
+          "code": "SH08",
           "name": "Coven Hat"
         },
         {
@@ -703,34 +832,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT08",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT08",
-          "name": "Coven Coat + Slim Scarf"
-        },
-        {
           "category": "Outfit",
           "code": "OF08",
-          "name": "Coven Coat"
+          "name": "Coven Coat + Lantern"
         },
         {
-          "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "category": "Night Motif",
+          "code": "MO14",
+          "name": "Storm Cloud"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT08",
-          "name": "Orbit Dots"
-        },
-        {
-          "category": "Companion",
-          "code": "CP08",
-          "name": "Pumpkin Lantern"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     },
@@ -742,19 +856,19 @@
       "motto": "Calm is a superpower.",
       "image": "studio/009.png",
       "modules": {
-        "head": 9,
-        "torso": 9,
-        "atmosphere": 9
+        "archetype": 9,
+        "motif": 16,
+        "layout": 2
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF09",
-          "name": "Spectral Hollow"
+          "category": "Archetype",
+          "code": "AR09",
+          "name": "Spectral Chain"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD09",
+          "category": "Silhouette / Headwear",
+          "code": "SH09",
           "name": "Spectral Wave"
         },
         {
@@ -763,34 +877,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT09",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT09",
-          "name": "Chain Crewneck + Loose Chain"
-        },
-        {
           "category": "Outfit",
           "code": "OF09",
           "name": "Chain Crewneck"
         },
         {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
+          "category": "Night Motif",
+          "code": "MO16",
+          "name": "Old Cassette"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT09",
-          "name": "Falling Pixels"
+          "category": "Motif Layout",
+          "code": "LY02",
+          "name": "Upper Right"
         }
       ]
     },
@@ -802,19 +901,19 @@
       "motto": "The city is ours at night.",
       "image": "studio/010.png",
       "modules": {
-        "head": 10,
-        "torso": 10,
-        "atmosphere": 10
+        "archetype": 10,
+        "motif": 18,
+        "layout": 1
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF10",
-          "name": "Raven Hypno"
+          "category": "Archetype",
+          "code": "AR10",
+          "name": "Hypno Velvet"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD10",
+          "category": "Silhouette / Headwear",
+          "code": "SH10",
           "name": "Raven Wave"
         },
         {
@@ -823,29 +922,19 @@
           "name": "Hypno Spirals"
         },
         {
-          "category": "Mouth",
-          "code": "MT10",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT10",
-          "name": "Velvet Jacket + Soft Bow"
-        },
-        {
           "category": "Outfit",
           "code": "OF10",
           "name": "Velvet Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO18",
+          "name": "Potion Bottle"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT10",
-          "name": "Twin Moths"
+          "category": "Motif Layout",
+          "code": "LY01",
+          "name": "Upper Left"
         }
       ]
     },
@@ -857,19 +946,19 @@
       "motto": "Broadcast from the void.",
       "image": "studio/011.png",
       "modules": {
-        "head": 11,
-        "torso": 11,
-        "atmosphere": 1
+        "archetype": 11,
+        "motif": 19,
+        "layout": 9
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF11",
-          "name": "Beanie Hollow"
+          "category": "Archetype",
+          "code": "AR11",
+          "name": "Beanie Bones"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD11",
+          "category": "Silhouette / Headwear",
+          "code": "SH11",
           "name": "Pom Beanie"
         },
         {
@@ -878,29 +967,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT11",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT11",
-          "name": "Skeleton Hoodie"
-        },
-        {
           "category": "Outfit",
           "code": "OF11",
           "name": "Skeleton Hoodie"
         },
         {
-          "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO19",
+          "name": "Coiled Snake"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT01",
-          "name": "Clean Air"
+          "category": "Motif Layout",
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     },
@@ -912,19 +991,19 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/012.png",
       "modules": {
-        "head": 12,
-        "torso": 12,
-        "atmosphere": 2
+        "archetype": 12,
+        "motif": 21,
+        "layout": 8
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF12",
-          "name": "Webbed Hollow"
+          "category": "Archetype",
+          "code": "AR12",
+          "name": "Webbed Court"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD12",
+          "category": "Silhouette / Headwear",
+          "code": "SH12",
           "name": "Webbed Wave"
         },
         {
@@ -933,34 +1012,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT12",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX12",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT12",
-          "name": "High Collar + Medallion"
-        },
-        {
           "category": "Outfit",
           "code": "OF12",
           "name": "High Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO21",
+          "name": "Ornate Key"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT02",
-          "name": "Left Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY08",
+          "name": "Twin Sides"
         }
       ]
     },
@@ -972,50 +1036,40 @@
       "motto": "Old blood, new rules.",
       "image": "studio/013.png",
       "modules": {
-        "head": 1,
-        "torso": 6,
-        "atmosphere": 3
+        "archetype": 13,
+        "motif": 1,
+        "layout": 7
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF01",
-          "name": "Raven Hollow"
+          "category": "Archetype",
+          "code": "AR13",
+          "name": "Goggle Aviator"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD01",
-          "name": "Raven Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH13",
+          "name": "Flight Goggles"
         },
         {
           "category": "Eyes",
-          "code": "EY01",
+          "code": "EY13",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT01",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT06",
-          "name": "Winged Cape + Medallion"
-        },
-        {
           "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
+          "code": "OF13",
+          "name": "Fur Flight Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO01",
+          "name": "Crescent Moon"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT03",
-          "name": "Right Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY07",
+          "name": "Twin Upper"
         }
       ]
     },
@@ -1027,50 +1081,40 @@
       "motto": "Stay bright after dark.",
       "image": "studio/014.png",
       "modules": {
-        "head": 2,
-        "torso": 7,
-        "atmosphere": 4
+        "archetype": 14,
+        "motif": 3,
+        "layout": 6
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF02",
-          "name": "Pumpkin Glow"
+          "category": "Archetype",
+          "code": "AR14",
+          "name": "Neon Visor"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD02",
-          "name": "Pumpkin Crown"
+          "category": "Silhouette / Headwear",
+          "code": "SH14",
+          "name": "Retro Visor"
         },
         {
           "category": "Eyes",
-          "code": "EY02",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT07",
-          "name": "Wrapped Tunic"
+          "code": "EY14",
+          "name": "Visor Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF14",
+          "name": "Utility Coat"
         },
         {
-          "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO03",
+          "name": "Bat Trio"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT04",
-          "name": "Static Shards"
+          "category": "Motif Layout",
+          "code": "LY06",
+          "name": "Lower Right"
         }
       ]
     },
@@ -1082,55 +1126,40 @@
       "motto": "Calm is a superpower.",
       "image": "studio/015.png",
       "modules": {
-        "head": 3,
-        "torso": 8,
-        "atmosphere": 5
+        "archetype": 15,
+        "motif": 5,
+        "layout": 5
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF03",
-          "name": "Midnight Fade"
+          "category": "Archetype",
+          "code": "AR15",
+          "name": "Moth Velvet"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD03",
-          "name": "Midnight Slick"
+          "category": "Silhouette / Headwear",
+          "code": "SH15",
+          "name": "Moth Antennae"
         },
         {
           "category": "Eyes",
-          "code": "EY03",
-          "name": "Shadow Fade"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT08",
-          "name": "Coven Coat + Slim Scarf"
+          "code": "EY15",
+          "name": "Dark Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF15",
+          "name": "Velvet Cape"
         },
         {
-          "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "category": "Night Motif",
+          "code": "MO05",
+          "name": "Luna Moths"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT05",
-          "name": "Night Wisps"
-        },
-        {
-          "category": "Companion",
-          "code": "CP08",
-          "name": "Pumpkin Lantern"
+          "category": "Motif Layout",
+          "code": "LY05",
+          "name": "Lower Left"
         }
       ]
     },
@@ -1142,50 +1171,40 @@
       "motto": "The city is ours at night.",
       "image": "studio/016.png",
       "modules": {
-        "head": 4,
-        "torso": 9,
-        "atmosphere": 6
+        "archetype": 16,
+        "motif": 7,
+        "layout": 4
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF04",
-          "name": "Flame Lashes"
+          "category": "Archetype",
+          "code": "AR16",
+          "name": "Wolf Varsity"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD04",
-          "name": "Living Flame"
+          "category": "Silhouette / Headwear",
+          "code": "SH16",
+          "name": "Wolf Ears"
         },
         {
           "category": "Eyes",
-          "code": "EY04",
-          "name": "Long Lashes"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT09",
-          "name": "Chain Crewneck + Loose Chain"
+          "code": "EY16",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
+          "code": "OF16",
+          "name": "Varsity Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
+          "category": "Night Motif",
+          "code": "MO07",
+          "name": "Black Cat"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT06",
-          "name": "Spider Drop"
+          "category": "Motif Layout",
+          "code": "LY04",
+          "name": "Middle Right"
         }
       ]
     },
@@ -1197,55 +1216,40 @@
       "motto": "Broadcast from the void.",
       "image": "studio/017.png",
       "modules": {
-        "head": 5,
-        "torso": 10,
-        "atmosphere": 7
+        "archetype": 17,
+        "motif": 9,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF05",
-          "name": "Stitched X"
+          "category": "Archetype",
+          "code": "AR17",
+          "name": "Rain Runner"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD05",
-          "name": "Stitched Crop"
+          "category": "Silhouette / Headwear",
+          "code": "SH17",
+          "name": "Deep Rain Hood"
         },
         {
           "category": "Eyes",
-          "code": "EY05",
-          "name": "X Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT05",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT10",
-          "name": "Velvet Jacket + Soft Bow"
+          "code": "EY17",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF17",
+          "name": "Technical Shell"
         },
         {
-          "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO09",
+          "name": "Mushroom Cluster"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     },
@@ -1257,55 +1261,40 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/018.png",
       "modules": {
-        "head": 6,
-        "torso": 11,
-        "atmosphere": 8
+        "archetype": 18,
+        "motif": 11,
+        "layout": 2
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF06",
-          "name": "Horned Anger"
+          "category": "Archetype",
+          "code": "AR18",
+          "name": "Geometric Bob"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD06",
-          "name": "Little Horns"
+          "category": "Silhouette / Headwear",
+          "code": "SH18",
+          "name": "Sleek Bob"
         },
         {
           "category": "Eyes",
-          "code": "EY06",
-          "name": "Angry Arches"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT06",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX06",
-          "name": "Bat Wings"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT11",
-          "name": "Skeleton Hoodie"
+          "code": "EY18",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF18",
+          "name": "Geometric Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO11",
+          "name": "Floating Eyes"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT08",
-          "name": "Orbit Dots"
+          "category": "Motif Layout",
+          "code": "LY02",
+          "name": "Upper Right"
         }
       ]
     },
@@ -1317,50 +1306,40 @@
       "motto": "Old blood, new rules.",
       "image": "studio/019.png",
       "modules": {
-        "head": 7,
-        "torso": 12,
-        "atmosphere": 9
+        "archetype": 19,
+        "motif": 13,
+        "layout": 1
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF07",
-          "name": "Mummy Glow"
+          "category": "Archetype",
+          "code": "AR19",
+          "name": "Bat Courier"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD07",
-          "name": "Mummy Wraps"
+          "category": "Silhouette / Headwear",
+          "code": "SH19",
+          "name": "Bat Courier Helmet"
         },
         {
           "category": "Eyes",
-          "code": "EY07",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT07",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT12",
-          "name": "High Collar + Medallion"
+          "code": "EY19",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
+          "code": "OF19",
+          "name": "Messenger Rig"
         },
         {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO13",
+          "name": "Night Comet"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT09",
-          "name": "Falling Pixels"
+          "category": "Motif Layout",
+          "code": "LY01",
+          "name": "Upper Left"
         }
       ]
     },
@@ -1372,50 +1351,40 @@
       "motto": "Stay bright after dark.",
       "image": "studio/020.png",
       "modules": {
-        "head": 8,
-        "torso": 1,
-        "atmosphere": 10
+        "archetype": 20,
+        "motif": 14,
+        "layout": 9
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF08",
-          "name": "Coven Hollow"
+          "category": "Archetype",
+          "code": "AR20",
+          "name": "Night Rider"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD08",
-          "name": "Coven Hat"
+          "category": "Silhouette / Headwear",
+          "code": "SH20",
+          "name": "High Pompadour"
         },
         {
           "category": "Eyes",
-          "code": "EY08",
+          "code": "EY20",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT08",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT01",
-          "name": "Skull Tux + Skull Bow"
-        },
-        {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF20",
+          "name": "Biker Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "category": "Night Motif",
+          "code": "MO14",
+          "name": "Storm Cloud"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT10",
-          "name": "Twin Moths"
+          "category": "Motif Layout",
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     },
@@ -1427,55 +1396,40 @@
       "motto": "Calm is a superpower.",
       "image": "studio/021.png",
       "modules": {
-        "head": 9,
-        "torso": 2,
-        "atmosphere": 1
+        "archetype": 21,
+        "motif": 16,
+        "layout": 8
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF09",
-          "name": "Spectral Hollow"
+          "category": "Archetype",
+          "code": "AR21",
+          "name": "Broadcast Headset"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD09",
-          "name": "Spectral Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH21",
+          "name": "Oversized Headphones"
         },
         {
           "category": "Eyes",
-          "code": "EY09",
+          "code": "EY21",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT09",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT02",
-          "name": "High Collar + Soft Bow"
-        },
-        {
           "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
+          "code": "OF21",
+          "name": "Broadcast Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO16",
+          "name": "Old Cassette"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT01",
-          "name": "Clean Air"
+          "category": "Motif Layout",
+          "code": "LY08",
+          "name": "Twin Sides"
         }
       ]
     },
@@ -1487,50 +1441,40 @@
       "motto": "The city is ours at night.",
       "image": "studio/022.png",
       "modules": {
-        "head": 10,
-        "torso": 3,
-        "atmosphere": 2
+        "archetype": 22,
+        "motif": 18,
+        "layout": 7
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF10",
-          "name": "Raven Hypno"
+          "category": "Archetype",
+          "code": "AR22",
+          "name": "Quilted Moonclip"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD10",
-          "name": "Raven Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH22",
+          "name": "Moonclip Bob"
         },
         {
           "category": "Eyes",
-          "code": "EY10",
-          "name": "Hypno Spirals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT10",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT03",
-          "name": "High Collar + Medallion"
+          "code": "EY22",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
+          "code": "OF22",
+          "name": "Quilted Coat"
         },
         {
-          "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO18",
+          "name": "Potion Bottle"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT02",
-          "name": "Left Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY07",
+          "name": "Twin Upper"
         }
       ]
     },
@@ -1542,50 +1486,40 @@
       "motto": "Broadcast from the void.",
       "image": "studio/023.png",
       "modules": {
-        "head": 11,
-        "torso": 4,
-        "atmosphere": 3
+        "archetype": 23,
+        "motif": 20,
+        "layout": 6
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF11",
-          "name": "Beanie Hollow"
+          "category": "Archetype",
+          "code": "AR23",
+          "name": "Spike Armor"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD11",
-          "name": "Pom Beanie"
+          "category": "Silhouette / Headwear",
+          "code": "SH23",
+          "name": "Spiked Crest"
         },
         {
           "category": "Eyes",
-          "code": "EY11",
+          "code": "EY23",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT11",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT04",
-          "name": "Striped Knit + Choker"
-        },
-        {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF23",
+          "name": "Armored Vest"
         },
         {
-          "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "category": "Night Motif",
+          "code": "MO20",
+          "name": "Night Beetle"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT03",
-          "name": "Right Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY06",
+          "name": "Lower Right"
         }
       ]
     },
@@ -1597,55 +1531,40 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/024.png",
       "modules": {
-        "head": 12,
-        "torso": 5,
-        "atmosphere": 4
+        "archetype": 24,
+        "motif": 22,
+        "layout": 5
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF12",
-          "name": "Webbed Hollow"
+          "category": "Archetype",
+          "code": "AR24",
+          "name": "Roundglass Cardigan"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD12",
-          "name": "Webbed Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH24",
+          "name": "Round Glasses"
         },
         {
           "category": "Eyes",
-          "code": "EY12",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT12",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX12",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT05",
-          "name": "Undertaker Shirt + Buttons"
+          "code": "EY24",
+          "name": "Lens Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
+          "code": "OF24",
+          "name": "Knit Cardigan"
         },
         {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
+          "category": "Night Motif",
+          "code": "MO22",
+          "name": "Tiny Ghost"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT04",
-          "name": "Static Shards"
+          "category": "Motif Layout",
+          "code": "LY05",
+          "name": "Lower Left"
         }
       ]
     },
@@ -1657,50 +1576,40 @@
       "motto": "Old blood, new rules.",
       "image": "studio/025.png",
       "modules": {
-        "head": 1,
-        "torso": 11,
-        "atmosphere": 5
+        "archetype": 25,
+        "motif": 2,
+        "layout": 4
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF01",
-          "name": "Raven Hollow"
+          "category": "Archetype",
+          "code": "AR25",
+          "name": "Noir Detective"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD01",
-          "name": "Raven Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH25",
+          "name": "Broad Fedora"
         },
         {
           "category": "Eyes",
-          "code": "EY01",
+          "code": "EY25",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT01",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT11",
-          "name": "Skeleton Hoodie"
-        },
-        {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF25",
+          "name": "Trench Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO02",
+          "name": "Crater Moon"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT05",
-          "name": "Night Wisps"
+          "category": "Motif Layout",
+          "code": "LY04",
+          "name": "Middle Right"
         }
       ]
     },
@@ -1712,50 +1621,40 @@
       "motto": "Stay bright after dark.",
       "image": "studio/026.png",
       "modules": {
-        "head": 2,
-        "torso": 12,
-        "atmosphere": 6
+        "archetype": 26,
+        "motif": 4,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF02",
-          "name": "Pumpkin Glow"
+          "category": "Archetype",
+          "code": "AR26",
+          "name": "Arcade Racer"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD02",
-          "name": "Pumpkin Crown"
+          "category": "Silhouette / Headwear",
+          "code": "SH26",
+          "name": "Compact Race Helmet"
         },
         {
           "category": "Eyes",
-          "code": "EY02",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT12",
-          "name": "High Collar + Medallion"
+          "code": "EY26",
+          "name": "Full Visor Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
+          "code": "OF26",
+          "name": "Racing Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO04",
+          "name": "Hanging Spider"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT06",
-          "name": "Spider Drop"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     },
@@ -1767,50 +1666,40 @@
       "motto": "Calm is a superpower.",
       "image": "studio/027.png",
       "modules": {
-        "head": 3,
-        "torso": 1,
-        "atmosphere": 7
+        "archetype": 27,
+        "motif": 6,
+        "layout": 2
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF03",
-          "name": "Midnight Fade"
+          "category": "Archetype",
+          "code": "AR27",
+          "name": "Deep-Sea Captain"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD03",
-          "name": "Midnight Slick"
+          "category": "Silhouette / Headwear",
+          "code": "SH27",
+          "name": "Captain Cap"
         },
         {
           "category": "Eyes",
-          "code": "EY03",
-          "name": "Shadow Fade"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT01",
-          "name": "Skull Tux + Skull Bow"
+          "code": "EY27",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF27",
+          "name": "Heavy Pea Coat"
         },
         {
-          "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "category": "Night Motif",
+          "code": "MO06",
+          "name": "Curling Fog"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "category": "Motif Layout",
+          "code": "LY02",
+          "name": "Upper Right"
         }
       ]
     },
@@ -1822,50 +1711,40 @@
       "motto": "The city is ours at night.",
       "image": "studio/028.png",
       "modules": {
-        "head": 4,
-        "torso": 2,
-        "atmosphere": 8
+        "archetype": 28,
+        "motif": 8,
+        "layout": 1
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF04",
-          "name": "Flame Lashes"
+          "category": "Archetype",
+          "code": "AR28",
+          "name": "Wild Inventor"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD04",
-          "name": "Living Flame"
+          "category": "Silhouette / Headwear",
+          "code": "SH28",
+          "name": "Wild Side Hair + Goggles"
         },
         {
           "category": "Eyes",
-          "code": "EY04",
-          "name": "Long Lashes"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT02",
-          "name": "High Collar + Soft Bow"
+          "code": "EY28",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
+          "code": "OF28",
+          "name": "Tool Apron"
         },
         {
-          "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO08",
+          "name": "Perched Crow"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT08",
-          "name": "Orbit Dots"
+          "category": "Motif Layout",
+          "code": "LY01",
+          "name": "Upper Left"
         }
       ]
     },
@@ -1877,55 +1756,40 @@
       "motto": "Broadcast from the void.",
       "image": "studio/029.png",
       "modules": {
-        "head": 5,
-        "torso": 3,
-        "atmosphere": 9
+        "archetype": 29,
+        "motif": 9,
+        "layout": 9
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF05",
-          "name": "Stitched X"
+          "category": "Archetype",
+          "code": "AR29",
+          "name": "Silent Film Star"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD05",
-          "name": "Stitched Crop"
+          "category": "Silhouette / Headwear",
+          "code": "SH29",
+          "name": "Finger-Wave Hair"
         },
         {
           "category": "Eyes",
-          "code": "EY05",
-          "name": "X Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT05",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT03",
-          "name": "High Collar + Medallion"
+          "code": "EY29",
+          "name": "Long Lashes"
         },
         {
           "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
+          "code": "OF29",
+          "name": "Fur Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO09",
+          "name": "Mushroom Cluster"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT09",
-          "name": "Falling Pixels"
+          "category": "Motif Layout",
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     },
@@ -1937,55 +1801,40 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/030.png",
       "modules": {
-        "head": 6,
-        "torso": 4,
-        "atmosphere": 10
+        "archetype": 30,
+        "motif": 11,
+        "layout": 8
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF06",
-          "name": "Horned Anger"
+          "category": "Archetype",
+          "code": "AR30",
+          "name": "Desert Nomad"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD06",
-          "name": "Little Horns"
+          "category": "Silhouette / Headwear",
+          "code": "SH30",
+          "name": "Wrapped Goggles"
         },
         {
           "category": "Eyes",
-          "code": "EY06",
-          "name": "Angry Arches"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT06",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX06",
-          "name": "Bat Wings"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT04",
-          "name": "Striped Knit + Choker"
+          "code": "EY30",
+          "name": "Goggle Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF30",
+          "name": "Desert Scarf"
         },
         {
-          "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "category": "Night Motif",
+          "code": "MO11",
+          "name": "Floating Eyes"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT10",
-          "name": "Twin Moths"
+          "category": "Motif Layout",
+          "code": "LY08",
+          "name": "Twin Sides"
         }
       ]
     },
@@ -1997,50 +1846,40 @@
       "motto": "Old blood, new rules.",
       "image": "studio/031.png",
       "modules": {
-        "head": 7,
-        "torso": 5,
-        "atmosphere": 1
+        "archetype": 31,
+        "motif": 13,
+        "layout": 7
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF07",
-          "name": "Mummy Glow"
+          "category": "Archetype",
+          "code": "AR31",
+          "name": "Botanical Keeper"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD07",
-          "name": "Mummy Wraps"
+          "category": "Silhouette / Headwear",
+          "code": "SH31",
+          "name": "Leaf Crown"
         },
         {
           "category": "Eyes",
-          "code": "EY07",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT07",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT05",
-          "name": "Undertaker Shirt + Buttons"
+          "code": "EY31",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
+          "code": "OF31",
+          "name": "Work Overalls"
         },
         {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
+          "category": "Night Motif",
+          "code": "MO13",
+          "name": "Night Comet"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT01",
-          "name": "Clean Air"
+          "category": "Motif Layout",
+          "code": "LY07",
+          "name": "Twin Upper"
         }
       ]
     },
@@ -2052,50 +1891,40 @@
       "motto": "Stay bright after dark.",
       "image": "studio/032.png",
       "modules": {
-        "head": 8,
-        "torso": 6,
-        "atmosphere": 2
+        "archetype": 32,
+        "motif": 15,
+        "layout": 6
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF08",
-          "name": "Coven Hollow"
+          "category": "Archetype",
+          "code": "AR32",
+          "name": "Synth Shade"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD08",
-          "name": "Coven Hat"
+          "category": "Silhouette / Headwear",
+          "code": "SH32",
+          "name": "Angular Shades"
         },
         {
           "category": "Eyes",
-          "code": "EY08",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT08",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT06",
-          "name": "Winged Cape + Medallion"
+          "code": "EY32",
+          "name": "Shade Reflection"
         },
         {
           "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
+          "code": "OF32",
+          "name": "Stage Coat"
         },
         {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO15",
+          "name": "Wolf Paw"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT02",
-          "name": "Left Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY06",
+          "name": "Lower Right"
         }
       ]
     },
@@ -2107,55 +1936,40 @@
       "motto": "Calm is a superpower.",
       "image": "studio/033.png",
       "modules": {
-        "head": 9,
-        "torso": 7,
-        "atmosphere": 3
+        "archetype": 33,
+        "motif": 17,
+        "layout": 5
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF09",
-          "name": "Spectral Hollow"
+          "category": "Archetype",
+          "code": "AR33",
+          "name": "Ice Climber"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD09",
-          "name": "Spectral Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH33",
+          "name": "Fur Climber Cap"
         },
         {
           "category": "Eyes",
-          "code": "EY09",
+          "code": "EY33",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT09",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT07",
-          "name": "Wrapped Tunic"
-        },
-        {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF33",
+          "name": "Padded Parka"
         },
         {
-          "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO17",
+          "name": "Pocket Radio"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT03",
-          "name": "Right Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY05",
+          "name": "Lower Left"
         }
       ]
     },
@@ -2167,55 +1981,40 @@
       "motto": "The city is ours at night.",
       "image": "studio/034.png",
       "modules": {
-        "head": 10,
-        "torso": 8,
-        "atmosphere": 4
+        "archetype": 34,
+        "motif": 19,
+        "layout": 4
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF10",
-          "name": "Raven Hypno"
+          "category": "Archetype",
+          "code": "AR34",
+          "name": "Street Magician"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD10",
-          "name": "Raven Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH34",
+          "name": "Tall Top Hat"
         },
         {
           "category": "Eyes",
-          "code": "EY10",
-          "name": "Hypno Spirals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT10",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT08",
-          "name": "Coven Coat + Slim Scarf"
+          "code": "EY34",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF34",
+          "name": "Patterned Vest"
         },
         {
-          "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "category": "Night Motif",
+          "code": "MO19",
+          "name": "Coiled Snake"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT04",
-          "name": "Static Shards"
-        },
-        {
-          "category": "Companion",
-          "code": "CP08",
-          "name": "Pumpkin Lantern"
+          "category": "Motif Layout",
+          "code": "LY04",
+          "name": "Middle Right"
         }
       ]
     },
@@ -2227,50 +2026,40 @@
       "motto": "Broadcast from the void.",
       "image": "studio/035.png",
       "modules": {
-        "head": 11,
-        "torso": 9,
-        "atmosphere": 5
+        "archetype": 35,
+        "motif": 21,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF11",
-          "name": "Beanie Hollow"
+          "category": "Archetype",
+          "code": "AR35",
+          "name": "Graffiti Courier"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD11",
-          "name": "Pom Beanie"
+          "category": "Silhouette / Headwear",
+          "code": "SH35",
+          "name": "Backward Cap"
         },
         {
           "category": "Eyes",
-          "code": "EY11",
+          "code": "EY35",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT11",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT09",
-          "name": "Chain Crewneck + Loose Chain"
-        },
-        {
           "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
+          "code": "OF35",
+          "name": "Oversized Hoodie"
         },
         {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
+          "category": "Night Motif",
+          "code": "MO21",
+          "name": "Ornate Key"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT05",
-          "name": "Night Wisps"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     },
@@ -2282,55 +2071,40 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/036.png",
       "modules": {
-        "head": 12,
-        "torso": 10,
-        "atmosphere": 7
+        "archetype": 36,
+        "motif": 1,
+        "layout": 2
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF12",
-          "name": "Webbed Hollow"
+          "category": "Archetype",
+          "code": "AR36",
+          "name": "Chess Strategist"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD12",
-          "name": "Webbed Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH36",
+          "name": "Center-Part Hair + Glasses"
         },
         {
           "category": "Eyes",
-          "code": "EY12",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT12",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX12",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT10",
-          "name": "Velvet Jacket + Soft Bow"
+          "code": "EY36",
+          "name": "Lens Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF36",
+          "name": "Sharp Blazer"
         },
         {
-          "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO01",
+          "name": "Crescent Moon"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "category": "Motif Layout",
+          "code": "LY02",
+          "name": "Upper Right"
         }
       ]
     },
@@ -2342,19 +2116,19 @@
       "motto": "Old blood, new rules.",
       "image": "studio/037.png",
       "modules": {
-        "head": 1,
-        "torso": 4,
-        "atmosphere": 7
+        "archetype": 1,
+        "motif": 5,
+        "layout": 2
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF01",
-          "name": "Raven Hollow"
+          "category": "Archetype",
+          "code": "AR01",
+          "name": "Raven Tux"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD01",
+          "category": "Silhouette / Headwear",
+          "code": "SH01",
           "name": "Raven Wave"
         },
         {
@@ -2363,29 +2137,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT01",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT04",
-          "name": "Striped Knit + Choker"
-        },
-        {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF01",
+          "name": "Skull Tux"
         },
         {
-          "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "category": "Night Motif",
+          "code": "MO05",
+          "name": "Luna Moths"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "category": "Motif Layout",
+          "code": "LY02",
+          "name": "Upper Right"
         }
       ]
     },
@@ -2397,19 +2161,19 @@
       "motto": "Stay bright after dark.",
       "image": "studio/038.png",
       "modules": {
-        "head": 2,
-        "torso": 5,
-        "atmosphere": 8
+        "archetype": 2,
+        "motif": 7,
+        "layout": 1
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF02",
-          "name": "Pumpkin Glow"
+          "category": "Archetype",
+          "code": "AR02",
+          "name": "Pumpkin Regent"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD02",
+          "category": "Silhouette / Headwear",
+          "code": "SH02",
           "name": "Pumpkin Crown"
         },
         {
@@ -2418,29 +2182,19 @@
           "name": "Soft Glow"
         },
         {
-          "category": "Mouth",
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT05",
-          "name": "Undertaker Shirt + Buttons"
-        },
-        {
           "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
+          "code": "OF02",
+          "name": "High Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
+          "category": "Night Motif",
+          "code": "MO07",
+          "name": "Black Cat"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT08",
-          "name": "Orbit Dots"
+          "category": "Motif Layout",
+          "code": "LY01",
+          "name": "Upper Left"
         }
       ]
     },
@@ -2452,19 +2206,19 @@
       "motto": "Calm is a superpower.",
       "image": "studio/039.png",
       "modules": {
-        "head": 3,
-        "torso": 6,
-        "atmosphere": 9
+        "archetype": 3,
+        "motif": 8,
+        "layout": 9
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF03",
-          "name": "Midnight Fade"
+          "category": "Archetype",
+          "code": "AR03",
+          "name": "Midnight Medallion"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD03",
+          "category": "Silhouette / Headwear",
+          "code": "SH03",
           "name": "Midnight Slick"
         },
         {
@@ -2473,29 +2227,19 @@
           "name": "Shadow Fade"
         },
         {
-          "category": "Mouth",
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT06",
-          "name": "Winged Cape + Medallion"
-        },
-        {
           "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
+          "code": "OF03",
+          "name": "Medallion Cape"
         },
         {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO08",
+          "name": "Perched Crow"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT09",
-          "name": "Falling Pixels"
+          "category": "Motif Layout",
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     },
@@ -2507,19 +2251,19 @@
       "motto": "The city is ours at night.",
       "image": "studio/040.png",
       "modules": {
-        "head": 4,
-        "torso": 7,
-        "atmosphere": 10
+        "archetype": 4,
+        "motif": 10,
+        "layout": 8
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF04",
-          "name": "Flame Lashes"
+          "category": "Archetype",
+          "code": "AR04",
+          "name": "Flame Knit"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD04",
+          "category": "Silhouette / Headwear",
+          "code": "SH04",
           "name": "Living Flame"
         },
         {
@@ -2528,29 +2272,19 @@
           "name": "Long Lashes"
         },
         {
-          "category": "Mouth",
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT07",
-          "name": "Wrapped Tunic"
-        },
-        {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF04",
+          "name": "Striped Knit"
         },
         {
-          "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO10",
+          "name": "Thorn Leaves"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT10",
-          "name": "Twin Moths"
+          "category": "Motif Layout",
+          "code": "LY08",
+          "name": "Twin Sides"
         }
       ]
     },
@@ -2562,19 +2296,19 @@
       "motto": "Broadcast from the void.",
       "image": "studio/041.png",
       "modules": {
-        "head": 5,
-        "torso": 8,
-        "atmosphere": 1
+        "archetype": 5,
+        "motif": 12,
+        "layout": 7
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF05",
-          "name": "Stitched X"
+          "category": "Archetype",
+          "code": "AR05",
+          "name": "Stitched Undertaker"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD05",
+          "category": "Silhouette / Headwear",
+          "code": "SH05",
           "name": "Stitched Crop"
         },
         {
@@ -2583,39 +2317,19 @@
           "name": "X Glow"
         },
         {
-          "category": "Mouth",
-          "code": "MT05",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT08",
-          "name": "Coven Coat + Slim Scarf"
-        },
-        {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF05",
+          "name": "Undertaker Shirt"
         },
         {
-          "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
-        },
-        {
-          "category": "Atmosphere",
-          "code": "AT01",
-          "name": "Clean Air"
-        },
-        {
-          "category": "Companion",
-          "code": "CP08",
+          "category": "Night Motif",
+          "code": "MO12",
           "name": "Pumpkin Lantern"
+        },
+        {
+          "category": "Motif Layout",
+          "code": "LY07",
+          "name": "Twin Upper"
         }
       ]
     },
@@ -2627,19 +2341,19 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/042.png",
       "modules": {
-        "head": 6,
-        "torso": 9,
-        "atmosphere": 2
+        "archetype": 6,
+        "motif": 14,
+        "layout": 6
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF06",
-          "name": "Horned Anger"
+          "category": "Archetype",
+          "code": "AR06",
+          "name": "Horned Wing"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD06",
+          "category": "Silhouette / Headwear",
+          "code": "SH06",
           "name": "Little Horns"
         },
         {
@@ -2648,34 +2362,19 @@
           "name": "Angry Arches"
         },
         {
-          "category": "Mouth",
-          "code": "MT06",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX06",
-          "name": "Bat Wings"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT09",
-          "name": "Chain Crewneck + Loose Chain"
-        },
-        {
           "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
+          "code": "OF06",
+          "name": "Winged Cape"
         },
         {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
+          "category": "Night Motif",
+          "code": "MO14",
+          "name": "Storm Cloud"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT02",
-          "name": "Left Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY06",
+          "name": "Lower Right"
         }
       ]
     },
@@ -2687,19 +2386,19 @@
       "motto": "Old blood, new rules.",
       "image": "studio/043.png",
       "modules": {
-        "head": 7,
-        "torso": 10,
-        "atmosphere": 3
+        "archetype": 7,
+        "motif": 16,
+        "layout": 5
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF07",
-          "name": "Mummy Glow"
+          "category": "Archetype",
+          "code": "AR07",
+          "name": "Mummy Wrap"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD07",
+          "category": "Silhouette / Headwear",
+          "code": "SH07",
           "name": "Mummy Wraps"
         },
         {
@@ -2708,29 +2407,19 @@
           "name": "Soft Glow"
         },
         {
-          "category": "Mouth",
-          "code": "MT07",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT10",
-          "name": "Velvet Jacket + Soft Bow"
-        },
-        {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF07",
+          "name": "Wrapped Tunic"
         },
         {
-          "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO16",
+          "name": "Old Cassette"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT03",
-          "name": "Right Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY05",
+          "name": "Lower Left"
         }
       ]
     },
@@ -2742,19 +2431,19 @@
       "motto": "Stay bright after dark.",
       "image": "studio/044.png",
       "modules": {
-        "head": 8,
-        "torso": 11,
-        "atmosphere": 4
+        "archetype": 8,
+        "motif": 18,
+        "layout": 4
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF08",
-          "name": "Coven Hollow"
+          "category": "Archetype",
+          "code": "AR08",
+          "name": "Coven Courier"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD08",
+          "category": "Silhouette / Headwear",
+          "code": "SH08",
           "name": "Coven Hat"
         },
         {
@@ -2763,29 +2452,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT08",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT11",
-          "name": "Skeleton Hoodie"
-        },
-        {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF08",
+          "name": "Coven Coat + Lantern"
         },
         {
-          "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO18",
+          "name": "Potion Bottle"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT04",
-          "name": "Static Shards"
+          "category": "Motif Layout",
+          "code": "LY04",
+          "name": "Middle Right"
         }
       ]
     },
@@ -2797,19 +2476,19 @@
       "motto": "Calm is a superpower.",
       "image": "studio/045.png",
       "modules": {
-        "head": 9,
-        "torso": 12,
-        "atmosphere": 6
+        "archetype": 9,
+        "motif": 20,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF09",
-          "name": "Spectral Hollow"
+          "category": "Archetype",
+          "code": "AR09",
+          "name": "Spectral Chain"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD09",
+          "category": "Silhouette / Headwear",
+          "code": "SH09",
           "name": "Spectral Wave"
         },
         {
@@ -2818,34 +2497,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT09",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT12",
-          "name": "High Collar + Medallion"
-        },
-        {
           "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
+          "code": "OF09",
+          "name": "Chain Crewneck"
         },
         {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO20",
+          "name": "Night Beetle"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT06",
-          "name": "Spider Drop"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     },
@@ -2857,19 +2521,19 @@
       "motto": "The city is ours at night.",
       "image": "studio/046.png",
       "modules": {
-        "head": 10,
-        "torso": 1,
-        "atmosphere": 6
+        "archetype": 10,
+        "motif": 22,
+        "layout": 2
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF10",
-          "name": "Raven Hypno"
+          "category": "Archetype",
+          "code": "AR10",
+          "name": "Hypno Velvet"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD10",
+          "category": "Silhouette / Headwear",
+          "code": "SH10",
           "name": "Raven Wave"
         },
         {
@@ -2878,29 +2542,19 @@
           "name": "Hypno Spirals"
         },
         {
-          "category": "Mouth",
-          "code": "MT10",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT01",
-          "name": "Skull Tux + Skull Bow"
-        },
-        {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF10",
+          "name": "Velvet Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "category": "Night Motif",
+          "code": "MO22",
+          "name": "Tiny Ghost"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT06",
-          "name": "Spider Drop"
+          "category": "Motif Layout",
+          "code": "LY02",
+          "name": "Upper Right"
         }
       ]
     },
@@ -2912,19 +2566,19 @@
       "motto": "Broadcast from the void.",
       "image": "studio/047.png",
       "modules": {
-        "head": 11,
-        "torso": 2,
-        "atmosphere": 7
+        "archetype": 11,
+        "motif": 2,
+        "layout": 1
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF11",
-          "name": "Beanie Hollow"
+          "category": "Archetype",
+          "code": "AR11",
+          "name": "Beanie Bones"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD11",
+          "category": "Silhouette / Headwear",
+          "code": "SH11",
           "name": "Pom Beanie"
         },
         {
@@ -2933,29 +2587,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT11",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT02",
-          "name": "High Collar + Soft Bow"
-        },
-        {
           "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
+          "code": "OF11",
+          "name": "Skeleton Hoodie"
         },
         {
-          "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO02",
+          "name": "Crater Moon"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "category": "Motif Layout",
+          "code": "LY01",
+          "name": "Upper Left"
         }
       ]
     },
@@ -2967,19 +2611,19 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/048.png",
       "modules": {
-        "head": 12,
-        "torso": 3,
-        "atmosphere": 8
+        "archetype": 12,
+        "motif": 3,
+        "layout": 9
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF12",
-          "name": "Webbed Hollow"
+          "category": "Archetype",
+          "code": "AR12",
+          "name": "Webbed Court"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD12",
+          "category": "Silhouette / Headwear",
+          "code": "SH12",
           "name": "Webbed Wave"
         },
         {
@@ -2988,34 +2632,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT12",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX12",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT03",
-          "name": "High Collar + Medallion"
-        },
-        {
           "category": "Outfit",
-          "code": "OF03",
+          "code": "OF12",
           "name": "High Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO03",
+          "name": "Bat Trio"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT08",
-          "name": "Orbit Dots"
+          "category": "Motif Layout",
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     },
@@ -3027,50 +2656,40 @@
       "motto": "Old blood, new rules.",
       "image": "studio/049.png",
       "modules": {
-        "head": 1,
-        "torso": 9,
-        "atmosphere": 9
+        "archetype": 13,
+        "motif": 5,
+        "layout": 8
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF01",
-          "name": "Raven Hollow"
+          "category": "Archetype",
+          "code": "AR13",
+          "name": "Goggle Aviator"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD01",
-          "name": "Raven Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH13",
+          "name": "Flight Goggles"
         },
         {
           "category": "Eyes",
-          "code": "EY01",
+          "code": "EY13",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT01",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT09",
-          "name": "Chain Crewneck + Loose Chain"
-        },
-        {
           "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
+          "code": "OF13",
+          "name": "Fur Flight Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
+          "category": "Night Motif",
+          "code": "MO05",
+          "name": "Luna Moths"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT09",
-          "name": "Falling Pixels"
+          "category": "Motif Layout",
+          "code": "LY08",
+          "name": "Twin Sides"
         }
       ]
     },
@@ -3082,50 +2701,40 @@
       "motto": "Stay bright after dark.",
       "image": "studio/050.png",
       "modules": {
-        "head": 2,
-        "torso": 10,
-        "atmosphere": 10
+        "archetype": 14,
+        "motif": 7,
+        "layout": 7
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF02",
-          "name": "Pumpkin Glow"
+          "category": "Archetype",
+          "code": "AR14",
+          "name": "Neon Visor"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD02",
-          "name": "Pumpkin Crown"
+          "category": "Silhouette / Headwear",
+          "code": "SH14",
+          "name": "Retro Visor"
         },
         {
           "category": "Eyes",
-          "code": "EY02",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT10",
-          "name": "Velvet Jacket + Soft Bow"
+          "code": "EY14",
+          "name": "Visor Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF14",
+          "name": "Utility Coat"
         },
         {
-          "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO07",
+          "name": "Black Cat"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT10",
-          "name": "Twin Moths"
+          "category": "Motif Layout",
+          "code": "LY07",
+          "name": "Twin Upper"
         }
       ]
     },
@@ -3137,50 +2746,40 @@
       "motto": "Calm is a superpower.",
       "image": "studio/051.png",
       "modules": {
-        "head": 3,
-        "torso": 11,
-        "atmosphere": 1
+        "archetype": 15,
+        "motif": 9,
+        "layout": 6
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF03",
-          "name": "Midnight Fade"
+          "category": "Archetype",
+          "code": "AR15",
+          "name": "Moth Velvet"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD03",
-          "name": "Midnight Slick"
+          "category": "Silhouette / Headwear",
+          "code": "SH15",
+          "name": "Moth Antennae"
         },
         {
           "category": "Eyes",
-          "code": "EY03",
-          "name": "Shadow Fade"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT11",
-          "name": "Skeleton Hoodie"
+          "code": "EY15",
+          "name": "Dark Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF15",
+          "name": "Velvet Cape"
         },
         {
-          "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO09",
+          "name": "Mushroom Cluster"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT01",
-          "name": "Clean Air"
+          "category": "Motif Layout",
+          "code": "LY06",
+          "name": "Lower Right"
         }
       ]
     },
@@ -3192,50 +2791,40 @@
       "motto": "The city is ours at night.",
       "image": "studio/052.png",
       "modules": {
-        "head": 4,
-        "torso": 12,
-        "atmosphere": 2
+        "archetype": 16,
+        "motif": 11,
+        "layout": 5
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF04",
-          "name": "Flame Lashes"
+          "category": "Archetype",
+          "code": "AR16",
+          "name": "Wolf Varsity"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD04",
-          "name": "Living Flame"
+          "category": "Silhouette / Headwear",
+          "code": "SH16",
+          "name": "Wolf Ears"
         },
         {
           "category": "Eyes",
-          "code": "EY04",
-          "name": "Long Lashes"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT12",
-          "name": "High Collar + Medallion"
+          "code": "EY16",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
+          "code": "OF16",
+          "name": "Varsity Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO11",
+          "name": "Floating Eyes"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT02",
-          "name": "Left Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY05",
+          "name": "Lower Left"
         }
       ]
     },
@@ -3247,55 +2836,40 @@
       "motto": "Broadcast from the void.",
       "image": "studio/053.png",
       "modules": {
-        "head": 5,
-        "torso": 1,
-        "atmosphere": 3
+        "archetype": 17,
+        "motif": 13,
+        "layout": 4
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF05",
-          "name": "Stitched X"
+          "category": "Archetype",
+          "code": "AR17",
+          "name": "Rain Runner"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD05",
-          "name": "Stitched Crop"
+          "category": "Silhouette / Headwear",
+          "code": "SH17",
+          "name": "Deep Rain Hood"
         },
         {
           "category": "Eyes",
-          "code": "EY05",
-          "name": "X Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT05",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT01",
-          "name": "Skull Tux + Skull Bow"
+          "code": "EY17",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF17",
+          "name": "Technical Shell"
         },
         {
-          "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "category": "Night Motif",
+          "code": "MO13",
+          "name": "Night Comet"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT03",
-          "name": "Right Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY04",
+          "name": "Middle Right"
         }
       ]
     },
@@ -3307,55 +2881,40 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/054.png",
       "modules": {
-        "head": 6,
-        "torso": 2,
-        "atmosphere": 4
+        "archetype": 18,
+        "motif": 15,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF06",
-          "name": "Horned Anger"
+          "category": "Archetype",
+          "code": "AR18",
+          "name": "Geometric Bob"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD06",
-          "name": "Little Horns"
+          "category": "Silhouette / Headwear",
+          "code": "SH18",
+          "name": "Sleek Bob"
         },
         {
           "category": "Eyes",
-          "code": "EY06",
-          "name": "Angry Arches"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT06",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX06",
-          "name": "Bat Wings"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT02",
-          "name": "High Collar + Soft Bow"
+          "code": "EY18",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
+          "code": "OF18",
+          "name": "Geometric Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO15",
+          "name": "Wolf Paw"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT04",
-          "name": "Static Shards"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     },
@@ -3367,50 +2926,40 @@
       "motto": "Old blood, new rules.",
       "image": "studio/055.png",
       "modules": {
-        "head": 7,
-        "torso": 3,
-        "atmosphere": 5
+        "archetype": 19,
+        "motif": 17,
+        "layout": 2
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF07",
-          "name": "Mummy Glow"
+          "category": "Archetype",
+          "code": "AR19",
+          "name": "Bat Courier"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD07",
-          "name": "Mummy Wraps"
+          "category": "Silhouette / Headwear",
+          "code": "SH19",
+          "name": "Bat Courier Helmet"
         },
         {
           "category": "Eyes",
-          "code": "EY07",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT07",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT03",
-          "name": "High Collar + Medallion"
+          "code": "EY19",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
+          "code": "OF19",
+          "name": "Messenger Rig"
         },
         {
-          "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO17",
+          "name": "Pocket Radio"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT05",
-          "name": "Night Wisps"
+          "category": "Motif Layout",
+          "code": "LY02",
+          "name": "Upper Right"
         }
       ]
     },
@@ -3422,50 +2971,40 @@
       "motto": "Stay bright after dark.",
       "image": "studio/056.png",
       "modules": {
-        "head": 8,
-        "torso": 4,
-        "atmosphere": 6
+        "archetype": 20,
+        "motif": 19,
+        "layout": 1
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF08",
-          "name": "Coven Hollow"
+          "category": "Archetype",
+          "code": "AR20",
+          "name": "Night Rider"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD08",
-          "name": "Coven Hat"
+          "category": "Silhouette / Headwear",
+          "code": "SH20",
+          "name": "High Pompadour"
         },
         {
           "category": "Eyes",
-          "code": "EY08",
+          "code": "EY20",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT08",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT04",
-          "name": "Striped Knit + Choker"
-        },
-        {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF20",
+          "name": "Biker Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "category": "Night Motif",
+          "code": "MO19",
+          "name": "Coiled Snake"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT06",
-          "name": "Spider Drop"
+          "category": "Motif Layout",
+          "code": "LY01",
+          "name": "Upper Left"
         }
       ]
     },
@@ -3477,55 +3016,40 @@
       "motto": "Calm is a superpower.",
       "image": "studio/057.png",
       "modules": {
-        "head": 9,
-        "torso": 5,
-        "atmosphere": 7
+        "archetype": 21,
+        "motif": 20,
+        "layout": 9
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF09",
-          "name": "Spectral Hollow"
+          "category": "Archetype",
+          "code": "AR21",
+          "name": "Broadcast Headset"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD09",
-          "name": "Spectral Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH21",
+          "name": "Oversized Headphones"
         },
         {
           "category": "Eyes",
-          "code": "EY09",
+          "code": "EY21",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT09",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT05",
-          "name": "Undertaker Shirt + Buttons"
-        },
-        {
           "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
+          "code": "OF21",
+          "name": "Broadcast Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
+          "category": "Night Motif",
+          "code": "MO20",
+          "name": "Night Beetle"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "category": "Motif Layout",
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     },
@@ -3537,50 +3061,40 @@
       "motto": "The city is ours at night.",
       "image": "studio/058.png",
       "modules": {
-        "head": 10,
-        "torso": 6,
-        "atmosphere": 8
+        "archetype": 22,
+        "motif": 22,
+        "layout": 8
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF10",
-          "name": "Raven Hypno"
+          "category": "Archetype",
+          "code": "AR22",
+          "name": "Quilted Moonclip"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD10",
-          "name": "Raven Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH22",
+          "name": "Moonclip Bob"
         },
         {
           "category": "Eyes",
-          "code": "EY10",
-          "name": "Hypno Spirals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT10",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT06",
-          "name": "Winged Cape + Medallion"
+          "code": "EY22",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
+          "code": "OF22",
+          "name": "Quilted Coat"
         },
         {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO22",
+          "name": "Tiny Ghost"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT08",
-          "name": "Orbit Dots"
+          "category": "Motif Layout",
+          "code": "LY08",
+          "name": "Twin Sides"
         }
       ]
     },
@@ -3592,50 +3106,40 @@
       "motto": "Broadcast from the void.",
       "image": "studio/059.png",
       "modules": {
-        "head": 11,
-        "torso": 7,
-        "atmosphere": 9
+        "archetype": 23,
+        "motif": 2,
+        "layout": 7
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF11",
-          "name": "Beanie Hollow"
+          "category": "Archetype",
+          "code": "AR23",
+          "name": "Spike Armor"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD11",
-          "name": "Pom Beanie"
+          "category": "Silhouette / Headwear",
+          "code": "SH23",
+          "name": "Spiked Crest"
         },
         {
           "category": "Eyes",
-          "code": "EY11",
+          "code": "EY23",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT11",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT07",
-          "name": "Wrapped Tunic"
-        },
-        {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF23",
+          "name": "Armored Vest"
         },
         {
-          "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO02",
+          "name": "Crater Moon"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT09",
-          "name": "Falling Pixels"
+          "category": "Motif Layout",
+          "code": "LY07",
+          "name": "Twin Upper"
         }
       ]
     },
@@ -3647,60 +3151,40 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/060.png",
       "modules": {
-        "head": 12,
-        "torso": 8,
-        "atmosphere": 10
+        "archetype": 24,
+        "motif": 4,
+        "layout": 6
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF12",
-          "name": "Webbed Hollow"
+          "category": "Archetype",
+          "code": "AR24",
+          "name": "Roundglass Cardigan"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD12",
-          "name": "Webbed Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH24",
+          "name": "Round Glasses"
         },
         {
           "category": "Eyes",
-          "code": "EY12",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT12",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX12",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT08",
-          "name": "Coven Coat + Slim Scarf"
+          "code": "EY24",
+          "name": "Lens Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF24",
+          "name": "Knit Cardigan"
         },
         {
-          "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "category": "Night Motif",
+          "code": "MO04",
+          "name": "Hanging Spider"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT10",
-          "name": "Twin Moths"
-        },
-        {
-          "category": "Companion",
-          "code": "CP08",
-          "name": "Pumpkin Lantern"
+          "category": "Motif Layout",
+          "code": "LY06",
+          "name": "Lower Right"
         }
       ]
     },
@@ -3712,50 +3196,40 @@
       "motto": "Old blood, new rules.",
       "image": "studio/061.png",
       "modules": {
-        "head": 1,
-        "torso": 2,
-        "atmosphere": 1
+        "archetype": 25,
+        "motif": 6,
+        "layout": 5
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF01",
-          "name": "Raven Hollow"
+          "category": "Archetype",
+          "code": "AR25",
+          "name": "Noir Detective"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD01",
-          "name": "Raven Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH25",
+          "name": "Broad Fedora"
         },
         {
           "category": "Eyes",
-          "code": "EY01",
+          "code": "EY25",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT01",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT02",
-          "name": "High Collar + Soft Bow"
-        },
-        {
           "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
+          "code": "OF25",
+          "name": "Trench Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO06",
+          "name": "Curling Fog"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT01",
-          "name": "Clean Air"
+          "category": "Motif Layout",
+          "code": "LY05",
+          "name": "Lower Left"
         }
       ]
     },
@@ -3767,50 +3241,40 @@
       "motto": "Stay bright after dark.",
       "image": "studio/062.png",
       "modules": {
-        "head": 2,
-        "torso": 3,
-        "atmosphere": 2
+        "archetype": 26,
+        "motif": 8,
+        "layout": 4
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF02",
-          "name": "Pumpkin Glow"
+          "category": "Archetype",
+          "code": "AR26",
+          "name": "Arcade Racer"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD02",
-          "name": "Pumpkin Crown"
+          "category": "Silhouette / Headwear",
+          "code": "SH26",
+          "name": "Compact Race Helmet"
         },
         {
           "category": "Eyes",
-          "code": "EY02",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT03",
-          "name": "High Collar + Medallion"
+          "code": "EY26",
+          "name": "Full Visor Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
+          "code": "OF26",
+          "name": "Racing Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO08",
+          "name": "Perched Crow"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT02",
-          "name": "Left Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY04",
+          "name": "Middle Right"
         }
       ]
     },
@@ -3822,50 +3286,40 @@
       "motto": "Calm is a superpower.",
       "image": "studio/063.png",
       "modules": {
-        "head": 3,
-        "torso": 4,
-        "atmosphere": 3
+        "archetype": 27,
+        "motif": 10,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF03",
-          "name": "Midnight Fade"
+          "category": "Archetype",
+          "code": "AR27",
+          "name": "Deep-Sea Captain"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD03",
-          "name": "Midnight Slick"
+          "category": "Silhouette / Headwear",
+          "code": "SH27",
+          "name": "Captain Cap"
         },
         {
           "category": "Eyes",
-          "code": "EY03",
-          "name": "Shadow Fade"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT04",
-          "name": "Striped Knit + Choker"
+          "code": "EY27",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF27",
+          "name": "Heavy Pea Coat"
         },
         {
-          "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "category": "Night Motif",
+          "code": "MO10",
+          "name": "Thorn Leaves"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT03",
-          "name": "Right Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     },
@@ -3877,50 +3331,40 @@
       "motto": "The city is ours at night.",
       "image": "studio/064.png",
       "modules": {
-        "head": 4,
-        "torso": 5,
-        "atmosphere": 4
+        "archetype": 28,
+        "motif": 12,
+        "layout": 2
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF04",
-          "name": "Flame Lashes"
+          "category": "Archetype",
+          "code": "AR28",
+          "name": "Wild Inventor"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD04",
-          "name": "Living Flame"
+          "category": "Silhouette / Headwear",
+          "code": "SH28",
+          "name": "Wild Side Hair + Goggles"
         },
         {
           "category": "Eyes",
-          "code": "EY04",
-          "name": "Long Lashes"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT05",
-          "name": "Undertaker Shirt + Buttons"
+          "code": "EY28",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
+          "code": "OF28",
+          "name": "Tool Apron"
         },
         {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
+          "category": "Night Motif",
+          "code": "MO12",
+          "name": "Pumpkin Lantern"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT04",
-          "name": "Static Shards"
+          "category": "Motif Layout",
+          "code": "LY02",
+          "name": "Upper Right"
         }
       ]
     },
@@ -3932,55 +3376,40 @@
       "motto": "Broadcast from the void.",
       "image": "studio/065.png",
       "modules": {
-        "head": 5,
-        "torso": 6,
-        "atmosphere": 5
+        "archetype": 29,
+        "motif": 14,
+        "layout": 1
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF05",
-          "name": "Stitched X"
+          "category": "Archetype",
+          "code": "AR29",
+          "name": "Silent Film Star"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD05",
-          "name": "Stitched Crop"
+          "category": "Silhouette / Headwear",
+          "code": "SH29",
+          "name": "Finger-Wave Hair"
         },
         {
           "category": "Eyes",
-          "code": "EY05",
-          "name": "X Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT05",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT06",
-          "name": "Winged Cape + Medallion"
+          "code": "EY29",
+          "name": "Long Lashes"
         },
         {
           "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
+          "code": "OF29",
+          "name": "Fur Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO14",
+          "name": "Storm Cloud"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT05",
-          "name": "Night Wisps"
+          "category": "Motif Layout",
+          "code": "LY01",
+          "name": "Upper Left"
         }
       ]
     },
@@ -3992,55 +3421,40 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/066.png",
       "modules": {
-        "head": 6,
-        "torso": 7,
-        "atmosphere": 6
+        "archetype": 30,
+        "motif": 15,
+        "layout": 9
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF06",
-          "name": "Horned Anger"
+          "category": "Archetype",
+          "code": "AR30",
+          "name": "Desert Nomad"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD06",
-          "name": "Little Horns"
+          "category": "Silhouette / Headwear",
+          "code": "SH30",
+          "name": "Wrapped Goggles"
         },
         {
           "category": "Eyes",
-          "code": "EY06",
-          "name": "Angry Arches"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT06",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX06",
-          "name": "Bat Wings"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT07",
-          "name": "Wrapped Tunic"
+          "code": "EY30",
+          "name": "Goggle Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF30",
+          "name": "Desert Scarf"
         },
         {
-          "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO15",
+          "name": "Wolf Paw"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT06",
-          "name": "Spider Drop"
+          "category": "Motif Layout",
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     },
@@ -4052,55 +3466,40 @@
       "motto": "Old blood, new rules.",
       "image": "studio/067.png",
       "modules": {
-        "head": 7,
-        "torso": 8,
-        "atmosphere": 7
+        "archetype": 31,
+        "motif": 17,
+        "layout": 8
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF07",
-          "name": "Mummy Glow"
+          "category": "Archetype",
+          "code": "AR31",
+          "name": "Botanical Keeper"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD07",
-          "name": "Mummy Wraps"
+          "category": "Silhouette / Headwear",
+          "code": "SH31",
+          "name": "Leaf Crown"
         },
         {
           "category": "Eyes",
-          "code": "EY07",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT07",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT08",
-          "name": "Coven Coat + Slim Scarf"
+          "code": "EY31",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF31",
+          "name": "Work Overalls"
         },
         {
-          "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "category": "Night Motif",
+          "code": "MO17",
+          "name": "Pocket Radio"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
-        },
-        {
-          "category": "Companion",
-          "code": "CP08",
-          "name": "Pumpkin Lantern"
+          "category": "Motif Layout",
+          "code": "LY08",
+          "name": "Twin Sides"
         }
       ]
     },
@@ -4112,50 +3511,40 @@
       "motto": "Stay bright after dark.",
       "image": "studio/068.png",
       "modules": {
-        "head": 8,
-        "torso": 9,
-        "atmosphere": 8
+        "archetype": 32,
+        "motif": 19,
+        "layout": 7
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF08",
-          "name": "Coven Hollow"
+          "category": "Archetype",
+          "code": "AR32",
+          "name": "Synth Shade"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD08",
-          "name": "Coven Hat"
+          "category": "Silhouette / Headwear",
+          "code": "SH32",
+          "name": "Angular Shades"
         },
         {
           "category": "Eyes",
-          "code": "EY08",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT08",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT09",
-          "name": "Chain Crewneck + Loose Chain"
+          "code": "EY32",
+          "name": "Shade Reflection"
         },
         {
           "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
+          "code": "OF32",
+          "name": "Stage Coat"
         },
         {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
+          "category": "Night Motif",
+          "code": "MO19",
+          "name": "Coiled Snake"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT08",
-          "name": "Orbit Dots"
+          "category": "Motif Layout",
+          "code": "LY07",
+          "name": "Twin Upper"
         }
       ]
     },
@@ -4167,55 +3556,40 @@
       "motto": "Calm is a superpower.",
       "image": "studio/069.png",
       "modules": {
-        "head": 9,
-        "torso": 10,
-        "atmosphere": 9
+        "archetype": 33,
+        "motif": 21,
+        "layout": 6
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF09",
-          "name": "Spectral Hollow"
+          "category": "Archetype",
+          "code": "AR33",
+          "name": "Ice Climber"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD09",
-          "name": "Spectral Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH33",
+          "name": "Fur Climber Cap"
         },
         {
           "category": "Eyes",
-          "code": "EY09",
+          "code": "EY33",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT09",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT10",
-          "name": "Velvet Jacket + Soft Bow"
-        },
-        {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF33",
+          "name": "Padded Parka"
         },
         {
-          "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO21",
+          "name": "Ornate Key"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT09",
-          "name": "Falling Pixels"
+          "category": "Motif Layout",
+          "code": "LY06",
+          "name": "Lower Right"
         }
       ]
     },
@@ -4227,50 +3601,40 @@
       "motto": "The city is ours at night.",
       "image": "studio/070.png",
       "modules": {
-        "head": 10,
-        "torso": 11,
-        "atmosphere": 10
+        "archetype": 34,
+        "motif": 1,
+        "layout": 5
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF10",
-          "name": "Raven Hypno"
+          "category": "Archetype",
+          "code": "AR34",
+          "name": "Street Magician"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD10",
-          "name": "Raven Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH34",
+          "name": "Tall Top Hat"
         },
         {
           "category": "Eyes",
-          "code": "EY10",
-          "name": "Hypno Spirals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT10",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT11",
-          "name": "Skeleton Hoodie"
+          "code": "EY34",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF34",
+          "name": "Patterned Vest"
         },
         {
-          "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO01",
+          "name": "Crescent Moon"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT10",
-          "name": "Twin Moths"
+          "category": "Motif Layout",
+          "code": "LY05",
+          "name": "Lower Left"
         }
       ]
     },
@@ -4282,50 +3646,40 @@
       "motto": "Broadcast from the void.",
       "image": "studio/071.png",
       "modules": {
-        "head": 11,
-        "torso": 12,
-        "atmosphere": 1
+        "archetype": 35,
+        "motif": 3,
+        "layout": 4
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF11",
-          "name": "Beanie Hollow"
+          "category": "Archetype",
+          "code": "AR35",
+          "name": "Graffiti Courier"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD11",
-          "name": "Pom Beanie"
+          "category": "Silhouette / Headwear",
+          "code": "SH35",
+          "name": "Backward Cap"
         },
         {
           "category": "Eyes",
-          "code": "EY11",
+          "code": "EY35",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT11",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT12",
-          "name": "High Collar + Medallion"
-        },
-        {
           "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
+          "code": "OF35",
+          "name": "Oversized Hoodie"
         },
         {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO03",
+          "name": "Bat Trio"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT01",
-          "name": "Clean Air"
+          "category": "Motif Layout",
+          "code": "LY04",
+          "name": "Middle Right"
         }
       ]
     },
@@ -4337,55 +3691,40 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/072.png",
       "modules": {
-        "head": 12,
-        "torso": 1,
-        "atmosphere": 2
+        "archetype": 36,
+        "motif": 5,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF12",
-          "name": "Webbed Hollow"
+          "category": "Archetype",
+          "code": "AR36",
+          "name": "Chess Strategist"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD12",
-          "name": "Webbed Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH36",
+          "name": "Center-Part Hair + Glasses"
         },
         {
           "category": "Eyes",
-          "code": "EY12",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT12",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX12",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT01",
-          "name": "Skull Tux + Skull Bow"
+          "code": "EY36",
+          "name": "Lens Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF36",
+          "name": "Sharp Blazer"
         },
         {
-          "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "category": "Night Motif",
+          "code": "MO05",
+          "name": "Luna Moths"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT02",
-          "name": "Left Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     },
@@ -4397,19 +3736,19 @@
       "motto": "Old blood, new rules.",
       "image": "studio/073.png",
       "modules": {
-        "head": 1,
-        "torso": 7,
-        "atmosphere": 3
+        "archetype": 1,
+        "motif": 9,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF01",
-          "name": "Raven Hollow"
+          "category": "Archetype",
+          "code": "AR01",
+          "name": "Raven Tux"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD01",
+          "category": "Silhouette / Headwear",
+          "code": "SH01",
           "name": "Raven Wave"
         },
         {
@@ -4418,29 +3757,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT01",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT07",
-          "name": "Wrapped Tunic"
-        },
-        {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF01",
+          "name": "Skull Tux"
         },
         {
-          "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO09",
+          "name": "Mushroom Cluster"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT03",
-          "name": "Right Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     },
@@ -4452,19 +3781,19 @@
       "motto": "Stay bright after dark.",
       "image": "studio/074.png",
       "modules": {
-        "head": 2,
-        "torso": 8,
-        "atmosphere": 4
+        "archetype": 2,
+        "motif": 11,
+        "layout": 2
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF02",
-          "name": "Pumpkin Glow"
+          "category": "Archetype",
+          "code": "AR02",
+          "name": "Pumpkin Regent"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD02",
+          "category": "Silhouette / Headwear",
+          "code": "SH02",
           "name": "Pumpkin Crown"
         },
         {
@@ -4473,34 +3802,19 @@
           "name": "Soft Glow"
         },
         {
-          "category": "Mouth",
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT08",
-          "name": "Coven Coat + Slim Scarf"
-        },
-        {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF02",
+          "name": "High Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "category": "Night Motif",
+          "code": "MO11",
+          "name": "Floating Eyes"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT04",
-          "name": "Static Shards"
-        },
-        {
-          "category": "Companion",
-          "code": "CP08",
-          "name": "Pumpkin Lantern"
+          "category": "Motif Layout",
+          "code": "LY02",
+          "name": "Upper Right"
         }
       ]
     },
@@ -4512,19 +3826,19 @@
       "motto": "Calm is a superpower.",
       "image": "studio/075.png",
       "modules": {
-        "head": 3,
-        "torso": 9,
-        "atmosphere": 5
+        "archetype": 3,
+        "motif": 13,
+        "layout": 1
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF03",
-          "name": "Midnight Fade"
+          "category": "Archetype",
+          "code": "AR03",
+          "name": "Midnight Medallion"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD03",
+          "category": "Silhouette / Headwear",
+          "code": "SH03",
           "name": "Midnight Slick"
         },
         {
@@ -4533,29 +3847,19 @@
           "name": "Shadow Fade"
         },
         {
-          "category": "Mouth",
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT09",
-          "name": "Chain Crewneck + Loose Chain"
-        },
-        {
           "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
+          "code": "OF03",
+          "name": "Medallion Cape"
         },
         {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
+          "category": "Night Motif",
+          "code": "MO13",
+          "name": "Night Comet"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT05",
-          "name": "Night Wisps"
+          "category": "Motif Layout",
+          "code": "LY01",
+          "name": "Upper Left"
         }
       ]
     },
@@ -4567,19 +3871,19 @@
       "motto": "The city is ours at night.",
       "image": "studio/076.png",
       "modules": {
-        "head": 4,
-        "torso": 10,
-        "atmosphere": 6
+        "archetype": 4,
+        "motif": 14,
+        "layout": 9
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF04",
-          "name": "Flame Lashes"
+          "category": "Archetype",
+          "code": "AR04",
+          "name": "Flame Knit"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD04",
+          "category": "Silhouette / Headwear",
+          "code": "SH04",
           "name": "Living Flame"
         },
         {
@@ -4588,29 +3892,19 @@
           "name": "Long Lashes"
         },
         {
-          "category": "Mouth",
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT10",
-          "name": "Velvet Jacket + Soft Bow"
-        },
-        {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF04",
+          "name": "Striped Knit"
         },
         {
-          "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO14",
+          "name": "Storm Cloud"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT06",
-          "name": "Spider Drop"
+          "category": "Motif Layout",
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     },
@@ -4622,19 +3916,19 @@
       "motto": "Broadcast from the void.",
       "image": "studio/077.png",
       "modules": {
-        "head": 5,
-        "torso": 11,
-        "atmosphere": 7
+        "archetype": 5,
+        "motif": 16,
+        "layout": 8
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF05",
-          "name": "Stitched X"
+          "category": "Archetype",
+          "code": "AR05",
+          "name": "Stitched Undertaker"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD05",
+          "category": "Silhouette / Headwear",
+          "code": "SH05",
           "name": "Stitched Crop"
         },
         {
@@ -4643,34 +3937,19 @@
           "name": "X Glow"
         },
         {
-          "category": "Mouth",
-          "code": "MT05",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT11",
-          "name": "Skeleton Hoodie"
-        },
-        {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF05",
+          "name": "Undertaker Shirt"
         },
         {
-          "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO16",
+          "name": "Old Cassette"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "category": "Motif Layout",
+          "code": "LY08",
+          "name": "Twin Sides"
         }
       ]
     },
@@ -4682,19 +3961,19 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/078.png",
       "modules": {
-        "head": 6,
-        "torso": 12,
-        "atmosphere": 8
+        "archetype": 6,
+        "motif": 18,
+        "layout": 7
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF06",
-          "name": "Horned Anger"
+          "category": "Archetype",
+          "code": "AR06",
+          "name": "Horned Wing"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD06",
+          "category": "Silhouette / Headwear",
+          "code": "SH06",
           "name": "Little Horns"
         },
         {
@@ -4703,34 +3982,19 @@
           "name": "Angry Arches"
         },
         {
-          "category": "Mouth",
-          "code": "MT06",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX06",
-          "name": "Bat Wings"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT12",
-          "name": "High Collar + Medallion"
-        },
-        {
           "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
+          "code": "OF06",
+          "name": "Winged Cape"
         },
         {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO18",
+          "name": "Potion Bottle"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT08",
-          "name": "Orbit Dots"
+          "category": "Motif Layout",
+          "code": "LY07",
+          "name": "Twin Upper"
         }
       ]
     },
@@ -4742,19 +4006,19 @@
       "motto": "Old blood, new rules.",
       "image": "studio/079.png",
       "modules": {
-        "head": 7,
-        "torso": 1,
-        "atmosphere": 9
+        "archetype": 7,
+        "motif": 20,
+        "layout": 6
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF07",
-          "name": "Mummy Glow"
+          "category": "Archetype",
+          "code": "AR07",
+          "name": "Mummy Wrap"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD07",
+          "category": "Silhouette / Headwear",
+          "code": "SH07",
           "name": "Mummy Wraps"
         },
         {
@@ -4763,29 +4027,19 @@
           "name": "Soft Glow"
         },
         {
-          "category": "Mouth",
-          "code": "MT07",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT01",
-          "name": "Skull Tux + Skull Bow"
-        },
-        {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF07",
+          "name": "Wrapped Tunic"
         },
         {
-          "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "category": "Night Motif",
+          "code": "MO20",
+          "name": "Night Beetle"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT09",
-          "name": "Falling Pixels"
+          "category": "Motif Layout",
+          "code": "LY06",
+          "name": "Lower Right"
         }
       ]
     },
@@ -4797,19 +4051,19 @@
       "motto": "Stay bright after dark.",
       "image": "studio/080.png",
       "modules": {
-        "head": 8,
-        "torso": 2,
-        "atmosphere": 10
+        "archetype": 8,
+        "motif": 22,
+        "layout": 5
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF08",
-          "name": "Coven Hollow"
+          "category": "Archetype",
+          "code": "AR08",
+          "name": "Coven Courier"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD08",
+          "category": "Silhouette / Headwear",
+          "code": "SH08",
           "name": "Coven Hat"
         },
         {
@@ -4818,29 +4072,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT08",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT02",
-          "name": "High Collar + Soft Bow"
-        },
-        {
           "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
+          "code": "OF08",
+          "name": "Coven Coat + Lantern"
         },
         {
-          "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO22",
+          "name": "Tiny Ghost"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT10",
-          "name": "Twin Moths"
+          "category": "Motif Layout",
+          "code": "LY05",
+          "name": "Lower Left"
         }
       ]
     },
@@ -4852,19 +4096,19 @@
       "motto": "Calm is a superpower.",
       "image": "studio/081.png",
       "modules": {
-        "head": 9,
-        "torso": 3,
-        "atmosphere": 1
+        "archetype": 9,
+        "motif": 2,
+        "layout": 4
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF09",
-          "name": "Spectral Hollow"
+          "category": "Archetype",
+          "code": "AR09",
+          "name": "Spectral Chain"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD09",
+          "category": "Silhouette / Headwear",
+          "code": "SH09",
           "name": "Spectral Wave"
         },
         {
@@ -4873,34 +4117,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT09",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT03",
-          "name": "High Collar + Medallion"
-        },
-        {
           "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
+          "code": "OF09",
+          "name": "Chain Crewneck"
         },
         {
-          "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO02",
+          "name": "Crater Moon"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT01",
-          "name": "Clean Air"
+          "category": "Motif Layout",
+          "code": "LY04",
+          "name": "Middle Right"
         }
       ]
     },
@@ -4912,19 +4141,19 @@
       "motto": "The city is ours at night.",
       "image": "studio/082.png",
       "modules": {
-        "head": 10,
-        "torso": 4,
-        "atmosphere": 2
+        "archetype": 10,
+        "motif": 4,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF10",
-          "name": "Raven Hypno"
+          "category": "Archetype",
+          "code": "AR10",
+          "name": "Hypno Velvet"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD10",
+          "category": "Silhouette / Headwear",
+          "code": "SH10",
           "name": "Raven Wave"
         },
         {
@@ -4933,29 +4162,19 @@
           "name": "Hypno Spirals"
         },
         {
-          "category": "Mouth",
-          "code": "MT10",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT04",
-          "name": "Striped Knit + Choker"
-        },
-        {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF10",
+          "name": "Velvet Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "category": "Night Motif",
+          "code": "MO04",
+          "name": "Hanging Spider"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT02",
-          "name": "Left Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     },
@@ -4967,19 +4186,19 @@
       "motto": "Broadcast from the void.",
       "image": "studio/083.png",
       "modules": {
-        "head": 11,
-        "torso": 5,
-        "atmosphere": 3
+        "archetype": 11,
+        "motif": 6,
+        "layout": 2
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF11",
-          "name": "Beanie Hollow"
+          "category": "Archetype",
+          "code": "AR11",
+          "name": "Beanie Bones"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD11",
+          "category": "Silhouette / Headwear",
+          "code": "SH11",
           "name": "Pom Beanie"
         },
         {
@@ -4988,29 +4207,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT11",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT05",
-          "name": "Undertaker Shirt + Buttons"
-        },
-        {
           "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
+          "code": "OF11",
+          "name": "Skeleton Hoodie"
         },
         {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
+          "category": "Night Motif",
+          "code": "MO06",
+          "name": "Curling Fog"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT03",
-          "name": "Right Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY02",
+          "name": "Upper Right"
         }
       ]
     },
@@ -5022,19 +4231,19 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/084.png",
       "modules": {
-        "head": 12,
-        "torso": 6,
-        "atmosphere": 4
+        "archetype": 12,
+        "motif": 8,
+        "layout": 1
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF12",
-          "name": "Webbed Hollow"
+          "category": "Archetype",
+          "code": "AR12",
+          "name": "Webbed Court"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD12",
+          "category": "Silhouette / Headwear",
+          "code": "SH12",
           "name": "Webbed Wave"
         },
         {
@@ -5043,34 +4252,19 @@
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT12",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX12",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT06",
-          "name": "Winged Cape + Medallion"
-        },
-        {
           "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
+          "code": "OF12",
+          "name": "High Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO08",
+          "name": "Perched Crow"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT04",
-          "name": "Static Shards"
+          "category": "Motif Layout",
+          "code": "LY01",
+          "name": "Upper Left"
         }
       ]
     },
@@ -5082,50 +4276,40 @@
       "motto": "Old blood, new rules.",
       "image": "studio/085.png",
       "modules": {
-        "head": 1,
-        "torso": 12,
-        "atmosphere": 5
+        "archetype": 13,
+        "motif": 9,
+        "layout": 9
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF01",
-          "name": "Raven Hollow"
+          "category": "Archetype",
+          "code": "AR13",
+          "name": "Goggle Aviator"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD01",
-          "name": "Raven Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH13",
+          "name": "Flight Goggles"
         },
         {
           "category": "Eyes",
-          "code": "EY01",
+          "code": "EY13",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT01",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT12",
-          "name": "High Collar + Medallion"
-        },
-        {
           "category": "Outfit",
-          "code": "OF12",
-          "name": "High Collar"
+          "code": "OF13",
+          "name": "Fur Flight Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK12",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO09",
+          "name": "Mushroom Cluster"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT05",
-          "name": "Night Wisps"
+          "category": "Motif Layout",
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     },
@@ -5137,50 +4321,40 @@
       "motto": "Stay bright after dark.",
       "image": "studio/086.png",
       "modules": {
-        "head": 2,
-        "torso": 1,
-        "atmosphere": 6
+        "archetype": 14,
+        "motif": 11,
+        "layout": 8
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF02",
-          "name": "Pumpkin Glow"
+          "category": "Archetype",
+          "code": "AR14",
+          "name": "Neon Visor"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD02",
-          "name": "Pumpkin Crown"
+          "category": "Silhouette / Headwear",
+          "code": "SH14",
+          "name": "Retro Visor"
         },
         {
           "category": "Eyes",
-          "code": "EY02",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT01",
-          "name": "Skull Tux + Skull Bow"
+          "code": "EY14",
+          "name": "Visor Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF01",
-          "name": "Skull Tux"
+          "code": "OF14",
+          "name": "Utility Coat"
         },
         {
-          "category": "Neck",
-          "code": "NK01",
-          "name": "Skull Bow"
+          "category": "Night Motif",
+          "code": "MO11",
+          "name": "Floating Eyes"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT06",
-          "name": "Spider Drop"
+          "category": "Motif Layout",
+          "code": "LY08",
+          "name": "Twin Sides"
         }
       ]
     },
@@ -5192,50 +4366,40 @@
       "motto": "Calm is a superpower.",
       "image": "studio/087.png",
       "modules": {
-        "head": 3,
-        "torso": 2,
-        "atmosphere": 7
+        "archetype": 15,
+        "motif": 13,
+        "layout": 7
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF03",
-          "name": "Midnight Fade"
+          "category": "Archetype",
+          "code": "AR15",
+          "name": "Moth Velvet"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD03",
-          "name": "Midnight Slick"
+          "category": "Silhouette / Headwear",
+          "code": "SH15",
+          "name": "Moth Antennae"
         },
         {
           "category": "Eyes",
-          "code": "EY03",
-          "name": "Shadow Fade"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT02",
-          "name": "High Collar + Soft Bow"
+          "code": "EY15",
+          "name": "Dark Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF02",
-          "name": "High Collar"
+          "code": "OF15",
+          "name": "Velvet Cape"
         },
         {
-          "category": "Neck",
-          "code": "NK02",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO13",
+          "name": "Night Comet"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "category": "Motif Layout",
+          "code": "LY07",
+          "name": "Twin Upper"
         }
       ]
     },
@@ -5247,50 +4411,40 @@
       "motto": "The city is ours at night.",
       "image": "studio/088.png",
       "modules": {
-        "head": 4,
-        "torso": 3,
-        "atmosphere": 8
+        "archetype": 16,
+        "motif": 15,
+        "layout": 6
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF04",
-          "name": "Flame Lashes"
+          "category": "Archetype",
+          "code": "AR16",
+          "name": "Wolf Varsity"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD04",
-          "name": "Living Flame"
+          "category": "Silhouette / Headwear",
+          "code": "SH16",
+          "name": "Wolf Ears"
         },
         {
           "category": "Eyes",
-          "code": "EY04",
-          "name": "Long Lashes"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT03",
-          "name": "High Collar + Medallion"
+          "code": "EY16",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF03",
-          "name": "High Collar"
+          "code": "OF16",
+          "name": "Varsity Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK03",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO15",
+          "name": "Wolf Paw"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT08",
-          "name": "Orbit Dots"
+          "category": "Motif Layout",
+          "code": "LY06",
+          "name": "Lower Right"
         }
       ]
     },
@@ -5302,55 +4456,40 @@
       "motto": "Broadcast from the void.",
       "image": "studio/089.png",
       "modules": {
-        "head": 5,
-        "torso": 4,
-        "atmosphere": 9
+        "archetype": 17,
+        "motif": 17,
+        "layout": 5
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF05",
-          "name": "Stitched X"
+          "category": "Archetype",
+          "code": "AR17",
+          "name": "Rain Runner"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD05",
-          "name": "Stitched Crop"
+          "category": "Silhouette / Headwear",
+          "code": "SH17",
+          "name": "Deep Rain Hood"
         },
         {
           "category": "Eyes",
-          "code": "EY05",
-          "name": "X Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT05",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX05",
-          "name": "Brow Stitches"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT04",
-          "name": "Striped Knit + Choker"
+          "code": "EY17",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF04",
-          "name": "Striped Knit"
+          "code": "OF17",
+          "name": "Technical Shell"
         },
         {
-          "category": "Neck",
-          "code": "NK04",
-          "name": "Black Choker"
+          "category": "Night Motif",
+          "code": "MO17",
+          "name": "Pocket Radio"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT09",
-          "name": "Falling Pixels"
+          "category": "Motif Layout",
+          "code": "LY05",
+          "name": "Lower Left"
         }
       ]
     },
@@ -5362,55 +4501,40 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/090.png",
       "modules": {
-        "head": 6,
-        "torso": 5,
-        "atmosphere": 10
+        "archetype": 18,
+        "motif": 19,
+        "layout": 4
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF06",
-          "name": "Horned Anger"
+          "category": "Archetype",
+          "code": "AR18",
+          "name": "Geometric Bob"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD06",
-          "name": "Little Horns"
+          "category": "Silhouette / Headwear",
+          "code": "SH18",
+          "name": "Sleek Bob"
         },
         {
           "category": "Eyes",
-          "code": "EY06",
-          "name": "Angry Arches"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT06",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX06",
-          "name": "Bat Wings"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT05",
-          "name": "Undertaker Shirt + Buttons"
+          "code": "EY18",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
+          "code": "OF18",
+          "name": "Geometric Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
+          "category": "Night Motif",
+          "code": "MO19",
+          "name": "Coiled Snake"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT10",
-          "name": "Twin Moths"
+          "category": "Motif Layout",
+          "code": "LY04",
+          "name": "Middle Right"
         }
       ]
     },
@@ -5422,50 +4546,40 @@
       "motto": "Old blood, new rules.",
       "image": "studio/091.png",
       "modules": {
-        "head": 7,
-        "torso": 6,
-        "atmosphere": 1
+        "archetype": 19,
+        "motif": 21,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF07",
-          "name": "Mummy Glow"
+          "category": "Archetype",
+          "code": "AR19",
+          "name": "Bat Courier"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD07",
-          "name": "Mummy Wraps"
+          "category": "Silhouette / Headwear",
+          "code": "SH19",
+          "name": "Bat Courier Helmet"
         },
         {
           "category": "Eyes",
-          "code": "EY07",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT07",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT06",
-          "name": "Winged Cape + Medallion"
+          "code": "EY19",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
+          "code": "OF19",
+          "name": "Messenger Rig"
         },
         {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO21",
+          "name": "Ornate Key"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT01",
-          "name": "Clean Air"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     },
@@ -5477,50 +4591,40 @@
       "motto": "Stay bright after dark.",
       "image": "studio/092.png",
       "modules": {
-        "head": 8,
-        "torso": 7,
-        "atmosphere": 2
+        "archetype": 20,
+        "motif": 1,
+        "layout": 2
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF08",
-          "name": "Coven Hollow"
+          "category": "Archetype",
+          "code": "AR20",
+          "name": "Night Rider"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD08",
-          "name": "Coven Hat"
+          "category": "Silhouette / Headwear",
+          "code": "SH20",
+          "name": "High Pompadour"
         },
         {
           "category": "Eyes",
-          "code": "EY08",
+          "code": "EY20",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT08",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT07",
-          "name": "Wrapped Tunic"
-        },
-        {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF20",
+          "name": "Biker Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO01",
+          "name": "Crescent Moon"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT02",
-          "name": "Left Bat Signal"
+          "category": "Motif Layout",
+          "code": "LY02",
+          "name": "Upper Right"
         }
       ]
     },
@@ -5532,60 +4636,40 @@
       "motto": "Calm is a superpower.",
       "image": "studio/093.png",
       "modules": {
-        "head": 9,
-        "torso": 8,
-        "atmosphere": 3
+        "archetype": 21,
+        "motif": 3,
+        "layout": 1
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF09",
-          "name": "Spectral Hollow"
+          "category": "Archetype",
+          "code": "AR21",
+          "name": "Broadcast Headset"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD09",
-          "name": "Spectral Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH21",
+          "name": "Oversized Headphones"
         },
         {
           "category": "Eyes",
-          "code": "EY09",
+          "code": "EY21",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT09",
-          "name": "Tiny Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX09",
-          "name": "Smoke Halo"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT08",
-          "name": "Coven Coat + Slim Scarf"
-        },
-        {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF21",
+          "name": "Broadcast Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "category": "Night Motif",
+          "code": "MO03",
+          "name": "Bat Trio"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT03",
-          "name": "Right Bat Signal"
-        },
-        {
-          "category": "Companion",
-          "code": "CP08",
-          "name": "Pumpkin Lantern"
+          "category": "Motif Layout",
+          "code": "LY01",
+          "name": "Upper Left"
         }
       ]
     },
@@ -5597,50 +4681,40 @@
       "motto": "The city is ours at night.",
       "image": "studio/094.png",
       "modules": {
-        "head": 10,
-        "torso": 9,
-        "atmosphere": 4
+        "archetype": 22,
+        "motif": 4,
+        "layout": 9
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF10",
-          "name": "Raven Hypno"
+          "category": "Archetype",
+          "code": "AR22",
+          "name": "Quilted Moonclip"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD10",
-          "name": "Raven Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH22",
+          "name": "Moonclip Bob"
         },
         {
           "category": "Eyes",
-          "code": "EY10",
-          "name": "Hypno Spirals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT10",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT09",
-          "name": "Chain Crewneck + Loose Chain"
+          "code": "EY22",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF09",
-          "name": "Chain Crewneck"
+          "code": "OF22",
+          "name": "Quilted Coat"
         },
         {
-          "category": "Neck",
-          "code": "NK09",
-          "name": "Loose Chain"
+          "category": "Night Motif",
+          "code": "MO04",
+          "name": "Hanging Spider"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT04",
-          "name": "Static Shards"
+          "category": "Motif Layout",
+          "code": "LY09",
+          "name": "Diagonal Pair"
         }
       ]
     },
@@ -5652,50 +4726,40 @@
       "motto": "Broadcast from the void.",
       "image": "studio/095.png",
       "modules": {
-        "head": 11,
-        "torso": 10,
-        "atmosphere": 5
+        "archetype": 23,
+        "motif": 6,
+        "layout": 8
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF11",
-          "name": "Beanie Hollow"
+          "category": "Archetype",
+          "code": "AR23",
+          "name": "Spike Armor"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD11",
-          "name": "Pom Beanie"
+          "category": "Silhouette / Headwear",
+          "code": "SH23",
+          "name": "Spiked Crest"
         },
         {
           "category": "Eyes",
-          "code": "EY11",
+          "code": "EY23",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT11",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT10",
-          "name": "Velvet Jacket + Soft Bow"
-        },
-        {
           "category": "Outfit",
-          "code": "OF10",
-          "name": "Velvet Jacket"
+          "code": "OF23",
+          "name": "Armored Vest"
         },
         {
-          "category": "Neck",
-          "code": "NK10",
-          "name": "Soft Bow"
+          "category": "Night Motif",
+          "code": "MO06",
+          "name": "Curling Fog"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT05",
-          "name": "Night Wisps"
+          "category": "Motif Layout",
+          "code": "LY08",
+          "name": "Twin Sides"
         }
       ]
     },
@@ -5707,55 +4771,40 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/096.png",
       "modules": {
-        "head": 12,
-        "torso": 11,
-        "atmosphere": 7
+        "archetype": 24,
+        "motif": 8,
+        "layout": 7
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF12",
-          "name": "Webbed Hollow"
+          "category": "Archetype",
+          "code": "AR24",
+          "name": "Roundglass Cardigan"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD12",
-          "name": "Webbed Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH24",
+          "name": "Round Glasses"
         },
         {
           "category": "Eyes",
-          "code": "EY12",
-          "name": "Hollow Ovals"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT12",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Head Extra",
-          "code": "HX12",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT11",
-          "name": "Skeleton Hoodie"
+          "code": "EY24",
+          "name": "Lens Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF11",
-          "name": "Skeleton Hoodie"
+          "code": "OF24",
+          "name": "Knit Cardigan"
         },
         {
-          "category": "Neck",
-          "code": "NK11",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO08",
+          "name": "Perched Crow"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "category": "Motif Layout",
+          "code": "LY07",
+          "name": "Twin Upper"
         }
       ]
     },
@@ -5767,50 +4816,40 @@
       "motto": "Old blood, new rules.",
       "image": "studio/097.png",
       "modules": {
-        "head": 1,
-        "torso": 5,
-        "atmosphere": 7
+        "archetype": 25,
+        "motif": 10,
+        "layout": 6
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF01",
-          "name": "Raven Hollow"
+          "category": "Archetype",
+          "code": "AR25",
+          "name": "Noir Detective"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD01",
-          "name": "Raven Wave"
+          "category": "Silhouette / Headwear",
+          "code": "SH25",
+          "name": "Broad Fedora"
         },
         {
           "category": "Eyes",
-          "code": "EY01",
+          "code": "EY25",
           "name": "Hollow Ovals"
         },
         {
-          "category": "Mouth",
-          "code": "MT01",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT05",
-          "name": "Undertaker Shirt + Buttons"
-        },
-        {
           "category": "Outfit",
-          "code": "OF05",
-          "name": "Undertaker Shirt"
+          "code": "OF25",
+          "name": "Trench Collar"
         },
         {
-          "category": "Neck",
-          "code": "NK05",
-          "name": "Double Buttons"
+          "category": "Night Motif",
+          "code": "MO10",
+          "name": "Thorn Leaves"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT07",
-          "name": "Comet Sparks"
+          "category": "Motif Layout",
+          "code": "LY06",
+          "name": "Lower Right"
         }
       ]
     },
@@ -5822,50 +4861,40 @@
       "motto": "Stay bright after dark.",
       "image": "studio/098.png",
       "modules": {
-        "head": 2,
-        "torso": 6,
-        "atmosphere": 8
+        "archetype": 26,
+        "motif": 12,
+        "layout": 5
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF02",
-          "name": "Pumpkin Glow"
+          "category": "Archetype",
+          "code": "AR26",
+          "name": "Arcade Racer"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD02",
-          "name": "Pumpkin Crown"
+          "category": "Silhouette / Headwear",
+          "code": "SH26",
+          "name": "Compact Race Helmet"
         },
         {
           "category": "Eyes",
-          "code": "EY02",
-          "name": "Soft Glow"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT02",
-          "name": "Jagged Grin"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT06",
-          "name": "Winged Cape + Medallion"
+          "code": "EY26",
+          "name": "Full Visor Glow"
         },
         {
           "category": "Outfit",
-          "code": "OF06",
-          "name": "Winged Cape"
+          "code": "OF26",
+          "name": "Racing Jacket"
         },
         {
-          "category": "Neck",
-          "code": "NK06",
-          "name": "Round Medallion"
+          "category": "Night Motif",
+          "code": "MO12",
+          "name": "Pumpkin Lantern"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT08",
-          "name": "Orbit Dots"
+          "category": "Motif Layout",
+          "code": "LY05",
+          "name": "Lower Left"
         }
       ]
     },
@@ -5877,50 +4906,40 @@
       "motto": "Calm is a superpower.",
       "image": "studio/099.png",
       "modules": {
-        "head": 3,
-        "torso": 7,
-        "atmosphere": 9
+        "archetype": 27,
+        "motif": 14,
+        "layout": 4
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF03",
-          "name": "Midnight Fade"
+          "category": "Archetype",
+          "code": "AR27",
+          "name": "Deep-Sea Captain"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD03",
-          "name": "Midnight Slick"
+          "category": "Silhouette / Headwear",
+          "code": "SH27",
+          "name": "Captain Cap"
         },
         {
           "category": "Eyes",
-          "code": "EY03",
-          "name": "Shadow Fade"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT03",
-          "name": "Twin Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT07",
-          "name": "Wrapped Tunic"
+          "code": "EY27",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF07",
-          "name": "Wrapped Tunic"
+          "code": "OF27",
+          "name": "Heavy Pea Coat"
         },
         {
-          "category": "Neck",
-          "code": "NK07",
-          "name": "No Neckpiece"
+          "category": "Night Motif",
+          "code": "MO14",
+          "name": "Storm Cloud"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT09",
-          "name": "Falling Pixels"
+          "category": "Motif Layout",
+          "code": "LY04",
+          "name": "Middle Right"
         }
       ]
     },
@@ -5932,55 +4951,40 @@
       "motto": "The city is ours at night.",
       "image": "studio/100.png",
       "modules": {
-        "head": 4,
-        "torso": 8,
-        "atmosphere": 10
+        "archetype": 28,
+        "motif": 16,
+        "layout": 3
       },
       "traits": [
         {
-          "category": "Head / Face",
-          "code": "HF04",
-          "name": "Flame Lashes"
+          "category": "Archetype",
+          "code": "AR28",
+          "name": "Wild Inventor"
         },
         {
-          "category": "Hair / Headwear",
-          "code": "HD04",
-          "name": "Living Flame"
+          "category": "Silhouette / Headwear",
+          "code": "SH28",
+          "name": "Wild Side Hair + Goggles"
         },
         {
           "category": "Eyes",
-          "code": "EY04",
-          "name": "Long Lashes"
-        },
-        {
-          "category": "Mouth",
-          "code": "MT04",
-          "name": "Crooked Fangs"
-        },
-        {
-          "category": "Outfit / Neck",
-          "code": "OT08",
-          "name": "Coven Coat + Slim Scarf"
+          "code": "EY28",
+          "name": "Hollow Ovals"
         },
         {
           "category": "Outfit",
-          "code": "OF08",
-          "name": "Coven Coat"
+          "code": "OF28",
+          "name": "Tool Apron"
         },
         {
-          "category": "Neck",
-          "code": "NK08",
-          "name": "Slim Scarf"
+          "category": "Night Motif",
+          "code": "MO16",
+          "name": "Old Cassette"
         },
         {
-          "category": "Atmosphere",
-          "code": "AT10",
-          "name": "Twin Moths"
-        },
-        {
-          "category": "Companion",
-          "code": "CP08",
-          "name": "Pumpkin Lantern"
+          "category": "Motif Layout",
+          "code": "LY03",
+          "name": "Middle Left"
         }
       ]
     }

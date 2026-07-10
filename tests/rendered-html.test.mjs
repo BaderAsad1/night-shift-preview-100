@@ -20,7 +20,7 @@ test("renders the Night Shift preview gallery", async () => {
   assert.match(html, /Night Shift Society — Preview 100/);
   assert.match(html, /MEET THE/);
   assert.match(html, /REVIEW THE BATCH/);
-  assert.match(html, /RELIGIOUS REFERENCES/);
+  assert.match(html, /VALID COMBINATIONS/);
 });
 
 test("ships 100 unique character records", async () => {
@@ -54,13 +54,17 @@ test("ships both one-bit comparison sets and static gallery", async () => {
   assert.equal(studioManifest.count, 100);
   assert.equal(new Set(studioManifest.characters.map(character => character.id)).size, 100);
   assert.equal(new Set(studioManifest.characters.map(character => JSON.stringify(character.traits))).size, 100);
-  assert.equal(studioManifest.traitLibrary.moduleCount, 34);
-  assert.equal(studioManifest.traitLibrary.possibleCorePairings, 144);
-  assert.equal(studioManifest.traitLibrary.possibleCombinations, 1440);
-  assert.equal(new Set(studioManifest.characters.map(character => `${character.modules.head}-${character.modules.torso}`)).size, 100);
-  assert.equal(new Set(studioManifest.characters.map(character => character.modules.atmosphere)).size, 10);
+  assert.equal(studioManifest.traitLibrary.moduleCount, 67);
+  assert.equal(studioManifest.traitLibrary.collectionTarget, 6666);
+  assert.equal(studioManifest.traitLibrary.possibleCombinations, 7128);
+  assert.equal(studioManifest.traitLibrary.reserveCombinations, 462);
+  assert.equal(new Set(studioManifest.characters.map(character => `${character.modules.archetype}-${character.modules.motif}-${character.modules.layout}`)).size, 100);
+  assert.equal(new Set(studioManifest.characters.map(character => character.modules.archetype)).size, 36);
+  assert.equal(new Set(studioManifest.characters.map(character => character.modules.motif)).size, 22);
+  assert.equal(new Set(studioManifest.characters.map(character => character.modules.layout)).size, 9);
   const traitNames = studioManifest.characters.flatMap(character => character.traits.map(trait => trait.name.toLowerCase()));
   assert.equal(traitNames.some(name => /cross|crucifix|religious|pentagram/.test(name)), false);
+  assert.equal(traitNames.some(name => /grid|chart|scan line|checker|waveform|skyline/.test(name)), false);
   assert.match(docsHtml, /SELECT RENDER STYLE/);
   assert.match(docsJs, /1-BIT BLACK/);
   assert.match(docsJs, /NEON NOCTURNE/);
