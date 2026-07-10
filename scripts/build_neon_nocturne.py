@@ -368,7 +368,7 @@ def apply_spectral_flame_color(portrait: Image.Image, archetype_index: int) -> I
 
 
 def color_living_flame_fragments(portrait: Image.Image, archetype_index: int) -> Image.Image:
-    """Fill AR04's two detached left flame bodies without touching the ear."""
+    """Fill every AR04 flame body, including the connected temple wedges."""
     if archetype_index != 3:
         return portrait
 
@@ -402,8 +402,30 @@ def color_living_flame_fragments(portrait: Image.Image, archetype_index: int) ->
             interior = component_mask.filter(ImageFilter.MinFilter(5))
             fragment_mask = ImageChops.lighter(fragment_mask, interior)
 
+    # The two temple wedges touch the face silhouette, so connected-component
+    # selection cannot distinguish them from the character. Their regions are
+    # deliberately bounded above the ear and outside the eyebrows. Intersecting
+    # the polygons with opaque ink, then insetting one pixel, keeps the original
+    # crisp black perimeter while replacing each solid black hair body.
+    temple_regions = Image.new("L", portrait.size, 0)
+    temple_draw = ImageDraw.Draw(temple_regions)
+    temple_draw.polygon(
+        ((234, 470), (258, 458), (276, 478), (276, 630),
+         (250, 640), (229, 620), (229, 588), (245, 570), (234, 525)),
+        fill=255,
+    )
+    temple_draw.polygon(
+        ((724, 500), (801, 500), (799, 548), (779, 570),
+         (756, 582), (735, 564), (724, 528)),
+        fill=255,
+    )
+    solid_ink = portrait.getchannel("A").point(lambda value: 255 if value == 255 else 0)
+    temple_bodies = ImageChops.multiply(solid_ink, temple_regions)
+    temple_bodies = temple_bodies.filter(ImageFilter.MinFilter(3))
+    flame_mask = ImageChops.lighter(fragment_mask, temple_bodies)
+
     yellow = Image.new("RGBA", portrait.size, (*TRAIT_YELLOW, 0))
-    yellow.putalpha(fragment_mask)
+    yellow.putalpha(flame_mask)
     portrait.alpha_composite(yellow)
     return portrait
 
@@ -480,8 +502,9 @@ def validate_portrait_trait(portrait: Image.Image, archetype_index: int) -> None
         )
     if archetype_index == 3:
         for label, box, minimum_ink in (
-            ("eyebrows", (450, 450, 760, 580), 5_000),
-            ("ear", (220, 540, 440, 770), 5_000),
+            ("left eyebrow", (450, 480, 590, 570), 1_200),
+            ("right eyebrow", (600, 480, 725, 570), 1_400),
+            ("ear", (275, 570, 440, 770), 2_700),
         ):
             ink_count = sum(
                 pixel[:3] == INK and pixel[3] == 255
@@ -490,6 +513,18 @@ def validate_portrait_trait(portrait: Image.Image, archetype_index: int) -> None
             if ink_count < minimum_ink:
                 raise ValueError(
                     f"AR04 {label} ink was contaminated by flame color: {ink_count} pixels"
+                )
+        for label, box, minimum_yellow in (
+            ("left temple flame", (225, 470, 280, 640), 3_000),
+            ("right temple flame", (720, 495, 805, 590), 3_500),
+        ):
+            region_yellow = sum(
+                pixel[:3] == TRAIT_YELLOW and pixel[3] == 255
+                for pixel in portrait.crop(box).getdata()
+            )
+            if region_yellow < minimum_yellow:
+                raise ValueError(
+                    f"AR04 {label} is not fully colored: {region_yellow} yellow pixels"
                 )
 
 
