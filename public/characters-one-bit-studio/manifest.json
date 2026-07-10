@@ -12,6 +12,7 @@
     ],
     "palette": {
       "ink": "#020102",
+      "traitYellow": "#fdf423",
       "presentationLime": "#d0f708"
     },
     "rendering": {
@@ -23,6 +24,7 @@
       "Complete portraits are never split into head or torso layers",
       "Only curated hand-drawn night motifs are used",
       "Motifs cannot erase, mask, or overpaint portrait pixels",
+      "Every eye interior and Living Flame interior uses #fdf423",
       "Motif library is limited to nature, nocturnal objects, and creatures",
       "No text, logo, signature, or watermark"
     ],

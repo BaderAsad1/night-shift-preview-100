@@ -15,7 +15,7 @@ import itertools
 import json
 from pathlib import Path
 
-from PIL import Image, ImageChops, ImageFilter, ImageOps
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,6 +27,7 @@ PORTRAIT_SOURCES = [
 MOTIF_SOURCE = ROOT / "reference" / "neon-nocturne-motifs.png"
 INK = (2, 1, 2)
 LIME = "#d0f708"
+TRAIT_YELLOW = (253, 244, 35)
 
 HOUSES = [
     {"name": "Velvet Court", "accent": "#ff405b", "motto": "Old blood, new rules."},
@@ -75,6 +76,48 @@ ARCHETYPES = [
     ("Street Magician", "Tall Top Hat", "Hollow Ovals", "Patterned Vest"),
     ("Graffiti Courier", "Backward Cap", "Hollow Ovals", "Oversized Hoodie"),
     ("Chess Strategist", "Center-Part Hair + Glasses", "Lens Glow", "Sharp Blazer"),
+]
+
+# Two tight eye-interior regions for each complete portrait, in final 1024px
+# coordinates. The fill routine only colors enclosed negative space inside these
+# regions, preserving every black outline, lash, spiral, pupil, and reflection.
+EYE_BOXES = [
+    ((470, 420, 610, 615), (650, 420, 790, 615)),
+    ((420, 430, 605, 610), (620, 430, 790, 610)),
+    ((460, 510, 625, 640), (655, 510, 805, 640)),
+    ((455, 500, 610, 700), (620, 500, 750, 700)),
+    ((485, 420, 635, 585), (690, 420, 810, 585)),
+    ((450, 530, 620, 700), (630, 530, 770, 700)),
+    ((475, 420, 635, 620), (660, 420, 820, 620)),
+    ((490, 480, 650, 680), (670, 480, 810, 680)),
+    ((480, 430, 630, 640), (640, 430, 770, 640)),
+    ((420, 370, 600, 590), (620, 370, 750, 590)),
+    ((480, 430, 650, 640), (660, 430, 800, 640)),
+    ((485, 410, 650, 620), (675, 410, 815, 620)),
+    ((470, 420, 620, 620), (635, 420, 765, 620)),
+    ((450, 440, 630, 550), (640, 440, 790, 550)),
+    ((450, 420, 595, 600), (610, 420, 735, 600)),
+    ((490, 460, 635, 660), (640, 460, 765, 660)),
+    ((460, 360, 625, 560), (620, 360, 760, 560)),
+    ((470, 410, 620, 590), (645, 410, 760, 590)),
+    ((480, 405, 620, 580), (635, 410, 750, 580)),
+    ((470, 430, 610, 620), (630, 430, 750, 620)),
+    ((485, 390, 630, 570), (650, 395, 775, 570)),
+    ((490, 410, 630, 590), (650, 410, 760, 590)),
+    ((485, 430, 615, 610), (640, 430, 750, 610)),
+    ((470, 400, 625, 575), (645, 400, 785, 575)),
+    ((430, 450, 565, 630), (585, 450, 710, 630)),
+    ((520, 410, 680, 625), (690, 410, 825, 625)),
+    ((450, 440, 595, 630), (615, 440, 735, 630)),
+    ((460, 420, 610, 610), (630, 420, 750, 610)),
+    ((460, 450, 625, 620), (650, 450, 780, 620)),
+    ((450, 390, 610, 570), (620, 390, 750, 570)),
+    ((460, 440, 610, 630), (630, 440, 750, 630)),
+    ((430, 450, 625, 625), (635, 450, 800, 625)),
+    ((460, 400, 620, 590), (630, 400, 750, 590)),
+    ((405, 450, 550, 630), (560, 450, 680, 630)),
+    ((450, 380, 610, 570), (625, 380, 755, 570)),
+    ((450, 390, 600, 560), (625, 390, 745, 560)),
 ]
 
 MOTIFS = [
@@ -214,6 +257,79 @@ def clean_portrait_footer(image: Image.Image, archetype_index: int) -> Image.Ima
     return image
 
 
+def eye_interior_mask(portrait: Image.Image, archetype_index: int) -> Image.Image:
+    """Find only the enclosed negative space within each portrait's two eyes."""
+    closed_ink = portrait.getchannel("A").point(
+        lambda value: 255 if value > 24 else 0
+    ).filter(ImageFilter.MaxFilter(17))
+    source = closed_ink.load()
+    mask = Image.new("L", portrait.size, 0)
+    target = mask.load()
+
+    for x0, y0, x1, y1 in EYE_BOXES[archetype_index]:
+        seen = set()
+        for y in range(y0, y1):
+            for x in range(x0, x1):
+                if source[x, y] or (x, y) in seen:
+                    continue
+                queue = deque([(x, y)])
+                seen.add((x, y))
+                component = []
+                touches_edge = False
+                while queue:
+                    cx, cy = queue.popleft()
+                    component.append((cx, cy))
+                    touches_edge |= cx in (x0, x1 - 1) or cy in (y0, y1 - 1)
+                    for nx, ny in ((cx - 1, cy), (cx + 1, cy), (cx, cy - 1), (cx, cy + 1)):
+                        if (x0 <= nx < x1 and y0 <= ny < y1 and not source[nx, ny]
+                                and (nx, ny) not in seen):
+                            seen.add((nx, ny))
+                            queue.append((nx, ny))
+                if not touches_edge and len(component) >= 300:
+                    for px, py in component:
+                        target[px, py] = 255
+
+    # The Hypno Spiral linework is intentionally open. Solid yellow discs sit
+    # behind the black spirals so every gap inside the two eyes gets the same fill.
+    if archetype_index == 9:
+        draw = ImageDraw.Draw(mask)
+        draw.ellipse((442, 390, 578, 568), fill=255)
+        draw.ellipse((638, 400, 728, 570), fill=255)
+    elif archetype_index == 31:
+        # The two angular shade reflections are open to the lens edge. These
+        # lens-shaped underlays color both reflections while the opaque black
+        # glasses continue to mask everything else.
+        draw = ImageDraw.Draw(mask)
+        draw.polygon(((430, 450), (625, 450), (602, 610), (458, 610)), fill=255)
+        draw.polygon(((635, 450), (800, 450), (776, 600), (654, 600)), fill=255)
+    return mask
+
+
+def flame_interior_mask(portrait: Image.Image, archetype_index: int) -> Image.Image:
+    """Return the inset body of the Living Flame silhouette, keeping a black rim."""
+    mask = Image.new("L", portrait.size, 0)
+    if archetype_index != 3:
+        return mask
+    solid_ink = portrait.getchannel("A").point(lambda value: 255 if value > 90 else 0)
+    inset = solid_ink.filter(ImageFilter.MinFilter(9))
+    flame_region = Image.new("L", portrait.size, 0)
+    ImageDraw.Draw(flame_region).rectangle((300, 70, 850, 500), fill=255)
+    return ImageChops.multiply(inset, flame_region)
+
+
+def apply_trait_color(portrait: Image.Image, archetype_index: int) -> Image.Image:
+    """Apply exact yellow to eyes and flame interiors without altering black ink."""
+    yellow = Image.new("RGBA", portrait.size, (*TRAIT_YELLOW, 0))
+    yellow.putalpha(eye_interior_mask(portrait, archetype_index))
+    colored = yellow
+    colored.alpha_composite(portrait)
+
+    flame = Image.new("RGBA", portrait.size, (*TRAIT_YELLOW, 0))
+    flame.putalpha(flame_interior_mask(portrait, archetype_index))
+    colored.alpha_composite(flame)
+    return colored
+
+
 def extract_motif(cell: Image.Image) -> Image.Image:
     return remove_tiny_fragments(alpha_art(lime_to_alpha(cell), 104, 104, (112, 112), 108), maximum_pixels=50)
 
@@ -279,7 +395,10 @@ def main() -> None:
         portraits.extend(extract_portrait(cell) for cell in portrait_cells(Image.open(source)))
     if len(portraits) != len(ARCHETYPES):
         raise ValueError(f"Expected {len(ARCHETYPES)} portraits, found {len(portraits)}")
-    portraits = [clean_portrait_footer(portrait, index) for index, portrait in enumerate(portraits)]
+    portraits = [
+        apply_trait_color(clean_portrait_footer(portrait, index), index)
+        for index, portrait in enumerate(portraits)
+    ]
     mattes = [protection_matte(portrait) for portrait in portraits]
 
     source_cells = motif_cells(Image.open(MOTIF_SOURCE))
@@ -328,7 +447,7 @@ def main() -> None:
     library = {
         "name": "Neon Nocturne — Complete Archetype System",
         "sources": [source.name for source in PORTRAIT_SOURCES] + [MOTIF_SOURCE.name],
-        "palette": {"ink": "#020102", "presentationLime": LIME},
+        "palette": {"ink": "#020102", "traitYellow": "#fdf423", "presentationLime": LIME},
         "rendering": {
             "output": "1024x1024 RGBA PNG",
             "architecture": "Complete portrait plus curated illustrated motif",
@@ -338,6 +457,7 @@ def main() -> None:
             "Complete portraits are never split into head or torso layers",
             "Only curated hand-drawn night motifs are used",
             "Motifs cannot erase, mask, or overpaint portrait pixels",
+            "Every eye interior and Living Flame interior uses #fdf423",
             "Motif library is limited to nature, nocturnal objects, and creatures",
             "No text, logo, signature, or watermark",
         ],

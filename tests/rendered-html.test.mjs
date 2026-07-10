@@ -58,6 +58,7 @@ test("ships both one-bit comparison sets and static gallery", async () => {
   assert.equal(studioManifest.traitLibrary.collectionTarget, 6666);
   assert.equal(studioManifest.traitLibrary.possibleCombinations, 7128);
   assert.equal(studioManifest.traitLibrary.reserveCombinations, 462);
+  assert.equal(studioManifest.traitLibrary.palette.traitYellow, "#fdf423");
   assert.equal(new Set(studioManifest.characters.map(character => `${character.modules.archetype}-${character.modules.motif}-${character.modules.layout}`)).size, 100);
   assert.equal(new Set(studioManifest.characters.map(character => character.modules.archetype)).size, 36);
   assert.equal(new Set(studioManifest.characters.map(character => character.modules.motif)).size, 22);
