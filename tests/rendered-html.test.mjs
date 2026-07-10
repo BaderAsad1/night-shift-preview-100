@@ -36,22 +36,29 @@ test("ships 100 unique character records", async () => {
 
 test("ships both one-bit comparison sets and static gallery", async () => {
   const oneBitRoot = new URL("../public/characters-one-bit/", import.meta.url);
-  const blockRoot = new URL("../public/characters-one-bit-block/", import.meta.url);
+  const studioRoot = new URL("../public/characters-one-bit-studio/", import.meta.url);
   const docsRoot = new URL("../docs/", import.meta.url);
-  const docsBlockRoot = new URL("block/", docsRoot);
-  const [oneBitFiles, blockFiles, docsBlockFiles, docsHtml, docsJs] = await Promise.all([
+  const docsStudioRoot = new URL("studio/", docsRoot);
+  const [oneBitFiles, studioFiles, docsStudioFiles, studioManifestText, docsHtml, docsJs] = await Promise.all([
     readdir(oneBitRoot),
-    readdir(blockRoot),
-    readdir(docsBlockRoot),
+    readdir(studioRoot),
+    readdir(docsStudioRoot),
+    readFile(new URL("manifest.json", studioRoot), "utf8"),
     readFile(new URL("index.html", docsRoot), "utf8"),
     readFile(new URL("app.js", docsRoot), "utf8"),
   ]);
+  const studioManifest = JSON.parse(studioManifestText);
   assert.equal(oneBitFiles.filter((file) => /^\d{3}\.png$/.test(file)).length, 100);
-  assert.equal(blockFiles.filter((file) => /^\d{3}\.png$/.test(file)).length, 100);
-  assert.equal(docsBlockFiles.filter((file) => /^\d{3}\.png$/.test(file)).length, 100);
+  assert.equal(studioFiles.filter((file) => /^\d{3}\.png$/.test(file)).length, 100);
+  assert.equal(docsStudioFiles.filter((file) => /^\d{3}\.png$/.test(file)).length, 100);
+  assert.equal(studioManifest.count, 100);
+  assert.equal(new Set(studioManifest.characters.map(character => character.id)).size, 100);
+  assert.equal(new Set(studioManifest.characters.map(character => JSON.stringify(character.traits))).size, 100);
+  const traitNames = studioManifest.characters.flatMap(character => character.traits.map(trait => trait.name.toLowerCase()));
+  assert.equal(traitNames.some(name => /cross|crucifix|religious|pentagram/.test(name)), false);
   assert.match(docsHtml, /SELECT RENDER STYLE/);
   assert.match(docsJs, /1-BIT BLACK/);
-  assert.match(docsJs, /1-BIT BLOCK/);
+  assert.match(docsJs, /NEON NOCTURNE/);
   assert.match(docsJs, /one-bit/);
-  assert.match(docsJs, /folder: "block"/);
+  assert.match(docsJs, /folder: "studio"/);
 });

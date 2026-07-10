@@ -1,9 +1,9 @@
-const state = { manifest: null, house: "All Houses", query: "", selected: null, mode: "color" };
+const state = { manifest: null, studioManifest: null, house: "All Houses", query: "", selected: null, mode: "color" };
 
 const modes = {
   color: { label: "8-BIT COLOR", alt: "8-bit color", folder: "characters" },
   "one-bit": { label: "1-BIT BLACK", alt: "one-bit black", folder: "one-bit" },
-  block: { label: "1-BIT BLOCK", alt: "chunky one-bit black", folder: "block" },
+  studio: { label: "NEON NOCTURNE", alt: "Neon Nocturne one-bit studio", folder: "studio" },
 };
 
 const gallery = document.querySelector("#gallery");
@@ -15,12 +15,18 @@ const modal = document.querySelector("#modal");
 
 function padded(id) { return String(id).padStart(3, "0"); }
 function imageSource(id) { return `${modes[state.mode].folder}/${padded(id)}.png`; }
+function traitsFor(character) {
+  if (state.mode === "studio" && state.studioManifest) {
+    return state.studioManifest.characters[character.id - 1].traits;
+  }
+  return character.traits;
+}
 
 function matches(character) {
   if (state.house !== "All Houses" && character.house !== state.house) return false;
   const q = state.query.trim().toLowerCase();
   if (!q) return true;
-  const text = [character.name, character.house, character.id, ...character.traits.flatMap(t => [t.name, t.code, t.category])].join(" ").toLowerCase();
+  const text = [character.name, character.house, character.id, ...traitsFor(character).flatMap(t => [t.name, t.code, t.category])].join(" ").toLowerCase();
   return text.includes(q);
 }
 
@@ -87,7 +93,12 @@ function setMode(mode) {
     const art = document.querySelector("#detail-art");
     art.src = imageSource(state.selected.id);
     art.alt = `${state.selected.name} — ${modes[mode].alt}`;
+    renderTraitList(state.selected);
   }
+}
+
+function renderTraitList(character) {
+  document.querySelector("#trait-list").innerHTML = traitsFor(character).map(trait => `<div><span>${trait.category}</span><strong>${trait.name}</strong><code>${trait.code}</code></div>`).join("");
 }
 
 function openCharacter(character) {
@@ -100,7 +111,7 @@ function openCharacter(character) {
   const art = document.querySelector("#detail-art");
   art.src = imageSource(character.id);
   art.alt = `${character.name} — ${modes[state.mode].alt}`;
-  document.querySelector("#trait-list").innerHTML = character.traits.map(trait => `<div><span>${trait.category}</span><strong>${trait.name}</strong><code>${trait.code}</code></div>`).join("");
+  renderTraitList(character);
   modal.hidden = false;
   document.body.style.overflow = "hidden";
   document.querySelector("#close").focus();
@@ -118,15 +129,23 @@ document.addEventListener("keydown", event => { if (event.key === "Escape" && !m
 search.addEventListener("input", event => { state.query = event.target.value; renderGallery(); });
 document.querySelector("#copy").addEventListener("click", async event => {
   const character = state.selected;
-  const traits = character.traits.map(trait => `${trait.category}: ${trait.name}`).join("; ");
+  const traits = traitsFor(character).map(trait => `${trait.category}: ${trait.name}`).join("; ");
   await navigator.clipboard.writeText(`${character.name} — ${character.house}\n${traits}\nReview: `);
   event.currentTarget.textContent = "COPIED";
   setTimeout(() => { event.currentTarget.textContent = "COPY REVIEW NOTE"; }, 1500);
 });
 
-fetch("characters/manifest.json")
-  .then(response => { if (!response.ok) throw new Error("Manifest unavailable"); return response.json(); })
-  .then(manifest => { state.manifest = manifest; document.body.dataset.mode = state.mode; renderStyleSwitch(); renderHero(); renderFilters(); renderGallery(); })
+Promise.all([fetch("characters/manifest.json"), fetch("studio/manifest.json")])
+  .then(async responses => {
+    if (responses.some(response => !response.ok)) throw new Error("Manifest unavailable");
+    return Promise.all(responses.map(response => response.json()));
+  })
+  .then(([manifest, studioManifest]) => {
+    state.manifest = manifest;
+    state.studioManifest = studioManifest;
+    document.body.dataset.mode = state.mode;
+    renderStyleSwitch(); renderHero(); renderFilters(); renderGallery();
+  })
   .catch(() => {
     gallery.innerHTML = '<div class="empty-state">The gallery could not load. Please refresh the page.</div>';
   });

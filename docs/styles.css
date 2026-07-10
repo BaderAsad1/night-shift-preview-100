@@ -108,13 +108,13 @@ body[data-mode="one-bit"] .image-well { background-image: linear-gradient(rgba(0
 body[data-mode="one-bit"] .stack-card { border-color: #80776b; }
 body[data-mode="one-bit"] .detail-image > span { color: #0c0910; }
 
-body[data-mode="block"] .image-well,
-body[data-mode="block"] .stack-card,
-body[data-mode="block"] .detail-image { background: #caff00; }
-body[data-mode="block"] .stack-card { border-color: #91b500; }
-body[data-mode="block"] .stack-card span,
-body[data-mode="block"] .detail-image > span { color: #0c0910; }
-body[data-mode="block"] .style-switch button.active { background: #caff00; }
+body[data-mode="studio"] .image-well,
+body[data-mode="studio"] .stack-card,
+body[data-mode="studio"] .detail-image { background: #d0f708; }
+body[data-mode="studio"] .stack-card { border-color: #91a900; }
+body[data-mode="studio"] .stack-card span,
+body[data-mode="studio"] .detail-image > span { color: #0c0910; }
+body[data-mode="studio"] .style-switch button.active { background: #d0f708; }
 
 @media (max-width: 1050px) {
   .hero { grid-template-columns: 1fr; padding-top: 70px; }
