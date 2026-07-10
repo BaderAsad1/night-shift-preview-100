@@ -292,6 +292,70 @@ def sharpen_portrait_ink(portrait: Image.Image) -> Image.Image:
     return sharp
 
 
+def apply_spectral_flame_color(portrait: Image.Image, archetype_index: int) -> Image.Image:
+    """Color AR09's disconnected spectral-flame stroke at the source level."""
+    if archetype_index != 8:
+        return portrait
+
+    pixels = portrait.load()
+    ink_pixels = {
+        (x, y)
+        for y in range(portrait.height)
+        for x in range(portrait.width)
+        if pixels[x, y][3] == 255 and pixels[x, y][:3] == INK
+    }
+    components: list[list[tuple[int, int]]] = []
+    while ink_pixels:
+        start = ink_pixels.pop()
+        queue = deque([start])
+        component = [start]
+        while queue:
+            x, y = queue.popleft()
+            for neighbor in ((x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)):
+                if neighbor in ink_pixels:
+                    ink_pixels.remove(neighbor)
+                    queue.append(neighbor)
+                    component.append(neighbor)
+        components.append(component)
+
+    largest = max(components, key=len)
+    flame_mask = Image.new("L", portrait.size, 0)
+    flame_pixels = flame_mask.load()
+    for component in components:
+        if component is largest or len(component) < 12:
+            continue
+        xs = [point[0] for point in component]
+        ys = [point[1] for point in component]
+        bbox = (min(xs), min(ys), max(xs) + 1, max(ys) + 1)
+        if bbox[0] < 230 or bbox[2] > 800 or bbox[1] < 280:
+            for x, y in component:
+                flame_pixels[x, y] = 255
+
+    # Widen the disconnected flame contour into a clearly yellow pixel stroke,
+    # then remove the full character silhouette so it can never spill into face
+    # or outfit negative space.
+    character_matte = Image.new("L", portrait.size, 0)
+    character_pixels = character_matte.load()
+    character_rows: dict[int, list[int]] = {}
+    for x, y in largest:
+        character_rows.setdefault(y, []).append(x)
+    for y, xs in character_rows.items():
+        for x in range(min(xs), max(xs) + 1):
+            character_pixels[x, y] = 255
+    character_matte = character_matte.filter(ImageFilter.MaxFilter(7))
+
+    colored_flame = flame_mask.filter(ImageFilter.MaxFilter(11))
+    colored_flame = ImageChops.subtract(colored_flame, character_matte)
+    outline = colored_flame.filter(ImageFilter.MaxFilter(5))
+    outlined = Image.new("RGBA", portrait.size, (*INK, 0))
+    outlined.putalpha(outline)
+    outlined.alpha_composite(portrait)
+    yellow = Image.new("RGBA", portrait.size, (*TRAIT_YELLOW, 0))
+    yellow.putalpha(colored_flame)
+    outlined.alpha_composite(yellow)
+    return outlined
+
+
 def apply_trait_color(
     portrait: Image.Image,
     archetype_index: int,
@@ -308,6 +372,28 @@ def apply_trait_color(
     flame.putalpha(flame_interior_mask(mask_source, archetype_index))
     colored.alpha_composite(flame)
     return colored
+
+
+def validate_portrait_trait(portrait: Image.Image, archetype_index: int) -> None:
+    """Reject soft, floating, off-palette, or incompletely colored sources."""
+    alpha = portrait.getchannel("A")
+    bbox = alpha.getbbox()
+    if not bbox or bbox[3] != 1024:
+        raise ValueError(f"AR{archetype_index + 1:02d} is not bottom-aligned: {bbox}")
+    if set(alpha.getdata()) - {0, 255}:
+        raise ValueError(f"AR{archetype_index + 1:02d} contains feathered alpha")
+    colors = {pixel[:3] for pixel in portrait.getdata() if pixel[3]}
+    if colors - {INK, TRAIT_YELLOW}:
+        raise ValueError(f"AR{archetype_index + 1:02d} contains off-palette pixels: {colors}")
+    yellow_count = sum(
+        pixel[:3] == TRAIT_YELLOW and pixel[3] == 255
+        for pixel in portrait.getdata()
+    )
+    minimum = 100_000 if archetype_index == 3 else 60_000 if archetype_index == 8 else 500
+    if yellow_count < minimum:
+        raise ValueError(
+            f"AR{archetype_index + 1:02d} has incomplete eye/flame color: {yellow_count} yellow pixels"
+        )
 
 
 def normalize_portrait_trait(portrait: Image.Image, archetype_index: int) -> Image.Image:
@@ -359,6 +445,8 @@ def build_portrait_trait_sources(output_dir: Path = TRAIT_SOURCE_DIR) -> None:
         cleaned = clean_portrait_footer(portrait, index)
         colored = apply_trait_color(sharpen_portrait_ink(cleaned), index, cleaned)
         normalized = normalize_portrait_trait(colored, index)
+        normalized = apply_spectral_flame_color(normalized, index)
+        validate_portrait_trait(normalized, index)
         normalized.save(output_dir / f"AR{index + 1:02d}.png", optimize=True)
 
 
@@ -434,7 +522,7 @@ def main() -> None:
             "Complete portraits are never split into head or torso layers",
             "Portrait scale and body baseline are normalized at the source-trait stage",
             "No decorative characters, icons, animals, objects, or motifs are placed in the background",
-            "Every eye interior and Living Flame interior is embedded in its source trait as #fdf423",
+            "Every eye interior, Living Flame interior, and Spectral Flame stroke is embedded in its source trait as #fdf423",
             "No text, logo, signature, or watermark",
         ],
         "moduleCount": sum(len(values) for values in categories.values()),
