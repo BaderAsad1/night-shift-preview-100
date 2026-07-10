@@ -25,6 +25,7 @@ PORTRAIT_SOURCES = [
     ROOT / "reference" / "neon-nocturne-expansion-b.png",
 ]
 MOTIF_SOURCE = ROOT / "reference" / "neon-nocturne-motifs.png"
+TRAIT_SOURCE_DIR = ROOT / "reference" / "neon-nocturne-traits"
 INK = (2, 1, 2)
 LIME = "#d0f708"
 TRAIT_YELLOW = (253, 244, 35)
@@ -318,7 +319,7 @@ def flame_interior_mask(portrait: Image.Image, archetype_index: int) -> Image.Im
 
 
 def apply_trait_color(portrait: Image.Image, archetype_index: int) -> Image.Image:
-    """Apply exact yellow to eyes and flame interiors without altering black ink."""
+    """Build source-level eye and flame color without altering black ink."""
     yellow = Image.new("RGBA", portrait.size, (*TRAIT_YELLOW, 0))
     yellow.putalpha(eye_interior_mask(portrait, archetype_index))
     colored = yellow
@@ -328,6 +329,77 @@ def apply_trait_color(portrait: Image.Image, archetype_index: int) -> Image.Imag
     flame.putalpha(flame_interior_mask(portrait, archetype_index))
     colored.alpha_composite(flame)
     return colored
+
+
+def normalize_portrait_trait(portrait: Image.Image, archetype_index: int) -> Image.Image:
+    """Normalize a source portrait around a shared 160px eye span and eye-line."""
+    boxes = EYE_BOXES[archetype_index]
+    centers = [((x0 + x1) / 2, (y0 + y1) / 2) for x0, y0, x1, y1 in boxes]
+    eye_midpoint = (
+        (centers[0][0] + centers[1][0]) / 2,
+        (centers[0][1] + centers[1][1]) / 2,
+    )
+    eye_span = centers[1][0] - centers[0][0]
+    bbox = portrait.getchannel("A").getbbox()
+    if not bbox or eye_span <= 0:
+        raise ValueError(f"Cannot normalize archetype {archetype_index + 1}")
+
+    scale = min(
+        160 / eye_span,
+        920 / (bbox[2] - bbox[0]),
+        920 / (bbox[3] - bbox[1]),
+    )
+    target_eye = (620, 520)
+    transformed = [
+        (bbox[0] - eye_midpoint[0]) * scale + target_eye[0],
+        (bbox[1] - eye_midpoint[1]) * scale + target_eye[1],
+        (bbox[2] - eye_midpoint[0]) * scale + target_eye[0],
+        (bbox[3] - eye_midpoint[1]) * scale + target_eye[1],
+    ]
+    # Calibrate to an inset 52..972 frame so Lanczos edge pixels still remain
+    # inside the public 48..976 safety boundary after resampling.
+    shift_x = max(52 - transformed[0], 0) + min(972 - transformed[2], 0)
+    shift_y = max(52 - transformed[1], 0) + min(972 - transformed[3], 0)
+
+    resized = portrait.resize(
+        (round(portrait.width * scale), round(portrait.height * scale)),
+        Image.Resampling.LANCZOS,
+    )
+    normalized = Image.new("RGBA", portrait.size, (0, 0, 0, 0))
+    normalized.alpha_composite(resized, (
+        round(target_eye[0] + shift_x - eye_midpoint[0] * scale),
+        round(target_eye[1] + shift_y - eye_midpoint[1] * scale),
+    ))
+    return normalized
+
+
+def build_portrait_trait_sources(output_dir: Path = TRAIT_SOURCE_DIR) -> None:
+    """Create the reusable, colored, normalized archetype source assets."""
+    portraits = []
+    for source in PORTRAIT_SOURCES:
+        portraits.extend(extract_portrait(cell) for cell in portrait_cells(Image.open(source)))
+    if len(portraits) != len(ARCHETYPES):
+        raise ValueError(f"Expected {len(ARCHETYPES)} portraits, found {len(portraits)}")
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    for old in output_dir.glob("AR*.png"):
+        old.unlink()
+    for index, portrait in enumerate(portraits):
+        cleaned = clean_portrait_footer(portrait, index)
+        colored = apply_trait_color(cleaned, index)
+        normalized = normalize_portrait_trait(colored, index)
+        normalized.save(output_dir / f"AR{index + 1:02d}.png", optimize=True)
+
+
+def load_portrait_trait_sources() -> list[Image.Image]:
+    paths = [TRAIT_SOURCE_DIR / f"AR{index + 1:02d}.png" for index in range(len(ARCHETYPES))]
+    missing = [path.name for path in paths if not path.exists()]
+    if missing:
+        raise FileNotFoundError(
+            f"Missing portrait trait sources: {', '.join(missing)}. "
+            "Run scripts/build_neon_nocturne_traits.py first."
+        )
+    return [Image.open(path).convert("RGBA") for path in paths]
 
 
 def extract_motif(cell: Image.Image) -> Image.Image:
@@ -390,15 +462,7 @@ def main() -> None:
     if not 1 <= args.limit <= len(combinations):
         raise ValueError(f"Limit must be between 1 and {len(combinations)}")
 
-    portraits = []
-    for source in PORTRAIT_SOURCES:
-        portraits.extend(extract_portrait(cell) for cell in portrait_cells(Image.open(source)))
-    if len(portraits) != len(ARCHETYPES):
-        raise ValueError(f"Expected {len(ARCHETYPES)} portraits, found {len(portraits)}")
-    portraits = [
-        apply_trait_color(clean_portrait_footer(portrait, index), index)
-        for index, portrait in enumerate(portraits)
-    ]
+    portraits = load_portrait_trait_sources()
     mattes = [protection_matte(portrait) for portrait in portraits]
 
     source_cells = motif_cells(Image.open(MOTIF_SOURCE))
@@ -446,18 +510,20 @@ def main() -> None:
     }
     library = {
         "name": "Neon Nocturne — Complete Archetype System",
-        "sources": [source.name for source in PORTRAIT_SOURCES] + [MOTIF_SOURCE.name],
+        "sources": ["neon-nocturne-traits/AR01.png–AR36.png", MOTIF_SOURCE.name],
         "palette": {"ink": "#020102", "traitYellow": "#fdf423", "presentationLime": LIME},
         "rendering": {
             "output": "1024x1024 RGBA PNG",
-            "architecture": "Complete portrait plus curated illustrated motif",
+            "architecture": "Normalized source portrait trait plus curated illustrated motif",
             "compositing": "Motif is erased inside a solid silhouette-protection matte",
+            "normalization": {"eyeSpan": 160, "eyeLineY": 520, "safeFrame": [48, 48, 976, 976]},
         },
         "rules": [
             "Complete portraits are never split into head or torso layers",
+            "Portrait size is normalized at the source-trait stage before collection assembly",
             "Only curated hand-drawn night motifs are used",
             "Motifs cannot erase, mask, or overpaint portrait pixels",
-            "Every eye interior and Living Flame interior uses #fdf423",
+            "Every eye interior and Living Flame interior is embedded in its source trait as #fdf423",
             "Motif library is limited to nature, nocturnal objects, and creatures",
             "No text, logo, signature, or watermark",
         ],

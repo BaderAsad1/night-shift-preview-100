@@ -39,10 +39,12 @@ test("ships both one-bit comparison sets and static gallery", async () => {
   const studioRoot = new URL("../public/characters-one-bit-studio/", import.meta.url);
   const docsRoot = new URL("../docs/", import.meta.url);
   const docsStudioRoot = new URL("studio/", docsRoot);
-  const [oneBitFiles, studioFiles, docsStudioFiles, studioManifestText, docsHtml, docsJs] = await Promise.all([
+  const traitSourceRoot = new URL("../reference/neon-nocturne-traits/", import.meta.url);
+  const [oneBitFiles, studioFiles, docsStudioFiles, traitSourceFiles, studioManifestText, docsHtml, docsJs] = await Promise.all([
     readdir(oneBitRoot),
     readdir(studioRoot),
     readdir(docsStudioRoot),
+    readdir(traitSourceRoot),
     readFile(new URL("manifest.json", studioRoot), "utf8"),
     readFile(new URL("index.html", docsRoot), "utf8"),
     readFile(new URL("app.js", docsRoot), "utf8"),
@@ -51,6 +53,7 @@ test("ships both one-bit comparison sets and static gallery", async () => {
   assert.equal(oneBitFiles.filter((file) => /^\d{3}\.png$/.test(file)).length, 100);
   assert.equal(studioFiles.filter((file) => /^\d{3}\.png$/.test(file)).length, 100);
   assert.equal(docsStudioFiles.filter((file) => /^\d{3}\.png$/.test(file)).length, 100);
+  assert.equal(traitSourceFiles.filter((file) => /^AR\d{2}\.png$/.test(file)).length, 36);
   assert.equal(studioManifest.count, 100);
   assert.equal(new Set(studioManifest.characters.map(character => character.id)).size, 100);
   assert.equal(new Set(studioManifest.characters.map(character => JSON.stringify(character.traits))).size, 100);
@@ -59,6 +62,11 @@ test("ships both one-bit comparison sets and static gallery", async () => {
   assert.equal(studioManifest.traitLibrary.possibleCombinations, 7128);
   assert.equal(studioManifest.traitLibrary.reserveCombinations, 462);
   assert.equal(studioManifest.traitLibrary.palette.traitYellow, "#fdf423");
+  assert.deepEqual(studioManifest.traitLibrary.rendering.normalization, {
+    eyeSpan: 160,
+    eyeLineY: 520,
+    safeFrame: [48, 48, 976, 976],
+  });
   assert.equal(new Set(studioManifest.characters.map(character => `${character.modules.archetype}-${character.modules.motif}-${character.modules.layout}`)).size, 100);
   assert.equal(new Set(studioManifest.characters.map(character => character.modules.archetype)).size, 36);
   assert.equal(new Set(studioManifest.characters.map(character => character.modules.motif)).size, 22);

@@ -5,9 +5,7 @@
   "traitLibrary": {
     "name": "Neon Nocturne \u2014 Complete Archetype System",
     "sources": [
-      "neon-nocturne-calibration.png",
-      "neon-nocturne-expansion-a.png",
-      "neon-nocturne-expansion-b.png",
+      "neon-nocturne-traits/AR01.png\u2013AR36.png",
       "neon-nocturne-motifs.png"
     ],
     "palette": {
@@ -17,14 +15,25 @@
     },
     "rendering": {
       "output": "1024x1024 RGBA PNG",
-      "architecture": "Complete portrait plus curated illustrated motif",
-      "compositing": "Motif is erased inside a solid silhouette-protection matte"
+      "architecture": "Normalized source portrait trait plus curated illustrated motif",
+      "compositing": "Motif is erased inside a solid silhouette-protection matte",
+      "normalization": {
+        "eyeSpan": 160,
+        "eyeLineY": 520,
+        "safeFrame": [
+          48,
+          48,
+          976,
+          976
+        ]
+      }
     },
     "rules": [
       "Complete portraits are never split into head or torso layers",
+      "Portrait size is normalized at the source-trait stage before collection assembly",
       "Only curated hand-drawn night motifs are used",
       "Motifs cannot erase, mask, or overpaint portrait pixels",
-      "Every eye interior and Living Flame interior uses #fdf423",
+      "Every eye interior and Living Flame interior is embedded in its source trait as #fdf423",
       "Motif library is limited to nature, nocturnal objects, and creatures",
       "No text, logo, signature, or watermark"
     ],
