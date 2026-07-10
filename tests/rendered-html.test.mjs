@@ -34,16 +34,24 @@ test("ships 100 unique character records", async () => {
   assert.equal(new Set(manifest.characters.map((character) => character.id)).size, 100);
 });
 
-test("ships the one-bit comparison set and static gallery", async () => {
+test("ships both one-bit comparison sets and static gallery", async () => {
   const oneBitRoot = new URL("../public/characters-one-bit/", import.meta.url);
+  const blockRoot = new URL("../public/characters-one-bit-block/", import.meta.url);
   const docsRoot = new URL("../docs/", import.meta.url);
-  const [oneBitFiles, docsHtml, docsJs] = await Promise.all([
+  const docsBlockRoot = new URL("block/", docsRoot);
+  const [oneBitFiles, blockFiles, docsBlockFiles, docsHtml, docsJs] = await Promise.all([
     readdir(oneBitRoot),
+    readdir(blockRoot),
+    readdir(docsBlockRoot),
     readFile(new URL("index.html", docsRoot), "utf8"),
     readFile(new URL("app.js", docsRoot), "utf8"),
   ]);
   assert.equal(oneBitFiles.filter((file) => /^\d{3}\.png$/.test(file)).length, 100);
+  assert.equal(blockFiles.filter((file) => /^\d{3}\.png$/.test(file)).length, 100);
+  assert.equal(docsBlockFiles.filter((file) => /^\d{3}\.png$/.test(file)).length, 100);
   assert.match(docsHtml, /SELECT RENDER STYLE/);
   assert.match(docsJs, /1-BIT BLACK/);
+  assert.match(docsJs, /1-BIT BLOCK/);
   assert.match(docsJs, /one-bit/);
+  assert.match(docsJs, /folder: "block"/);
 });

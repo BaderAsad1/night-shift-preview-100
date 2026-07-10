@@ -1,5 +1,11 @@
 const state = { manifest: null, house: "All Houses", query: "", selected: null, mode: "color" };
 
+const modes = {
+  color: { label: "8-BIT COLOR", alt: "8-bit color", folder: "characters" },
+  "one-bit": { label: "1-BIT BLACK", alt: "one-bit black", folder: "one-bit" },
+  block: { label: "1-BIT BLOCK", alt: "chunky one-bit black", folder: "block" },
+};
+
 const gallery = document.querySelector("#gallery");
 const filters = document.querySelector("#filters");
 const search = document.querySelector("#search");
@@ -8,7 +14,7 @@ const empty = document.querySelector("#empty");
 const modal = document.querySelector("#modal");
 
 function padded(id) { return String(id).padStart(3, "0"); }
-function imageSource(id) { return state.mode === "one-bit" ? `one-bit/${padded(id)}.png` : `characters/${padded(id)}.png`; }
+function imageSource(id) { return `${modes[state.mode].folder}/${padded(id)}.png`; }
 
 function matches(character) {
   if (state.house !== "All Houses" && character.house !== state.house) return false;
@@ -27,7 +33,7 @@ function renderGallery() {
     card.className = "character-card";
     card.style.setProperty("--accent", character.accent);
     card.setAttribute("aria-label", `Inspect ${character.name}`);
-    card.innerHTML = `<span class="image-well"><img src="${imageSource(character.id)}" alt="${character.name} — ${state.mode === "one-bit" ? "one-bit black" : "8-bit color"}" loading="lazy"></span><span class="card-meta"><span><b>#${padded(character.id)}</b><small>${character.house}</small></span><span class="inspect">↗</span></span>`;
+    card.innerHTML = `<span class="image-well"><img src="${imageSource(character.id)}" alt="${character.name} — ${modes[state.mode].alt}" loading="lazy"></span><span class="card-meta"><span><b>#${padded(character.id)}</b><small>${character.house}</small></span><span class="inspect">↗</span></span>`;
     card.addEventListener("click", () => openCharacter(character));
     return card;
   }));
@@ -59,10 +65,7 @@ function renderHero() {
 
 function renderStyleSwitch() {
   const switcher = document.querySelector("#style-switch");
-  const options = [
-    { id: "color", label: "8-BIT COLOR" },
-    { id: "one-bit", label: "1-BIT BLACK" },
-  ];
+  const options = Object.entries(modes).map(([id, mode]) => ({ id, label: mode.label }));
   switcher.replaceChildren(...options.map(option => {
     const button = document.createElement("button");
     button.textContent = option.label;
@@ -76,14 +79,14 @@ function renderStyleSwitch() {
 function setMode(mode) {
   state.mode = mode;
   document.body.dataset.mode = mode;
-  document.querySelector("#mode-label").textContent = mode === "one-bit" ? "1-BIT BLACK" : "8-BIT COLOR";
+  document.querySelector("#mode-label").textContent = modes[mode].label;
   renderStyleSwitch();
   renderHero();
   renderGallery();
   if (state.selected) {
     const art = document.querySelector("#detail-art");
     art.src = imageSource(state.selected.id);
-    art.alt = `${state.selected.name} — ${mode === "one-bit" ? "one-bit black" : "8-bit color"}`;
+    art.alt = `${state.selected.name} — ${modes[mode].alt}`;
   }
 }
 
@@ -96,7 +99,7 @@ function openCharacter(character) {
   image.style.setProperty("--accent", character.accent);
   const art = document.querySelector("#detail-art");
   art.src = imageSource(character.id);
-  art.alt = `${character.name} — ${state.mode === "one-bit" ? "one-bit black" : "8-bit color"}`;
+  art.alt = `${character.name} — ${modes[state.mode].alt}`;
   document.querySelector("#trait-list").innerHTML = character.traits.map(trait => `<div><span>${trait.category}</span><strong>${trait.name}</strong><code>${trait.code}</code></div>`).join("");
   modal.hidden = false;
   document.body.style.overflow = "hidden";
