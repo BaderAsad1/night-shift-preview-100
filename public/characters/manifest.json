@@ -1,0 +1,4880 @@
+{
+  "collection": "Night Shift Society",
+  "status": "Concept preview \u2014 not final mint art",
+  "count": 100,
+  "traitConcepts": 144,
+  "houses": [
+    {
+      "name": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules."
+    },
+    {
+      "name": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark."
+    },
+    {
+      "name": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower."
+    },
+    {
+      "name": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night."
+    },
+    {
+      "name": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void."
+    },
+    {
+      "name": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette."
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "name": "Night Shift #001",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/001.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B11",
+          "name": "Golden"
+        },
+        {
+          "category": "Outfit",
+          "code": "O9",
+          "name": "Skate jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H11",
+          "name": "Tiny top hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F14",
+          "name": "Black rose"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F5",
+          "name": "Sunglasses"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P5",
+          "name": "Instant camera"
+        },
+        {
+          "category": "Effect",
+          "code": "E11",
+          "name": "Hologram pixels"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Night Shift #002",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/002.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B13",
+          "name": "Stone"
+        },
+        {
+          "category": "Outfit",
+          "code": "O3",
+          "name": "Cyber armor"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H6",
+          "name": "Messy spikes"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P13",
+          "name": "Crystal shard"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Night Shift #003",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/003.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B7",
+          "name": "Chrome"
+        },
+        {
+          "category": "Outfit",
+          "code": "O11",
+          "name": "Casino tux"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H2",
+          "name": "Slick-back"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F14",
+          "name": "Black rose"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Neck",
+          "code": "C10",
+          "name": "Bat amulet"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Night Shift #004",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/004.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B12",
+          "name": "Deep void"
+        },
+        {
+          "category": "Outfit",
+          "code": "O9",
+          "name": "Skate jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H12",
+          "name": "Bat beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F14",
+          "name": "Black rose"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F5",
+          "name": "Sunglasses"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X5",
+          "name": "Blood tear"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P14",
+          "name": "Vinyl record"
+        },
+        {
+          "category": "Companion",
+          "code": "K14",
+          "name": "Pocket dragon"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Night Shift #005",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/005.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B1",
+          "name": "Moon pale"
+        },
+        {
+          "category": "Outfit",
+          "code": "O5",
+          "name": "Noir trench"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H11",
+          "name": "Tiny top hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F15",
+          "name": "Moustache"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F8",
+          "name": "Red visor"
+        },
+        {
+          "category": "Neck",
+          "code": "C10",
+          "name": "Bat amulet"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P3",
+          "name": "Game console"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Night Shift #006",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/006.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B12",
+          "name": "Deep void"
+        },
+        {
+          "category": "Outfit",
+          "code": "O9",
+          "name": "Skate jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H4",
+          "name": "Long straight"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X16",
+          "name": "Lollipop"
+        },
+        {
+          "category": "Neck",
+          "code": "C12",
+          "name": "Bone necklace"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        },
+        {
+          "category": "Companion",
+          "code": "K13",
+          "name": "Mech spider"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Night Shift #007",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/007.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B14",
+          "name": "Alien lavender"
+        },
+        {
+          "category": "Outfit",
+          "code": "O4",
+          "name": "Space suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Neck",
+          "code": "C12",
+          "name": "Bone necklace"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P5",
+          "name": "Instant camera"
+        },
+        {
+          "category": "Effect",
+          "code": "E10",
+          "name": "Glass shards"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Night Shift #008",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/008.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B6",
+          "name": "Porcelain"
+        },
+        {
+          "category": "Outfit",
+          "code": "O6",
+          "name": "Neon racer"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H14",
+          "name": "Horn pair"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P13",
+          "name": "Crystal shard"
+        },
+        {
+          "category": "Companion",
+          "code": "K14",
+          "name": "Pocket dragon"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Night Shift #009",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/009.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B2",
+          "name": "Ash gray"
+        },
+        {
+          "category": "Outfit",
+          "code": "O3",
+          "name": "Cyber armor"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H11",
+          "name": "Tiny top hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F9",
+          "name": "Classic fangs"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X16",
+          "name": "Lollipop"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P16",
+          "name": "Hologram cube"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Night Shift #010",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/010.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B7",
+          "name": "Chrome"
+        },
+        {
+          "category": "Outfit",
+          "code": "O14",
+          "name": "Flame biker"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H14",
+          "name": "Horn pair"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F9",
+          "name": "Classic fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F8",
+          "name": "Red visor"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X10",
+          "name": "Ear studs"
+        },
+        {
+          "category": "Earring",
+          "code": "C14",
+          "name": "Fang earring"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Night Shift #011",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/011.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B13",
+          "name": "Stone"
+        },
+        {
+          "category": "Outfit",
+          "code": "O3",
+          "name": "Cyber armor"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X16",
+          "name": "Lollipop"
+        },
+        {
+          "category": "Neck",
+          "code": "C12",
+          "name": "Bone necklace"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Night Shift #012",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/012.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B16",
+          "name": "Crystal"
+        },
+        {
+          "category": "Outfit",
+          "code": "O1",
+          "name": "Street hoodie"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H1",
+          "name": "Widow peak"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F10",
+          "name": "Long fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F7",
+          "name": "Monocle"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X1",
+          "name": "Cheek scar"
+        },
+        {
+          "category": "Neck",
+          "code": "C10",
+          "name": "Bat amulet"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P8",
+          "name": "Night coin"
+        },
+        {
+          "category": "Companion",
+          "code": "K16",
+          "name": "Vampire plant"
+        },
+        {
+          "category": "Effect",
+          "code": "E9",
+          "name": "Neon fragments"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Night Shift #013",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/013.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B6",
+          "name": "Porcelain"
+        },
+        {
+          "category": "Outfit",
+          "code": "O12",
+          "name": "Hologram coat"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H6",
+          "name": "Messy spikes"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F7",
+          "name": "Monocle"
+        },
+        {
+          "category": "Neck",
+          "code": "C9",
+          "name": "Ruby choker"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Night Shift #014",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/014.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B15",
+          "name": "Daywalker"
+        },
+        {
+          "category": "Outfit",
+          "code": "O2",
+          "name": "Varsity jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H14",
+          "name": "Horn pair"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F12",
+          "name": "Blood fangs"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X11",
+          "name": "Bat cheek mark"
+        },
+        {
+          "category": "Neck",
+          "code": "C9",
+          "name": "Ruby choker"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P14",
+          "name": "Vinyl record"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Night Shift #015",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/015.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B6",
+          "name": "Porcelain"
+        },
+        {
+          "category": "Outfit",
+          "code": "O6",
+          "name": "Neon racer"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H11",
+          "name": "Tiny top hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F12",
+          "name": "Blood fangs"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P12",
+          "name": "Plasma baton"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Night Shift #016",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/016.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B9",
+          "name": "Ember veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O2",
+          "name": "Varsity jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H5",
+          "name": "Bob cut"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Earring",
+          "code": "C14",
+          "name": "Fang earring"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Night Shift #017",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/017.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B9",
+          "name": "Ember veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O10",
+          "name": "Explorer suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H1",
+          "name": "Widow peak"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F10",
+          "name": "Long fangs"
+        },
+        {
+          "category": "Neck",
+          "code": "C9",
+          "name": "Ruby choker"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P10",
+          "name": "Red drink pouch"
+        },
+        {
+          "category": "Companion",
+          "code": "K6",
+          "name": "Tiny alien"
+        },
+        {
+          "category": "Effect",
+          "code": "E1",
+          "name": "Red glitch"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Night Shift #018",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/018.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B16",
+          "name": "Crystal"
+        },
+        {
+          "category": "Outfit",
+          "code": "O11",
+          "name": "Casino tux"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H2",
+          "name": "Slick-back"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F12",
+          "name": "Blood fangs"
+        },
+        {
+          "category": "Effect",
+          "code": "E2",
+          "name": "Purple smoke"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Night Shift #019",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/019.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B15",
+          "name": "Daywalker"
+        },
+        {
+          "category": "Outfit",
+          "code": "O15",
+          "name": "Artist jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H5",
+          "name": "Bob cut"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F12",
+          "name": "Blood fangs"
+        },
+        {
+          "category": "Earring",
+          "code": "C14",
+          "name": "Fang earring"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Night Shift #020",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/020.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B10",
+          "name": "Electric cyan"
+        },
+        {
+          "category": "Outfit",
+          "code": "O7",
+          "name": "Lab jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H14",
+          "name": "Horn pair"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P7",
+          "name": "Pixel laptop"
+        },
+        {
+          "category": "Companion",
+          "code": "K11",
+          "name": "Red slime"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Night Shift #021",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/021.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B12",
+          "name": "Deep void"
+        },
+        {
+          "category": "Outfit",
+          "code": "O3",
+          "name": "Cyber armor"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H14",
+          "name": "Horn pair"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F9",
+          "name": "Classic fangs"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P15",
+          "name": "Night cup"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Night Shift #022",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/022.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B7",
+          "name": "Chrome"
+        },
+        {
+          "category": "Outfit",
+          "code": "O5",
+          "name": "Noir trench"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H7",
+          "name": "Topknot"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X4",
+          "name": "Cyber cheek"
+        },
+        {
+          "category": "Neck",
+          "code": "C11",
+          "name": "Silver chain"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Night Shift #023",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/023.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B10",
+          "name": "Electric cyan"
+        },
+        {
+          "category": "Outfit",
+          "code": "O15",
+          "name": "Artist jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H2",
+          "name": "Slick-back"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X10",
+          "name": "Ear studs"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P10",
+          "name": "Red drink pouch"
+        },
+        {
+          "category": "Effect",
+          "code": "E15",
+          "name": "Ink splash"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Night Shift #024",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/024.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B11",
+          "name": "Golden"
+        },
+        {
+          "category": "Outfit",
+          "code": "O8",
+          "name": "Layered armor"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H11",
+          "name": "Tiny top hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Night Shift #025",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/025.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B4",
+          "name": "Crimson veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O13",
+          "name": "Frost parka"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H7",
+          "name": "Topknot"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F15",
+          "name": "Moustache"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F5",
+          "name": "Sunglasses"
+        },
+        {
+          "category": "Effect",
+          "code": "E2",
+          "name": "Purple smoke"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Night Shift #026",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/026.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B15",
+          "name": "Daywalker"
+        },
+        {
+          "category": "Outfit",
+          "code": "O1",
+          "name": "Street hoodie"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H1",
+          "name": "Widow peak"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F5",
+          "name": "Sunglasses"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X6",
+          "name": "Ice tear"
+        },
+        {
+          "category": "Neck",
+          "code": "C9",
+          "name": "Ruby choker"
+        },
+        {
+          "category": "Companion",
+          "code": "K10",
+          "name": "Cyan drone"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Night Shift #027",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/027.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B11",
+          "name": "Golden"
+        },
+        {
+          "category": "Outfit",
+          "code": "O10",
+          "name": "Explorer suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X1",
+          "name": "Cheek scar"
+        },
+        {
+          "category": "Neck",
+          "code": "C10",
+          "name": "Bat amulet"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P1",
+          "name": "Black umbrella"
+        },
+        {
+          "category": "Effect",
+          "code": "E15",
+          "name": "Ink splash"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Night Shift #028",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/028.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B2",
+          "name": "Ash gray"
+        },
+        {
+          "category": "Outfit",
+          "code": "O5",
+          "name": "Noir trench"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H6",
+          "name": "Messy spikes"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F10",
+          "name": "Long fangs"
+        },
+        {
+          "category": "Companion",
+          "code": "K7",
+          "name": "Eyeball creature"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Night Shift #029",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/029.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B11",
+          "name": "Golden"
+        },
+        {
+          "category": "Outfit",
+          "code": "O13",
+          "name": "Frost parka"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H8",
+          "name": "White ancient"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F15",
+          "name": "Moustache"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Night Shift #030",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/030.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B12",
+          "name": "Deep void"
+        },
+        {
+          "category": "Outfit",
+          "code": "O3",
+          "name": "Cyber armor"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H8",
+          "name": "White ancient"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X12",
+          "name": "Lightning stripe"
+        },
+        {
+          "category": "Neck",
+          "code": "C11",
+          "name": "Silver chain"
+        },
+        {
+          "category": "Companion",
+          "code": "K16",
+          "name": "Vampire plant"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Night Shift #031",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/031.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B4",
+          "name": "Crimson veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O9",
+          "name": "Skate jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F8",
+          "name": "Red visor"
+        },
+        {
+          "category": "Companion",
+          "code": "K12",
+          "name": "Cyber rat"
+        },
+        {
+          "category": "Effect",
+          "code": "E11",
+          "name": "Hologram pixels"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Night Shift #032",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/032.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B5",
+          "name": "Obsidian"
+        },
+        {
+          "category": "Outfit",
+          "code": "O11",
+          "name": "Casino tux"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H1",
+          "name": "Widow peak"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F5",
+          "name": "Sunglasses"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P4",
+          "name": "Cassette player"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Night Shift #033",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/033.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B6",
+          "name": "Porcelain"
+        },
+        {
+          "category": "Outfit",
+          "code": "O7",
+          "name": "Lab jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F15",
+          "name": "Moustache"
+        },
+        {
+          "category": "Neck",
+          "code": "C9",
+          "name": "Ruby choker"
+        },
+        {
+          "category": "Effect",
+          "code": "E12",
+          "name": "Data cubes"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Night Shift #034",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/034.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B9",
+          "name": "Ember veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O12",
+          "name": "Hologram coat"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H16",
+          "name": "Hood"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Companion",
+          "code": "K6",
+          "name": "Tiny alien"
+        },
+        {
+          "category": "Effect",
+          "code": "E3",
+          "name": "Icy breath"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Night Shift #035",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/035.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B2",
+          "name": "Ash gray"
+        },
+        {
+          "category": "Outfit",
+          "code": "O13",
+          "name": "Frost parka"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H1",
+          "name": "Widow peak"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Neck",
+          "code": "C7",
+          "name": "Zip collar"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Night Shift #036",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/036.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B15",
+          "name": "Daywalker"
+        },
+        {
+          "category": "Outfit",
+          "code": "O9",
+          "name": "Skate jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X2",
+          "name": "Brow notches"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P13",
+          "name": "Crystal shard"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Night Shift #037",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/037.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B1",
+          "name": "Moon pale"
+        },
+        {
+          "category": "Outfit",
+          "code": "O9",
+          "name": "Skate jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H12",
+          "name": "Bat beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X12",
+          "name": "Lightning stripe"
+        },
+        {
+          "category": "Neck",
+          "code": "C7",
+          "name": "Zip collar"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P7",
+          "name": "Pixel laptop"
+        },
+        {
+          "category": "Companion",
+          "code": "K11",
+          "name": "Red slime"
+        },
+        {
+          "category": "Effect",
+          "code": "E5",
+          "name": "Red droplets"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Night Shift #038",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/038.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B14",
+          "name": "Alien lavender"
+        },
+        {
+          "category": "Outfit",
+          "code": "O12",
+          "name": "Hologram coat"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H12",
+          "name": "Bat beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X3",
+          "name": "Porcelain cracks"
+        },
+        {
+          "category": "Companion",
+          "code": "K9",
+          "name": "Shadow wolf"
+        },
+        {
+          "category": "Effect",
+          "code": "E3",
+          "name": "Icy breath"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Night Shift #039",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/039.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B1",
+          "name": "Moon pale"
+        },
+        {
+          "category": "Outfit",
+          "code": "O4",
+          "name": "Space suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H12",
+          "name": "Bat beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P11",
+          "name": "Spray can"
+        },
+        {
+          "category": "Companion",
+          "code": "K16",
+          "name": "Vampire plant"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Night Shift #040",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/040.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B5",
+          "name": "Obsidian"
+        },
+        {
+          "category": "Outfit",
+          "code": "O15",
+          "name": "Artist jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H12",
+          "name": "Bat beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F9",
+          "name": "Classic fangs"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Night Shift #041",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/041.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B3",
+          "name": "Frost blue"
+        },
+        {
+          "category": "Outfit",
+          "code": "O16",
+          "name": "Dark utility"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Neck",
+          "code": "C11",
+          "name": "Silver chain"
+        },
+        {
+          "category": "Companion",
+          "code": "K8",
+          "name": "Shadow blob"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Night Shift #042",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/042.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B9",
+          "name": "Ember veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O11",
+          "name": "Casino tux"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H11",
+          "name": "Tiny top hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F10",
+          "name": "Long fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F7",
+          "name": "Monocle"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X11",
+          "name": "Bat cheek mark"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P13",
+          "name": "Crystal shard"
+        },
+        {
+          "category": "Companion",
+          "code": "K1",
+          "name": "Classic bat"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Night Shift #043",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/043.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B8",
+          "name": "Neon glitch"
+        },
+        {
+          "category": "Outfit",
+          "code": "O1",
+          "name": "Street hoodie"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H1",
+          "name": "Widow peak"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F14",
+          "name": "Black rose"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F7",
+          "name": "Monocle"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X6",
+          "name": "Ice tear"
+        },
+        {
+          "category": "Neck",
+          "code": "C7",
+          "name": "Zip collar"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P3",
+          "name": "Game console"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Night Shift #044",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/044.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B12",
+          "name": "Deep void"
+        },
+        {
+          "category": "Outfit",
+          "code": "O15",
+          "name": "Artist jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H16",
+          "name": "Hood"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X4",
+          "name": "Cyber cheek"
+        },
+        {
+          "category": "Earring",
+          "code": "C14",
+          "name": "Fang earring"
+        },
+        {
+          "category": "Companion",
+          "code": "K9",
+          "name": "Shadow wolf"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Night Shift #045",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/045.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B4",
+          "name": "Crimson veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O11",
+          "name": "Casino tux"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H14",
+          "name": "Horn pair"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F10",
+          "name": "Long fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F8",
+          "name": "Red visor"
+        },
+        {
+          "category": "Neck",
+          "code": "C12",
+          "name": "Bone necklace"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Night Shift #046",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/046.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B13",
+          "name": "Stone"
+        },
+        {
+          "category": "Outfit",
+          "code": "O3",
+          "name": "Cyber armor"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H8",
+          "name": "White ancient"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X12",
+          "name": "Lightning stripe"
+        },
+        {
+          "category": "Companion",
+          "code": "K9",
+          "name": "Shadow wolf"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Night Shift #047",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/047.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B4",
+          "name": "Crimson veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O10",
+          "name": "Explorer suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H4",
+          "name": "Long straight"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F10",
+          "name": "Long fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Neck",
+          "code": "C8",
+          "name": "Red cravat"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P5",
+          "name": "Instant camera"
+        },
+        {
+          "category": "Companion",
+          "code": "K15",
+          "name": "Ice beetle"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Night Shift #048",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/048.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B9",
+          "name": "Ember veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O5",
+          "name": "Noir trench"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H7",
+          "name": "Topknot"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        },
+        {
+          "category": "Companion",
+          "code": "K10",
+          "name": "Cyan drone"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Night Shift #049",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/049.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B3",
+          "name": "Frost blue"
+        },
+        {
+          "category": "Outfit",
+          "code": "O12",
+          "name": "Hologram coat"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H7",
+          "name": "Topknot"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F12",
+          "name": "Blood fangs"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X12",
+          "name": "Lightning stripe"
+        },
+        {
+          "category": "Neck",
+          "code": "C10",
+          "name": "Bat amulet"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        },
+        {
+          "category": "Effect",
+          "code": "E9",
+          "name": "Neon fragments"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Night Shift #050",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/050.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B11",
+          "name": "Golden"
+        },
+        {
+          "category": "Outfit",
+          "code": "O10",
+          "name": "Explorer suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H2",
+          "name": "Slick-back"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F15",
+          "name": "Moustache"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Companion",
+          "code": "K5",
+          "name": "Night moth"
+        },
+        {
+          "category": "Effect",
+          "code": "E4",
+          "name": "Ember sparks"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Night Shift #051",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/051.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B10",
+          "name": "Electric cyan"
+        },
+        {
+          "category": "Outfit",
+          "code": "O9",
+          "name": "Skate jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H5",
+          "name": "Bob cut"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X6",
+          "name": "Ice tear"
+        },
+        {
+          "category": "Neck",
+          "code": "C11",
+          "name": "Silver chain"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Night Shift #052",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/052.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B8",
+          "name": "Neon glitch"
+        },
+        {
+          "category": "Outfit",
+          "code": "O10",
+          "name": "Explorer suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H11",
+          "name": "Tiny top hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X16",
+          "name": "Lollipop"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Night Shift #053",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/053.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B3",
+          "name": "Frost blue"
+        },
+        {
+          "category": "Outfit",
+          "code": "O6",
+          "name": "Neon racer"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H7",
+          "name": "Topknot"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X11",
+          "name": "Bat cheek mark"
+        },
+        {
+          "category": "Neck",
+          "code": "C9",
+          "name": "Ruby choker"
+        },
+        {
+          "category": "Companion",
+          "code": "K13",
+          "name": "Mech spider"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Night Shift #054",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/054.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B11",
+          "name": "Golden"
+        },
+        {
+          "category": "Outfit",
+          "code": "O11",
+          "name": "Casino tux"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H6",
+          "name": "Messy spikes"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F15",
+          "name": "Moustache"
+        },
+        {
+          "category": "Neck",
+          "code": "C7",
+          "name": "Zip collar"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P5",
+          "name": "Instant camera"
+        },
+        {
+          "category": "Companion",
+          "code": "K9",
+          "name": "Shadow wolf"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Night Shift #055",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/055.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B14",
+          "name": "Alien lavender"
+        },
+        {
+          "category": "Outfit",
+          "code": "O2",
+          "name": "Varsity jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H12",
+          "name": "Bat beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X7",
+          "name": "Pixel freckles"
+        },
+        {
+          "category": "Earring",
+          "code": "C14",
+          "name": "Fang earring"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P3",
+          "name": "Game console"
+        },
+        {
+          "category": "Companion",
+          "code": "K16",
+          "name": "Vampire plant"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Night Shift #056",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/056.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B11",
+          "name": "Golden"
+        },
+        {
+          "category": "Outfit",
+          "code": "O13",
+          "name": "Frost parka"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H7",
+          "name": "Topknot"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Neck",
+          "code": "C9",
+          "name": "Ruby choker"
+        },
+        {
+          "category": "Effect",
+          "code": "E9",
+          "name": "Neon fragments"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Night Shift #057",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/057.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B5",
+          "name": "Obsidian"
+        },
+        {
+          "category": "Outfit",
+          "code": "O10",
+          "name": "Explorer suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H2",
+          "name": "Slick-back"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F9",
+          "name": "Classic fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F5",
+          "name": "Sunglasses"
+        },
+        {
+          "category": "Neck",
+          "code": "C9",
+          "name": "Ruby choker"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P2",
+          "name": "Silver cane"
+        },
+        {
+          "category": "Companion",
+          "code": "K6",
+          "name": "Tiny alien"
+        },
+        {
+          "category": "Effect",
+          "code": "E5",
+          "name": "Red droplets"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Night Shift #058",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/058.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B1",
+          "name": "Moon pale"
+        },
+        {
+          "category": "Outfit",
+          "code": "O10",
+          "name": "Explorer suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H4",
+          "name": "Long straight"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F14",
+          "name": "Black rose"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F7",
+          "name": "Monocle"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X14",
+          "name": "Gold grill"
+        },
+        {
+          "category": "Earring",
+          "code": "C14",
+          "name": "Fang earring"
+        },
+        {
+          "category": "Companion",
+          "code": "K3",
+          "name": "Black cat"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Night Shift #059",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/059.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B2",
+          "name": "Ash gray"
+        },
+        {
+          "category": "Outfit",
+          "code": "O2",
+          "name": "Varsity jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F7",
+          "name": "Monocle"
+        },
+        {
+          "category": "Companion",
+          "code": "K15",
+          "name": "Ice beetle"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Night Shift #060",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/060.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B6",
+          "name": "Porcelain"
+        },
+        {
+          "category": "Outfit",
+          "code": "O5",
+          "name": "Noir trench"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H5",
+          "name": "Bob cut"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X13",
+          "name": "Lip stitches"
+        },
+        {
+          "category": "Earring",
+          "code": "C14",
+          "name": "Fang earring"
+        },
+        {
+          "category": "Companion",
+          "code": "K16",
+          "name": "Vampire plant"
+        },
+        {
+          "category": "Effect",
+          "code": "E14",
+          "name": "Flame wisps"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Night Shift #061",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/061.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B14",
+          "name": "Alien lavender"
+        },
+        {
+          "category": "Outfit",
+          "code": "O5",
+          "name": "Noir trench"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H1",
+          "name": "Widow peak"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F14",
+          "name": "Black rose"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F5",
+          "name": "Sunglasses"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Night Shift #062",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/062.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B2",
+          "name": "Ash gray"
+        },
+        {
+          "category": "Outfit",
+          "code": "O6",
+          "name": "Neon racer"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H12",
+          "name": "Bat beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F9",
+          "name": "Classic fangs"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X10",
+          "name": "Ear studs"
+        },
+        {
+          "category": "Neck",
+          "code": "C9",
+          "name": "Ruby choker"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Night Shift #063",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/063.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B11",
+          "name": "Golden"
+        },
+        {
+          "category": "Outfit",
+          "code": "O15",
+          "name": "Artist jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H12",
+          "name": "Bat beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P16",
+          "name": "Hologram cube"
+        },
+        {
+          "category": "Effect",
+          "code": "E5",
+          "name": "Red droplets"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Night Shift #064",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/064.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B2",
+          "name": "Ash gray"
+        },
+        {
+          "category": "Outfit",
+          "code": "O16",
+          "name": "Dark utility"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F15",
+          "name": "Moustache"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F8",
+          "name": "Red visor"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X15",
+          "name": "Bubblegum"
+        },
+        {
+          "category": "Neck",
+          "code": "C11",
+          "name": "Silver chain"
+        },
+        {
+          "category": "Companion",
+          "code": "K1",
+          "name": "Classic bat"
+        },
+        {
+          "category": "Effect",
+          "code": "E9",
+          "name": "Neon fragments"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Night Shift #065",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/065.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B3",
+          "name": "Frost blue"
+        },
+        {
+          "category": "Outfit",
+          "code": "O15",
+          "name": "Artist jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H8",
+          "name": "White ancient"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F7",
+          "name": "Monocle"
+        },
+        {
+          "category": "Earring",
+          "code": "C14",
+          "name": "Fang earring"
+        },
+        {
+          "category": "Companion",
+          "code": "K4",
+          "name": "Raven"
+        },
+        {
+          "category": "Effect",
+          "code": "E1",
+          "name": "Red glitch"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Night Shift #066",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/066.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B16",
+          "name": "Crystal"
+        },
+        {
+          "category": "Outfit",
+          "code": "O7",
+          "name": "Lab jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H14",
+          "name": "Horn pair"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F9",
+          "name": "Classic fangs"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X2",
+          "name": "Brow notches"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Night Shift #067",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/067.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B13",
+          "name": "Stone"
+        },
+        {
+          "category": "Outfit",
+          "code": "O4",
+          "name": "Space suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H14",
+          "name": "Horn pair"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F10",
+          "name": "Long fangs"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X4",
+          "name": "Cyber cheek"
+        },
+        {
+          "category": "Neck",
+          "code": "C7",
+          "name": "Zip collar"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P9",
+          "name": "Coffin key"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Night Shift #068",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/068.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B16",
+          "name": "Crystal"
+        },
+        {
+          "category": "Outfit",
+          "code": "O2",
+          "name": "Varsity jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H14",
+          "name": "Horn pair"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F5",
+          "name": "Sunglasses"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X12",
+          "name": "Lightning stripe"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P7",
+          "name": "Pixel laptop"
+        },
+        {
+          "category": "Companion",
+          "code": "K4",
+          "name": "Raven"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Night Shift #069",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/069.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B2",
+          "name": "Ash gray"
+        },
+        {
+          "category": "Outfit",
+          "code": "O10",
+          "name": "Explorer suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H16",
+          "name": "Hood"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F12",
+          "name": "Blood fangs"
+        },
+        {
+          "category": "Neck",
+          "code": "C8",
+          "name": "Red cravat"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Night Shift #070",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/070.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B12",
+          "name": "Deep void"
+        },
+        {
+          "category": "Outfit",
+          "code": "O15",
+          "name": "Artist jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H15",
+          "name": "Razor orbit"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F12",
+          "name": "Blood fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F7",
+          "name": "Monocle"
+        },
+        {
+          "category": "Neck",
+          "code": "C10",
+          "name": "Bat amulet"
+        },
+        {
+          "category": "Companion",
+          "code": "K14",
+          "name": "Pocket dragon"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Night Shift #071",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/071.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B5",
+          "name": "Obsidian"
+        },
+        {
+          "category": "Outfit",
+          "code": "O5",
+          "name": "Noir trench"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H8",
+          "name": "White ancient"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F8",
+          "name": "Red visor"
+        },
+        {
+          "category": "Effect",
+          "code": "E14",
+          "name": "Flame wisps"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Night Shift #072",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/072.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B9",
+          "name": "Ember veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O7",
+          "name": "Lab jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H1",
+          "name": "Widow peak"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F15",
+          "name": "Moustache"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X9",
+          "name": "Nose ring"
+        },
+        {
+          "category": "Earring",
+          "code": "C14",
+          "name": "Fang earring"
+        },
+        {
+          "category": "Companion",
+          "code": "K5",
+          "name": "Night moth"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Night Shift #073",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/073.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B6",
+          "name": "Porcelain"
+        },
+        {
+          "category": "Outfit",
+          "code": "O4",
+          "name": "Space suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F10",
+          "name": "Long fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F8",
+          "name": "Red visor"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X15",
+          "name": "Bubblegum"
+        },
+        {
+          "category": "Neck",
+          "code": "C10",
+          "name": "Bat amulet"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Night Shift #074",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/074.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B12",
+          "name": "Deep void"
+        },
+        {
+          "category": "Outfit",
+          "code": "O8",
+          "name": "Layered armor"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H2",
+          "name": "Slick-back"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F14",
+          "name": "Black rose"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P5",
+          "name": "Instant camera"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Night Shift #075",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/075.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B8",
+          "name": "Neon glitch"
+        },
+        {
+          "category": "Outfit",
+          "code": "O2",
+          "name": "Varsity jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F10",
+          "name": "Long fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F7",
+          "name": "Monocle"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X10",
+          "name": "Ear studs"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P5",
+          "name": "Instant camera"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Night Shift #076",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/076.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B16",
+          "name": "Crystal"
+        },
+        {
+          "category": "Outfit",
+          "code": "O7",
+          "name": "Lab jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H14",
+          "name": "Horn pair"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F12",
+          "name": "Blood fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F8",
+          "name": "Red visor"
+        },
+        {
+          "category": "Companion",
+          "code": "K5",
+          "name": "Night moth"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Night Shift #077",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/077.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B5",
+          "name": "Obsidian"
+        },
+        {
+          "category": "Outfit",
+          "code": "O6",
+          "name": "Neon racer"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F14",
+          "name": "Black rose"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P12",
+          "name": "Plasma baton"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Night Shift #078",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/078.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B16",
+          "name": "Crystal"
+        },
+        {
+          "category": "Outfit",
+          "code": "O14",
+          "name": "Flame biker"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H11",
+          "name": "Tiny top hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X2",
+          "name": "Brow notches"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P14",
+          "name": "Vinyl record"
+        },
+        {
+          "category": "Companion",
+          "code": "K10",
+          "name": "Cyan drone"
+        },
+        {
+          "category": "Effect",
+          "code": "E16",
+          "name": "Time fragments"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Night Shift #079",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/079.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B13",
+          "name": "Stone"
+        },
+        {
+          "category": "Outfit",
+          "code": "O12",
+          "name": "Hologram coat"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H7",
+          "name": "Topknot"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F12",
+          "name": "Blood fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P4",
+          "name": "Cassette player"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Night Shift #080",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/080.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B1",
+          "name": "Moon pale"
+        },
+        {
+          "category": "Outfit",
+          "code": "O15",
+          "name": "Artist jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H7",
+          "name": "Topknot"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P10",
+          "name": "Red drink pouch"
+        },
+        {
+          "category": "Companion",
+          "code": "K1",
+          "name": "Classic bat"
+        },
+        {
+          "category": "Effect",
+          "code": "E6",
+          "name": "Scanlines"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Night Shift #081",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/081.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B14",
+          "name": "Alien lavender"
+        },
+        {
+          "category": "Outfit",
+          "code": "O14",
+          "name": "Flame biker"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H7",
+          "name": "Topknot"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X5",
+          "name": "Blood tear"
+        },
+        {
+          "category": "Neck",
+          "code": "C7",
+          "name": "Zip collar"
+        },
+        {
+          "category": "Earring",
+          "code": "C14",
+          "name": "Fang earring"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Night Shift #082",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/082.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B4",
+          "name": "Crimson veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O13",
+          "name": "Frost parka"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P1",
+          "name": "Black umbrella"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Night Shift #083",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/083.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B6",
+          "name": "Porcelain"
+        },
+        {
+          "category": "Outfit",
+          "code": "O10",
+          "name": "Explorer suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H14",
+          "name": "Horn pair"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F14",
+          "name": "Black rose"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X3",
+          "name": "Porcelain cracks"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Night Shift #084",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/084.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B4",
+          "name": "Crimson veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O15",
+          "name": "Artist jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H16",
+          "name": "Hood"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F10",
+          "name": "Long fangs"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X2",
+          "name": "Brow notches"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P9",
+          "name": "Coffin key"
+        },
+        {
+          "category": "Effect",
+          "code": "E16",
+          "name": "Time fragments"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "name": "Night Shift #085",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/085.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B10",
+          "name": "Electric cyan"
+        },
+        {
+          "category": "Outfit",
+          "code": "O16",
+          "name": "Dark utility"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H8",
+          "name": "White ancient"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X2",
+          "name": "Brow notches"
+        },
+        {
+          "category": "Neck",
+          "code": "C7",
+          "name": "Zip collar"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P4",
+          "name": "Cassette player"
+        },
+        {
+          "category": "Effect",
+          "code": "E12",
+          "name": "Data cubes"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Night Shift #086",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/086.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B10",
+          "name": "Electric cyan"
+        },
+        {
+          "category": "Outfit",
+          "code": "O12",
+          "name": "Hologram coat"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H15",
+          "name": "Razor orbit"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F9",
+          "name": "Classic fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F8",
+          "name": "Red visor"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Night Shift #087",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/087.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B14",
+          "name": "Alien lavender"
+        },
+        {
+          "category": "Outfit",
+          "code": "O7",
+          "name": "Lab jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H4",
+          "name": "Long straight"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X2",
+          "name": "Brow notches"
+        },
+        {
+          "category": "Neck",
+          "code": "C12",
+          "name": "Bone necklace"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P7",
+          "name": "Pixel laptop"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Night Shift #088",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/088.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B6",
+          "name": "Porcelain"
+        },
+        {
+          "category": "Outfit",
+          "code": "O10",
+          "name": "Explorer suit"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H16",
+          "name": "Hood"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F12",
+          "name": "Blood fangs"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X10",
+          "name": "Ear studs"
+        },
+        {
+          "category": "Neck",
+          "code": "C8",
+          "name": "Red cravat"
+        },
+        {
+          "category": "Companion",
+          "code": "K8",
+          "name": "Shadow blob"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Night Shift #089",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/089.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B11",
+          "name": "Golden"
+        },
+        {
+          "category": "Outfit",
+          "code": "O15",
+          "name": "Artist jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H8",
+          "name": "White ancient"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X14",
+          "name": "Gold grill"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P4",
+          "name": "Cassette player"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Night Shift #090",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/090.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B8",
+          "name": "Neon glitch"
+        },
+        {
+          "category": "Outfit",
+          "code": "O15",
+          "name": "Artist jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H1",
+          "name": "Widow peak"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Companion",
+          "code": "K14",
+          "name": "Pocket dragon"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Night Shift #091",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/091.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B3",
+          "name": "Frost blue"
+        },
+        {
+          "category": "Outfit",
+          "code": "O16",
+          "name": "Dark utility"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H15",
+          "name": "Razor orbit"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F8",
+          "name": "Red visor"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X3",
+          "name": "Porcelain cracks"
+        },
+        {
+          "category": "Earring",
+          "code": "C14",
+          "name": "Fang earring"
+        },
+        {
+          "category": "Companion",
+          "code": "K2",
+          "name": "Robot bat"
+        },
+        {
+          "category": "Effect",
+          "code": "E5",
+          "name": "Red droplets"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Night Shift #092",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/092.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B4",
+          "name": "Crimson veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O14",
+          "name": "Flame biker"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H8",
+          "name": "White ancient"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F9",
+          "name": "Classic fangs"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F7",
+          "name": "Monocle"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X4",
+          "name": "Cyber cheek"
+        },
+        {
+          "category": "Neck",
+          "code": "C12",
+          "name": "Bone necklace"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Night Shift #093",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/093.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B12",
+          "name": "Deep void"
+        },
+        {
+          "category": "Outfit",
+          "code": "O9",
+          "name": "Skate jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H2",
+          "name": "Slick-back"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F9",
+          "name": "Classic fangs"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X8",
+          "name": "Face bandage"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P16",
+          "name": "Hologram cube"
+        },
+        {
+          "category": "Companion",
+          "code": "K7",
+          "name": "Eyeball creature"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Night Shift #094",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/094.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B4",
+          "name": "Crimson veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O9",
+          "name": "Skate jacket"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F4",
+          "name": "Void eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F15",
+          "name": "Moustache"
+        },
+        {
+          "category": "Effect",
+          "code": "E1",
+          "name": "Red glitch"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Night Shift #095",
+      "house": "Black Signal",
+      "accent": "#a576ff",
+      "motto": "Broadcast from the void.",
+      "image": "/characters/095.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B12",
+          "name": "Deep void"
+        },
+        {
+          "category": "Outfit",
+          "code": "O13",
+          "name": "Frost parka"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H5",
+          "name": "Bob cut"
+        },
+        {
+          "category": "Eyes",
+          "code": "F3",
+          "name": "Gold eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F13",
+          "name": "Stitched mouth"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F8",
+          "name": "Red visor"
+        },
+        {
+          "category": "Effect",
+          "code": "E6",
+          "name": "Scanlines"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Night Shift #096",
+      "house": "Wild Bite",
+      "accent": "#d8ff4f",
+      "motto": "Instinct over etiquette.",
+      "image": "/characters/096.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B15",
+          "name": "Daywalker"
+        },
+        {
+          "category": "Outfit",
+          "code": "O6",
+          "name": "Neon racer"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H5",
+          "name": "Bob cut"
+        },
+        {
+          "category": "Eyes",
+          "code": "F1",
+          "name": "Red eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X9",
+          "name": "Nose ring"
+        },
+        {
+          "category": "Neck",
+          "code": "C12",
+          "name": "Bone necklace"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P15",
+          "name": "Night cup"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "name": "Night Shift #097",
+      "house": "Velvet Court",
+      "accent": "#ff405b",
+      "motto": "Old blood, new rules.",
+      "image": "/characters/097.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B9",
+          "name": "Ember veins"
+        },
+        {
+          "category": "Outfit",
+          "code": "O1",
+          "name": "Street hoodie"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H3",
+          "name": "Mohawk"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Neck",
+          "code": "C8",
+          "name": "Red cravat"
+        },
+        {
+          "category": "Side Prop",
+          "code": "P13",
+          "name": "Crystal shard"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Night Shift #098",
+      "house": "Neon Vein",
+      "accent": "#35e7ff",
+      "motto": "Stay bright after dark.",
+      "image": "/characters/098.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B12",
+          "name": "Deep void"
+        },
+        {
+          "category": "Outfit",
+          "code": "O16",
+          "name": "Dark utility"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H11",
+          "name": "Tiny top hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F11",
+          "name": "Gold fang"
+        },
+        {
+          "category": "Eyewear",
+          "code": "F6",
+          "name": "Gold glasses"
+        },
+        {
+          "category": "Companion",
+          "code": "K8",
+          "name": "Shadow blob"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "name": "Night Shift #099",
+      "house": "Cold Blood",
+      "accent": "#9bdcff",
+      "motto": "Calm is a superpower.",
+      "image": "/characters/099.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B2",
+          "name": "Ash gray"
+        },
+        {
+          "category": "Outfit",
+          "code": "O12",
+          "name": "Hologram coat"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H16",
+          "name": "Hood"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F16",
+          "name": "Face mask"
+        },
+        {
+          "category": "Neck",
+          "code": "C9",
+          "name": "Ruby choker"
+        },
+        {
+          "category": "Earring",
+          "code": "C13",
+          "name": "Gold hoop"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "name": "Night Shift #100",
+      "house": "Asphalt Fangs",
+      "accent": "#ff7a32",
+      "motto": "The city is ours at night.",
+      "image": "/characters/100.png",
+      "traits": [
+        {
+          "category": "Origin",
+          "code": "B14",
+          "name": "Alien lavender"
+        },
+        {
+          "category": "Outfit",
+          "code": "O1",
+          "name": "Street hoodie"
+        },
+        {
+          "category": "Hair / Headwear",
+          "code": "H5",
+          "name": "Bob cut"
+        },
+        {
+          "category": "Eyes",
+          "code": "F2",
+          "name": "Icy eyes"
+        },
+        {
+          "category": "Mouth",
+          "code": "F12",
+          "name": "Blood fangs"
+        },
+        {
+          "category": "Face Detail",
+          "code": "X16",
+          "name": "Lollipop"
+        },
+        {
+          "category": "Effect",
+          "code": "E14",
+          "name": "Flame wisps"
+        }
+      ]
+    }
+  ]
+}
