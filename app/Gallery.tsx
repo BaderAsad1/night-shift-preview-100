@@ -99,9 +99,9 @@ export function Gallery({ manifest }: { manifest: Manifest }) {
 
       <section className="metrics" aria-label="Collection overview">
         <div><strong>100</strong><span>CHARACTERS</span></div>
-        <div><strong>144</strong><span>TRAIT CONCEPTS</span></div>
+        <div><strong>36</strong><span>SOURCE ARCHETYPES</span></div>
         <div><strong>6</strong><span>NIGHT HOUSES</span></div>
-        <div><strong>7,128</strong><span>VALID COMBINATIONS</span></div>
+        <div><strong>0</strong><span>BACKGROUND OBJECTS</span></div>
       </section>
 
       <section className="collection" id="collection">

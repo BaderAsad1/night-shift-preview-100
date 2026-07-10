@@ -1,21 +1,18 @@
 #!/usr/bin/env python3
-"""Build Neon Nocturne from complete portraits and illustrated motifs.
+"""Build Neon Nocturne from complete, source-normalized portraits.
 
-No head/torso splicing and no procedural grids, bars, charts, or scan lines.
-Every portrait is complete. A curated pixel-art motif is placed only around the
-portrait and erased behind a solid silhouette-protection matte.
+No head/torso splicing, background objects, procedural grids, bars, charts, or
+scan lines. Every output is assembled from one complete portrait source trait.
 """
 
 from __future__ import annotations
 
 import argparse
 from collections import deque
-import hashlib
-import itertools
 import json
 from pathlib import Path
 
-from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageOps
+from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,7 +21,6 @@ PORTRAIT_SOURCES = [
     ROOT / "reference" / "neon-nocturne-expansion-a.png",
     ROOT / "reference" / "neon-nocturne-expansion-b.png",
 ]
-MOTIF_SOURCE = ROOT / "reference" / "neon-nocturne-motifs.png"
 TRAIT_SOURCE_DIR = ROOT / "reference" / "neon-nocturne-traits"
 INK = (2, 1, 2)
 LIME = "#d0f708"
@@ -121,46 +117,10 @@ EYE_BOXES = [
     ((450, 390, 600, 560), (625, 390, 745, 560)),
 ]
 
-MOTIFS = [
-    ("MO01", "Crescent Moon"), ("MO02", "Crater Moon"),
-    ("MO03", "Bat Trio"), ("MO04", "Hanging Spider"),
-    ("MO05", "Luna Moths"), ("MO06", "Curling Fog"),
-    ("MO07", "Black Cat"), ("MO08", "Perched Crow"),
-    ("MO09", "Mushroom Cluster"), ("MO10", "Thorn Leaves"),
-    ("MO11", "Floating Eyes"), ("MO12", "Pumpkin Lantern"),
-    ("MO13", "Night Comet"), ("MO14", "Storm Cloud"),
-    ("MO15", "Wolf Paw"), ("MO16", "Old Cassette"),
-    ("MO17", "Pocket Radio"), ("MO18", "Potion Bottle"),
-    ("MO19", "Coiled Snake"), ("MO20", "Night Beetle"),
-    ("MO21", "Ornate Key"), ("MO22", "Tiny Ghost"),
-]
-# The generated 6x4 sheet also contains a window and candle. They are omitted
-# so nothing in the collection can be mistaken for religious imagery.
-MOTIF_SOURCE_INDICES = list(range(20)) + [22, 23]
-
-LAYOUTS = [
-    ("LY01", "Upper Left", [(8, 8, False)]),
-    ("LY02", "Upper Right", [(904, 8, False)]),
-    ("LY03", "Middle Left", [(8, 336, False)]),
-    ("LY04", "Middle Right", [(904, 336, False)]),
-    ("LY05", "Lower Left", [(8, 896, False)]),
-    ("LY06", "Lower Right", [(904, 896, False)]),
-    ("LY07", "Twin Upper", [(8, 8, False), (904, 8, True)]),
-    ("LY08", "Twin Sides", [(8, 408, False), (904, 408, True)]),
-    ("LY09", "Diagonal Pair", [(8, 8, False), (904, 896, True)]),
-]
-
-
 def portrait_cells(sheet: Image.Image) -> list[Image.Image]:
     xs = [0, 356, 716, 1013, sheet.width]
     ys = [0, 399, 750, sheet.height]
     return [sheet.crop((xs[c], ys[r], xs[c + 1], ys[r + 1])).convert("RGB") for r in range(3) for c in range(4)]
-
-
-def motif_cells(sheet: Image.Image) -> list[Image.Image]:
-    xs = [round(i * sheet.width / 6) for i in range(7)]
-    ys = [round(i * sheet.height / 4) for i in range(5)]
-    return [sheet.crop((xs[c], ys[r], xs[c + 1], ys[r + 1])).convert("RGB") for r in range(4) for c in range(6)]
 
 
 def lime_to_alpha(cell: Image.Image) -> Image.Image:
@@ -312,27 +272,46 @@ def flame_interior_mask(portrait: Image.Image, archetype_index: int) -> Image.Im
     if archetype_index != 3:
         return mask
     solid_ink = portrait.getchannel("A").point(lambda value: 255 if value > 90 else 0)
-    inset = solid_ink.filter(ImageFilter.MinFilter(9))
+    # One-pixel inset: keep the crisp black outline while coloring narrow flame
+    # tongues that the old four-pixel inset incorrectly left black.
+    inset = solid_ink.filter(ImageFilter.MinFilter(3))
     flame_region = Image.new("L", portrait.size, 0)
-    ImageDraw.Draw(flame_region).rectangle((300, 70, 850, 500), fill=255)
+    flame_draw = ImageDraw.Draw(flame_region)
+    flame_draw.rectangle((300, 70, 850, 500), fill=255)
+    # The left temple flame drops below the main crown. It is part of the same
+    # hair trait, not a separate black hair block.
+    flame_draw.rectangle((280, 440, 455, 690), fill=255)
     return ImageChops.multiply(inset, flame_region)
 
 
-def apply_trait_color(portrait: Image.Image, archetype_index: int) -> Image.Image:
+def sharpen_portrait_ink(portrait: Image.Image) -> Image.Image:
+    """Snap generated line art to opaque black pixels with no glow feather."""
+    alpha = portrait.getchannel("A").point(lambda value: 255 if value >= 96 else 0)
+    sharp = Image.new("RGBA", portrait.size, (*INK, 0))
+    sharp.putalpha(alpha)
+    return sharp
+
+
+def apply_trait_color(
+    portrait: Image.Image,
+    archetype_index: int,
+    mask_source: Image.Image | None = None,
+) -> Image.Image:
     """Build source-level eye and flame color without altering black ink."""
+    mask_source = mask_source or portrait
     yellow = Image.new("RGBA", portrait.size, (*TRAIT_YELLOW, 0))
-    yellow.putalpha(eye_interior_mask(portrait, archetype_index))
+    yellow.putalpha(eye_interior_mask(mask_source, archetype_index))
     colored = yellow
     colored.alpha_composite(portrait)
 
     flame = Image.new("RGBA", portrait.size, (*TRAIT_YELLOW, 0))
-    flame.putalpha(flame_interior_mask(portrait, archetype_index))
+    flame.putalpha(flame_interior_mask(mask_source, archetype_index))
     colored.alpha_composite(flame)
     return colored
 
 
 def normalize_portrait_trait(portrait: Image.Image, archetype_index: int) -> Image.Image:
-    """Normalize a source portrait around a shared 160px eye span and eye-line."""
+    """Use one face scale and anchor every portrait to the canvas bottom."""
     boxes = EYE_BOXES[archetype_index]
     centers = [((x0 + x1) / 2, (y0 + y1) / 2) for x0, y0, x1, y1 in boxes]
     eye_midpoint = (
@@ -344,31 +323,23 @@ def normalize_portrait_trait(portrait: Image.Image, archetype_index: int) -> Ima
     if not bbox or eye_span <= 0:
         raise ValueError(f"Cannot normalize archetype {archetype_index + 1}")
 
-    scale = min(
-        160 / eye_span,
-        920 / (bbox[2] - bbox[0]),
-        920 / (bbox[3] - bbox[1]),
-    )
-    target_eye = (620, 520)
-    transformed = [
-        (bbox[0] - eye_midpoint[0]) * scale + target_eye[0],
-        (bbox[1] - eye_midpoint[1]) * scale + target_eye[1],
-        (bbox[2] - eye_midpoint[0]) * scale + target_eye[0],
-        (bbox[3] - eye_midpoint[1]) * scale + target_eye[1],
-    ]
-    # Calibrate to an inset 52..972 frame so Lanczos edge pixels still remain
-    # inside the public 48..976 safety boundary after resampling.
-    shift_x = max(52 - transformed[0], 0) + min(972 - transformed[2], 0)
-    shift_y = max(52 - transformed[1], 0) + min(972 - transformed[3], 0)
+    scale = 160 / eye_span
+    target_eye_x = 620
+    target_left = (bbox[0] - eye_midpoint[0]) * scale + target_eye_x
+    target_right = (bbox[2] - eye_midpoint[0]) * scale + target_eye_x
+    shift_x = max(-target_left, 0) + min(1024 - target_right, 0)
 
     resized = portrait.resize(
         (round(portrait.width * scale), round(portrait.height * scale)),
-        Image.Resampling.LANCZOS,
+        Image.Resampling.NEAREST,
     )
+    resized_bbox = resized.getchannel("A").getbbox()
+    if not resized_bbox:
+        raise ValueError(f"Empty normalized archetype {archetype_index + 1}")
     normalized = Image.new("RGBA", portrait.size, (0, 0, 0, 0))
     normalized.alpha_composite(resized, (
-        round(target_eye[0] + shift_x - eye_midpoint[0] * scale),
-        round(target_eye[1] + shift_y - eye_midpoint[1] * scale),
+        round(target_eye_x + shift_x - eye_midpoint[0] * scale),
+        1024 - resized_bbox[3],
     ))
     return normalized
 
@@ -386,7 +357,7 @@ def build_portrait_trait_sources(output_dir: Path = TRAIT_SOURCE_DIR) -> None:
         old.unlink()
     for index, portrait in enumerate(portraits):
         cleaned = clean_portrait_footer(portrait, index)
-        colored = apply_trait_color(cleaned, index)
+        colored = apply_trait_color(sharpen_portrait_ink(cleaned), index, cleaned)
         normalized = normalize_portrait_trait(colored, index)
         normalized.save(output_dir / f"AR{index + 1:02d}.png", optimize=True)
 
@@ -402,54 +373,13 @@ def load_portrait_trait_sources() -> list[Image.Image]:
     return [Image.open(path).convert("RGBA") for path in paths]
 
 
-def extract_motif(cell: Image.Image) -> Image.Image:
-    return remove_tiny_fragments(alpha_art(lime_to_alpha(cell), 104, 104, (112, 112), 108), maximum_pixels=50)
-
-
-def protection_matte(base: Image.Image) -> Image.Image:
-    """Protect lime interior spaces as well as black portrait pixels."""
-    alpha = base.getchannel("A").point(lambda value: 255 if value > 24 else 0)
-    src = alpha.load()
-    matte = Image.new("L", alpha.size, 0)
-    dst = matte.load()
-    for y in range(alpha.height):
-        occupied = [x for x in range(alpha.width) if src[x, y]]
-        if occupied:
-            for x in range(max(0, occupied[0] - 8), min(alpha.width, occupied[-1] + 9)):
-                dst[x, y] = 255
-    return matte.filter(ImageFilter.MaxFilter(17))
-
-
-def motif_layer(motif: Image.Image, layout_index: int) -> Image.Image:
-    layer = Image.new("RGBA", (1024, 1024), (*INK, 0))
-    for x, y, mirrored in LAYOUTS[layout_index][2]:
-        art = ImageOps.mirror(motif) if mirrored else motif
-        layer.alpha_composite(art, (x, y))
-    return layer
-
-
-def all_combinations() -> list[tuple[int, int, int]]:
-    overlays = list(itertools.product(range(len(MOTIFS)), range(len(LAYOUTS))))
-    result = []
-    for round_index in range(len(overlays)):
-        for archetype_index in range(len(ARCHETYPES)):
-            overlay_index = (round_index * 37 + archetype_index * 17) % len(overlays)
-            motif_index, layout_index = overlays[overlay_index]
-            result.append((archetype_index, motif_index, layout_index))
-    if len(result) != 7128 or len(set(result)) != 7128:
-        raise ValueError("Expected exactly 7,128 unique combinations")
-    return result
-
-
-def trait_records(archetype_index: int, motif_index: int, layout_index: int):
+def trait_records(archetype_index: int):
     archetype = ARCHETYPES[archetype_index]
     return [
         {"category": "Archetype", "code": f"AR{archetype_index + 1:02d}", "name": archetype[0]},
         {"category": "Silhouette / Headwear", "code": f"SH{archetype_index + 1:02d}", "name": archetype[1]},
         {"category": "Eyes", "code": f"EY{archetype_index + 1:02d}", "name": archetype[2]},
         {"category": "Outfit", "code": f"OF{archetype_index + 1:02d}", "name": archetype[3]},
-        {"category": "Night Motif", "code": MOTIFS[motif_index][0], "name": MOTIFS[motif_index][1]},
-        {"category": "Motif Layout", "code": LAYOUTS[layout_index][0], "name": LAYOUTS[layout_index][1]},
     ]
 
 
@@ -458,32 +388,18 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--limit", type=int, default=100)
     args = parser.parse_args()
-    combinations = all_combinations()
-    if not 1 <= args.limit <= len(combinations):
-        raise ValueError(f"Limit must be between 1 and {len(combinations)}")
+    if not 1 <= args.limit <= 100:
+        raise ValueError("Limit must be between 1 and 100")
 
     portraits = load_portrait_trait_sources()
-    mattes = [protection_matte(portrait) for portrait in portraits]
-
-    source_cells = motif_cells(Image.open(MOTIF_SOURCE))
-    motifs = [extract_motif(source_cells[index]) for index in MOTIF_SOURCE_INDICES]
-    if len(motifs) != len(MOTIFS):
-        raise ValueError(f"Expected {len(MOTIFS)} motifs, found {len(motifs)}")
 
     args.output.mkdir(parents=True, exist_ok=True)
     for old in args.output.glob("*.png"):
         old.unlink()
-    hashes = set()
     records = []
-    for number, (archetype_index, motif_index, layout_index) in enumerate(combinations[:args.limit], 1):
-        decoration = motif_layer(motifs[motif_index], layout_index)
-        decoration.putalpha(ImageChops.subtract(decoration.getchannel("A"), mattes[archetype_index]))
-        image = decoration
-        image.alpha_composite(portraits[archetype_index])
-        digest = hashlib.sha256(image.tobytes()).hexdigest()
-        if digest in hashes:
-            raise SystemExit(f"Duplicate rendered art at #{number:03d}")
-        hashes.add(digest)
+    for number in range(1, args.limit + 1):
+        archetype_index = (number - 1) % len(ARCHETYPES)
+        image = portraits[archetype_index].copy()
         filename = f"{number:03d}.png"
         image.save(args.output / filename, optimize=True)
         house = HOUSES[(number - 1) % len(HOUSES)]
@@ -494,50 +410,42 @@ def main() -> None:
             "accent": house["accent"],
             "motto": house["motto"],
             "image": f"studio/{filename}",
-            "modules": {"archetype": archetype_index + 1, "motif": motif_index + 1, "layout": layout_index + 1},
-            "traits": trait_records(archetype_index, motif_index, layout_index),
+            "modules": {"archetype": archetype_index + 1},
+            "traits": trait_records(archetype_index),
         })
 
-    possible = len(combinations)
     categories = {
         "Archetype": [
             {"code": f"AR{i + 1:02d}", "name": values[0],
              "components": {"silhouette": values[1], "eyes": values[2], "outfit": values[3]}}
             for i, values in enumerate(ARCHETYPES)
         ],
-        "Night Motif": [{"code": code, "name": name} for code, name in MOTIFS],
-        "Motif Layout": [{"code": code, "name": name} for code, name, _ in LAYOUTS],
     }
     library = {
         "name": "Neon Nocturne — Complete Archetype System",
-        "sources": ["neon-nocturne-traits/AR01.png–AR36.png", MOTIF_SOURCE.name],
+        "sources": ["neon-nocturne-traits/AR01.png–AR36.png"],
         "palette": {"ink": "#020102", "traitYellow": "#fdf423", "presentationLime": LIME},
         "rendering": {
             "output": "1024x1024 RGBA PNG",
-            "architecture": "Normalized source portrait trait plus curated illustrated motif",
-            "compositing": "Motif is erased inside a solid silhouette-protection matte",
-            "normalization": {"eyeSpan": 160, "eyeLineY": 520, "safeFrame": [48, 48, 976, 976]},
+            "architecture": "One complete, normalized source portrait trait; no background objects",
+            "normalization": {"eyeSpan": 160, "bodyBaselineY": 1024, "resampling": "nearest"},
         },
         "rules": [
             "Complete portraits are never split into head or torso layers",
-            "Portrait size is normalized at the source-trait stage before collection assembly",
-            "Only curated hand-drawn night motifs are used",
-            "Motifs cannot erase, mask, or overpaint portrait pixels",
+            "Portrait scale and body baseline are normalized at the source-trait stage",
+            "No decorative characters, icons, animals, objects, or motifs are placed in the background",
             "Every eye interior and Living Flame interior is embedded in its source trait as #fdf423",
-            "Motif library is limited to nature, nocturnal objects, and creatures",
             "No text, logo, signature, or watermark",
         ],
         "moduleCount": sum(len(values) for values in categories.values()),
         "collectionTarget": 6666,
-        "possibleCombinations": possible,
-        "reserveCombinations": possible - 6666,
+        "sourceArchetypeCount": len(ARCHETYPES),
         "categories": categories,
     }
     manifest = {"collection": "Night Shift Society", "edition": "Neon Nocturne", "count": len(records),
                 "traitLibrary": library, "characters": records}
     (args.output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
-    print(f"Built {len(records)} previews from 36 complete portraits, 22 motifs, and 9 layouts "
-          f"({possible} valid combinations; target 6666)")
+    print(f"Built {len(records)} clean previews from 36 complete source portraits; no background motifs")
 
 
 if __name__ == "__main__":

@@ -20,7 +20,8 @@ test("renders the Night Shift preview gallery", async () => {
   assert.match(html, /Night Shift Society — Preview 100/);
   assert.match(html, /MEET THE/);
   assert.match(html, /REVIEW THE BATCH/);
-  assert.match(html, /VALID COMBINATIONS/);
+  assert.match(html, /SOURCE ARCHETYPES/);
+  assert.match(html, /BACKGROUND OBJECTS/);
 });
 
 test("ships 100 unique character records", async () => {
@@ -56,21 +57,19 @@ test("ships both one-bit comparison sets and static gallery", async () => {
   assert.equal(traitSourceFiles.filter((file) => /^AR\d{2}\.png$/.test(file)).length, 36);
   assert.equal(studioManifest.count, 100);
   assert.equal(new Set(studioManifest.characters.map(character => character.id)).size, 100);
-  assert.equal(new Set(studioManifest.characters.map(character => JSON.stringify(character.traits))).size, 100);
-  assert.equal(studioManifest.traitLibrary.moduleCount, 67);
+  assert.equal(new Set(studioManifest.characters.map(character => JSON.stringify(character.traits))).size, 36);
+  assert.equal(studioManifest.traitLibrary.moduleCount, 36);
   assert.equal(studioManifest.traitLibrary.collectionTarget, 6666);
-  assert.equal(studioManifest.traitLibrary.possibleCombinations, 7128);
-  assert.equal(studioManifest.traitLibrary.reserveCombinations, 462);
+  assert.equal(studioManifest.traitLibrary.sourceArchetypeCount, 36);
   assert.equal(studioManifest.traitLibrary.palette.traitYellow, "#fdf423");
   assert.deepEqual(studioManifest.traitLibrary.rendering.normalization, {
     eyeSpan: 160,
-    eyeLineY: 520,
-    safeFrame: [48, 48, 976, 976],
+    bodyBaselineY: 1024,
+    resampling: "nearest",
   });
-  assert.equal(new Set(studioManifest.characters.map(character => `${character.modules.archetype}-${character.modules.motif}-${character.modules.layout}`)).size, 100);
   assert.equal(new Set(studioManifest.characters.map(character => character.modules.archetype)).size, 36);
-  assert.equal(new Set(studioManifest.characters.map(character => character.modules.motif)).size, 22);
-  assert.equal(new Set(studioManifest.characters.map(character => character.modules.layout)).size, 9);
+  assert.equal(studioManifest.characters.some(character => "motif" in character.modules || "layout" in character.modules), false);
+  assert.equal(studioManifest.traitLibrary.rules.some(rule => /No decorative characters, icons, animals, objects, or motifs/.test(rule)), true);
   const traitNames = studioManifest.characters.flatMap(character => character.traits.map(trait => trait.name.toLowerCase()));
   assert.equal(traitNames.some(name => /cross|crucifix|religious|pentagram/.test(name)), false);
   assert.equal(traitNames.some(name => /grid|chart|scan line|checker|waveform|skyline/.test(name)), false);

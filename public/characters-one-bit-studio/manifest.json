@@ -5,8 +5,7 @@
   "traitLibrary": {
     "name": "Neon Nocturne \u2014 Complete Archetype System",
     "sources": [
-      "neon-nocturne-traits/AR01.png\u2013AR36.png",
-      "neon-nocturne-motifs.png"
+      "neon-nocturne-traits/AR01.png\u2013AR36.png"
     ],
     "palette": {
       "ink": "#020102",
@@ -15,32 +14,23 @@
     },
     "rendering": {
       "output": "1024x1024 RGBA PNG",
-      "architecture": "Normalized source portrait trait plus curated illustrated motif",
-      "compositing": "Motif is erased inside a solid silhouette-protection matte",
+      "architecture": "One complete, normalized source portrait trait; no background objects",
       "normalization": {
         "eyeSpan": 160,
-        "eyeLineY": 520,
-        "safeFrame": [
-          48,
-          48,
-          976,
-          976
-        ]
+        "bodyBaselineY": 1024,
+        "resampling": "nearest"
       }
     },
     "rules": [
       "Complete portraits are never split into head or torso layers",
-      "Portrait size is normalized at the source-trait stage before collection assembly",
-      "Only curated hand-drawn night motifs are used",
-      "Motifs cannot erase, mask, or overpaint portrait pixels",
+      "Portrait scale and body baseline are normalized at the source-trait stage",
+      "No decorative characters, icons, animals, objects, or motifs are placed in the background",
       "Every eye interior and Living Flame interior is embedded in its source trait as #fdf423",
-      "Motif library is limited to nature, nocturnal objects, and creatures",
       "No text, logo, signature, or watermark"
     ],
-    "moduleCount": 67,
+    "moduleCount": 36,
     "collectionTarget": 6666,
-    "possibleCombinations": 7128,
-    "reserveCombinations": 462,
+    "sourceArchetypeCount": 36,
     "categories": {
       "Archetype": [
         {
@@ -367,134 +357,6 @@
             "outfit": "Sharp Blazer"
           }
         }
-      ],
-      "Night Motif": [
-        {
-          "code": "MO01",
-          "name": "Crescent Moon"
-        },
-        {
-          "code": "MO02",
-          "name": "Crater Moon"
-        },
-        {
-          "code": "MO03",
-          "name": "Bat Trio"
-        },
-        {
-          "code": "MO04",
-          "name": "Hanging Spider"
-        },
-        {
-          "code": "MO05",
-          "name": "Luna Moths"
-        },
-        {
-          "code": "MO06",
-          "name": "Curling Fog"
-        },
-        {
-          "code": "MO07",
-          "name": "Black Cat"
-        },
-        {
-          "code": "MO08",
-          "name": "Perched Crow"
-        },
-        {
-          "code": "MO09",
-          "name": "Mushroom Cluster"
-        },
-        {
-          "code": "MO10",
-          "name": "Thorn Leaves"
-        },
-        {
-          "code": "MO11",
-          "name": "Floating Eyes"
-        },
-        {
-          "code": "MO12",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "code": "MO13",
-          "name": "Night Comet"
-        },
-        {
-          "code": "MO14",
-          "name": "Storm Cloud"
-        },
-        {
-          "code": "MO15",
-          "name": "Wolf Paw"
-        },
-        {
-          "code": "MO16",
-          "name": "Old Cassette"
-        },
-        {
-          "code": "MO17",
-          "name": "Pocket Radio"
-        },
-        {
-          "code": "MO18",
-          "name": "Potion Bottle"
-        },
-        {
-          "code": "MO19",
-          "name": "Coiled Snake"
-        },
-        {
-          "code": "MO20",
-          "name": "Night Beetle"
-        },
-        {
-          "code": "MO21",
-          "name": "Ornate Key"
-        },
-        {
-          "code": "MO22",
-          "name": "Tiny Ghost"
-        }
-      ],
-      "Motif Layout": [
-        {
-          "code": "LY01",
-          "name": "Upper Left"
-        },
-        {
-          "code": "LY02",
-          "name": "Upper Right"
-        },
-        {
-          "code": "LY03",
-          "name": "Middle Left"
-        },
-        {
-          "code": "LY04",
-          "name": "Middle Right"
-        },
-        {
-          "code": "LY05",
-          "name": "Lower Left"
-        },
-        {
-          "code": "LY06",
-          "name": "Lower Right"
-        },
-        {
-          "code": "LY07",
-          "name": "Twin Upper"
-        },
-        {
-          "code": "LY08",
-          "name": "Twin Sides"
-        },
-        {
-          "code": "LY09",
-          "name": "Diagonal Pair"
-        }
       ]
     }
   },
@@ -507,9 +369,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/001.png",
       "modules": {
-        "archetype": 1,
-        "motif": 1,
-        "layout": 1
+        "archetype": 1
       },
       "traits": [
         {
@@ -531,16 +391,6 @@
           "category": "Outfit",
           "code": "OF01",
           "name": "Skull Tux"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO01",
-          "name": "Crescent Moon"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY01",
-          "name": "Upper Left"
         }
       ]
     },
@@ -552,9 +402,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/002.png",
       "modules": {
-        "archetype": 2,
-        "motif": 2,
-        "layout": 9
+        "archetype": 2
       },
       "traits": [
         {
@@ -576,16 +424,6 @@
           "category": "Outfit",
           "code": "OF02",
           "name": "High Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO02",
-          "name": "Crater Moon"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY09",
-          "name": "Diagonal Pair"
         }
       ]
     },
@@ -597,9 +435,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/003.png",
       "modules": {
-        "archetype": 3,
-        "motif": 4,
-        "layout": 8
+        "archetype": 3
       },
       "traits": [
         {
@@ -621,16 +457,6 @@
           "category": "Outfit",
           "code": "OF03",
           "name": "Medallion Cape"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO04",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY08",
-          "name": "Twin Sides"
         }
       ]
     },
@@ -642,9 +468,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/004.png",
       "modules": {
-        "archetype": 4,
-        "motif": 6,
-        "layout": 7
+        "archetype": 4
       },
       "traits": [
         {
@@ -666,16 +490,6 @@
           "category": "Outfit",
           "code": "OF04",
           "name": "Striped Knit"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO06",
-          "name": "Curling Fog"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY07",
-          "name": "Twin Upper"
         }
       ]
     },
@@ -687,9 +501,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/005.png",
       "modules": {
-        "archetype": 5,
-        "motif": 8,
-        "layout": 6
+        "archetype": 5
       },
       "traits": [
         {
@@ -711,16 +523,6 @@
           "category": "Outfit",
           "code": "OF05",
           "name": "Undertaker Shirt"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO08",
-          "name": "Perched Crow"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY06",
-          "name": "Lower Right"
         }
       ]
     },
@@ -732,9 +534,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/006.png",
       "modules": {
-        "archetype": 6,
-        "motif": 10,
-        "layout": 5
+        "archetype": 6
       },
       "traits": [
         {
@@ -756,16 +556,6 @@
           "category": "Outfit",
           "code": "OF06",
           "name": "Winged Cape"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO10",
-          "name": "Thorn Leaves"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY05",
-          "name": "Lower Left"
         }
       ]
     },
@@ -777,9 +567,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/007.png",
       "modules": {
-        "archetype": 7,
-        "motif": 12,
-        "layout": 4
+        "archetype": 7
       },
       "traits": [
         {
@@ -801,16 +589,6 @@
           "category": "Outfit",
           "code": "OF07",
           "name": "Wrapped Tunic"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO12",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY04",
-          "name": "Middle Right"
         }
       ]
     },
@@ -822,9 +600,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/008.png",
       "modules": {
-        "archetype": 8,
-        "motif": 14,
-        "layout": 3
+        "archetype": 8
       },
       "traits": [
         {
@@ -846,16 +622,6 @@
           "category": "Outfit",
           "code": "OF08",
           "name": "Coven Coat + Lantern"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO14",
-          "name": "Storm Cloud"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     },
@@ -867,9 +633,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/009.png",
       "modules": {
-        "archetype": 9,
-        "motif": 16,
-        "layout": 2
+        "archetype": 9
       },
       "traits": [
         {
@@ -891,16 +655,6 @@
           "category": "Outfit",
           "code": "OF09",
           "name": "Chain Crewneck"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO16",
-          "name": "Old Cassette"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY02",
-          "name": "Upper Right"
         }
       ]
     },
@@ -912,9 +666,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/010.png",
       "modules": {
-        "archetype": 10,
-        "motif": 18,
-        "layout": 1
+        "archetype": 10
       },
       "traits": [
         {
@@ -936,16 +688,6 @@
           "category": "Outfit",
           "code": "OF10",
           "name": "Velvet Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO18",
-          "name": "Potion Bottle"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY01",
-          "name": "Upper Left"
         }
       ]
     },
@@ -957,9 +699,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/011.png",
       "modules": {
-        "archetype": 11,
-        "motif": 19,
-        "layout": 9
+        "archetype": 11
       },
       "traits": [
         {
@@ -981,16 +721,6 @@
           "category": "Outfit",
           "code": "OF11",
           "name": "Skeleton Hoodie"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO19",
-          "name": "Coiled Snake"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY09",
-          "name": "Diagonal Pair"
         }
       ]
     },
@@ -1002,9 +732,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/012.png",
       "modules": {
-        "archetype": 12,
-        "motif": 21,
-        "layout": 8
+        "archetype": 12
       },
       "traits": [
         {
@@ -1026,16 +754,6 @@
           "category": "Outfit",
           "code": "OF12",
           "name": "High Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO21",
-          "name": "Ornate Key"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY08",
-          "name": "Twin Sides"
         }
       ]
     },
@@ -1047,9 +765,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/013.png",
       "modules": {
-        "archetype": 13,
-        "motif": 1,
-        "layout": 7
+        "archetype": 13
       },
       "traits": [
         {
@@ -1071,16 +787,6 @@
           "category": "Outfit",
           "code": "OF13",
           "name": "Fur Flight Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO01",
-          "name": "Crescent Moon"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY07",
-          "name": "Twin Upper"
         }
       ]
     },
@@ -1092,9 +798,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/014.png",
       "modules": {
-        "archetype": 14,
-        "motif": 3,
-        "layout": 6
+        "archetype": 14
       },
       "traits": [
         {
@@ -1116,16 +820,6 @@
           "category": "Outfit",
           "code": "OF14",
           "name": "Utility Coat"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO03",
-          "name": "Bat Trio"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY06",
-          "name": "Lower Right"
         }
       ]
     },
@@ -1137,9 +831,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/015.png",
       "modules": {
-        "archetype": 15,
-        "motif": 5,
-        "layout": 5
+        "archetype": 15
       },
       "traits": [
         {
@@ -1161,16 +853,6 @@
           "category": "Outfit",
           "code": "OF15",
           "name": "Velvet Cape"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO05",
-          "name": "Luna Moths"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY05",
-          "name": "Lower Left"
         }
       ]
     },
@@ -1182,9 +864,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/016.png",
       "modules": {
-        "archetype": 16,
-        "motif": 7,
-        "layout": 4
+        "archetype": 16
       },
       "traits": [
         {
@@ -1206,16 +886,6 @@
           "category": "Outfit",
           "code": "OF16",
           "name": "Varsity Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO07",
-          "name": "Black Cat"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY04",
-          "name": "Middle Right"
         }
       ]
     },
@@ -1227,9 +897,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/017.png",
       "modules": {
-        "archetype": 17,
-        "motif": 9,
-        "layout": 3
+        "archetype": 17
       },
       "traits": [
         {
@@ -1251,16 +919,6 @@
           "category": "Outfit",
           "code": "OF17",
           "name": "Technical Shell"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO09",
-          "name": "Mushroom Cluster"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     },
@@ -1272,9 +930,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/018.png",
       "modules": {
-        "archetype": 18,
-        "motif": 11,
-        "layout": 2
+        "archetype": 18
       },
       "traits": [
         {
@@ -1296,16 +952,6 @@
           "category": "Outfit",
           "code": "OF18",
           "name": "Geometric Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO11",
-          "name": "Floating Eyes"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY02",
-          "name": "Upper Right"
         }
       ]
     },
@@ -1317,9 +963,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/019.png",
       "modules": {
-        "archetype": 19,
-        "motif": 13,
-        "layout": 1
+        "archetype": 19
       },
       "traits": [
         {
@@ -1341,16 +985,6 @@
           "category": "Outfit",
           "code": "OF19",
           "name": "Messenger Rig"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO13",
-          "name": "Night Comet"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY01",
-          "name": "Upper Left"
         }
       ]
     },
@@ -1362,9 +996,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/020.png",
       "modules": {
-        "archetype": 20,
-        "motif": 14,
-        "layout": 9
+        "archetype": 20
       },
       "traits": [
         {
@@ -1386,16 +1018,6 @@
           "category": "Outfit",
           "code": "OF20",
           "name": "Biker Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO14",
-          "name": "Storm Cloud"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY09",
-          "name": "Diagonal Pair"
         }
       ]
     },
@@ -1407,9 +1029,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/021.png",
       "modules": {
-        "archetype": 21,
-        "motif": 16,
-        "layout": 8
+        "archetype": 21
       },
       "traits": [
         {
@@ -1431,16 +1051,6 @@
           "category": "Outfit",
           "code": "OF21",
           "name": "Broadcast Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO16",
-          "name": "Old Cassette"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY08",
-          "name": "Twin Sides"
         }
       ]
     },
@@ -1452,9 +1062,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/022.png",
       "modules": {
-        "archetype": 22,
-        "motif": 18,
-        "layout": 7
+        "archetype": 22
       },
       "traits": [
         {
@@ -1476,16 +1084,6 @@
           "category": "Outfit",
           "code": "OF22",
           "name": "Quilted Coat"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO18",
-          "name": "Potion Bottle"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY07",
-          "name": "Twin Upper"
         }
       ]
     },
@@ -1497,9 +1095,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/023.png",
       "modules": {
-        "archetype": 23,
-        "motif": 20,
-        "layout": 6
+        "archetype": 23
       },
       "traits": [
         {
@@ -1521,16 +1117,6 @@
           "category": "Outfit",
           "code": "OF23",
           "name": "Armored Vest"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO20",
-          "name": "Night Beetle"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY06",
-          "name": "Lower Right"
         }
       ]
     },
@@ -1542,9 +1128,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/024.png",
       "modules": {
-        "archetype": 24,
-        "motif": 22,
-        "layout": 5
+        "archetype": 24
       },
       "traits": [
         {
@@ -1566,16 +1150,6 @@
           "category": "Outfit",
           "code": "OF24",
           "name": "Knit Cardigan"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO22",
-          "name": "Tiny Ghost"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY05",
-          "name": "Lower Left"
         }
       ]
     },
@@ -1587,9 +1161,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/025.png",
       "modules": {
-        "archetype": 25,
-        "motif": 2,
-        "layout": 4
+        "archetype": 25
       },
       "traits": [
         {
@@ -1611,16 +1183,6 @@
           "category": "Outfit",
           "code": "OF25",
           "name": "Trench Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO02",
-          "name": "Crater Moon"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY04",
-          "name": "Middle Right"
         }
       ]
     },
@@ -1632,9 +1194,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/026.png",
       "modules": {
-        "archetype": 26,
-        "motif": 4,
-        "layout": 3
+        "archetype": 26
       },
       "traits": [
         {
@@ -1656,16 +1216,6 @@
           "category": "Outfit",
           "code": "OF26",
           "name": "Racing Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO04",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     },
@@ -1677,9 +1227,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/027.png",
       "modules": {
-        "archetype": 27,
-        "motif": 6,
-        "layout": 2
+        "archetype": 27
       },
       "traits": [
         {
@@ -1701,16 +1249,6 @@
           "category": "Outfit",
           "code": "OF27",
           "name": "Heavy Pea Coat"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO06",
-          "name": "Curling Fog"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY02",
-          "name": "Upper Right"
         }
       ]
     },
@@ -1722,9 +1260,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/028.png",
       "modules": {
-        "archetype": 28,
-        "motif": 8,
-        "layout": 1
+        "archetype": 28
       },
       "traits": [
         {
@@ -1746,16 +1282,6 @@
           "category": "Outfit",
           "code": "OF28",
           "name": "Tool Apron"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO08",
-          "name": "Perched Crow"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY01",
-          "name": "Upper Left"
         }
       ]
     },
@@ -1767,9 +1293,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/029.png",
       "modules": {
-        "archetype": 29,
-        "motif": 9,
-        "layout": 9
+        "archetype": 29
       },
       "traits": [
         {
@@ -1791,16 +1315,6 @@
           "category": "Outfit",
           "code": "OF29",
           "name": "Fur Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO09",
-          "name": "Mushroom Cluster"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY09",
-          "name": "Diagonal Pair"
         }
       ]
     },
@@ -1812,9 +1326,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/030.png",
       "modules": {
-        "archetype": 30,
-        "motif": 11,
-        "layout": 8
+        "archetype": 30
       },
       "traits": [
         {
@@ -1836,16 +1348,6 @@
           "category": "Outfit",
           "code": "OF30",
           "name": "Desert Scarf"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO11",
-          "name": "Floating Eyes"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY08",
-          "name": "Twin Sides"
         }
       ]
     },
@@ -1857,9 +1359,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/031.png",
       "modules": {
-        "archetype": 31,
-        "motif": 13,
-        "layout": 7
+        "archetype": 31
       },
       "traits": [
         {
@@ -1881,16 +1381,6 @@
           "category": "Outfit",
           "code": "OF31",
           "name": "Work Overalls"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO13",
-          "name": "Night Comet"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY07",
-          "name": "Twin Upper"
         }
       ]
     },
@@ -1902,9 +1392,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/032.png",
       "modules": {
-        "archetype": 32,
-        "motif": 15,
-        "layout": 6
+        "archetype": 32
       },
       "traits": [
         {
@@ -1926,16 +1414,6 @@
           "category": "Outfit",
           "code": "OF32",
           "name": "Stage Coat"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO15",
-          "name": "Wolf Paw"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY06",
-          "name": "Lower Right"
         }
       ]
     },
@@ -1947,9 +1425,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/033.png",
       "modules": {
-        "archetype": 33,
-        "motif": 17,
-        "layout": 5
+        "archetype": 33
       },
       "traits": [
         {
@@ -1971,16 +1447,6 @@
           "category": "Outfit",
           "code": "OF33",
           "name": "Padded Parka"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO17",
-          "name": "Pocket Radio"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY05",
-          "name": "Lower Left"
         }
       ]
     },
@@ -1992,9 +1458,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/034.png",
       "modules": {
-        "archetype": 34,
-        "motif": 19,
-        "layout": 4
+        "archetype": 34
       },
       "traits": [
         {
@@ -2016,16 +1480,6 @@
           "category": "Outfit",
           "code": "OF34",
           "name": "Patterned Vest"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO19",
-          "name": "Coiled Snake"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY04",
-          "name": "Middle Right"
         }
       ]
     },
@@ -2037,9 +1491,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/035.png",
       "modules": {
-        "archetype": 35,
-        "motif": 21,
-        "layout": 3
+        "archetype": 35
       },
       "traits": [
         {
@@ -2061,16 +1513,6 @@
           "category": "Outfit",
           "code": "OF35",
           "name": "Oversized Hoodie"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO21",
-          "name": "Ornate Key"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     },
@@ -2082,9 +1524,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/036.png",
       "modules": {
-        "archetype": 36,
-        "motif": 1,
-        "layout": 2
+        "archetype": 36
       },
       "traits": [
         {
@@ -2106,16 +1546,6 @@
           "category": "Outfit",
           "code": "OF36",
           "name": "Sharp Blazer"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO01",
-          "name": "Crescent Moon"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY02",
-          "name": "Upper Right"
         }
       ]
     },
@@ -2127,9 +1557,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/037.png",
       "modules": {
-        "archetype": 1,
-        "motif": 5,
-        "layout": 2
+        "archetype": 1
       },
       "traits": [
         {
@@ -2151,16 +1579,6 @@
           "category": "Outfit",
           "code": "OF01",
           "name": "Skull Tux"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO05",
-          "name": "Luna Moths"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY02",
-          "name": "Upper Right"
         }
       ]
     },
@@ -2172,9 +1590,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/038.png",
       "modules": {
-        "archetype": 2,
-        "motif": 7,
-        "layout": 1
+        "archetype": 2
       },
       "traits": [
         {
@@ -2196,16 +1612,6 @@
           "category": "Outfit",
           "code": "OF02",
           "name": "High Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO07",
-          "name": "Black Cat"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY01",
-          "name": "Upper Left"
         }
       ]
     },
@@ -2217,9 +1623,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/039.png",
       "modules": {
-        "archetype": 3,
-        "motif": 8,
-        "layout": 9
+        "archetype": 3
       },
       "traits": [
         {
@@ -2241,16 +1645,6 @@
           "category": "Outfit",
           "code": "OF03",
           "name": "Medallion Cape"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO08",
-          "name": "Perched Crow"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY09",
-          "name": "Diagonal Pair"
         }
       ]
     },
@@ -2262,9 +1656,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/040.png",
       "modules": {
-        "archetype": 4,
-        "motif": 10,
-        "layout": 8
+        "archetype": 4
       },
       "traits": [
         {
@@ -2286,16 +1678,6 @@
           "category": "Outfit",
           "code": "OF04",
           "name": "Striped Knit"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO10",
-          "name": "Thorn Leaves"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY08",
-          "name": "Twin Sides"
         }
       ]
     },
@@ -2307,9 +1689,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/041.png",
       "modules": {
-        "archetype": 5,
-        "motif": 12,
-        "layout": 7
+        "archetype": 5
       },
       "traits": [
         {
@@ -2331,16 +1711,6 @@
           "category": "Outfit",
           "code": "OF05",
           "name": "Undertaker Shirt"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO12",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY07",
-          "name": "Twin Upper"
         }
       ]
     },
@@ -2352,9 +1722,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/042.png",
       "modules": {
-        "archetype": 6,
-        "motif": 14,
-        "layout": 6
+        "archetype": 6
       },
       "traits": [
         {
@@ -2376,16 +1744,6 @@
           "category": "Outfit",
           "code": "OF06",
           "name": "Winged Cape"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO14",
-          "name": "Storm Cloud"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY06",
-          "name": "Lower Right"
         }
       ]
     },
@@ -2397,9 +1755,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/043.png",
       "modules": {
-        "archetype": 7,
-        "motif": 16,
-        "layout": 5
+        "archetype": 7
       },
       "traits": [
         {
@@ -2421,16 +1777,6 @@
           "category": "Outfit",
           "code": "OF07",
           "name": "Wrapped Tunic"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO16",
-          "name": "Old Cassette"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY05",
-          "name": "Lower Left"
         }
       ]
     },
@@ -2442,9 +1788,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/044.png",
       "modules": {
-        "archetype": 8,
-        "motif": 18,
-        "layout": 4
+        "archetype": 8
       },
       "traits": [
         {
@@ -2466,16 +1810,6 @@
           "category": "Outfit",
           "code": "OF08",
           "name": "Coven Coat + Lantern"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO18",
-          "name": "Potion Bottle"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY04",
-          "name": "Middle Right"
         }
       ]
     },
@@ -2487,9 +1821,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/045.png",
       "modules": {
-        "archetype": 9,
-        "motif": 20,
-        "layout": 3
+        "archetype": 9
       },
       "traits": [
         {
@@ -2511,16 +1843,6 @@
           "category": "Outfit",
           "code": "OF09",
           "name": "Chain Crewneck"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO20",
-          "name": "Night Beetle"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     },
@@ -2532,9 +1854,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/046.png",
       "modules": {
-        "archetype": 10,
-        "motif": 22,
-        "layout": 2
+        "archetype": 10
       },
       "traits": [
         {
@@ -2556,16 +1876,6 @@
           "category": "Outfit",
           "code": "OF10",
           "name": "Velvet Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO22",
-          "name": "Tiny Ghost"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY02",
-          "name": "Upper Right"
         }
       ]
     },
@@ -2577,9 +1887,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/047.png",
       "modules": {
-        "archetype": 11,
-        "motif": 2,
-        "layout": 1
+        "archetype": 11
       },
       "traits": [
         {
@@ -2601,16 +1909,6 @@
           "category": "Outfit",
           "code": "OF11",
           "name": "Skeleton Hoodie"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO02",
-          "name": "Crater Moon"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY01",
-          "name": "Upper Left"
         }
       ]
     },
@@ -2622,9 +1920,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/048.png",
       "modules": {
-        "archetype": 12,
-        "motif": 3,
-        "layout": 9
+        "archetype": 12
       },
       "traits": [
         {
@@ -2646,16 +1942,6 @@
           "category": "Outfit",
           "code": "OF12",
           "name": "High Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO03",
-          "name": "Bat Trio"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY09",
-          "name": "Diagonal Pair"
         }
       ]
     },
@@ -2667,9 +1953,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/049.png",
       "modules": {
-        "archetype": 13,
-        "motif": 5,
-        "layout": 8
+        "archetype": 13
       },
       "traits": [
         {
@@ -2691,16 +1975,6 @@
           "category": "Outfit",
           "code": "OF13",
           "name": "Fur Flight Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO05",
-          "name": "Luna Moths"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY08",
-          "name": "Twin Sides"
         }
       ]
     },
@@ -2712,9 +1986,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/050.png",
       "modules": {
-        "archetype": 14,
-        "motif": 7,
-        "layout": 7
+        "archetype": 14
       },
       "traits": [
         {
@@ -2736,16 +2008,6 @@
           "category": "Outfit",
           "code": "OF14",
           "name": "Utility Coat"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO07",
-          "name": "Black Cat"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY07",
-          "name": "Twin Upper"
         }
       ]
     },
@@ -2757,9 +2019,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/051.png",
       "modules": {
-        "archetype": 15,
-        "motif": 9,
-        "layout": 6
+        "archetype": 15
       },
       "traits": [
         {
@@ -2781,16 +2041,6 @@
           "category": "Outfit",
           "code": "OF15",
           "name": "Velvet Cape"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO09",
-          "name": "Mushroom Cluster"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY06",
-          "name": "Lower Right"
         }
       ]
     },
@@ -2802,9 +2052,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/052.png",
       "modules": {
-        "archetype": 16,
-        "motif": 11,
-        "layout": 5
+        "archetype": 16
       },
       "traits": [
         {
@@ -2826,16 +2074,6 @@
           "category": "Outfit",
           "code": "OF16",
           "name": "Varsity Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO11",
-          "name": "Floating Eyes"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY05",
-          "name": "Lower Left"
         }
       ]
     },
@@ -2847,9 +2085,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/053.png",
       "modules": {
-        "archetype": 17,
-        "motif": 13,
-        "layout": 4
+        "archetype": 17
       },
       "traits": [
         {
@@ -2871,16 +2107,6 @@
           "category": "Outfit",
           "code": "OF17",
           "name": "Technical Shell"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO13",
-          "name": "Night Comet"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY04",
-          "name": "Middle Right"
         }
       ]
     },
@@ -2892,9 +2118,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/054.png",
       "modules": {
-        "archetype": 18,
-        "motif": 15,
-        "layout": 3
+        "archetype": 18
       },
       "traits": [
         {
@@ -2916,16 +2140,6 @@
           "category": "Outfit",
           "code": "OF18",
           "name": "Geometric Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO15",
-          "name": "Wolf Paw"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     },
@@ -2937,9 +2151,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/055.png",
       "modules": {
-        "archetype": 19,
-        "motif": 17,
-        "layout": 2
+        "archetype": 19
       },
       "traits": [
         {
@@ -2961,16 +2173,6 @@
           "category": "Outfit",
           "code": "OF19",
           "name": "Messenger Rig"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO17",
-          "name": "Pocket Radio"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY02",
-          "name": "Upper Right"
         }
       ]
     },
@@ -2982,9 +2184,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/056.png",
       "modules": {
-        "archetype": 20,
-        "motif": 19,
-        "layout": 1
+        "archetype": 20
       },
       "traits": [
         {
@@ -3006,16 +2206,6 @@
           "category": "Outfit",
           "code": "OF20",
           "name": "Biker Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO19",
-          "name": "Coiled Snake"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY01",
-          "name": "Upper Left"
         }
       ]
     },
@@ -3027,9 +2217,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/057.png",
       "modules": {
-        "archetype": 21,
-        "motif": 20,
-        "layout": 9
+        "archetype": 21
       },
       "traits": [
         {
@@ -3051,16 +2239,6 @@
           "category": "Outfit",
           "code": "OF21",
           "name": "Broadcast Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO20",
-          "name": "Night Beetle"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY09",
-          "name": "Diagonal Pair"
         }
       ]
     },
@@ -3072,9 +2250,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/058.png",
       "modules": {
-        "archetype": 22,
-        "motif": 22,
-        "layout": 8
+        "archetype": 22
       },
       "traits": [
         {
@@ -3096,16 +2272,6 @@
           "category": "Outfit",
           "code": "OF22",
           "name": "Quilted Coat"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO22",
-          "name": "Tiny Ghost"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY08",
-          "name": "Twin Sides"
         }
       ]
     },
@@ -3117,9 +2283,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/059.png",
       "modules": {
-        "archetype": 23,
-        "motif": 2,
-        "layout": 7
+        "archetype": 23
       },
       "traits": [
         {
@@ -3141,16 +2305,6 @@
           "category": "Outfit",
           "code": "OF23",
           "name": "Armored Vest"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO02",
-          "name": "Crater Moon"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY07",
-          "name": "Twin Upper"
         }
       ]
     },
@@ -3162,9 +2316,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/060.png",
       "modules": {
-        "archetype": 24,
-        "motif": 4,
-        "layout": 6
+        "archetype": 24
       },
       "traits": [
         {
@@ -3186,16 +2338,6 @@
           "category": "Outfit",
           "code": "OF24",
           "name": "Knit Cardigan"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO04",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY06",
-          "name": "Lower Right"
         }
       ]
     },
@@ -3207,9 +2349,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/061.png",
       "modules": {
-        "archetype": 25,
-        "motif": 6,
-        "layout": 5
+        "archetype": 25
       },
       "traits": [
         {
@@ -3231,16 +2371,6 @@
           "category": "Outfit",
           "code": "OF25",
           "name": "Trench Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO06",
-          "name": "Curling Fog"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY05",
-          "name": "Lower Left"
         }
       ]
     },
@@ -3252,9 +2382,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/062.png",
       "modules": {
-        "archetype": 26,
-        "motif": 8,
-        "layout": 4
+        "archetype": 26
       },
       "traits": [
         {
@@ -3276,16 +2404,6 @@
           "category": "Outfit",
           "code": "OF26",
           "name": "Racing Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO08",
-          "name": "Perched Crow"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY04",
-          "name": "Middle Right"
         }
       ]
     },
@@ -3297,9 +2415,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/063.png",
       "modules": {
-        "archetype": 27,
-        "motif": 10,
-        "layout": 3
+        "archetype": 27
       },
       "traits": [
         {
@@ -3321,16 +2437,6 @@
           "category": "Outfit",
           "code": "OF27",
           "name": "Heavy Pea Coat"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO10",
-          "name": "Thorn Leaves"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     },
@@ -3342,9 +2448,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/064.png",
       "modules": {
-        "archetype": 28,
-        "motif": 12,
-        "layout": 2
+        "archetype": 28
       },
       "traits": [
         {
@@ -3366,16 +2470,6 @@
           "category": "Outfit",
           "code": "OF28",
           "name": "Tool Apron"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO12",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY02",
-          "name": "Upper Right"
         }
       ]
     },
@@ -3387,9 +2481,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/065.png",
       "modules": {
-        "archetype": 29,
-        "motif": 14,
-        "layout": 1
+        "archetype": 29
       },
       "traits": [
         {
@@ -3411,16 +2503,6 @@
           "category": "Outfit",
           "code": "OF29",
           "name": "Fur Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO14",
-          "name": "Storm Cloud"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY01",
-          "name": "Upper Left"
         }
       ]
     },
@@ -3432,9 +2514,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/066.png",
       "modules": {
-        "archetype": 30,
-        "motif": 15,
-        "layout": 9
+        "archetype": 30
       },
       "traits": [
         {
@@ -3456,16 +2536,6 @@
           "category": "Outfit",
           "code": "OF30",
           "name": "Desert Scarf"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO15",
-          "name": "Wolf Paw"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY09",
-          "name": "Diagonal Pair"
         }
       ]
     },
@@ -3477,9 +2547,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/067.png",
       "modules": {
-        "archetype": 31,
-        "motif": 17,
-        "layout": 8
+        "archetype": 31
       },
       "traits": [
         {
@@ -3501,16 +2569,6 @@
           "category": "Outfit",
           "code": "OF31",
           "name": "Work Overalls"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO17",
-          "name": "Pocket Radio"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY08",
-          "name": "Twin Sides"
         }
       ]
     },
@@ -3522,9 +2580,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/068.png",
       "modules": {
-        "archetype": 32,
-        "motif": 19,
-        "layout": 7
+        "archetype": 32
       },
       "traits": [
         {
@@ -3546,16 +2602,6 @@
           "category": "Outfit",
           "code": "OF32",
           "name": "Stage Coat"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO19",
-          "name": "Coiled Snake"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY07",
-          "name": "Twin Upper"
         }
       ]
     },
@@ -3567,9 +2613,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/069.png",
       "modules": {
-        "archetype": 33,
-        "motif": 21,
-        "layout": 6
+        "archetype": 33
       },
       "traits": [
         {
@@ -3591,16 +2635,6 @@
           "category": "Outfit",
           "code": "OF33",
           "name": "Padded Parka"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO21",
-          "name": "Ornate Key"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY06",
-          "name": "Lower Right"
         }
       ]
     },
@@ -3612,9 +2646,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/070.png",
       "modules": {
-        "archetype": 34,
-        "motif": 1,
-        "layout": 5
+        "archetype": 34
       },
       "traits": [
         {
@@ -3636,16 +2668,6 @@
           "category": "Outfit",
           "code": "OF34",
           "name": "Patterned Vest"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO01",
-          "name": "Crescent Moon"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY05",
-          "name": "Lower Left"
         }
       ]
     },
@@ -3657,9 +2679,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/071.png",
       "modules": {
-        "archetype": 35,
-        "motif": 3,
-        "layout": 4
+        "archetype": 35
       },
       "traits": [
         {
@@ -3681,16 +2701,6 @@
           "category": "Outfit",
           "code": "OF35",
           "name": "Oversized Hoodie"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO03",
-          "name": "Bat Trio"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY04",
-          "name": "Middle Right"
         }
       ]
     },
@@ -3702,9 +2712,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/072.png",
       "modules": {
-        "archetype": 36,
-        "motif": 5,
-        "layout": 3
+        "archetype": 36
       },
       "traits": [
         {
@@ -3726,16 +2734,6 @@
           "category": "Outfit",
           "code": "OF36",
           "name": "Sharp Blazer"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO05",
-          "name": "Luna Moths"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     },
@@ -3747,9 +2745,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/073.png",
       "modules": {
-        "archetype": 1,
-        "motif": 9,
-        "layout": 3
+        "archetype": 1
       },
       "traits": [
         {
@@ -3771,16 +2767,6 @@
           "category": "Outfit",
           "code": "OF01",
           "name": "Skull Tux"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO09",
-          "name": "Mushroom Cluster"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     },
@@ -3792,9 +2778,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/074.png",
       "modules": {
-        "archetype": 2,
-        "motif": 11,
-        "layout": 2
+        "archetype": 2
       },
       "traits": [
         {
@@ -3816,16 +2800,6 @@
           "category": "Outfit",
           "code": "OF02",
           "name": "High Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO11",
-          "name": "Floating Eyes"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY02",
-          "name": "Upper Right"
         }
       ]
     },
@@ -3837,9 +2811,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/075.png",
       "modules": {
-        "archetype": 3,
-        "motif": 13,
-        "layout": 1
+        "archetype": 3
       },
       "traits": [
         {
@@ -3861,16 +2833,6 @@
           "category": "Outfit",
           "code": "OF03",
           "name": "Medallion Cape"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO13",
-          "name": "Night Comet"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY01",
-          "name": "Upper Left"
         }
       ]
     },
@@ -3882,9 +2844,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/076.png",
       "modules": {
-        "archetype": 4,
-        "motif": 14,
-        "layout": 9
+        "archetype": 4
       },
       "traits": [
         {
@@ -3906,16 +2866,6 @@
           "category": "Outfit",
           "code": "OF04",
           "name": "Striped Knit"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO14",
-          "name": "Storm Cloud"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY09",
-          "name": "Diagonal Pair"
         }
       ]
     },
@@ -3927,9 +2877,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/077.png",
       "modules": {
-        "archetype": 5,
-        "motif": 16,
-        "layout": 8
+        "archetype": 5
       },
       "traits": [
         {
@@ -3951,16 +2899,6 @@
           "category": "Outfit",
           "code": "OF05",
           "name": "Undertaker Shirt"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO16",
-          "name": "Old Cassette"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY08",
-          "name": "Twin Sides"
         }
       ]
     },
@@ -3972,9 +2910,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/078.png",
       "modules": {
-        "archetype": 6,
-        "motif": 18,
-        "layout": 7
+        "archetype": 6
       },
       "traits": [
         {
@@ -3996,16 +2932,6 @@
           "category": "Outfit",
           "code": "OF06",
           "name": "Winged Cape"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO18",
-          "name": "Potion Bottle"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY07",
-          "name": "Twin Upper"
         }
       ]
     },
@@ -4017,9 +2943,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/079.png",
       "modules": {
-        "archetype": 7,
-        "motif": 20,
-        "layout": 6
+        "archetype": 7
       },
       "traits": [
         {
@@ -4041,16 +2965,6 @@
           "category": "Outfit",
           "code": "OF07",
           "name": "Wrapped Tunic"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO20",
-          "name": "Night Beetle"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY06",
-          "name": "Lower Right"
         }
       ]
     },
@@ -4062,9 +2976,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/080.png",
       "modules": {
-        "archetype": 8,
-        "motif": 22,
-        "layout": 5
+        "archetype": 8
       },
       "traits": [
         {
@@ -4086,16 +2998,6 @@
           "category": "Outfit",
           "code": "OF08",
           "name": "Coven Coat + Lantern"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO22",
-          "name": "Tiny Ghost"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY05",
-          "name": "Lower Left"
         }
       ]
     },
@@ -4107,9 +3009,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/081.png",
       "modules": {
-        "archetype": 9,
-        "motif": 2,
-        "layout": 4
+        "archetype": 9
       },
       "traits": [
         {
@@ -4131,16 +3031,6 @@
           "category": "Outfit",
           "code": "OF09",
           "name": "Chain Crewneck"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO02",
-          "name": "Crater Moon"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY04",
-          "name": "Middle Right"
         }
       ]
     },
@@ -4152,9 +3042,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/082.png",
       "modules": {
-        "archetype": 10,
-        "motif": 4,
-        "layout": 3
+        "archetype": 10
       },
       "traits": [
         {
@@ -4176,16 +3064,6 @@
           "category": "Outfit",
           "code": "OF10",
           "name": "Velvet Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO04",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     },
@@ -4197,9 +3075,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/083.png",
       "modules": {
-        "archetype": 11,
-        "motif": 6,
-        "layout": 2
+        "archetype": 11
       },
       "traits": [
         {
@@ -4221,16 +3097,6 @@
           "category": "Outfit",
           "code": "OF11",
           "name": "Skeleton Hoodie"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO06",
-          "name": "Curling Fog"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY02",
-          "name": "Upper Right"
         }
       ]
     },
@@ -4242,9 +3108,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/084.png",
       "modules": {
-        "archetype": 12,
-        "motif": 8,
-        "layout": 1
+        "archetype": 12
       },
       "traits": [
         {
@@ -4266,16 +3130,6 @@
           "category": "Outfit",
           "code": "OF12",
           "name": "High Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO08",
-          "name": "Perched Crow"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY01",
-          "name": "Upper Left"
         }
       ]
     },
@@ -4287,9 +3141,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/085.png",
       "modules": {
-        "archetype": 13,
-        "motif": 9,
-        "layout": 9
+        "archetype": 13
       },
       "traits": [
         {
@@ -4311,16 +3163,6 @@
           "category": "Outfit",
           "code": "OF13",
           "name": "Fur Flight Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO09",
-          "name": "Mushroom Cluster"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY09",
-          "name": "Diagonal Pair"
         }
       ]
     },
@@ -4332,9 +3174,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/086.png",
       "modules": {
-        "archetype": 14,
-        "motif": 11,
-        "layout": 8
+        "archetype": 14
       },
       "traits": [
         {
@@ -4356,16 +3196,6 @@
           "category": "Outfit",
           "code": "OF14",
           "name": "Utility Coat"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO11",
-          "name": "Floating Eyes"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY08",
-          "name": "Twin Sides"
         }
       ]
     },
@@ -4377,9 +3207,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/087.png",
       "modules": {
-        "archetype": 15,
-        "motif": 13,
-        "layout": 7
+        "archetype": 15
       },
       "traits": [
         {
@@ -4401,16 +3229,6 @@
           "category": "Outfit",
           "code": "OF15",
           "name": "Velvet Cape"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO13",
-          "name": "Night Comet"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY07",
-          "name": "Twin Upper"
         }
       ]
     },
@@ -4422,9 +3240,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/088.png",
       "modules": {
-        "archetype": 16,
-        "motif": 15,
-        "layout": 6
+        "archetype": 16
       },
       "traits": [
         {
@@ -4446,16 +3262,6 @@
           "category": "Outfit",
           "code": "OF16",
           "name": "Varsity Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO15",
-          "name": "Wolf Paw"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY06",
-          "name": "Lower Right"
         }
       ]
     },
@@ -4467,9 +3273,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/089.png",
       "modules": {
-        "archetype": 17,
-        "motif": 17,
-        "layout": 5
+        "archetype": 17
       },
       "traits": [
         {
@@ -4491,16 +3295,6 @@
           "category": "Outfit",
           "code": "OF17",
           "name": "Technical Shell"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO17",
-          "name": "Pocket Radio"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY05",
-          "name": "Lower Left"
         }
       ]
     },
@@ -4512,9 +3306,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/090.png",
       "modules": {
-        "archetype": 18,
-        "motif": 19,
-        "layout": 4
+        "archetype": 18
       },
       "traits": [
         {
@@ -4536,16 +3328,6 @@
           "category": "Outfit",
           "code": "OF18",
           "name": "Geometric Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO19",
-          "name": "Coiled Snake"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY04",
-          "name": "Middle Right"
         }
       ]
     },
@@ -4557,9 +3339,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/091.png",
       "modules": {
-        "archetype": 19,
-        "motif": 21,
-        "layout": 3
+        "archetype": 19
       },
       "traits": [
         {
@@ -4581,16 +3361,6 @@
           "category": "Outfit",
           "code": "OF19",
           "name": "Messenger Rig"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO21",
-          "name": "Ornate Key"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     },
@@ -4602,9 +3372,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/092.png",
       "modules": {
-        "archetype": 20,
-        "motif": 1,
-        "layout": 2
+        "archetype": 20
       },
       "traits": [
         {
@@ -4626,16 +3394,6 @@
           "category": "Outfit",
           "code": "OF20",
           "name": "Biker Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO01",
-          "name": "Crescent Moon"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY02",
-          "name": "Upper Right"
         }
       ]
     },
@@ -4647,9 +3405,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/093.png",
       "modules": {
-        "archetype": 21,
-        "motif": 3,
-        "layout": 1
+        "archetype": 21
       },
       "traits": [
         {
@@ -4671,16 +3427,6 @@
           "category": "Outfit",
           "code": "OF21",
           "name": "Broadcast Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO03",
-          "name": "Bat Trio"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY01",
-          "name": "Upper Left"
         }
       ]
     },
@@ -4692,9 +3438,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/094.png",
       "modules": {
-        "archetype": 22,
-        "motif": 4,
-        "layout": 9
+        "archetype": 22
       },
       "traits": [
         {
@@ -4716,16 +3460,6 @@
           "category": "Outfit",
           "code": "OF22",
           "name": "Quilted Coat"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO04",
-          "name": "Hanging Spider"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY09",
-          "name": "Diagonal Pair"
         }
       ]
     },
@@ -4737,9 +3471,7 @@
       "motto": "Broadcast from the void.",
       "image": "studio/095.png",
       "modules": {
-        "archetype": 23,
-        "motif": 6,
-        "layout": 8
+        "archetype": 23
       },
       "traits": [
         {
@@ -4761,16 +3493,6 @@
           "category": "Outfit",
           "code": "OF23",
           "name": "Armored Vest"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO06",
-          "name": "Curling Fog"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY08",
-          "name": "Twin Sides"
         }
       ]
     },
@@ -4782,9 +3504,7 @@
       "motto": "Instinct over etiquette.",
       "image": "studio/096.png",
       "modules": {
-        "archetype": 24,
-        "motif": 8,
-        "layout": 7
+        "archetype": 24
       },
       "traits": [
         {
@@ -4806,16 +3526,6 @@
           "category": "Outfit",
           "code": "OF24",
           "name": "Knit Cardigan"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO08",
-          "name": "Perched Crow"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY07",
-          "name": "Twin Upper"
         }
       ]
     },
@@ -4827,9 +3537,7 @@
       "motto": "Old blood, new rules.",
       "image": "studio/097.png",
       "modules": {
-        "archetype": 25,
-        "motif": 10,
-        "layout": 6
+        "archetype": 25
       },
       "traits": [
         {
@@ -4851,16 +3559,6 @@
           "category": "Outfit",
           "code": "OF25",
           "name": "Trench Collar"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO10",
-          "name": "Thorn Leaves"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY06",
-          "name": "Lower Right"
         }
       ]
     },
@@ -4872,9 +3570,7 @@
       "motto": "Stay bright after dark.",
       "image": "studio/098.png",
       "modules": {
-        "archetype": 26,
-        "motif": 12,
-        "layout": 5
+        "archetype": 26
       },
       "traits": [
         {
@@ -4896,16 +3592,6 @@
           "category": "Outfit",
           "code": "OF26",
           "name": "Racing Jacket"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO12",
-          "name": "Pumpkin Lantern"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY05",
-          "name": "Lower Left"
         }
       ]
     },
@@ -4917,9 +3603,7 @@
       "motto": "Calm is a superpower.",
       "image": "studio/099.png",
       "modules": {
-        "archetype": 27,
-        "motif": 14,
-        "layout": 4
+        "archetype": 27
       },
       "traits": [
         {
@@ -4941,16 +3625,6 @@
           "category": "Outfit",
           "code": "OF27",
           "name": "Heavy Pea Coat"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO14",
-          "name": "Storm Cloud"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY04",
-          "name": "Middle Right"
         }
       ]
     },
@@ -4962,9 +3636,7 @@
       "motto": "The city is ours at night.",
       "image": "studio/100.png",
       "modules": {
-        "archetype": 28,
-        "motif": 16,
-        "layout": 3
+        "archetype": 28
       },
       "traits": [
         {
@@ -4986,16 +3658,6 @@
           "category": "Outfit",
           "code": "OF28",
           "name": "Tool Apron"
-        },
-        {
-          "category": "Night Motif",
-          "code": "MO16",
-          "name": "Old Cassette"
-        },
-        {
-          "category": "Motif Layout",
-          "code": "LY03",
-          "name": "Middle Left"
         }
       ]
     }
