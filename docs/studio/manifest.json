@@ -25,7 +25,7 @@
       "Complete portraits are never split into head or torso layers",
       "Portrait scale and body baseline are normalized at the source-trait stage",
       "No decorative characters, icons, animals, objects, or motifs are placed in the background",
-      "Every eye interior, Living Flame interior, and Spectral Flame stroke is embedded in its source trait as #fdf423",
+      "Every eye interior, Living Flame interior, and Spectral Flame body is embedded in its source trait as #fdf423",
       "No text, logo, signature, or watermark"
     ],
     "moduleCount": 36,

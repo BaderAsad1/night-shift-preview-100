@@ -319,8 +319,10 @@ def apply_spectral_flame_color(portrait: Image.Image, archetype_index: int) -> I
         components.append(component)
 
     largest = max(components, key=len)
-    flame_mask = Image.new("L", portrait.size, 0)
-    flame_pixels = flame_mask.load()
+    flame_body_mask = Image.new("L", portrait.size, 0)
+    flame_body_pixels = flame_body_mask.load()
+    flame_spark_mask = Image.new("L", portrait.size, 0)
+    flame_spark_pixels = flame_spark_mask.load()
     for component in components:
         if component is largest or len(component) < 12:
             continue
@@ -329,7 +331,10 @@ def apply_spectral_flame_color(portrait: Image.Image, archetype_index: int) -> I
         bbox = (min(xs), min(ys), max(xs) + 1, max(ys) + 1)
         if bbox[0] < 230 or bbox[2] > 800 or bbox[1] < 280:
             for x, y in component:
-                flame_pixels[x, y] = 255
+                if len(component) >= 600:
+                    flame_body_pixels[x, y] = 255
+                else:
+                    flame_spark_pixels[x, y] = 255
 
     # Widen the disconnected flame contour into a clearly yellow pixel stroke,
     # then remove the full character silhouette so it can never spill into face
@@ -344,7 +349,13 @@ def apply_spectral_flame_color(portrait: Image.Image, archetype_index: int) -> I
             character_pixels[x, y] = 255
     character_matte = character_matte.filter(ImageFilter.MaxFilter(7))
 
-    colored_flame = flame_mask.filter(ImageFilter.MaxFilter(11))
+    # The source aura is a broken one-pixel contour. Expand it into a solid
+    # flame body while retaining its exact curls and concave notches.
+    colored_flame = flame_body_mask.filter(ImageFilter.MaxFilter(41))
+    colored_flame = ImageChops.lighter(
+        colored_flame,
+        flame_spark_mask.filter(ImageFilter.MaxFilter(5)),
+    )
     colored_flame = ImageChops.subtract(colored_flame, character_matte)
     outline = colored_flame.filter(ImageFilter.MaxFilter(5))
     outlined = Image.new("RGBA", portrait.size, (*INK, 0))
@@ -354,6 +365,79 @@ def apply_spectral_flame_color(portrait: Image.Image, archetype_index: int) -> I
     yellow.putalpha(colored_flame)
     outlined.alpha_composite(yellow)
     return outlined
+
+
+def color_living_flame_fragments(portrait: Image.Image, archetype_index: int) -> Image.Image:
+    """Fill AR04's two detached left flame bodies without touching the ear."""
+    if archetype_index != 3:
+        return portrait
+
+    pixels = portrait.load()
+    ink_pixels = {
+        (x, y)
+        for y in range(portrait.height)
+        for x in range(portrait.width)
+        if pixels[x, y][3] == 255 and pixels[x, y][:3] == INK
+    }
+    fragment_mask = Image.new("L", portrait.size, 0)
+    while ink_pixels:
+        start = ink_pixels.pop()
+        queue = deque([start])
+        component = [start]
+        while queue:
+            x, y = queue.popleft()
+            for neighbor in ((x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)):
+                if neighbor in ink_pixels:
+                    ink_pixels.remove(neighbor)
+                    queue.append(neighbor)
+                    component.append(neighbor)
+        xs = [point[0] for point in component]
+        ys = [point[1] for point in component]
+        bbox = (min(xs), min(ys), max(xs) + 1, max(ys) + 1)
+        if len(component) >= 500 and bbox[0] < 330 and bbox[1] < 550 and bbox[3] < 560:
+            component_mask = Image.new("L", portrait.size, 0)
+            component_pixels = component_mask.load()
+            for x, y in component:
+                component_pixels[x, y] = 255
+            interior = component_mask.filter(ImageFilter.MinFilter(5))
+            fragment_mask = ImageChops.lighter(fragment_mask, interior)
+
+    yellow = Image.new("RGBA", portrait.size, (*TRAIT_YELLOW, 0))
+    yellow.putalpha(fragment_mask)
+    portrait.alpha_composite(yellow)
+    return portrait
+
+
+def restore_living_flame_face_ink(
+    colored: Image.Image,
+    portrait: Image.Image,
+    archetype_index: int,
+) -> Image.Image:
+    """Restore AR04 facial and ear ink after coloring only the flame hair."""
+    if archetype_index != 3:
+        return colored
+
+    alpha = portrait.getchannel("A")
+    restore_mask = Image.new("L", portrait.size, 0)
+    restore_draw = ImageDraw.Draw(restore_mask)
+    # Both eyebrows, lashes, and eye outlines. Transparent eye interiors remain
+    # yellow because only original black ink is restored.
+    restore_draw.rectangle((430, 460, 800, 760), fill=255)
+
+    # Ear linework is thin; the adjacent flame-hair mass is solid. Keeping only
+    # the thin-ink portion restores the ear without bringing back the black hair.
+    thin_ink = ImageChops.subtract(alpha, alpha.filter(ImageFilter.MinFilter(5)))
+    ear_region = Image.new("L", portrait.size, 0)
+    ImageDraw.Draw(ear_region).rectangle((220, 500, 470, 830), fill=255)
+    restore_mask = ImageChops.lighter(
+        restore_mask,
+        ImageChops.multiply(thin_ink, ear_region),
+    )
+
+    restored = portrait.copy()
+    restored.putalpha(ImageChops.multiply(alpha, restore_mask))
+    colored.alpha_composite(restored)
+    return colored
 
 
 def apply_trait_color(
@@ -371,7 +455,7 @@ def apply_trait_color(
     flame = Image.new("RGBA", portrait.size, (*TRAIT_YELLOW, 0))
     flame.putalpha(flame_interior_mask(mask_source, archetype_index))
     colored.alpha_composite(flame)
-    return colored
+    return restore_living_flame_face_ink(colored, portrait, archetype_index)
 
 
 def validate_portrait_trait(portrait: Image.Image, archetype_index: int) -> None:
@@ -389,11 +473,24 @@ def validate_portrait_trait(portrait: Image.Image, archetype_index: int) -> None
         pixel[:3] == TRAIT_YELLOW and pixel[3] == 255
         for pixel in portrait.getdata()
     )
-    minimum = 100_000 if archetype_index == 3 else 60_000 if archetype_index == 8 else 500
+    minimum = 100_000 if archetype_index == 3 else 150_000 if archetype_index == 8 else 500
     if yellow_count < minimum:
         raise ValueError(
             f"AR{archetype_index + 1:02d} has incomplete eye/flame color: {yellow_count} yellow pixels"
         )
+    if archetype_index == 3:
+        for label, box, minimum_ink in (
+            ("eyebrows", (450, 450, 760, 580), 5_000),
+            ("ear", (220, 540, 440, 770), 5_000),
+        ):
+            ink_count = sum(
+                pixel[:3] == INK and pixel[3] == 255
+                for pixel in portrait.crop(box).getdata()
+            )
+            if ink_count < minimum_ink:
+                raise ValueError(
+                    f"AR04 {label} ink was contaminated by flame color: {ink_count} pixels"
+                )
 
 
 def normalize_portrait_trait(portrait: Image.Image, archetype_index: int) -> Image.Image:
@@ -445,6 +542,7 @@ def build_portrait_trait_sources(output_dir: Path = TRAIT_SOURCE_DIR) -> None:
         cleaned = clean_portrait_footer(portrait, index)
         colored = apply_trait_color(sharpen_portrait_ink(cleaned), index, cleaned)
         normalized = normalize_portrait_trait(colored, index)
+        normalized = color_living_flame_fragments(normalized, index)
         normalized = apply_spectral_flame_color(normalized, index)
         validate_portrait_trait(normalized, index)
         normalized.save(output_dir / f"AR{index + 1:02d}.png", optimize=True)
@@ -522,7 +620,7 @@ def main() -> None:
             "Complete portraits are never split into head or torso layers",
             "Portrait scale and body baseline are normalized at the source-trait stage",
             "No decorative characters, icons, animals, objects, or motifs are placed in the background",
-            "Every eye interior, Living Flame interior, and Spectral Flame stroke is embedded in its source trait as #fdf423",
+            "Every eye interior, Living Flame interior, and Spectral Flame body is embedded in its source trait as #fdf423",
             "No text, logo, signature, or watermark",
         ],
         "moduleCount": sum(len(values) for values in categories.values()),
