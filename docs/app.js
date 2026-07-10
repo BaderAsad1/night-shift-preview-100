@@ -1,4 +1,4 @@
-const state = { manifest: null, house: "All Houses", query: "", selected: null };
+const state = { manifest: null, house: "All Houses", query: "", selected: null, mode: "color" };
 
 const gallery = document.querySelector("#gallery");
 const filters = document.querySelector("#filters");
@@ -8,6 +8,7 @@ const empty = document.querySelector("#empty");
 const modal = document.querySelector("#modal");
 
 function padded(id) { return String(id).padStart(3, "0"); }
+function imageSource(id) { return state.mode === "one-bit" ? `one-bit/${padded(id)}.png` : `characters/${padded(id)}.png`; }
 
 function matches(character) {
   if (state.house !== "All Houses" && character.house !== state.house) return false;
@@ -26,7 +27,7 @@ function renderGallery() {
     card.className = "character-card";
     card.style.setProperty("--accent", character.accent);
     card.setAttribute("aria-label", `Inspect ${character.name}`);
-    card.innerHTML = `<span class="image-well"><img src="characters/${padded(character.id)}.png" alt="${character.name}" loading="lazy"></span><span class="card-meta"><span><b>#${padded(character.id)}</b><small>${character.house}</small></span><span class="inspect">↗</span></span>`;
+    card.innerHTML = `<span class="image-well"><img src="${imageSource(character.id)}" alt="${character.name} — ${state.mode === "one-bit" ? "one-bit black" : "8-bit color"}" loading="lazy"></span><span class="card-meta"><span><b>#${padded(character.id)}</b><small>${character.house}</small></span><span class="inspect">↗</span></span>`;
     card.addEventListener("click", () => openCharacter(character));
     return card;
   }));
@@ -45,14 +46,45 @@ function renderFilters() {
 
 function renderHero() {
   const stack = document.querySelector("#hero-stack");
+  stack.replaceChildren();
   [7, 18, 1].forEach((id, index) => {
     const character = state.manifest.characters[id - 1];
     const card = document.createElement("div");
     card.className = `stack-card stack-${index + 1}`;
     card.style.setProperty("--accent", character.accent);
-    card.innerHTML = `<img src="characters/${padded(id)}.png" alt=""><span>#${padded(id)}</span>`;
+    card.innerHTML = `<img src="${imageSource(id)}" alt=""><span>#${padded(id)}</span>`;
     stack.append(card);
   });
+}
+
+function renderStyleSwitch() {
+  const switcher = document.querySelector("#style-switch");
+  const options = [
+    { id: "color", label: "8-BIT COLOR" },
+    { id: "one-bit", label: "1-BIT BLACK" },
+  ];
+  switcher.replaceChildren(...options.map(option => {
+    const button = document.createElement("button");
+    button.textContent = option.label;
+    button.className = state.mode === option.id ? "active" : "";
+    button.setAttribute("aria-pressed", state.mode === option.id ? "true" : "false");
+    button.addEventListener("click", () => setMode(option.id));
+    return button;
+  }));
+}
+
+function setMode(mode) {
+  state.mode = mode;
+  document.body.dataset.mode = mode;
+  document.querySelector("#mode-label").textContent = mode === "one-bit" ? "1-BIT BLACK" : "8-BIT COLOR";
+  renderStyleSwitch();
+  renderHero();
+  renderGallery();
+  if (state.selected) {
+    const art = document.querySelector("#detail-art");
+    art.src = imageSource(state.selected.id);
+    art.alt = `${state.selected.name} — ${mode === "one-bit" ? "one-bit black" : "8-bit color"}`;
+  }
 }
 
 function openCharacter(character) {
@@ -63,8 +95,8 @@ function openCharacter(character) {
   const image = document.querySelector("#detail-image");
   image.style.setProperty("--accent", character.accent);
   const art = document.querySelector("#detail-art");
-  art.src = `characters/${padded(character.id)}.png`;
-  art.alt = character.name;
+  art.src = imageSource(character.id);
+  art.alt = `${character.name} — ${state.mode === "one-bit" ? "one-bit black" : "8-bit color"}`;
   document.querySelector("#trait-list").innerHTML = character.traits.map(trait => `<div><span>${trait.category}</span><strong>${trait.name}</strong><code>${trait.code}</code></div>`).join("");
   modal.hidden = false;
   document.body.style.overflow = "hidden";
@@ -91,7 +123,7 @@ document.querySelector("#copy").addEventListener("click", async event => {
 
 fetch("characters/manifest.json")
   .then(response => { if (!response.ok) throw new Error("Manifest unavailable"); return response.json(); })
-  .then(manifest => { state.manifest = manifest; renderHero(); renderFilters(); renderGallery(); })
+  .then(manifest => { state.manifest = manifest; document.body.dataset.mode = state.mode; renderStyleSwitch(); renderHero(); renderFilters(); renderGallery(); })
   .catch(() => {
     gallery.innerHTML = '<div class="empty-state">The gallery could not load. Please refresh the page.</div>';
   });
