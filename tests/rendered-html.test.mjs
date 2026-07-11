@@ -58,6 +58,22 @@ test("ships the categorized isolated V2 library and standard generator test", as
   assert.equal(outputs.filter((file) => /^\d{4}\.png$/.test(file)).length, 24);
 });
 
+test("ships the V2 layer library through the GitHub Pages docs source", async () => {
+  const docsRoot = new URL("../docs/", import.meta.url);
+  const reviewRoot = new URL("review/trait-expansion-v2/", docsRoot);
+  const [homeHtml, reviewHtml, manifestText, hairFiles] = await Promise.all([
+    readFile(new URL("index.html", docsRoot), "utf8"),
+    readFile(new URL("index.html", reviewRoot), "utf8"),
+    readFile(new URL("isolated-layers/manifest.json", reviewRoot), "utf8"),
+    readdir(new URL("isolated-layers/hair-headwear/", reviewRoot)),
+  ]);
+  const manifest = JSON.parse(manifestText);
+  assert.match(homeHtml, /OPEN THE 128-TRAIT REVIEW/);
+  assert.match(reviewHtml, /ISOLATED TRAIT/);
+  assert.equal(manifest.count, 128);
+  assert.equal(hairFiles.filter((file) => /^HH\d{2}\.png$/.test(file)).length, 16);
+});
+
 test("ships 100 unique character records", async () => {
   const root = new URL("../public/characters/", import.meta.url);
   const files = await readdir(root);

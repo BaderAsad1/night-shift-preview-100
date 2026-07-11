@@ -45,6 +45,12 @@ main { min-height: 100vh; overflow: hidden; background-image: radial-gradient(ci
 .metrics strong { color: var(--red); font: 900 26px var(--font-geist-mono), monospace; }
 .metrics span { color: var(--muted); font: 700 9px var(--font-geist-mono), monospace; letter-spacing: .12em; }
 
+.v2-review-link { max-width: 1356px; margin: 70px auto 0; padding: 38px 42px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 40px; border: 1px solid #596800; background: linear-gradient(105deg, rgba(208,247,8,.13), transparent 48%), #120e16; }
+.v2-review-link h2 { margin: 10px 0; font-size: clamp(34px, 4vw, 58px); line-height: .92; letter-spacing: -.05em; }
+.v2-review-link p { max-width: 720px; margin: 0; color: #aaa1b1; line-height: 1.65; }
+.v2-review-link a { display: flex; align-items: center; gap: 28px; padding: 18px 20px; color: #0c0910; background: #d0f708; text-decoration: none; font: 900 10px var(--font-geist-mono), monospace; letter-spacing: .09em; box-shadow: 7px 7px 0 #657700; }
+.v2-review-link a b { font-size: 20px; }
+
 .collection { max-width: 1440px; margin: auto; padding: 100px 42px 120px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 32px; }
 .section-heading h2 { font-size: clamp(42px, 5vw, 70px); }
@@ -163,6 +169,7 @@ body[data-mode="studio"] .style-switch button.active { background: #d0f708; }
   .metrics { grid-template-columns: repeat(2, 1fr); }
   .metrics div { padding: 20px; border-bottom: 1px solid var(--line); }
   .collection { padding: 75px 18px; }
+  .v2-review-link { margin: 45px 18px 0; padding: 28px 24px; grid-template-columns: 1fr; }
   .section-heading { align-items: start; }
   .section-heading p { display: none; }
   .controls { display: grid; }

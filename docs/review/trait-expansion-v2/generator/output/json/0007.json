@@ -1,0 +1,15 @@
+{
+  "name": "Neon Nocturne Pipeline Test #7",
+  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "image": "ipfs://REPLACE_AFTER_UPLOAD/0007.png",
+  "dna": "205b6a55288fde391e700dac036a0ef0c8914c409261d1e647c41bf1f1acc0fa",
+  "edition": 7,
+  "attributes": [
+    {
+      "trait_type": "Complete Character",
+      "value": "Closed Crooked Grin",
+      "code": "MO03"
+    }
+  ],
+  "compiler": "Night Shift Layer Generator 1.0"
+}

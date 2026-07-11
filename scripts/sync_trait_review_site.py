@@ -9,12 +9,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "review" / "trait-expansion-v2"
-DESTINATION = ROOT / "public" / "review" / "trait-expansion-v2"
+DESTINATIONS = (
+    ROOT / "public" / "review" / "trait-expansion-v2",
+    ROOT / "docs" / "review" / "trait-expansion-v2",
+)
 
 
-def copy_item(relative: str) -> None:
+def copy_item(relative: str, destination_root: Path) -> None:
     source = SOURCE / relative
-    destination = DESTINATION / relative
+    destination = destination_root / relative
     if source.is_dir():
         shutil.copytree(source, destination)
     else:
@@ -23,24 +26,25 @@ def copy_item(relative: str) -> None:
 
 
 def main() -> None:
-    shutil.rmtree(DESTINATION, ignore_errors=True)
-    DESTINATION.mkdir(parents=True)
-    for item in (
-        "index.html",
-        "review.css",
-        "review.js",
-        "manifest.js",
-        "manifest.json",
-        "cards",
-        "cards-transparent",
-        "isolated-layers",
-        "generator/output",
-        "generator/config.json",
-        "generator/README.md",
-        "generator/neon-nocturne-generator-layers.zip",
-    ):
-        copy_item(item)
-    print(f"Synced hosted review assets to {DESTINATION.relative_to(ROOT)}")
+    for destination in DESTINATIONS:
+        shutil.rmtree(destination, ignore_errors=True)
+        destination.mkdir(parents=True)
+        for item in (
+            "index.html",
+            "review.css",
+            "review.js",
+            "manifest.js",
+            "manifest.json",
+            "cards",
+            "cards-transparent",
+            "isolated-layers",
+            "generator/output",
+            "generator/config.json",
+            "generator/README.md",
+            "generator/neon-nocturne-generator-layers.zip",
+        ):
+            copy_item(item, destination)
+        print(f"Synced hosted review assets to {destination.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@ from __future__ import annotations
 import json
 import shutil
 from pathlib import Path
-from zipfile import ZIP_DEFLATED, ZipFile
+from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 import cv2
 import numpy as np
@@ -341,7 +341,10 @@ def remove_unapproved_yellow(layer: np.ndarray, category: str, code: str) -> np.
 def write_zip(path: Path, files: list[tuple[Path, str]]) -> None:
     with ZipFile(path, "w", ZIP_DEFLATED) as archive:
         for source, name in files:
-            archive.write(source, name)
+            info = ZipInfo(name, date_time=(2026, 1, 1, 0, 0, 0))
+            info.compress_type = ZIP_DEFLATED
+            info.external_attr = 0o100644 << 16
+            archive.writestr(info, source.read_bytes())
 
 
 def main() -> None:

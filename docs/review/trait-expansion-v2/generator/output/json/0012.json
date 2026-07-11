@@ -1,0 +1,15 @@
+{
+  "name": "Neon Nocturne Pipeline Test #12",
+  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "image": "ipfs://REPLACE_AFTER_UPLOAD/0012.png",
+  "dna": "e2c707d25acd8ad00779e33f7d50fc2b74f6ffbea8459fa6c57cd788debf4a97",
+  "edition": 12,
+  "attributes": [
+    {
+      "trait_type": "Complete Character",
+      "value": "Stone Gargoyle",
+      "code": "RA05"
+    }
+  ],
+  "compiler": "Night Shift Layer Generator 1.0"
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neon Nocturne — Trait Expansion V2 Review</title>
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
+  <header>
+    <div>
+      <span class="eyebrow">NIGHT SHIFT SOCIETY / INTERNAL REVIEW</span>
+      <h1>NEON NOCTURNE<br><em>TRAIT EXPANSION V2</em></h1>
+      <p>128 categorized, registered transparent trait layers with individual and batch downloads, plus their on-character references and a deterministic standard-layer generator test.</p>
+    </div>
+    <div class="scoreboard" aria-label="Review counts">
+      <span><b id="total-count">128</b> TOTAL</span>
+      <span><b id="approved-count">0</b> APPROVED</span>
+      <span><b id="revise-count">0</b> REVISE</span>
+      <span><b id="rejected-count">0</b> REJECTED</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="rules">
+      <strong>LOCKED:</strong> approved face geometry, exact scale, bottom baseline, hard pixel edges,
+      <code>#020102</code> ink and <code>#fdf423</code> eye/flame interiors. No religious references or background objects.
+    </section>
+
+    <section class="layer-library" id="isolated-trait-library">
+      <div class="library-head">
+        <div>
+          <span class="eyebrow">128 FILES / 8 CATEGORIES / TRANSPARENT PNG</span>
+          <h2>ISOLATED TRAIT<br><em>LAYER LIBRARY</em></h2>
+          <p>Every file is a 512×512 registered RGBA PNG. Use <b>ISOLATED</b> to inspect the downloadable layer itself and <b>REFERENCE</b> to compare it with the approved on-character concept.</p>
+        </div>
+        <div class="batch-actions" id="batch-actions" aria-label="Batch trait downloads"></div>
+      </div>
+
+      <div class="toolbar">
+        <div id="filters" class="filters" aria-label="Filter traits"></div>
+        <button id="export-decisions" class="export">EXPORT DECISIONS ↓</button>
+      </div>
+
+      <section id="trait-grid" class="trait-grid" aria-live="polite"></section>
+    </section>
+
+    <section class="generator-section" id="generator-test">
+      <div class="generator-head">
+        <div>
+          <span class="eyebrow">STANDARD NFT PIPELINE / TEST RUN 01</span>
+          <h2>WEIGHTED LAYER<br><em>GENERATOR TEST</em></h2>
+          <p>24 deterministic editions generated from ordered, registered 512×512 transparent PNG inputs. Filename weights, unique DNA, mint metadata, fixed layer order, and zero runtime scaling.</p>
+        </div>
+        <div class="generator-actions">
+          <a href="generator/neon-nocturne-generator-layers.zip" download>DOWNLOAD GENERATOR LAYERS ↓</a>
+          <a href="generator/output/_metadata.json" download>DOWNLOAD TEST METADATA ↓</a>
+        </div>
+      </div>
+      <div class="generator-warning">
+        <strong>PIPELINE READY / LAYER REVIEW ACTIVE:</strong> the isolated library above is now the art-source review surface. This test remains intentionally deterministic while the team approves or revises each layer before generating the 6,666-edition production run.
+      </div>
+      <div id="generator-grid" class="generator-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <template id="trait-template">
+    <article class="trait-card">
+      <div class="image-wrap checker"><img alt="" loading="lazy"></div>
+      <div class="trait-copy"><code></code><strong></strong><a class="trait-download" href="" download>PNG ↓</a></div>
+      <button class="view-toggle" type="button">REFERENCE</button>
+      <div class="decisions" role="group" aria-label="Trait decision">
+        <button data-decision="approve">APPROVE</button>
+        <button data-decision="revise">REVISE</button>
+        <button data-decision="reject">REJECT</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="manifest.js"></script>
+  <script src="isolated-layers/manifest.js"></script>
+  <script src="generator/output/manifest.js"></script>
+  <script src="review.js"></script>
+</body>
+</html>
