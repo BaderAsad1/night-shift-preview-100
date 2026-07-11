@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0046",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/046.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Classic Point"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Raven Wave"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Angry Arches"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Crooked Grin"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Striped Knit"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Pixel Tear"
+    }
+  ]
+}

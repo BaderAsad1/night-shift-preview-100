@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0067",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/067.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Wide Signal"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Webbed Wave"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "X Glow"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Open Bite"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Chain Crewneck"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Nose Ring"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0089",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/089.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Classic Point"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Spider Bob"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Web Liner"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Quiet Fang"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Coven Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Mini Shades"
+    }
+  ]
+}

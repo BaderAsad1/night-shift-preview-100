@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0096",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/096.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Tall Velvet"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Coven Hat"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Night Fade"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Sharp Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Quilted Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Temple Circuit"
+    }
+  ]
+}

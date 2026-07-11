@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0051",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/051.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Narrow Night"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Pom Beanie"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "X Glow"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Night Pout"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Coven Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Mini Shades"
+    }
+  ]
+}

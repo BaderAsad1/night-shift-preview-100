@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0029",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/029.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Soft Jaw"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Moon Beanie"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Moon Gaze"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Crooked Grin"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Coven Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Brow Slit"
+    }
+  ]
+}

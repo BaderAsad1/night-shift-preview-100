@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0057",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/057.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Tall Velvet"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Retro Visor"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Night Fade"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Flat Mood"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Varsity Jacket"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Pixel Tear"
+    }
+  ]
+}

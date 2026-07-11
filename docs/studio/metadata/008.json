@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0008",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/008.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Classic Point"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Moon Beanie"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Spike Stare"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Twin Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Winged Cape"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Ear Tag"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0082",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/082.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Narrow Night"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Little Horns"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Lens Glow"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Sharp Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Tool Apron"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Ear Tag"
+    }
+  ]
+}

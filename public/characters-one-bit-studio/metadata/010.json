@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0010",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/010.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Narrow Night"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Spiked Crest"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Wolf Slant"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Crooked Grin"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Utility Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Nose Ring"
+    }
+  ]
+}

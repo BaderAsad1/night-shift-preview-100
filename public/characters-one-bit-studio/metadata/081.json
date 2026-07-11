@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0081",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/081.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Tall Velvet"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Raven Wave"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Goggle Glow"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Half Bite"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Winged Cape"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Ear Tag"
+    }
+  ]
+}

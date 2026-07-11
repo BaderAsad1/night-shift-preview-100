@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0093",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/093.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Tall Velvet"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Spiked Crest"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Mummy Glow"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Side Smirk"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Armored Vest"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Mini Shades"
+    }
+  ]
+}

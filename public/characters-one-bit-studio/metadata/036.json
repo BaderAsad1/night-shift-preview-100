@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0036",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/036.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Wide Signal"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Living Flame"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Rain Focus"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Happy Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Wrapped Tunic"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Pixel Tear"
+    }
+  ]
+}

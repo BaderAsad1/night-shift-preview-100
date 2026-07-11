@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0012",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/012.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Wide Signal"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Mummy Wrap"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Night Fade"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Quiet Fang"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Broadcast Jacket"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Cheek Scar"
+    }
+  ]
+}

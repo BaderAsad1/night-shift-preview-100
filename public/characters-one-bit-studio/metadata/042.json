@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0042",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/042.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Classic Point"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Mummy Wrap"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Soft Glow"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Zigzag Bite"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "High Collar"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Moon Clip"
+    }
+  ]
+}

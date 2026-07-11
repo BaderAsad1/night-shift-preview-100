@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0061",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/061.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Tall Velvet"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Spectral Wave"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Moth Dark"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Open Bite"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Tool Apron"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Bridge Stud"
+    }
+  ]
+}

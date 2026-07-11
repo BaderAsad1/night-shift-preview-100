@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0009",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/009.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Narrow Night"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Spider Bob"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "X Glow"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Single Fang"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Trench Collar"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Nose Ring"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0025",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/025.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Wide Signal"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Retro Visor"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Hypno Spirals"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Zigzag Bite"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Medallion Cape"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Cheek Stripes"
+    }
+  ]
+}

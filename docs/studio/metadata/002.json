@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0002",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/002.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Wide Signal"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Wolf Ears"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Moth Dark"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Twin Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Coven Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Pixel Tear"
+    }
+  ]
+}

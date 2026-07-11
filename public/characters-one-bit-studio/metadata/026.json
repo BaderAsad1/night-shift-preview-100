@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0026",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/026.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Round Bite"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Retro Visor"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Mummy Glow"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Flat Mood"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Fur Flight Jacket"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Brow Slit"
+    }
+  ]
+}

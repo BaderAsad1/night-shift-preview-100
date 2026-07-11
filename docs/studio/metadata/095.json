@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0095",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/095.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Classic Point"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Moon Beanie"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Web Liner"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Quiet Fang"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Skeleton Hoodie"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Mini Shades"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0034",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/034.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Round Bite"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "High Pompadour"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "X Glow"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Zigzag Bite"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Technical Shell"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Cheek Scar"
+    }
+  ]
+}

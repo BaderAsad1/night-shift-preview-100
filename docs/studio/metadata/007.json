@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0007",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/007.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Classic Point"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Aviator Crop"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Wolf Slant"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Night Pout"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Messenger Rig"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Mini Shades"
+    }
+  ]
+}

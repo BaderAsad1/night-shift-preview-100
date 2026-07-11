@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0035",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/035.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Wide Signal"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Moonclip Bob"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Hypno Spirals"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Small O"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Skull Tux"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Brow Slit"
+    }
+  ]
+}

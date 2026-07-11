@@ -1,1017 +1,4540 @@
 {
-  "componentTraitCount": 108,
-  "masterCount": 36,
-  "totalFileCount": 144,
-  "format": "1024x1024 RGBA PNG",
-  "background": "transparent",
+  "collection": "Night Shift Society",
+  "edition": "Canonical Layered One-Bit",
+  "canvas": "1024x1024 RGBA",
+  "workingGrid": "256x256 rasterized from a canonical 128-unit design grid, scaled 4x nearest-neighbor",
+  "palette": {
+    "ink": "#020102",
+    "traitYellow": "#fdf423"
+  },
+  "traitCount": 128,
+  "categoryCounts": {
+    "Base": 8,
+    "Headwear": 30,
+    "Eyes": 24,
+    "Mouth": 16,
+    "Outfit": 30,
+    "Accessory": 20
+  },
+  "renderCount": 100,
+  "uniqueDnaCount": 100,
+  "uniqueRenderCount": 100,
+  "verifiedUniqueDnaCapacity": 6666,
+  "verifiedUniqueRenderCapacity": 6666,
+  "totalRawDnaSpace": 55296000,
+  "rarityPolicy": {
+    "tiers": {
+      "Common": 8,
+      "Uncommon": 4,
+      "Rare": 2,
+      "Legendary": 1
+    },
+    "method": "Deterministic weighted draw without duplicate DNA"
+  },
+  "compatibilityRules": [
+    "Integrated helmet and visor headwear cannot combine with visor-class eyes",
+    "Integrated eyewear cannot combine with face-covering eyewear accessories",
+    "Helmet headwear cannot combine with face-covering eyewear accessories",
+    "No background-object category exists"
+  ],
   "traits": [
     {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH01",
+      "category": "Base",
+      "code": "BA01",
+      "name": "Classic Point",
+      "rarity": "Common",
+      "file": "traits/base/BA01.png"
+    },
+    {
+      "category": "Base",
+      "code": "BA02",
+      "name": "Narrow Night",
+      "rarity": "Common",
+      "file": "traits/base/BA02.png"
+    },
+    {
+      "category": "Base",
+      "code": "BA03",
+      "name": "Round Bite",
+      "rarity": "Common",
+      "file": "traits/base/BA03.png"
+    },
+    {
+      "category": "Base",
+      "code": "BA04",
+      "name": "Wide Signal",
+      "rarity": "Common",
+      "file": "traits/base/BA04.png"
+    },
+    {
+      "category": "Base",
+      "code": "BA05",
+      "name": "Tall Velvet",
+      "rarity": "Uncommon",
+      "file": "traits/base/BA05.png"
+    },
+    {
+      "category": "Base",
+      "code": "BA06",
+      "name": "Soft Jaw",
+      "rarity": "Uncommon",
+      "file": "traits/base/BA06.png"
+    },
+    {
+      "category": "Base",
+      "code": "BA07",
+      "name": "Sharp Chin",
+      "rarity": "Rare",
+      "file": "traits/base/BA07.png"
+    },
+    {
+      "category": "Base",
+      "code": "BA08",
+      "name": "Compact Fang",
+      "rarity": "Legendary",
+      "file": "traits/base/BA08.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW01",
       "name": "Raven Wave",
-      "file": "traits/headwear/SH01.png"
+      "rarity": "Common",
+      "file": "traits/headwear/HW01.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW02",
+      "name": "Living Flame",
+      "rarity": "Common",
+      "file": "traits/headwear/HW02.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW03",
+      "name": "Pom Beanie",
+      "rarity": "Common",
+      "file": "traits/headwear/HW03.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW04",
+      "name": "Webbed Wave",
+      "rarity": "Common",
+      "file": "traits/headwear/HW04.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW05",
+      "name": "Flight Goggles",
+      "rarity": "Common",
+      "file": "traits/headwear/HW05.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW06",
+      "name": "Little Horns",
+      "rarity": "Common",
+      "file": "traits/headwear/HW06.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW07",
+      "name": "Mummy Wrap",
+      "rarity": "Common",
+      "file": "traits/headwear/HW07.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW08",
+      "name": "Coven Hat",
+      "rarity": "Common",
+      "file": "traits/headwear/HW08.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW09",
+      "name": "Spectral Wave",
+      "rarity": "Common",
+      "file": "traits/headwear/HW09.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW10",
+      "name": "Slick Curl",
+      "rarity": "Common",
+      "file": "traits/headwear/HW10.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW11",
+      "name": "Moon Beanie",
+      "rarity": "Common",
+      "file": "traits/headwear/HW11.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW12",
+      "name": "Spider Bob",
+      "rarity": "Common",
+      "file": "traits/headwear/HW12.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW13",
+      "name": "Aviator Crop",
+      "rarity": "Common",
+      "file": "traits/headwear/HW13.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW14",
+      "name": "Retro Visor",
+      "rarity": "Common",
+      "file": "traits/headwear/HW14.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW15",
+      "name": "Moth Antennae",
+      "rarity": "Common",
+      "file": "traits/headwear/HW15.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW16",
+      "name": "Wolf Ears",
+      "rarity": "Common",
+      "file": "traits/headwear/HW16.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW17",
+      "name": "Deep Rain Hood",
+      "rarity": "Uncommon",
+      "file": "traits/headwear/HW17.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW18",
+      "name": "Sleek Bob",
+      "rarity": "Uncommon",
+      "file": "traits/headwear/HW18.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW19",
+      "name": "Bat Courier Helmet",
+      "rarity": "Uncommon",
+      "file": "traits/headwear/HW19.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW20",
+      "name": "High Pompadour",
+      "rarity": "Uncommon",
+      "file": "traits/headwear/HW20.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW21",
+      "name": "Broadcast Headset",
+      "rarity": "Uncommon",
+      "file": "traits/headwear/HW21.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW22",
+      "name": "Moonclip Bob",
+      "rarity": "Uncommon",
+      "file": "traits/headwear/HW22.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW23",
+      "name": "Spiked Crest",
+      "rarity": "Uncommon",
+      "file": "traits/headwear/HW23.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW24",
+      "name": "Roundglass Wave",
+      "rarity": "Rare",
+      "file": "traits/headwear/HW24.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW25",
+      "name": "Broad Fedora",
+      "rarity": "Rare",
+      "file": "traits/headwear/HW25.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW26",
+      "name": "Race Helmet",
+      "rarity": "Rare",
+      "file": "traits/headwear/HW26.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW27",
+      "name": "Captain Cap",
+      "rarity": "Rare",
+      "file": "traits/headwear/HW27.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW28",
+      "name": "Wild Side Hair",
+      "rarity": "Legendary",
+      "file": "traits/headwear/HW28.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW29",
+      "name": "Finger Wave",
+      "rarity": "Legendary",
+      "file": "traits/headwear/HW29.png"
+    },
+    {
+      "category": "Headwear",
+      "code": "HW30",
+      "name": "Backward Cap",
+      "rarity": "Legendary",
+      "file": "traits/headwear/HW30.png"
     },
     {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY01",
       "name": "Hollow Ovals",
+      "rarity": "Common",
       "file": "traits/eyes/EY01.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF01",
-      "name": "Skull Tux",
-      "file": "traits/outfits/OF01.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR01",
-      "name": "Raven Tux",
-      "file": "traits/masters/AR01.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH02",
-      "name": "Pumpkin Crown",
-      "file": "traits/headwear/SH02.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY02",
       "name": "Soft Glow",
+      "rarity": "Common",
       "file": "traits/eyes/EY02.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF02",
-      "name": "High Collar",
-      "file": "traits/outfits/OF02.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR02",
-      "name": "Pumpkin Regent",
-      "file": "traits/masters/AR02.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH03",
-      "name": "Midnight Slick",
-      "file": "traits/headwear/SH03.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY03",
       "name": "Shadow Fade",
+      "rarity": "Common",
       "file": "traits/eyes/EY03.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF03",
-      "name": "Medallion Cape",
-      "file": "traits/outfits/OF03.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR03",
-      "name": "Midnight Medallion",
-      "file": "traits/masters/AR03.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH04",
-      "name": "Living Flame",
-      "file": "traits/headwear/SH04.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY04",
       "name": "Long Lashes",
+      "rarity": "Common",
       "file": "traits/eyes/EY04.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF04",
-      "name": "Striped Knit",
-      "file": "traits/outfits/OF04.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR04",
-      "name": "Flame Knit",
-      "file": "traits/masters/AR04.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH05",
-      "name": "Stitched Crop",
-      "file": "traits/headwear/SH05.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY05",
       "name": "X Glow",
+      "rarity": "Common",
       "file": "traits/eyes/EY05.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF05",
-      "name": "Undertaker Shirt",
-      "file": "traits/outfits/OF05.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR05",
-      "name": "Stitched Undertaker",
-      "file": "traits/masters/AR05.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH06",
-      "name": "Little Horns",
-      "file": "traits/headwear/SH06.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY06",
       "name": "Angry Arches",
+      "rarity": "Common",
       "file": "traits/eyes/EY06.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF06",
-      "name": "Winged Cape",
-      "file": "traits/outfits/OF06.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR06",
-      "name": "Horned Wing",
-      "file": "traits/masters/AR06.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH07",
-      "name": "Mummy Wraps",
-      "file": "traits/headwear/SH07.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY07",
-      "name": "Soft Glow",
+      "name": "Mummy Glow",
+      "rarity": "Common",
       "file": "traits/eyes/EY07.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF07",
-      "name": "Wrapped Tunic",
-      "file": "traits/outfits/OF07.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR07",
-      "name": "Mummy Wrap",
-      "file": "traits/masters/AR07.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH08",
-      "name": "Coven Hat",
-      "file": "traits/headwear/SH08.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY08",
-      "name": "Hollow Ovals",
+      "name": "Wide Awake",
+      "rarity": "Common",
       "file": "traits/eyes/EY08.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF08",
-      "name": "Coven Coat + Lantern",
-      "file": "traits/outfits/OF08.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR08",
-      "name": "Coven Courier",
-      "file": "traits/masters/AR08.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH09",
-      "name": "Spectral Wave",
-      "file": "traits/headwear/SH09.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY09",
-      "name": "Hollow Ovals",
+      "name": "Night Fade",
+      "rarity": "Common",
       "file": "traits/eyes/EY09.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF09",
-      "name": "Chain Crewneck",
-      "file": "traits/outfits/OF09.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR09",
-      "name": "Spectral Chain",
-      "file": "traits/masters/AR09.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH10",
-      "name": "Raven Wave",
-      "file": "traits/headwear/SH10.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY10",
       "name": "Hypno Spirals",
+      "rarity": "Common",
       "file": "traits/eyes/EY10.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF10",
-      "name": "Velvet Jacket",
-      "file": "traits/outfits/OF10.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR10",
-      "name": "Hypno Velvet",
-      "file": "traits/masters/AR10.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH11",
-      "name": "Pom Beanie",
-      "file": "traits/headwear/SH11.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY11",
-      "name": "Hollow Ovals",
+      "name": "Sleepy Glow",
+      "rarity": "Common",
       "file": "traits/eyes/EY11.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF11",
-      "name": "Skeleton Hoodie",
-      "file": "traits/outfits/OF11.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR11",
-      "name": "Beanie Bones",
-      "file": "traits/masters/AR11.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH12",
-      "name": "Webbed Wave",
-      "file": "traits/headwear/SH12.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY12",
-      "name": "Hollow Ovals",
+      "name": "Web Liner",
+      "rarity": "Common",
       "file": "traits/eyes/EY12.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF12",
-      "name": "High Collar",
-      "file": "traits/outfits/OF12.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR12",
-      "name": "Webbed Court",
-      "file": "traits/masters/AR12.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH13",
-      "name": "Flight Goggles",
-      "file": "traits/headwear/SH13.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY13",
-      "name": "Hollow Ovals",
+      "name": "Goggle Glow",
+      "rarity": "Common",
       "file": "traits/eyes/EY13.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF13",
-      "name": "Fur Flight Jacket",
-      "file": "traits/outfits/OF13.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR13",
-      "name": "Goggle Aviator",
-      "file": "traits/masters/AR13.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH14",
-      "name": "Retro Visor",
-      "file": "traits/headwear/SH14.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY14",
       "name": "Visor Glow",
+      "rarity": "Uncommon",
       "file": "traits/eyes/EY14.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF14",
-      "name": "Utility Coat",
-      "file": "traits/outfits/OF14.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR14",
-      "name": "Neon Visor",
-      "file": "traits/masters/AR14.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH15",
-      "name": "Moth Antennae",
-      "file": "traits/headwear/SH15.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY15",
-      "name": "Dark Glow",
+      "name": "Moth Dark",
+      "rarity": "Uncommon",
       "file": "traits/eyes/EY15.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF15",
-      "name": "Velvet Cape",
-      "file": "traits/outfits/OF15.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR15",
-      "name": "Moth Velvet",
-      "file": "traits/masters/AR15.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH16",
-      "name": "Wolf Ears",
-      "file": "traits/headwear/SH16.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY16",
-      "name": "Hollow Ovals",
+      "name": "Wolf Slant",
+      "rarity": "Uncommon",
       "file": "traits/eyes/EY16.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF16",
-      "name": "Varsity Jacket",
-      "file": "traits/outfits/OF16.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR16",
-      "name": "Wolf Varsity",
-      "file": "traits/masters/AR16.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH17",
-      "name": "Deep Rain Hood",
-      "file": "traits/headwear/SH17.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY17",
-      "name": "Hollow Ovals",
+      "name": "Rain Focus",
+      "rarity": "Uncommon",
       "file": "traits/eyes/EY17.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF17",
-      "name": "Technical Shell",
-      "file": "traits/outfits/OF17.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR17",
-      "name": "Rain Runner",
-      "file": "traits/masters/AR17.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH18",
-      "name": "Sleek Bob",
-      "file": "traits/headwear/SH18.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY18",
-      "name": "Hollow Ovals",
+      "name": "Bob Lashes",
+      "rarity": "Uncommon",
       "file": "traits/eyes/EY18.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF18",
-      "name": "Geometric Collar",
-      "file": "traits/outfits/OF18.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR18",
-      "name": "Geometric Bob",
-      "file": "traits/masters/AR18.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH19",
-      "name": "Bat Courier Helmet",
-      "file": "traits/headwear/SH19.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY19",
-      "name": "Hollow Ovals",
+      "name": "Courier Scan",
+      "rarity": "Rare",
       "file": "traits/eyes/EY19.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF19",
-      "name": "Messenger Rig",
-      "file": "traits/outfits/OF19.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR19",
-      "name": "Bat Courier",
-      "file": "traits/masters/AR19.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH20",
-      "name": "High Pompadour",
-      "file": "traits/headwear/SH20.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY20",
-      "name": "Hollow Ovals",
+      "name": "Rider Squint",
+      "rarity": "Rare",
       "file": "traits/eyes/EY20.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF20",
-      "name": "Biker Jacket",
-      "file": "traits/outfits/OF20.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR20",
-      "name": "Night Rider",
-      "file": "traits/masters/AR20.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH21",
-      "name": "Oversized Headphones",
-      "file": "traits/headwear/SH21.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY21",
-      "name": "Hollow Ovals",
+      "name": "Broadcast Rings",
+      "rarity": "Rare",
       "file": "traits/eyes/EY21.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF21",
-      "name": "Broadcast Jacket",
-      "file": "traits/outfits/OF21.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR21",
-      "name": "Broadcast Headset",
-      "file": "traits/masters/AR21.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH22",
-      "name": "Moonclip Bob",
-      "file": "traits/headwear/SH22.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY22",
-      "name": "Hollow Ovals",
+      "name": "Moon Gaze",
+      "rarity": "Rare",
       "file": "traits/eyes/EY22.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF22",
-      "name": "Quilted Coat",
-      "file": "traits/outfits/OF22.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR22",
-      "name": "Quilted Moonclip",
-      "file": "traits/masters/AR22.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH23",
-      "name": "Spiked Crest",
-      "file": "traits/headwear/SH23.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY23",
-      "name": "Hollow Ovals",
+      "name": "Spike Stare",
+      "rarity": "Legendary",
       "file": "traits/eyes/EY23.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF23",
-      "name": "Armored Vest",
-      "file": "traits/outfits/OF23.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR23",
-      "name": "Spike Armor",
-      "file": "traits/masters/AR23.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH24",
-      "name": "Round Glasses",
-      "file": "traits/headwear/SH24.png"
-    },
-    {
       "category": "Eyes",
-      "folder": "eyes",
       "code": "EY24",
       "name": "Lens Glow",
+      "rarity": "Legendary",
       "file": "traits/eyes/EY24.png"
     },
     {
+      "category": "Mouth",
+      "code": "MO01",
+      "name": "Twin Fangs",
+      "rarity": "Common",
+      "file": "traits/mouth/MO01.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO02",
+      "name": "Side Smirk",
+      "rarity": "Common",
+      "file": "traits/mouth/MO02.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO03",
+      "name": "Open Bite",
+      "rarity": "Common",
+      "file": "traits/mouth/MO03.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO04",
+      "name": "Quiet Fang",
+      "rarity": "Common",
+      "file": "traits/mouth/MO04.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO05",
+      "name": "Zigzag Bite",
+      "rarity": "Common",
+      "file": "traits/mouth/MO05.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO06",
+      "name": "Flat Mood",
+      "rarity": "Common",
+      "file": "traits/mouth/MO06.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO07",
+      "name": "Happy Fangs",
+      "rarity": "Common",
+      "file": "traits/mouth/MO07.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO08",
+      "name": "Single Fang",
+      "rarity": "Common",
+      "file": "traits/mouth/MO08.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO09",
+      "name": "Underbite",
+      "rarity": "Uncommon",
+      "file": "traits/mouth/MO09.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO10",
+      "name": "Small O",
+      "rarity": "Uncommon",
+      "file": "traits/mouth/MO10.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO11",
+      "name": "Crooked Grin",
+      "rarity": "Uncommon",
+      "file": "traits/mouth/MO11.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO12",
+      "name": "Sharp Smile",
+      "rarity": "Uncommon",
+      "file": "traits/mouth/MO12.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO13",
+      "name": "Night Pout",
+      "rarity": "Rare",
+      "file": "traits/mouth/MO13.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO14",
+      "name": "Three Teeth",
+      "rarity": "Rare",
+      "file": "traits/mouth/MO14.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO15",
+      "name": "Half Bite",
+      "rarity": "Legendary",
+      "file": "traits/mouth/MO15.png"
+    },
+    {
+      "category": "Mouth",
+      "code": "MO16",
+      "name": "Pixel Laugh",
+      "rarity": "Legendary",
+      "file": "traits/mouth/MO16.png"
+    },
+    {
       "category": "Outfit",
-      "folder": "outfits",
+      "code": "OF01",
+      "name": "Skull Tux",
+      "rarity": "Common",
+      "file": "traits/outfit/OF01.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF02",
+      "name": "High Collar",
+      "rarity": "Common",
+      "file": "traits/outfit/OF02.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF03",
+      "name": "Medallion Cape",
+      "rarity": "Common",
+      "file": "traits/outfit/OF03.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF04",
+      "name": "Striped Knit",
+      "rarity": "Common",
+      "file": "traits/outfit/OF04.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF05",
+      "name": "Undertaker Shirt",
+      "rarity": "Common",
+      "file": "traits/outfit/OF05.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF06",
+      "name": "Winged Cape",
+      "rarity": "Common",
+      "file": "traits/outfit/OF06.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF07",
+      "name": "Wrapped Tunic",
+      "rarity": "Common",
+      "file": "traits/outfit/OF07.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF08",
+      "name": "Coven Coat",
+      "rarity": "Common",
+      "file": "traits/outfit/OF08.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF09",
+      "name": "Chain Crewneck",
+      "rarity": "Common",
+      "file": "traits/outfit/OF09.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF10",
+      "name": "Velvet Jacket",
+      "rarity": "Common",
+      "file": "traits/outfit/OF10.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF11",
+      "name": "Skeleton Hoodie",
+      "rarity": "Common",
+      "file": "traits/outfit/OF11.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF12",
+      "name": "Webbed Court",
+      "rarity": "Common",
+      "file": "traits/outfit/OF12.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF13",
+      "name": "Fur Flight Jacket",
+      "rarity": "Common",
+      "file": "traits/outfit/OF13.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF14",
+      "name": "Utility Coat",
+      "rarity": "Common",
+      "file": "traits/outfit/OF14.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF15",
+      "name": "Moth Velvet",
+      "rarity": "Common",
+      "file": "traits/outfit/OF15.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF16",
+      "name": "Varsity Jacket",
+      "rarity": "Common",
+      "file": "traits/outfit/OF16.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF17",
+      "name": "Technical Shell",
+      "rarity": "Uncommon",
+      "file": "traits/outfit/OF17.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF18",
+      "name": "Geometric Collar",
+      "rarity": "Uncommon",
+      "file": "traits/outfit/OF18.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF19",
+      "name": "Messenger Rig",
+      "rarity": "Uncommon",
+      "file": "traits/outfit/OF19.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF20",
+      "name": "Biker Jacket",
+      "rarity": "Uncommon",
+      "file": "traits/outfit/OF20.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF21",
+      "name": "Broadcast Jacket",
+      "rarity": "Uncommon",
+      "file": "traits/outfit/OF21.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF22",
+      "name": "Quilted Coat",
+      "rarity": "Uncommon",
+      "file": "traits/outfit/OF22.png"
+    },
+    {
+      "category": "Outfit",
+      "code": "OF23",
+      "name": "Armored Vest",
+      "rarity": "Uncommon",
+      "file": "traits/outfit/OF23.png"
+    },
+    {
+      "category": "Outfit",
       "code": "OF24",
       "name": "Knit Cardigan",
-      "file": "traits/outfits/OF24.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR24",
-      "name": "Roundglass Cardigan",
-      "file": "traits/masters/AR24.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH25",
-      "name": "Broad Fedora",
-      "file": "traits/headwear/SH25.png"
-    },
-    {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY25",
-      "name": "Hollow Ovals",
-      "file": "traits/eyes/EY25.png"
+      "rarity": "Rare",
+      "file": "traits/outfit/OF24.png"
     },
     {
       "category": "Outfit",
-      "folder": "outfits",
       "code": "OF25",
       "name": "Trench Collar",
-      "file": "traits/outfits/OF25.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR25",
-      "name": "Noir Detective",
-      "file": "traits/masters/AR25.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH26",
-      "name": "Compact Race Helmet",
-      "file": "traits/headwear/SH26.png"
-    },
-    {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY26",
-      "name": "Full Visor Glow",
-      "file": "traits/eyes/EY26.png"
+      "rarity": "Rare",
+      "file": "traits/outfit/OF25.png"
     },
     {
       "category": "Outfit",
-      "folder": "outfits",
       "code": "OF26",
       "name": "Racing Jacket",
-      "file": "traits/outfits/OF26.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR26",
-      "name": "Arcade Racer",
-      "file": "traits/masters/AR26.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH27",
-      "name": "Captain Cap",
-      "file": "traits/headwear/SH27.png"
-    },
-    {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY27",
-      "name": "Hollow Ovals",
-      "file": "traits/eyes/EY27.png"
+      "rarity": "Rare",
+      "file": "traits/outfit/OF26.png"
     },
     {
       "category": "Outfit",
-      "folder": "outfits",
       "code": "OF27",
       "name": "Heavy Pea Coat",
-      "file": "traits/outfits/OF27.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR27",
-      "name": "Deep-Sea Captain",
-      "file": "traits/masters/AR27.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH28",
-      "name": "Wild Side Hair + Goggles",
-      "file": "traits/headwear/SH28.png"
-    },
-    {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY28",
-      "name": "Hollow Ovals",
-      "file": "traits/eyes/EY28.png"
+      "rarity": "Rare",
+      "file": "traits/outfit/OF27.png"
     },
     {
       "category": "Outfit",
-      "folder": "outfits",
       "code": "OF28",
       "name": "Tool Apron",
-      "file": "traits/outfits/OF28.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR28",
-      "name": "Wild Inventor",
-      "file": "traits/masters/AR28.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH29",
-      "name": "Finger-Wave Hair",
-      "file": "traits/headwear/SH29.png"
-    },
-    {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY29",
-      "name": "Long Lashes",
-      "file": "traits/eyes/EY29.png"
+      "rarity": "Legendary",
+      "file": "traits/outfit/OF28.png"
     },
     {
       "category": "Outfit",
-      "folder": "outfits",
       "code": "OF29",
       "name": "Fur Collar",
-      "file": "traits/outfits/OF29.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR29",
-      "name": "Silent Film Star",
-      "file": "traits/masters/AR29.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH30",
-      "name": "Wrapped Goggles",
-      "file": "traits/headwear/SH30.png"
-    },
-    {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY30",
-      "name": "Goggle Glow",
-      "file": "traits/eyes/EY30.png"
+      "rarity": "Legendary",
+      "file": "traits/outfit/OF29.png"
     },
     {
       "category": "Outfit",
-      "folder": "outfits",
       "code": "OF30",
-      "name": "Desert Scarf",
-      "file": "traits/outfits/OF30.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR30",
-      "name": "Desert Nomad",
-      "file": "traits/masters/AR30.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH31",
-      "name": "Leaf Crown",
-      "file": "traits/headwear/SH31.png"
-    },
-    {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY31",
-      "name": "Hollow Ovals",
-      "file": "traits/eyes/EY31.png"
-    },
-    {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF31",
-      "name": "Work Overalls",
-      "file": "traits/outfits/OF31.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR31",
-      "name": "Botanical Keeper",
-      "file": "traits/masters/AR31.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH32",
-      "name": "Angular Shades",
-      "file": "traits/headwear/SH32.png"
-    },
-    {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY32",
-      "name": "Shade Reflection",
-      "file": "traits/eyes/EY32.png"
-    },
-    {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF32",
-      "name": "Stage Coat",
-      "file": "traits/outfits/OF32.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR32",
-      "name": "Synth Shade",
-      "file": "traits/masters/AR32.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH33",
-      "name": "Fur Climber Cap",
-      "file": "traits/headwear/SH33.png"
-    },
-    {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY33",
-      "name": "Hollow Ovals",
-      "file": "traits/eyes/EY33.png"
-    },
-    {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF33",
-      "name": "Padded Parka",
-      "file": "traits/outfits/OF33.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR33",
-      "name": "Ice Climber",
-      "file": "traits/masters/AR33.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH34",
-      "name": "Tall Top Hat",
-      "file": "traits/headwear/SH34.png"
-    },
-    {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY34",
-      "name": "Hollow Ovals",
-      "file": "traits/eyes/EY34.png"
-    },
-    {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF34",
-      "name": "Patterned Vest",
-      "file": "traits/outfits/OF34.png"
-    },
-    {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR34",
-      "name": "Street Magician",
-      "file": "traits/masters/AR34.png"
-    },
-    {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH35",
-      "name": "Backward Cap",
-      "file": "traits/headwear/SH35.png"
-    },
-    {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY35",
-      "name": "Hollow Ovals",
-      "file": "traits/eyes/EY35.png"
-    },
-    {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF35",
       "name": "Oversized Hoodie",
-      "file": "traits/outfits/OF35.png"
+      "rarity": "Legendary",
+      "file": "traits/outfit/OF30.png"
     },
     {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR35",
-      "name": "Graffiti Courier",
-      "file": "traits/masters/AR35.png"
+      "category": "Accessory",
+      "code": "AC01",
+      "name": "Ear Cuff",
+      "rarity": "Common",
+      "file": "traits/accessory/AC01.png"
     },
     {
-      "category": "Silhouette / Headwear",
-      "folder": "headwear",
-      "code": "SH36",
-      "name": "Center-Part Hair + Glasses",
-      "file": "traits/headwear/SH36.png"
+      "category": "Accessory",
+      "code": "AC02",
+      "name": "Brow Slit",
+      "rarity": "Common",
+      "file": "traits/accessory/AC02.png"
     },
     {
-      "category": "Eyes",
-      "folder": "eyes",
-      "code": "EY36",
-      "name": "Lens Glow",
-      "file": "traits/eyes/EY36.png"
+      "category": "Accessory",
+      "code": "AC03",
+      "name": "Cheek Scar",
+      "rarity": "Common",
+      "file": "traits/accessory/AC03.png"
     },
     {
-      "category": "Outfit",
-      "folder": "outfits",
-      "code": "OF36",
-      "name": "Sharp Blazer",
-      "file": "traits/outfits/OF36.png"
+      "category": "Accessory",
+      "code": "AC04",
+      "name": "Nose Ring",
+      "rarity": "Common",
+      "file": "traits/accessory/AC04.png"
     },
     {
-      "category": "Master Archetype",
-      "folder": "masters",
-      "code": "AR36",
-      "name": "Chess Strategist",
-      "file": "traits/masters/AR36.png"
+      "category": "Accessory",
+      "code": "AC05",
+      "name": "Pixel Tear",
+      "rarity": "Common",
+      "file": "traits/accessory/AC05.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC06",
+      "name": "Face Bandage",
+      "rarity": "Common",
+      "file": "traits/accessory/AC06.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC07",
+      "name": "Jaw Bolts",
+      "rarity": "Common",
+      "file": "traits/accessory/AC07.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC08",
+      "name": "Temple Circuit",
+      "rarity": "Common",
+      "file": "traits/accessory/AC08.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC09",
+      "name": "Monocle",
+      "rarity": "Common",
+      "file": "traits/accessory/AC09.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC10",
+      "name": "Mini Shades",
+      "rarity": "Common",
+      "file": "traits/accessory/AC10.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC11",
+      "name": "Ear Tag",
+      "rarity": "Common",
+      "file": "traits/accessory/AC11.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC12",
+      "name": "Cheek Stripes",
+      "rarity": "Uncommon",
+      "file": "traits/accessory/AC12.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC13",
+      "name": "Moon Clip",
+      "rarity": "Uncommon",
+      "file": "traits/accessory/AC13.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC14",
+      "name": "Headset Mic",
+      "rarity": "Uncommon",
+      "file": "traits/accessory/AC14.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC15",
+      "name": "Bridge Stud",
+      "rarity": "Uncommon",
+      "file": "traits/accessory/AC15.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC16",
+      "name": "Double Earring",
+      "rarity": "Rare",
+      "file": "traits/accessory/AC16.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC17",
+      "name": "Eye Spark",
+      "rarity": "Rare",
+      "file": "traits/accessory/AC17.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC18",
+      "name": "Side Patch",
+      "rarity": "Rare",
+      "file": "traits/accessory/AC18.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC19",
+      "name": "Brow Studs",
+      "rarity": "Legendary",
+      "file": "traits/accessory/AC19.png"
+    },
+    {
+      "category": "Accessory",
+      "code": "AC20",
+      "name": "Fang Chain",
+      "rarity": "Legendary",
+      "file": "traits/accessory/AC20.png"
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "image": "renders/001.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW22",
+          "name": "Moonclip Bob"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY13",
+          "name": "Goggle Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO06",
+          "name": "Flat Mood"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF06",
+          "name": "Winged Cape"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC16",
+          "name": "Double Earring"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "renders/002.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW16",
+          "name": "Wolf Ears"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY15",
+          "name": "Moth Dark"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC05",
+          "name": "Pixel Tear"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "renders/003.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW17",
+          "name": "Deep Rain Hood"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY18",
+          "name": "Bob Lashes"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO09",
+          "name": "Underbite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF06",
+          "name": "Winged Cape"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC14",
+          "name": "Headset Mic"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "renders/004.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW15",
+          "name": "Moth Antennae"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Night Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO06",
+          "name": "Flat Mood"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF16",
+          "name": "Varsity Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "renders/005.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW17",
+          "name": "Deep Rain Hood"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY20",
+          "name": "Rider Squint"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO05",
+          "name": "Zigzag Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF17",
+          "name": "Technical Shell"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC12",
+          "name": "Cheek Stripes"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "renders/006.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW16",
+          "name": "Wolf Ears"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY06",
+          "name": "Angry Arches"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO04",
+          "name": "Quiet Fang"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF12",
+          "name": "Webbed Court"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC08",
+          "name": "Temple Circuit"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "renders/007.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW13",
+          "name": "Aviator Crop"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY16",
+          "name": "Wolf Slant"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO13",
+          "name": "Night Pout"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF19",
+          "name": "Messenger Rig"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC10",
+          "name": "Mini Shades"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "renders/008.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW11",
+          "name": "Moon Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY23",
+          "name": "Spike Stare"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF06",
+          "name": "Winged Cape"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC11",
+          "name": "Ear Tag"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "renders/009.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW12",
+          "name": "Spider Bob"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY05",
+          "name": "X Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO08",
+          "name": "Single Fang"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF25",
+          "name": "Trench Collar"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC04",
+          "name": "Nose Ring"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "image": "renders/010.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW23",
+          "name": "Spiked Crest"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY16",
+          "name": "Wolf Slant"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO11",
+          "name": "Crooked Grin"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF14",
+          "name": "Utility Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC04",
+          "name": "Nose Ring"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "image": "renders/011.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA06",
+          "name": "Soft Jaw"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW09",
+          "name": "Spectral Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY02",
+          "name": "Soft Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO13",
+          "name": "Night Pout"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF21",
+          "name": "Broadcast Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "image": "renders/012.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW07",
+          "name": "Mummy Wrap"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Night Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO04",
+          "name": "Quiet Fang"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF21",
+          "name": "Broadcast Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC03",
+          "name": "Cheek Scar"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "image": "renders/013.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA06",
+          "name": "Soft Jaw"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW12",
+          "name": "Spider Bob"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY03",
+          "name": "Shadow Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO07",
+          "name": "Happy Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF01",
+          "name": "Skull Tux"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC04",
+          "name": "Nose Ring"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "image": "renders/014.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA06",
+          "name": "Soft Jaw"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW10",
+          "name": "Slick Curl"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY16",
+          "name": "Wolf Slant"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO11",
+          "name": "Crooked Grin"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF20",
+          "name": "Biker Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC09",
+          "name": "Monocle"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "image": "renders/015.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW14",
+          "name": "Retro Visor"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO06",
+          "name": "Flat Mood"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF04",
+          "name": "Striped Knit"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC08",
+          "name": "Temple Circuit"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "image": "renders/016.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW19",
+          "name": "Bat Courier Helmet"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY04",
+          "name": "Long Lashes"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF14",
+          "name": "Utility Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC05",
+          "name": "Pixel Tear"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "image": "renders/017.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW05",
+          "name": "Flight Goggles"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO07",
+          "name": "Happy Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF14",
+          "name": "Utility Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC07",
+          "name": "Jaw Bolts"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "image": "renders/018.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW10",
+          "name": "Slick Curl"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY18",
+          "name": "Bob Lashes"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO12",
+          "name": "Sharp Smile"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF22",
+          "name": "Quilted Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC03",
+          "name": "Cheek Scar"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "image": "renders/019.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW03",
+          "name": "Pom Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY04",
+          "name": "Long Lashes"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO07",
+          "name": "Happy Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF05",
+          "name": "Undertaker Shirt"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC09",
+          "name": "Monocle"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "image": "renders/020.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW08",
+          "name": "Coven Hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Night Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO11",
+          "name": "Crooked Grin"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF27",
+          "name": "Heavy Pea Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC20",
+          "name": "Fang Chain"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "image": "renders/021.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA06",
+          "name": "Soft Jaw"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW12",
+          "name": "Spider Bob"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO07",
+          "name": "Happy Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF04",
+          "name": "Striped Knit"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "image": "renders/022.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW19",
+          "name": "Bat Courier Helmet"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO12",
+          "name": "Sharp Smile"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF04",
+          "name": "Striped Knit"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC15",
+          "name": "Bridge Stud"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "image": "renders/023.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW21",
+          "name": "Broadcast Headset"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY06",
+          "name": "Angry Arches"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO02",
+          "name": "Side Smirk"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF21",
+          "name": "Broadcast Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC16",
+          "name": "Double Earring"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "image": "renders/024.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW15",
+          "name": "Moth Antennae"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY08",
+          "name": "Wide Awake"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO03",
+          "name": "Open Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF02",
+          "name": "High Collar"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC05",
+          "name": "Pixel Tear"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "image": "renders/025.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW14",
+          "name": "Retro Visor"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO05",
+          "name": "Zigzag Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF03",
+          "name": "Medallion Cape"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC12",
+          "name": "Cheek Stripes"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "image": "renders/026.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW14",
+          "name": "Retro Visor"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO06",
+          "name": "Flat Mood"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF13",
+          "name": "Fur Flight Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "image": "renders/027.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW10",
+          "name": "Slick Curl"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY06",
+          "name": "Angry Arches"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO04",
+          "name": "Quiet Fang"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF03",
+          "name": "Medallion Cape"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC18",
+          "name": "Side Patch"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "image": "renders/028.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW11",
+          "name": "Moon Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Night Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO10",
+          "name": "Small O"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF15",
+          "name": "Moth Velvet"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC08",
+          "name": "Temple Circuit"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "image": "renders/029.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA06",
+          "name": "Soft Jaw"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW11",
+          "name": "Moon Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY22",
+          "name": "Moon Gaze"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO11",
+          "name": "Crooked Grin"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "image": "renders/030.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA05",
+          "name": "Tall Velvet"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW01",
+          "name": "Raven Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY05",
+          "name": "X Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO11",
+          "name": "Crooked Grin"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF25",
+          "name": "Trench Collar"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC05",
+          "name": "Pixel Tear"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "image": "renders/031.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA06",
+          "name": "Soft Jaw"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW11",
+          "name": "Moon Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY01",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO13",
+          "name": "Night Pout"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF17",
+          "name": "Technical Shell"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC14",
+          "name": "Headset Mic"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "image": "renders/032.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW04",
+          "name": "Webbed Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY12",
+          "name": "Web Liner"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF30",
+          "name": "Oversized Hoodie"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC12",
+          "name": "Cheek Stripes"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "image": "renders/033.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA07",
+          "name": "Sharp Chin"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW09",
+          "name": "Spectral Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF04",
+          "name": "Striped Knit"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC06",
+          "name": "Face Bandage"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "image": "renders/034.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW20",
+          "name": "High Pompadour"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY05",
+          "name": "X Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO05",
+          "name": "Zigzag Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF17",
+          "name": "Technical Shell"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC03",
+          "name": "Cheek Scar"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "image": "renders/035.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW22",
+          "name": "Moonclip Bob"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO10",
+          "name": "Small O"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF01",
+          "name": "Skull Tux"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "image": "renders/036.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW02",
+          "name": "Living Flame"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY17",
+          "name": "Rain Focus"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO07",
+          "name": "Happy Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF07",
+          "name": "Wrapped Tunic"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC05",
+          "name": "Pixel Tear"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "image": "renders/037.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW07",
+          "name": "Mummy Wrap"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY04",
+          "name": "Long Lashes"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO07",
+          "name": "Happy Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF06",
+          "name": "Winged Cape"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC14",
+          "name": "Headset Mic"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "image": "renders/038.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA05",
+          "name": "Tall Velvet"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW02",
+          "name": "Living Flame"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY13",
+          "name": "Goggle Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF15",
+          "name": "Moth Velvet"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC08",
+          "name": "Temple Circuit"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "image": "renders/039.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW08",
+          "name": "Coven Hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY15",
+          "name": "Moth Dark"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO06",
+          "name": "Flat Mood"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF12",
+          "name": "Webbed Court"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC06",
+          "name": "Face Bandage"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "image": "renders/040.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW15",
+          "name": "Moth Antennae"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY08",
+          "name": "Wide Awake"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO10",
+          "name": "Small O"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF20",
+          "name": "Biker Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC11",
+          "name": "Ear Tag"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "image": "renders/041.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW01",
+          "name": "Raven Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY12",
+          "name": "Web Liner"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO02",
+          "name": "Side Smirk"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF17",
+          "name": "Technical Shell"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC08",
+          "name": "Temple Circuit"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "image": "renders/042.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW07",
+          "name": "Mummy Wrap"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY02",
+          "name": "Soft Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO05",
+          "name": "Zigzag Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF02",
+          "name": "High Collar"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC13",
+          "name": "Moon Clip"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "image": "renders/043.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW04",
+          "name": "Webbed Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY08",
+          "name": "Wide Awake"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO06",
+          "name": "Flat Mood"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF24",
+          "name": "Knit Cardigan"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC03",
+          "name": "Cheek Scar"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "image": "renders/044.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW04",
+          "name": "Webbed Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY11",
+          "name": "Sleepy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO07",
+          "name": "Happy Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF15",
+          "name": "Moth Velvet"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC01",
+          "name": "Ear Cuff"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "image": "renders/045.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW08",
+          "name": "Coven Hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY06",
+          "name": "Angry Arches"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO06",
+          "name": "Flat Mood"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF17",
+          "name": "Technical Shell"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC15",
+          "name": "Bridge Stud"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "image": "renders/046.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW01",
+          "name": "Raven Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY06",
+          "name": "Angry Arches"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO11",
+          "name": "Crooked Grin"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF04",
+          "name": "Striped Knit"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC05",
+          "name": "Pixel Tear"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "image": "renders/047.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW11",
+          "name": "Moon Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY12",
+          "name": "Web Liner"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO16",
+          "name": "Pixel Laugh"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF09",
+          "name": "Chain Crewneck"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC04",
+          "name": "Nose Ring"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "image": "renders/048.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW21",
+          "name": "Broadcast Headset"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY12",
+          "name": "Web Liner"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO02",
+          "name": "Side Smirk"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF02",
+          "name": "High Collar"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC05",
+          "name": "Pixel Tear"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "image": "renders/049.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW06",
+          "name": "Little Horns"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY20",
+          "name": "Rider Squint"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO11",
+          "name": "Crooked Grin"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF12",
+          "name": "Webbed Court"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "image": "renders/050.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA07",
+          "name": "Sharp Chin"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW04",
+          "name": "Webbed Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY04",
+          "name": "Long Lashes"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO04",
+          "name": "Quiet Fang"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF13",
+          "name": "Fur Flight Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC12",
+          "name": "Cheek Stripes"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "image": "renders/051.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW03",
+          "name": "Pom Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY05",
+          "name": "X Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO13",
+          "name": "Night Pout"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC10",
+          "name": "Mini Shades"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "image": "renders/052.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW21",
+          "name": "Broadcast Headset"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY20",
+          "name": "Rider Squint"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO02",
+          "name": "Side Smirk"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF04",
+          "name": "Striped Knit"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC03",
+          "name": "Cheek Scar"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "image": "renders/053.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW13",
+          "name": "Aviator Crop"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY05",
+          "name": "X Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO02",
+          "name": "Side Smirk"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF13",
+          "name": "Fur Flight Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC01",
+          "name": "Ear Cuff"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "image": "renders/054.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW08",
+          "name": "Coven Hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY02",
+          "name": "Soft Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO05",
+          "name": "Zigzag Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF19",
+          "name": "Messenger Rig"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC10",
+          "name": "Mini Shades"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "image": "renders/055.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW23",
+          "name": "Spiked Crest"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY02",
+          "name": "Soft Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO05",
+          "name": "Zigzag Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF20",
+          "name": "Biker Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC07",
+          "name": "Jaw Bolts"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "image": "renders/056.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW21",
+          "name": "Broadcast Headset"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY03",
+          "name": "Shadow Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO08",
+          "name": "Single Fang"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF27",
+          "name": "Heavy Pea Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC06",
+          "name": "Face Bandage"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "image": "renders/057.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA05",
+          "name": "Tall Velvet"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW14",
+          "name": "Retro Visor"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Night Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO06",
+          "name": "Flat Mood"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF16",
+          "name": "Varsity Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC05",
+          "name": "Pixel Tear"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "image": "renders/058.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA06",
+          "name": "Soft Jaw"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW06",
+          "name": "Little Horns"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY05",
+          "name": "X Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO13",
+          "name": "Night Pout"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF02",
+          "name": "High Collar"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC09",
+          "name": "Monocle"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "image": "renders/059.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW23",
+          "name": "Spiked Crest"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY01",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO09",
+          "name": "Underbite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF12",
+          "name": "Webbed Court"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC10",
+          "name": "Mini Shades"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "image": "renders/060.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW26",
+          "name": "Race Helmet"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO05",
+          "name": "Zigzag Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF12",
+          "name": "Webbed Court"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC12",
+          "name": "Cheek Stripes"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "image": "renders/061.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA05",
+          "name": "Tall Velvet"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW09",
+          "name": "Spectral Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY15",
+          "name": "Moth Dark"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO03",
+          "name": "Open Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF28",
+          "name": "Tool Apron"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC15",
+          "name": "Bridge Stud"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "image": "renders/062.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW13",
+          "name": "Aviator Crop"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Night Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO11",
+          "name": "Crooked Grin"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF04",
+          "name": "Striped Knit"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC05",
+          "name": "Pixel Tear"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "image": "renders/063.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW09",
+          "name": "Spectral Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY11",
+          "name": "Sleepy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO15",
+          "name": "Half Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF05",
+          "name": "Undertaker Shirt"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC13",
+          "name": "Moon Clip"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "image": "renders/064.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW07",
+          "name": "Mummy Wrap"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO02",
+          "name": "Side Smirk"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF14",
+          "name": "Utility Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "image": "renders/065.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA08",
+          "name": "Compact Fang"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW18",
+          "name": "Sleek Bob"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY16",
+          "name": "Wolf Slant"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO06",
+          "name": "Flat Mood"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF16",
+          "name": "Varsity Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC07",
+          "name": "Jaw Bolts"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "image": "renders/066.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW13",
+          "name": "Aviator Crop"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF12",
+          "name": "Webbed Court"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC08",
+          "name": "Temple Circuit"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "image": "renders/067.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW04",
+          "name": "Webbed Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY05",
+          "name": "X Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO03",
+          "name": "Open Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF09",
+          "name": "Chain Crewneck"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC04",
+          "name": "Nose Ring"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "image": "renders/068.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA07",
+          "name": "Sharp Chin"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW11",
+          "name": "Moon Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY02",
+          "name": "Soft Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO03",
+          "name": "Open Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF19",
+          "name": "Messenger Rig"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "image": "renders/069.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW12",
+          "name": "Spider Bob"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY11",
+          "name": "Sleepy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO06",
+          "name": "Flat Mood"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF05",
+          "name": "Undertaker Shirt"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC08",
+          "name": "Temple Circuit"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "image": "renders/070.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW01",
+          "name": "Raven Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY06",
+          "name": "Angry Arches"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO03",
+          "name": "Open Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF07",
+          "name": "Wrapped Tunic"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC11",
+          "name": "Ear Tag"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "image": "renders/071.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW14",
+          "name": "Retro Visor"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY11",
+          "name": "Sleepy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO02",
+          "name": "Side Smirk"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF18",
+          "name": "Geometric Collar"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC05",
+          "name": "Pixel Tear"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "image": "renders/072.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA07",
+          "name": "Sharp Chin"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW03",
+          "name": "Pom Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY01",
+          "name": "Hollow Ovals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO03",
+          "name": "Open Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF05",
+          "name": "Undertaker Shirt"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC16",
+          "name": "Double Earring"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "image": "renders/073.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW15",
+          "name": "Moth Antennae"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY16",
+          "name": "Wolf Slant"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO15",
+          "name": "Half Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF20",
+          "name": "Biker Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC11",
+          "name": "Ear Tag"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "image": "renders/074.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA07",
+          "name": "Sharp Chin"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW02",
+          "name": "Living Flame"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO03",
+          "name": "Open Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF12",
+          "name": "Webbed Court"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC12",
+          "name": "Cheek Stripes"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "image": "renders/075.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW13",
+          "name": "Aviator Crop"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY08",
+          "name": "Wide Awake"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO10",
+          "name": "Small O"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF09",
+          "name": "Chain Crewneck"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC08",
+          "name": "Temple Circuit"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "image": "renders/076.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW04",
+          "name": "Webbed Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY08",
+          "name": "Wide Awake"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO07",
+          "name": "Happy Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF04",
+          "name": "Striped Knit"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC09",
+          "name": "Monocle"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "image": "renders/077.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA06",
+          "name": "Soft Jaw"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW08",
+          "name": "Coven Hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF09",
+          "name": "Chain Crewneck"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC14",
+          "name": "Headset Mic"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "image": "renders/078.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA07",
+          "name": "Sharp Chin"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW18",
+          "name": "Sleek Bob"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY06",
+          "name": "Angry Arches"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO03",
+          "name": "Open Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF16",
+          "name": "Varsity Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC14",
+          "name": "Headset Mic"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "image": "renders/079.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW11",
+          "name": "Moon Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY03",
+          "name": "Shadow Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO06",
+          "name": "Flat Mood"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "image": "renders/080.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW11",
+          "name": "Moon Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY18",
+          "name": "Bob Lashes"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO16",
+          "name": "Pixel Laugh"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF14",
+          "name": "Utility Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC07",
+          "name": "Jaw Bolts"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "image": "renders/081.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA05",
+          "name": "Tall Velvet"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW01",
+          "name": "Raven Wave"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY13",
+          "name": "Goggle Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO15",
+          "name": "Half Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF06",
+          "name": "Winged Cape"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC11",
+          "name": "Ear Tag"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "image": "renders/082.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW06",
+          "name": "Little Horns"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY24",
+          "name": "Lens Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO12",
+          "name": "Sharp Smile"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF28",
+          "name": "Tool Apron"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC11",
+          "name": "Ear Tag"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "image": "renders/083.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW11",
+          "name": "Moon Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY17",
+          "name": "Rain Focus"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO07",
+          "name": "Happy Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF12",
+          "name": "Webbed Court"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC04",
+          "name": "Nose Ring"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "image": "renders/084.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA05",
+          "name": "Tall Velvet"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW08",
+          "name": "Coven Hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO11",
+          "name": "Crooked Grin"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF13",
+          "name": "Fur Flight Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC03",
+          "name": "Cheek Scar"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "image": "renders/085.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW02",
+          "name": "Living Flame"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO08",
+          "name": "Single Fang"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF18",
+          "name": "Geometric Collar"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "image": "renders/086.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW19",
+          "name": "Bat Courier Helmet"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY02",
+          "name": "Soft Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO08",
+          "name": "Single Fang"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF13",
+          "name": "Fur Flight Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC11",
+          "name": "Ear Tag"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "image": "renders/087.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW07",
+          "name": "Mummy Wrap"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Night Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO02",
+          "name": "Side Smirk"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF04",
+          "name": "Striped Knit"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC17",
+          "name": "Eye Spark"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "image": "renders/088.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW19",
+          "name": "Bat Courier Helmet"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO12",
+          "name": "Sharp Smile"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC05",
+          "name": "Pixel Tear"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "image": "renders/089.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW12",
+          "name": "Spider Bob"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY12",
+          "name": "Web Liner"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO04",
+          "name": "Quiet Fang"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF08",
+          "name": "Coven Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC10",
+          "name": "Mini Shades"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "image": "renders/090.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW17",
+          "name": "Deep Rain Hood"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY16",
+          "name": "Wolf Slant"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF14",
+          "name": "Utility Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC03",
+          "name": "Cheek Scar"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "image": "renders/091.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW22",
+          "name": "Moonclip Bob"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY13",
+          "name": "Goggle Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO03",
+          "name": "Open Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF19",
+          "name": "Messenger Rig"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC11",
+          "name": "Ear Tag"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "image": "renders/092.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW16",
+          "name": "Wolf Ears"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO07",
+          "name": "Happy Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF16",
+          "name": "Varsity Jacket"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC11",
+          "name": "Ear Tag"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "image": "renders/093.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA05",
+          "name": "Tall Velvet"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW23",
+          "name": "Spiked Crest"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY07",
+          "name": "Mummy Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO02",
+          "name": "Side Smirk"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF23",
+          "name": "Armored Vest"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC10",
+          "name": "Mini Shades"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "image": "renders/094.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA03",
+          "name": "Round Bite"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW08",
+          "name": "Coven Hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY13",
+          "name": "Goggle Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO05",
+          "name": "Zigzag Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF23",
+          "name": "Armored Vest"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC02",
+          "name": "Brow Slit"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "image": "renders/095.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW11",
+          "name": "Moon Beanie"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY12",
+          "name": "Web Liner"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO04",
+          "name": "Quiet Fang"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF11",
+          "name": "Skeleton Hoodie"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC10",
+          "name": "Mini Shades"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "image": "renders/096.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA05",
+          "name": "Tall Velvet"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW08",
+          "name": "Coven Hat"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Night Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO12",
+          "name": "Sharp Smile"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF22",
+          "name": "Quilted Coat"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC08",
+          "name": "Temple Circuit"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "image": "renders/097.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA01",
+          "name": "Classic Point"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW14",
+          "name": "Retro Visor"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY05",
+          "name": "X Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO07",
+          "name": "Happy Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF06",
+          "name": "Winged Cape"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC11",
+          "name": "Ear Tag"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "image": "renders/098.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW07",
+          "name": "Mummy Wrap"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY09",
+          "name": "Night Fade"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO03",
+          "name": "Open Bite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF03",
+          "name": "Medallion Cape"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC14",
+          "name": "Headset Mic"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "image": "renders/099.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA02",
+          "name": "Narrow Night"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW10",
+          "name": "Slick Curl"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY05",
+          "name": "X Glow"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO09",
+          "name": "Underbite"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF05",
+          "name": "Undertaker Shirt"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC03",
+          "name": "Cheek Scar"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "image": "renders/100.png",
+      "dna": [
+        {
+          "category": "Base",
+          "code": "BA04",
+          "name": "Wide Signal"
+        },
+        {
+          "category": "Headwear",
+          "code": "HW06",
+          "name": "Little Horns"
+        },
+        {
+          "category": "Eyes",
+          "code": "EY10",
+          "name": "Hypno Spirals"
+        },
+        {
+          "category": "Mouth",
+          "code": "MO01",
+          "name": "Twin Fangs"
+        },
+        {
+          "category": "Outfit",
+          "code": "OF03",
+          "name": "Medallion Cape"
+        },
+        {
+          "category": "Accessory",
+          "code": "AC15",
+          "name": "Bridge Stud"
+        }
+      ]
     }
   ]
 }

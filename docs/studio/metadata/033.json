@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0033",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/033.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Sharp Chin"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Spectral Wave"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Hypno Spirals"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Twin Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Striped Knit"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Face Bandage"
+    }
+  ]
+}

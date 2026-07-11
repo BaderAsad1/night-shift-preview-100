@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0016",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/016.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Wide Signal"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Bat Courier Helmet"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Long Lashes"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Twin Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Utility Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Pixel Tear"
+    }
+  ]
+}

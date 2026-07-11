@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0058",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/058.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Soft Jaw"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Little Horns"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "X Glow"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Night Pout"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "High Collar"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Monocle"
+    }
+  ]
+}

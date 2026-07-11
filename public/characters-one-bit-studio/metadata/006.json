@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0006",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/006.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Wide Signal"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Wolf Ears"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Angry Arches"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Quiet Fang"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Webbed Court"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Temple Circuit"
+    }
+  ]
+}

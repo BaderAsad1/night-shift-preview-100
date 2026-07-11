@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0060",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/060.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Narrow Night"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Race Helmet"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Mummy Glow"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Zigzag Bite"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Webbed Court"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Cheek Stripes"
+    }
+  ]
+}

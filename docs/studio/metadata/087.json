@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0087",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/087.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Narrow Night"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Mummy Wrap"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Night Fade"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Side Smirk"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Striped Knit"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Eye Spark"
+    }
+  ]
+}

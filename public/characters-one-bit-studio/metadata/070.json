@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0070",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/070.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Wide Signal"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Raven Wave"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Angry Arches"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Open Bite"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Wrapped Tunic"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Ear Tag"
+    }
+  ]
+}

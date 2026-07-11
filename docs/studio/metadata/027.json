@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0027",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/027.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Narrow Night"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Slick Curl"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Angry Arches"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Quiet Fang"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Medallion Cape"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Side Patch"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0032",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/032.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Round Bite"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Webbed Wave"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Web Liner"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Twin Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Oversized Hoodie"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Cheek Stripes"
+    }
+  ]
+}

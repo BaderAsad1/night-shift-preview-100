@@ -1,0 +1,31 @@
+{
+  "name": "Night Shift #0020",
+  "description": "Canonical layered one-bit Night Shift production test.",
+  "image": "../renders/020.png",
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "Wide Signal"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Coven Hat"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Night Fade"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Crooked Grin"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Heavy Pea Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Fang Chain"
+    }
+  ]
+}
