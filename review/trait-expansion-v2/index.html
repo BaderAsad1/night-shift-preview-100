@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neon Nocturne — Trait Expansion V2 Review</title>
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
+  <header>
+    <div>
+      <span class="eyebrow">NIGHT SHIFT SOCIETY / INTERNAL REVIEW</span>
+      <h1>NEON NOCTURNE<br><em>TRAIT EXPANSION V2</em></h1>
+      <p>128 proposed concepts. Review only—none of these files are production layers or live-site artwork.</p>
+    </div>
+    <div class="scoreboard" aria-label="Review counts">
+      <span><b id="total-count">128</b> TOTAL</span>
+      <span><b id="approved-count">0</b> APPROVED</span>
+      <span><b id="revise-count">0</b> REVISE</span>
+      <span><b id="rejected-count">0</b> REJECTED</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="rules">
+      <strong>LOCKED:</strong> approved face geometry, exact scale, bottom baseline, hard pixel edges,
+      <code>#020102</code> ink and <code>#fdf423</code> eye/flame interiors. No religious references or background objects.
+    </section>
+
+    <div class="toolbar">
+      <div id="filters" class="filters" aria-label="Filter traits"></div>
+      <button id="export-decisions" class="export">EXPORT DECISIONS ↓</button>
+    </div>
+
+    <section id="trait-grid" class="trait-grid" aria-live="polite"></section>
+  </main>
+
+  <template id="trait-template">
+    <article class="trait-card">
+      <div class="image-wrap"><img alt="" loading="lazy"></div>
+      <div class="trait-copy"><code></code><strong></strong></div>
+      <div class="decisions" role="group" aria-label="Trait decision">
+        <button data-decision="approve">APPROVE</button>
+        <button data-decision="revise">REVISE</button>
+        <button data-decision="reject">REJECT</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="manifest.js"></script>
+  <script src="review.js"></script>
+</body>
+</html>
