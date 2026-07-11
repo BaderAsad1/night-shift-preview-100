@@ -1,4 +1,4 @@
-const state = { manifest: null, studioManifest: null, house: "All Houses", query: "", selected: null, mode: "color" };
+const state = { manifest: null, studioManifest: null, traitManifest: null, house: "All Houses", query: "", selected: null, mode: "color", traitCategory: "Component Traits" };
 
 const modes = {
   color: { label: "8-BIT COLOR", alt: "8-bit color", folder: "characters" },
@@ -83,17 +83,29 @@ function renderStyleSwitch() {
 }
 
 function renderTraitDownloads() {
-  const archetypes = state.studioManifest?.traitLibrary?.categories?.Archetype || [];
+  const allTraits = state.traitManifest?.traits || [];
+  const traits = state.traitCategory === "Component Traits"
+    ? allTraits.filter(trait => trait.category !== "Master Archetype")
+    : allTraits.filter(trait => trait.category === state.traitCategory);
   const grid = document.querySelector("#trait-download-grid");
-  grid.replaceChildren(...archetypes.map(trait => {
+  const filters = document.querySelector("#trait-category-bar");
+  const categories = ["Component Traits", "Silhouette / Headwear", "Eyes", "Outfit", "Master Archetype"];
+  filters.replaceChildren(...categories.map(category => {
+    const button = document.createElement("button");
+    const count = category === "Component Traits" ? 108 : 36;
+    button.textContent = `${category} · ${count}`;
+    button.className = category === state.traitCategory ? "active" : "";
+    button.addEventListener("click", () => { state.traitCategory = category; renderTraitDownloads(); });
+    return button;
+  }));
+  grid.replaceChildren(...traits.map(trait => {
     const card = document.createElement("article");
-    const file = `${trait.code}.png`;
     card.className = "trait-download-card";
     card.innerHTML = `
-      <div class="trait-preview"><img src="traits/${file}" alt="${trait.name} transparent source trait" loading="lazy"></div>
+      <div class="trait-preview"><img src="${trait.file}" alt="${trait.name} transparent ${trait.category} trait" loading="lazy"></div>
       <div class="trait-download-meta">
         <span><code>${trait.code}</code><strong>${trait.name}</strong></span>
-        <a href="traits/${file}" download="${file}" aria-label="Download ${trait.name} transparent PNG">PNG ↓</a>
+        <a href="${trait.file}" download="${trait.code}.png" aria-label="Download ${trait.name} transparent PNG">PNG ↓</a>
       </div>`;
     return card;
   }));
@@ -152,14 +164,15 @@ document.querySelector("#copy").addEventListener("click", async event => {
   setTimeout(() => { event.currentTarget.textContent = "COPY REVIEW NOTE"; }, 1500);
 });
 
-Promise.all([fetch("characters/manifest.json"), fetch("studio/manifest.json")])
+Promise.all([fetch("characters/manifest.json"), fetch("studio/manifest.json"), fetch("traits/manifest.json")])
   .then(async responses => {
     if (responses.some(response => !response.ok)) throw new Error("Manifest unavailable");
     return Promise.all(responses.map(response => response.json()));
   })
-  .then(([manifest, studioManifest]) => {
+  .then(([manifest, studioManifest, traitManifest]) => {
     state.manifest = manifest;
     state.studioManifest = studioManifest;
+    state.traitManifest = traitManifest;
     document.body.dataset.mode = state.mode;
     renderStyleSwitch(); renderHero(); renderFilters(); renderGallery(); renderTraitDownloads();
   })

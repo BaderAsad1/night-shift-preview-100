@@ -1,0 +1,1017 @@
+{
+  "componentTraitCount": 108,
+  "masterCount": 36,
+  "totalFileCount": 144,
+  "format": "1024x1024 RGBA PNG",
+  "background": "transparent",
+  "traits": [
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH01",
+      "name": "Raven Wave",
+      "file": "traits/headwear/SH01.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY01",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY01.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF01",
+      "name": "Skull Tux",
+      "file": "traits/outfits/OF01.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR01",
+      "name": "Raven Tux",
+      "file": "traits/masters/AR01.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH02",
+      "name": "Pumpkin Crown",
+      "file": "traits/headwear/SH02.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY02",
+      "name": "Soft Glow",
+      "file": "traits/eyes/EY02.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF02",
+      "name": "High Collar",
+      "file": "traits/outfits/OF02.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR02",
+      "name": "Pumpkin Regent",
+      "file": "traits/masters/AR02.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH03",
+      "name": "Midnight Slick",
+      "file": "traits/headwear/SH03.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY03",
+      "name": "Shadow Fade",
+      "file": "traits/eyes/EY03.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF03",
+      "name": "Medallion Cape",
+      "file": "traits/outfits/OF03.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR03",
+      "name": "Midnight Medallion",
+      "file": "traits/masters/AR03.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH04",
+      "name": "Living Flame",
+      "file": "traits/headwear/SH04.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY04",
+      "name": "Long Lashes",
+      "file": "traits/eyes/EY04.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF04",
+      "name": "Striped Knit",
+      "file": "traits/outfits/OF04.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR04",
+      "name": "Flame Knit",
+      "file": "traits/masters/AR04.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH05",
+      "name": "Stitched Crop",
+      "file": "traits/headwear/SH05.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY05",
+      "name": "X Glow",
+      "file": "traits/eyes/EY05.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF05",
+      "name": "Undertaker Shirt",
+      "file": "traits/outfits/OF05.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR05",
+      "name": "Stitched Undertaker",
+      "file": "traits/masters/AR05.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH06",
+      "name": "Little Horns",
+      "file": "traits/headwear/SH06.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY06",
+      "name": "Angry Arches",
+      "file": "traits/eyes/EY06.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF06",
+      "name": "Winged Cape",
+      "file": "traits/outfits/OF06.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR06",
+      "name": "Horned Wing",
+      "file": "traits/masters/AR06.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH07",
+      "name": "Mummy Wraps",
+      "file": "traits/headwear/SH07.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY07",
+      "name": "Soft Glow",
+      "file": "traits/eyes/EY07.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF07",
+      "name": "Wrapped Tunic",
+      "file": "traits/outfits/OF07.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR07",
+      "name": "Mummy Wrap",
+      "file": "traits/masters/AR07.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH08",
+      "name": "Coven Hat",
+      "file": "traits/headwear/SH08.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY08",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY08.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF08",
+      "name": "Coven Coat + Lantern",
+      "file": "traits/outfits/OF08.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR08",
+      "name": "Coven Courier",
+      "file": "traits/masters/AR08.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH09",
+      "name": "Spectral Wave",
+      "file": "traits/headwear/SH09.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY09",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY09.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF09",
+      "name": "Chain Crewneck",
+      "file": "traits/outfits/OF09.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR09",
+      "name": "Spectral Chain",
+      "file": "traits/masters/AR09.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH10",
+      "name": "Raven Wave",
+      "file": "traits/headwear/SH10.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY10",
+      "name": "Hypno Spirals",
+      "file": "traits/eyes/EY10.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF10",
+      "name": "Velvet Jacket",
+      "file": "traits/outfits/OF10.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR10",
+      "name": "Hypno Velvet",
+      "file": "traits/masters/AR10.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH11",
+      "name": "Pom Beanie",
+      "file": "traits/headwear/SH11.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY11",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY11.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF11",
+      "name": "Skeleton Hoodie",
+      "file": "traits/outfits/OF11.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR11",
+      "name": "Beanie Bones",
+      "file": "traits/masters/AR11.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH12",
+      "name": "Webbed Wave",
+      "file": "traits/headwear/SH12.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY12",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY12.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF12",
+      "name": "High Collar",
+      "file": "traits/outfits/OF12.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR12",
+      "name": "Webbed Court",
+      "file": "traits/masters/AR12.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH13",
+      "name": "Flight Goggles",
+      "file": "traits/headwear/SH13.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY13",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY13.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF13",
+      "name": "Fur Flight Jacket",
+      "file": "traits/outfits/OF13.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR13",
+      "name": "Goggle Aviator",
+      "file": "traits/masters/AR13.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH14",
+      "name": "Retro Visor",
+      "file": "traits/headwear/SH14.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY14",
+      "name": "Visor Glow",
+      "file": "traits/eyes/EY14.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF14",
+      "name": "Utility Coat",
+      "file": "traits/outfits/OF14.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR14",
+      "name": "Neon Visor",
+      "file": "traits/masters/AR14.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH15",
+      "name": "Moth Antennae",
+      "file": "traits/headwear/SH15.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY15",
+      "name": "Dark Glow",
+      "file": "traits/eyes/EY15.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF15",
+      "name": "Velvet Cape",
+      "file": "traits/outfits/OF15.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR15",
+      "name": "Moth Velvet",
+      "file": "traits/masters/AR15.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH16",
+      "name": "Wolf Ears",
+      "file": "traits/headwear/SH16.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY16",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY16.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF16",
+      "name": "Varsity Jacket",
+      "file": "traits/outfits/OF16.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR16",
+      "name": "Wolf Varsity",
+      "file": "traits/masters/AR16.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH17",
+      "name": "Deep Rain Hood",
+      "file": "traits/headwear/SH17.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY17",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY17.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF17",
+      "name": "Technical Shell",
+      "file": "traits/outfits/OF17.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR17",
+      "name": "Rain Runner",
+      "file": "traits/masters/AR17.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH18",
+      "name": "Sleek Bob",
+      "file": "traits/headwear/SH18.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY18",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY18.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF18",
+      "name": "Geometric Collar",
+      "file": "traits/outfits/OF18.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR18",
+      "name": "Geometric Bob",
+      "file": "traits/masters/AR18.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH19",
+      "name": "Bat Courier Helmet",
+      "file": "traits/headwear/SH19.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY19",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY19.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF19",
+      "name": "Messenger Rig",
+      "file": "traits/outfits/OF19.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR19",
+      "name": "Bat Courier",
+      "file": "traits/masters/AR19.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH20",
+      "name": "High Pompadour",
+      "file": "traits/headwear/SH20.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY20",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY20.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF20",
+      "name": "Biker Jacket",
+      "file": "traits/outfits/OF20.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR20",
+      "name": "Night Rider",
+      "file": "traits/masters/AR20.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH21",
+      "name": "Oversized Headphones",
+      "file": "traits/headwear/SH21.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY21",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY21.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF21",
+      "name": "Broadcast Jacket",
+      "file": "traits/outfits/OF21.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR21",
+      "name": "Broadcast Headset",
+      "file": "traits/masters/AR21.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH22",
+      "name": "Moonclip Bob",
+      "file": "traits/headwear/SH22.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY22",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY22.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF22",
+      "name": "Quilted Coat",
+      "file": "traits/outfits/OF22.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR22",
+      "name": "Quilted Moonclip",
+      "file": "traits/masters/AR22.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH23",
+      "name": "Spiked Crest",
+      "file": "traits/headwear/SH23.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY23",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY23.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF23",
+      "name": "Armored Vest",
+      "file": "traits/outfits/OF23.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR23",
+      "name": "Spike Armor",
+      "file": "traits/masters/AR23.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH24",
+      "name": "Round Glasses",
+      "file": "traits/headwear/SH24.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY24",
+      "name": "Lens Glow",
+      "file": "traits/eyes/EY24.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF24",
+      "name": "Knit Cardigan",
+      "file": "traits/outfits/OF24.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR24",
+      "name": "Roundglass Cardigan",
+      "file": "traits/masters/AR24.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH25",
+      "name": "Broad Fedora",
+      "file": "traits/headwear/SH25.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY25",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY25.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF25",
+      "name": "Trench Collar",
+      "file": "traits/outfits/OF25.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR25",
+      "name": "Noir Detective",
+      "file": "traits/masters/AR25.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH26",
+      "name": "Compact Race Helmet",
+      "file": "traits/headwear/SH26.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY26",
+      "name": "Full Visor Glow",
+      "file": "traits/eyes/EY26.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF26",
+      "name": "Racing Jacket",
+      "file": "traits/outfits/OF26.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR26",
+      "name": "Arcade Racer",
+      "file": "traits/masters/AR26.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH27",
+      "name": "Captain Cap",
+      "file": "traits/headwear/SH27.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY27",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY27.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF27",
+      "name": "Heavy Pea Coat",
+      "file": "traits/outfits/OF27.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR27",
+      "name": "Deep-Sea Captain",
+      "file": "traits/masters/AR27.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH28",
+      "name": "Wild Side Hair + Goggles",
+      "file": "traits/headwear/SH28.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY28",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY28.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF28",
+      "name": "Tool Apron",
+      "file": "traits/outfits/OF28.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR28",
+      "name": "Wild Inventor",
+      "file": "traits/masters/AR28.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH29",
+      "name": "Finger-Wave Hair",
+      "file": "traits/headwear/SH29.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY29",
+      "name": "Long Lashes",
+      "file": "traits/eyes/EY29.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF29",
+      "name": "Fur Collar",
+      "file": "traits/outfits/OF29.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR29",
+      "name": "Silent Film Star",
+      "file": "traits/masters/AR29.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH30",
+      "name": "Wrapped Goggles",
+      "file": "traits/headwear/SH30.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY30",
+      "name": "Goggle Glow",
+      "file": "traits/eyes/EY30.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF30",
+      "name": "Desert Scarf",
+      "file": "traits/outfits/OF30.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR30",
+      "name": "Desert Nomad",
+      "file": "traits/masters/AR30.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH31",
+      "name": "Leaf Crown",
+      "file": "traits/headwear/SH31.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY31",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY31.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF31",
+      "name": "Work Overalls",
+      "file": "traits/outfits/OF31.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR31",
+      "name": "Botanical Keeper",
+      "file": "traits/masters/AR31.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH32",
+      "name": "Angular Shades",
+      "file": "traits/headwear/SH32.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY32",
+      "name": "Shade Reflection",
+      "file": "traits/eyes/EY32.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF32",
+      "name": "Stage Coat",
+      "file": "traits/outfits/OF32.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR32",
+      "name": "Synth Shade",
+      "file": "traits/masters/AR32.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH33",
+      "name": "Fur Climber Cap",
+      "file": "traits/headwear/SH33.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY33",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY33.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF33",
+      "name": "Padded Parka",
+      "file": "traits/outfits/OF33.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR33",
+      "name": "Ice Climber",
+      "file": "traits/masters/AR33.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH34",
+      "name": "Tall Top Hat",
+      "file": "traits/headwear/SH34.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY34",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY34.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF34",
+      "name": "Patterned Vest",
+      "file": "traits/outfits/OF34.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR34",
+      "name": "Street Magician",
+      "file": "traits/masters/AR34.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH35",
+      "name": "Backward Cap",
+      "file": "traits/headwear/SH35.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY35",
+      "name": "Hollow Ovals",
+      "file": "traits/eyes/EY35.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF35",
+      "name": "Oversized Hoodie",
+      "file": "traits/outfits/OF35.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR35",
+      "name": "Graffiti Courier",
+      "file": "traits/masters/AR35.png"
+    },
+    {
+      "category": "Silhouette / Headwear",
+      "folder": "headwear",
+      "code": "SH36",
+      "name": "Center-Part Hair + Glasses",
+      "file": "traits/headwear/SH36.png"
+    },
+    {
+      "category": "Eyes",
+      "folder": "eyes",
+      "code": "EY36",
+      "name": "Lens Glow",
+      "file": "traits/eyes/EY36.png"
+    },
+    {
+      "category": "Outfit",
+      "folder": "outfits",
+      "code": "OF36",
+      "name": "Sharp Blazer",
+      "file": "traits/outfits/OF36.png"
+    },
+    {
+      "category": "Master Archetype",
+      "folder": "masters",
+      "code": "AR36",
+      "name": "Chess Strategist",
+      "file": "traits/masters/AR36.png"
+    }
+  ]
+}

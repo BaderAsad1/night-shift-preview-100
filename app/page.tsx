@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import manifest from "../public/characters/manifest.json";
-import studioManifest from "../public/characters-one-bit-studio/manifest.json";
+import traitManifest from "../public/traits/manifest.json";
 import { Gallery } from "./Gallery";
 
 export const metadata: Metadata = {
@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <Gallery manifest={manifest} traitSources={studioManifest.traitLibrary.categories.Archetype} />;
+  return <Gallery manifest={manifest} traitSources={traitManifest.traits} />;
 }

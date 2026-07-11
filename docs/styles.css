@@ -85,6 +85,12 @@ main { min-height: 100vh; overflow: hidden; background-image: radial-gradient(ci
 .batch-download span { font: 900 12px var(--font-geist-mono), monospace; letter-spacing: .08em; }
 .batch-download small { grid-column: 1; font: 700 8px var(--font-geist-mono), monospace; letter-spacing: .1em; }
 .batch-download b { grid-column: 2; grid-row: 1 / span 2; font-size: 26px; }
+.trait-category-bar { display: flex; flex-wrap: wrap; gap: 8px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.trait-category-bar button { cursor: pointer; padding: 11px 13px; border: 1px solid var(--line); color: #9d95a4; background: transparent; text-transform: uppercase; font: 700 9px var(--font-geist-mono), monospace; letter-spacing: .07em; }
+.trait-category-bar button:hover, .trait-category-bar button.active { color: #0c0910; border-color: #d0f708; background: #d0f708; }
+.trait-batch-links { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 14px; }
+.trait-batch-links a { padding: 10px 12px; border: 1px solid #4b3d53; color: #c8c0cf; text-decoration: none; font: 800 8px var(--font-geist-mono), monospace; letter-spacing: .08em; }
+.trait-batch-links a:hover { color: #0c0910; border-color: #d0f708; background: #d0f708; }
 .trait-download-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-top: 14px; }
 .trait-download-card { overflow: hidden; border: 1px solid var(--line); background: #120e16; }
 .trait-preview { aspect-ratio: 1; background: repeating-conic-gradient(#e9e6df 0 25%, #cfcac0 0 50%) 50% / 20px 20px; }

@@ -22,9 +22,11 @@ type Manifest = {
   characters: Character[];
 };
 type TraitSource = {
+  category: string;
+  folder: string;
   code: string;
   name: string;
-  components: { silhouette: string; eyes: string; outfit: string };
+  file: string;
 };
 
 function PixelMark() {
@@ -40,6 +42,7 @@ export function Gallery({ manifest, traitSources }: { manifest: Manifest; traitS
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<Character | null>(null);
   const [copied, setCopied] = useState(false);
+  const [traitCategory, setTraitCategory] = useState("Component Traits");
 
   const visible = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -55,6 +58,12 @@ export function Gallery({ manifest, traitSources }: { manifest: Manifest; traitS
       return haystack.includes(q);
     });
   }, [house, manifest.characters, query]);
+
+  const downloadableTraits = useMemo(() => (
+    traitCategory === "Component Traits"
+      ? traitSources.filter((trait) => trait.category !== "Master Archetype")
+      : traitSources.filter((trait) => trait.category === traitCategory)
+  ), [traitCategory, traitSources]);
 
   useEffect(() => {
     const close = (event: KeyboardEvent) => event.key === "Escape" && setSelected(null);
@@ -160,19 +169,33 @@ export function Gallery({ manifest, traitSources }: { manifest: Manifest; traitS
           <div>
             <span className="kicker">PRODUCTION FILES / TRANSPARENT PNG</span>
             <h2>DOWNLOAD THE<br />TRAIT LIBRARY</h2>
-            <p>All 36 normalized Neon Nocturne source archetypes at 1024×1024 with transparent backgrounds. Download any file individually or take the complete batch.</p>
+            <p>108 individual Neon Nocturne component traits—36 headwear and silhouettes, 36 eye treatments, and 36 outfits—at 1024×1024 with transparent backgrounds. The 36 complete masters remain available as a separate reference set.</p>
           </div>
-          <a className="batch-download" href="/traits/night-shift-neon-nocturne-traits-transparent.zip" download>
-            <span>DOWNLOAD ALL 36</span><small>ZIP · TRANSPARENT PNG</small><b>↓</b>
+          <a className="batch-download" href="/traits/night-shift-108-component-traits-transparent.zip" download>
+            <span>DOWNLOAD ALL 108 TRAITS</span><small>ZIP · TRANSPARENT PNG</small><b>↓</b>
           </a>
         </div>
+        <div className="trait-category-bar" aria-label="Filter trait downloads">
+          {["Component Traits", "Silhouette / Headwear", "Eyes", "Outfit", "Master Archetype"].map((category) => (
+            <button className={traitCategory === category ? "active" : ""} key={category} onClick={() => setTraitCategory(category)}>
+              {category} · {category === "Component Traits" ? 108 : 36}
+            </button>
+          ))}
+        </div>
+        <div className="trait-batch-links">
+          <a href="/traits/night-shift-headwear-36-transparent.zip" download>HEADWEAR 36 ↓</a>
+          <a href="/traits/night-shift-eyes-36-transparent.zip" download>EYES 36 ↓</a>
+          <a href="/traits/night-shift-outfits-36-transparent.zip" download>OUTFITS 36 ↓</a>
+          <a href="/traits/night-shift-masters-36-transparent.zip" download>MASTERS 36 ↓</a>
+          <a href="/traits/night-shift-144-trait-library-transparent.zip" download>EVERY FILE 144 ↓</a>
+        </div>
         <div className="trait-download-grid" aria-label="Transparent trait downloads">
-          {traitSources.map((trait) => (
+          {downloadableTraits.map((trait) => (
             <article className="trait-download-card" key={trait.code}>
-              <div className="trait-preview"><img src={`/traits/${trait.code}.png`} alt={`${trait.name} transparent source trait`} loading="lazy" /></div>
+              <div className="trait-preview"><img src={`/${trait.file}`} alt={`${trait.name} transparent ${trait.category} trait`} loading="lazy" /></div>
               <div className="trait-download-meta">
                 <span><code>{trait.code}</code><strong>{trait.name}</strong></span>
-                <a href={`/traits/${trait.code}.png`} download={`${trait.code}.png`} aria-label={`Download ${trait.name} transparent PNG`}>PNG ↓</a>
+                <a href={`/${trait.file}`} download={`${trait.code}.png`} aria-label={`Download ${trait.name} transparent PNG`}>PNG ↓</a>
               </div>
             </article>
           ))}

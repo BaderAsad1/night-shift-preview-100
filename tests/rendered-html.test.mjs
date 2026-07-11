@@ -84,18 +84,28 @@ test("ships the transparent source trait download library", async () => {
   const publicTraitsRoot = new URL("../public/traits/", import.meta.url);
   const docsTraitsRoot = new URL("../docs/traits/", import.meta.url);
   const docsRoot = new URL("../docs/", import.meta.url);
-  const [publicFiles, docsFiles, docsHtml, docsJs] = await Promise.all([
+  const categories = ["headwear", "eyes", "outfits", "masters"];
+  const [publicFiles, docsFiles, docsHtml, docsJs, traitManifestText] = await Promise.all([
     readdir(publicTraitsRoot),
     readdir(docsTraitsRoot),
     readFile(new URL("index.html", docsRoot), "utf8"),
     readFile(new URL("app.js", docsRoot), "utf8"),
+    readFile(new URL("manifest.json", publicTraitsRoot), "utf8"),
   ]);
-  assert.equal(publicFiles.filter((file) => /^AR\d{2}\.png$/.test(file)).length, 36);
-  assert.equal(docsFiles.filter((file) => /^AR\d{2}\.png$/.test(file)).length, 36);
-  assert.equal(publicFiles.includes("night-shift-neon-nocturne-traits-transparent.zip"), true);
-  assert.equal(docsFiles.includes("night-shift-neon-nocturne-traits-transparent.zip"), true);
+  const traitManifest = JSON.parse(traitManifestText);
+  const publicCategoryFiles = await Promise.all(categories.map((category) => readdir(new URL(`${category}/`, publicTraitsRoot))));
+  const docsCategoryFiles = await Promise.all(categories.map((category) => readdir(new URL(`${category}/`, docsTraitsRoot))));
+  assert.deepEqual(publicCategoryFiles.map((files) => files.filter((file) => /^(SH|EY|OF|AR)\d{2}\.png$/.test(file)).length), [36, 36, 36, 36]);
+  assert.deepEqual(docsCategoryFiles.map((files) => files.filter((file) => /^(SH|EY|OF|AR)\d{2}\.png$/.test(file)).length), [36, 36, 36, 36]);
+  assert.equal(publicFiles.includes("night-shift-108-component-traits-transparent.zip"), true);
+  assert.equal(docsFiles.includes("night-shift-144-trait-library-transparent.zip"), true);
+  assert.equal(traitManifest.componentTraitCount, 108);
+  assert.equal(traitManifest.masterCount, 36);
+  assert.equal(traitManifest.totalFileCount, 144);
+  assert.equal(traitManifest.traits.length, 144);
+  assert.equal(traitManifest.traits.filter((trait) => trait.category !== "Master Archetype").length, 108);
   assert.match(docsHtml, /DOWNLOAD THE/);
-  assert.match(docsHtml, /DOWNLOAD ALL 36/);
+  assert.match(docsHtml, /DOWNLOAD ALL 108 TRAITS/);
   assert.match(docsJs, /renderTraitDownloads/);
-  assert.match(docsJs, /download=.*file/);
+  assert.match(docsJs, /Component Traits/);
 });

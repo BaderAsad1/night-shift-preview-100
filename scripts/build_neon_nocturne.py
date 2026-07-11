@@ -528,8 +528,11 @@ def validate_portrait_trait(portrait: Image.Image, archetype_index: int) -> None
                 )
 
 
-def normalize_portrait_trait(portrait: Image.Image, archetype_index: int) -> Image.Image:
-    """Use one face scale and anchor every portrait to the canvas bottom."""
+def portrait_normalization_geometry(
+    portrait: Image.Image,
+    archetype_index: int,
+) -> tuple[float, int, int]:
+    """Return the scale and final canvas offset used by source normalization."""
     boxes = EYE_BOXES[archetype_index]
     centers = [((x0 + x1) / 2, (y0 + y1) / 2) for x0, y0, x1, y1 in boxes]
     eye_midpoint = (
@@ -554,15 +557,28 @@ def normalize_portrait_trait(portrait: Image.Image, archetype_index: int) -> Ima
     resized_bbox = resized.getchannel("A").getbbox()
     if not resized_bbox:
         raise ValueError(f"Empty normalized archetype {archetype_index + 1}")
-    normalized = Image.new("RGBA", portrait.size, (0, 0, 0, 0))
-    normalized.alpha_composite(resized, (
+    return (
+        scale,
         round(target_eye_x + shift_x - eye_midpoint[0] * scale),
         1024 - resized_bbox[3],
-    ))
+    )
+
+
+def normalize_portrait_trait(portrait: Image.Image, archetype_index: int) -> Image.Image:
+    """Use one face scale and anchor every portrait to the canvas bottom."""
+    scale, offset_x, offset_y = portrait_normalization_geometry(portrait, archetype_index)
+    resized = portrait.resize(
+        (round(portrait.width * scale), round(portrait.height * scale)),
+        Image.Resampling.NEAREST,
+    )
+    normalized = Image.new("RGBA", portrait.size, (0, 0, 0, 0))
+    normalized.alpha_composite(resized, (offset_x, offset_y))
     return normalized
 
 
-def build_portrait_trait_sources(output_dir: Path = TRAIT_SOURCE_DIR) -> None:
+def build_portrait_trait_sources(
+    output_dir: Path = TRAIT_SOURCE_DIR,
+) -> list[tuple[tuple[int, int, int, int], tuple[int, int, int, int]]]:
     """Create the reusable, colored, normalized archetype source assets."""
     portraits = []
     for source in PORTRAIT_SOURCES:
@@ -573,14 +589,26 @@ def build_portrait_trait_sources(output_dir: Path = TRAIT_SOURCE_DIR) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     for old in output_dir.glob("AR*.png"):
         old.unlink()
+    normalized_eye_boxes = []
     for index, portrait in enumerate(portraits):
         cleaned = clean_portrait_footer(portrait, index)
         colored = apply_trait_color(sharpen_portrait_ink(cleaned), index, cleaned)
+        scale, offset_x, offset_y = portrait_normalization_geometry(colored, index)
         normalized = normalize_portrait_trait(colored, index)
         normalized = color_living_flame_fragments(normalized, index)
         normalized = apply_spectral_flame_color(normalized, index)
         validate_portrait_trait(normalized, index)
         normalized.save(output_dir / f"AR{index + 1:02d}.png", optimize=True)
+        normalized_eye_boxes.append(tuple(
+            (
+                round(x0 * scale + offset_x),
+                round(y0 * scale + offset_y),
+                round(x1 * scale + offset_x),
+                round(y1 * scale + offset_y),
+            )
+            for x0, y0, x1, y1 in EYE_BOXES[index]
+        ))
+    return normalized_eye_boxes
 
 
 def load_portrait_trait_sources() -> list[Image.Image]:
