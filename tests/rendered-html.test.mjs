@@ -25,18 +25,23 @@ test("renders the Night Shift preview gallery", async () => {
   assert.match(html, /V2 TRAIT REVIEW/);
 });
 
-test("ships the registered V2 review and standard generator test", async () => {
+test("ships the categorized isolated V2 library and standard generator test", async () => {
   const reviewRoot = new URL("../public/review/trait-expansion-v2/", import.meta.url);
-  const [html, manifestText, generatorManifestText, cards, transparentCards, outputs] = await Promise.all([
+  const [html, manifestText, isolatedManifestText, generatorManifestText, cards, transparentCards, isolatedHair, outputs] = await Promise.all([
     readFile(new URL("index.html", reviewRoot), "utf8"),
     readFile(new URL("manifest.json", reviewRoot), "utf8"),
+    readFile(new URL("isolated-layers/manifest.json", reviewRoot), "utf8"),
     readFile(new URL("generator/output/manifest.json", reviewRoot), "utf8"),
     readdir(new URL("cards/hair-headwear/", reviewRoot)),
     readdir(new URL("cards-transparent/hair-headwear/", reviewRoot)),
+    readdir(new URL("isolated-layers/hair-headwear/", reviewRoot)),
     readdir(new URL("generator/output/images/", reviewRoot)),
   ]);
   const manifest = JSON.parse(manifestText);
+  const isolatedManifest = JSON.parse(isolatedManifestText);
   const generatorManifest = JSON.parse(generatorManifestText);
+  assert.match(html, /ISOLATED TRAIT/);
+  assert.match(html, /128 FILES \/ 8 CATEGORIES/);
   assert.match(html, /WEIGHTED LAYER/);
   assert.match(html, /DOWNLOAD GENERATOR LAYERS/);
   assert.equal(manifest.conceptCount, 128);
@@ -44,6 +49,10 @@ test("ships the registered V2 review and standard generator test", async () => {
   assert.equal(manifest.traits.every((trait) => trait.registration.bodyBaselineY === 512), true);
   assert.equal(cards.filter((file) => /^HH\d{2}\.png$/.test(file)).length, 16);
   assert.equal(transparentCards.filter((file) => /^HH\d{2}\.png$/.test(file)).length, 16);
+  assert.equal(isolatedManifest.count, 128);
+  assert.deepEqual(isolatedManifest.categories, ["hair-headwear", "eyes", "eyewear", "mouths", "outfits", "neck", "face-details", "rare"]);
+  assert.equal(isolatedManifest.layers.every((layer) => layer.canvas.join("x") === "512x512" && layer.background === "transparent"), true);
+  assert.equal(isolatedHair.filter((file) => /^HH\d{2}\.png$/.test(file)).length, 16);
   assert.equal(generatorManifest.hashLipsCompatibleStructure, true);
   assert.equal(generatorManifest.count, 24);
   assert.equal(outputs.filter((file) => /^\d{4}\.png$/.test(file)).length, 24);

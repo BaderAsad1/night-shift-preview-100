@@ -33,6 +33,7 @@ def main() -> None:
         "manifest.json",
         "cards",
         "cards-transparent",
+        "isolated-layers",
         "generator/output",
         "generator/config.json",
         "generator/README.md",
