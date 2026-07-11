@@ -6,6 +6,7 @@ from __future__ import annotations
 import re
 import json
 import sys
+from collections import deque
 from pathlib import Path
 
 from PIL import Image
@@ -26,6 +27,7 @@ EXPECTED = [
 PALETTE = {(2, 1, 2), (208, 247, 8), (253, 244, 35)}
 INK = (2, 1, 2)
 YELLOW = (253, 244, 35)
+CANVAS = 512
 
 
 def fail(message: str) -> None:
@@ -40,6 +42,21 @@ def audit_sheet(path: Path) -> tuple[int, int]:
     colors = set(image.getdata())
     if colors != PALETTE:
         fail(f"{path.name} palette mismatch: {sorted(colors)}")
+    mask_path = REVIEW / "yellow-masks" / path.name
+    if not mask_path.exists():
+        fail(f"{path.name} is missing its approved eye/flame yellow mask")
+    approved_yellow = Image.open(mask_path).convert("1")
+    if approved_yellow.size != image.size:
+        fail(f"{path.name} yellow mask size mismatch")
+    approved_pixels = approved_yellow.load()
+    image_pixels = image.load()
+    unauthorized_yellow = sum(
+        image_pixels[x, y] == YELLOW and not approved_pixels[x, y]
+        for y in range(image.height)
+        for x in range(image.width)
+    )
+    if unauthorized_yellow:
+        fail(f"{path.name} has {unauthorized_yellow} yellow pixels outside approved eyes/flames")
 
     width, height = image.size
     pixels = image.load()
@@ -69,6 +86,35 @@ def audit_sheet(path: Path) -> tuple[int, int]:
             if yellow < 24:
                 fail(f"{path.name} cell {row * 4 + column + 1:02d} lacks approved yellow ({yellow} pixels)")
     return minimum_ink, minimum_yellow
+
+
+def alpha_components(alpha: Image.Image) -> list[list[tuple[int, int]]]:
+    pixels = alpha.load()
+    width, height = alpha.size
+    seen: set[tuple[int, int]] = set()
+    components: list[list[tuple[int, int]]] = []
+    for y in range(height):
+        for x in range(width):
+            if not pixels[x, y] or (x, y) in seen:
+                continue
+            queue = deque([(x, y)])
+            seen.add((x, y))
+            component: list[tuple[int, int]] = []
+            while queue:
+                cx, cy = queue.popleft()
+                component.append((cx, cy))
+                for nx in range(cx - 1, cx + 2):
+                    for ny in range(cy - 1, cy + 2):
+                        if (
+                            0 <= nx < width
+                            and 0 <= ny < height
+                            and (nx, ny) not in seen
+                            and pixels[nx, ny]
+                        ):
+                            seen.add((nx, ny))
+                            queue.append((nx, ny))
+            components.append(component)
+    return sorted(components, key=len, reverse=True)
 
 
 def main() -> None:
@@ -115,6 +161,29 @@ def main() -> None:
         visible_colors = {pixel[:3] for pixel in transparent.getdata() if pixel[3]}
         if alpha_values != {0, 255} or visible_colors != {INK, YELLOW}:
             fail(f"{trait['code']} transparent preview alpha/palette mismatch")
+        components = alpha_components(transparent.getchannel("A"))
+        if not components:
+            fail(f"{trait['code']} has no visible character")
+        main_bottom = max(y for _, y in components[0])
+        if main_bottom != CANVAS - 1:
+            fail(f"{trait['code']} body baseline is y={main_bottom}, expected {CANVAS - 1}")
+        detached_below = [
+            component
+            for component in components[1:]
+            if min(y for _, y in component) > main_bottom
+        ]
+        if detached_below:
+            fail(f"{trait['code']} has detached artwork below the character")
+        edge_pixels = [
+            (x, y)
+            for x, y in components[0]
+            if x in (0, CANVAS - 1)
+        ]
+        if edge_pixels:
+            fail(f"{trait['code']} main character is clipped at a horizontal edge")
+        registration = trait.get("registration", {})
+        if registration.get("bodyBaselineY") != CANVAS:
+            fail(f"{trait['code']} is missing baseline registration metadata")
     print("reviewCards=128")
     print("sourceCards=128")
     print("transparentPreviews=128")

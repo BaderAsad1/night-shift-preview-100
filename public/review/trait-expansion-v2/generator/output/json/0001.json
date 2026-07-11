@@ -1,0 +1,15 @@
+{
+  "name": "Neon Nocturne Pipeline Test #1",
+  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "image": "ipfs://REPLACE_AFTER_UPLOAD/0001.png",
+  "dna": "383fa3894044f628a957e41c88bc11144d7fb7ae40d8656f729d760d87a0a67c",
+  "edition": 1,
+  "attributes": [
+    {
+      "trait_type": "Complete Character",
+      "value": "Teardrop Pupils",
+      "code": "EY13"
+    }
+  ],
+  "compiler": "Night Shift Layer Generator 1.0"
+}

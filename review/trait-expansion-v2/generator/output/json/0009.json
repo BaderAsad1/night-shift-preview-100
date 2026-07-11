@@ -1,0 +1,15 @@
+{
+  "name": "Neon Nocturne Pipeline Test #9",
+  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "image": "ipfs://REPLACE_AFTER_UPLOAD/0009.png",
+  "dna": "d05c2aee23f34a4b15bf183fdaf6d9cba738cd6d1c093502d2fbbf2e50f0c3b6",
+  "edition": 9,
+  "attributes": [
+    {
+      "trait_type": "Complete Character",
+      "value": "Tiny Oval Shades",
+      "code": "EW09"
+    }
+  ],
+  "compiler": "Night Shift Layer Generator 1.0"
+}

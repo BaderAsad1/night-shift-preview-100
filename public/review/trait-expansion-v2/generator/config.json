@@ -1,0 +1,16 @@
+{
+  "namePrefix": "Neon Nocturne Pipeline Test",
+  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "baseUri": "ipfs://REPLACE_AFTER_UPLOAD",
+  "editionSize": 24,
+  "seed": 6666,
+  "canvas": [512, 512],
+  "background": "#d0f708",
+  "rarityDelimiter": "#",
+  "layerConfigurations": [
+    {
+      "growEditionSizeTo": 24,
+      "layersOrder": ["01-complete-character"]
+    }
+  ]
+}

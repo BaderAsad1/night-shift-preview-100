@@ -1,0 +1,15 @@
+{
+  "name": "Neon Nocturne Pipeline Test #2",
+  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "image": "ipfs://REPLACE_AFTER_UPLOAD/0002.png",
+  "dna": "b775bb1f41a752dc7606df974739ab6c961dd7da8839c2b7fd04533161d51dcb",
+  "edition": 2,
+  "attributes": [
+    {
+      "trait_type": "Complete Character",
+      "value": "Tired Under Eye Ink",
+      "code": "EY16"
+    }
+  ],
+  "compiler": "Night Shift Layer Generator 1.0"
+}

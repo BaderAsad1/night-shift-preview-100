@@ -24,6 +24,8 @@ main { min-height: 100vh; overflow: hidden; background-image: radial-gradient(ci
 .pixel-mark i:nth-child(2), .pixel-mark i:nth-child(5) { background: transparent; }
 .preview-pill { font: 700 10px/1 var(--font-geist-mono), monospace; letter-spacing: .13em; border: 1px solid var(--line); padding: 10px 13px; color: var(--muted); }
 .preview-pill span { display: inline-block; width: 6px; height: 6px; background: #63ff92; margin-right: 7px; box-shadow: 0 0 10px #63ff92; }
+.topbar-actions { display: flex; align-items: center; gap: 10px; }
+.review-link { padding: 10px 13px; border: 1px solid var(--red); color: var(--red); text-decoration: none; font: 700 10px/1 var(--font-geist-mono), monospace; letter-spacing: .1em; }
 
 .hero { max-width: 1360px; margin: auto; min-height: 650px; padding: 80px 70px 74px; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; }
 .eyebrow, .kicker { color: var(--red); font: 700 11px/1.2 var(--font-geist-mono), monospace; letter-spacing: .18em; }
@@ -133,6 +135,8 @@ footer { max-width: 1440px; margin: auto; padding: 26px 42px; border-top: 1px so
 @media (max-width: 760px) {
   .topbar { height: 66px; padding: 0 18px; }
   .brand { font-size: 10px; }
+  .review-link { padding: 9px; font-size: 8px; }
+  .preview-pill { display: none; }
   .hero { padding: 55px 20px 55px; min-height: auto; }
   .hero h1 { font-size: 58px; }
   .hero-copy > p { font-size: 15px; }

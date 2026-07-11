@@ -22,6 +22,31 @@ test("renders the Night Shift preview gallery", async () => {
   assert.match(html, /REVIEW THE BATCH/);
   assert.match(html, /SOURCE ARCHETYPES/);
   assert.match(html, /BACKGROUND OBJECTS/);
+  assert.match(html, /V2 TRAIT REVIEW/);
+});
+
+test("ships the registered V2 review and standard generator test", async () => {
+  const reviewRoot = new URL("../public/review/trait-expansion-v2/", import.meta.url);
+  const [html, manifestText, generatorManifestText, cards, transparentCards, outputs] = await Promise.all([
+    readFile(new URL("index.html", reviewRoot), "utf8"),
+    readFile(new URL("manifest.json", reviewRoot), "utf8"),
+    readFile(new URL("generator/output/manifest.json", reviewRoot), "utf8"),
+    readdir(new URL("cards/hair-headwear/", reviewRoot)),
+    readdir(new URL("cards-transparent/hair-headwear/", reviewRoot)),
+    readdir(new URL("generator/output/images/", reviewRoot)),
+  ]);
+  const manifest = JSON.parse(manifestText);
+  const generatorManifest = JSON.parse(generatorManifestText);
+  assert.match(html, /WEIGHTED LAYER/);
+  assert.match(html, /DOWNLOAD GENERATOR LAYERS/);
+  assert.equal(manifest.conceptCount, 128);
+  assert.equal(manifest.yellowPolicy, "explicit-mask-eyes-and-approved-flames-only");
+  assert.equal(manifest.traits.every((trait) => trait.registration.bodyBaselineY === 512), true);
+  assert.equal(cards.filter((file) => /^HH\d{2}\.png$/.test(file)).length, 16);
+  assert.equal(transparentCards.filter((file) => /^HH\d{2}\.png$/.test(file)).length, 16);
+  assert.equal(generatorManifest.hashLipsCompatibleStructure, true);
+  assert.equal(generatorManifest.count, 24);
+  assert.equal(outputs.filter((file) => /^\d{4}\.png$/.test(file)).length, 24);
 });
 
 test("ships 100 unique character records", async () => {

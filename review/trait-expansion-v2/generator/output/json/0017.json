@@ -1,0 +1,15 @@
+{
+  "name": "Neon Nocturne Pipeline Test #17",
+  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "image": "ipfs://REPLACE_AFTER_UPLOAD/0017.png",
+  "dna": "808524ae794bc8cba2c1cfa5e73f5f65e1ab15e770391cae2217752476948771",
+  "edition": 17,
+  "attributes": [
+    {
+      "trait_type": "Complete Character",
+      "value": "Stitched Rag Doll",
+      "code": "RA10"
+    }
+  ],
+  "compiler": "Night Shift Layer Generator 1.0"
+}

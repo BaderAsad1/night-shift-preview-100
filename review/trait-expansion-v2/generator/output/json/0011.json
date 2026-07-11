@@ -1,0 +1,15 @@
+{
+  "name": "Neon Nocturne Pipeline Test #11",
+  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "image": "ipfs://REPLACE_AFTER_UPLOAD/0011.png",
+  "dna": "627c56ca84b320ad31e50fced73e2b22a49b018208edf7387074e7fd3f427e1f",
+  "edition": 11,
+  "attributes": [
+    {
+      "trait_type": "Complete Character",
+      "value": "Bomber Jacket",
+      "code": "OF12"
+    }
+  ],
+  "compiler": "Night Shift Layer Generator 1.0"
+}

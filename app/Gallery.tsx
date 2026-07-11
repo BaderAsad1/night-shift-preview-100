@@ -85,7 +85,10 @@ export function Gallery({ manifest, traitSources }: { manifest: Manifest; traitS
           <PixelMark />
           <span>NIGHT SHIFT SOCIETY</span>
         </a>
-        <div className="preview-pill"><span /> TEAM PREVIEW</div>
+        <div className="topbar-actions">
+          <a className="review-link" href="/review/trait-expansion-v2/index.html">V2 TRAIT REVIEW ↗</a>
+          <div className="preview-pill"><span /> TEAM PREVIEW</div>
+        </div>
       </header>
 
       <section className="hero" id="top">
