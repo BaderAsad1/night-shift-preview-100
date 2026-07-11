@@ -21,6 +21,11 @@ type Manifest = {
   houses: House[];
   characters: Character[];
 };
+type TraitSource = {
+  code: string;
+  name: string;
+  components: { silhouette: string; eyes: string; outfit: string };
+};
 
 function PixelMark() {
   return (
@@ -30,7 +35,7 @@ function PixelMark() {
   );
 }
 
-export function Gallery({ manifest }: { manifest: Manifest }) {
+export function Gallery({ manifest, traitSources }: { manifest: Manifest; traitSources: TraitSource[] }) {
   const [house, setHouse] = useState("All Houses");
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<Character | null>(null);
@@ -148,6 +153,30 @@ export function Gallery({ manifest }: { manifest: Manifest }) {
         {visible.length === 0 && (
           <div className="empty-state">No night creatures match that search.</div>
         )}
+      </section>
+
+      <section className="trait-library" id="trait-downloads">
+        <div className="trait-library-head">
+          <div>
+            <span className="kicker">PRODUCTION FILES / TRANSPARENT PNG</span>
+            <h2>DOWNLOAD THE<br />TRAIT LIBRARY</h2>
+            <p>All 36 normalized Neon Nocturne source archetypes at 1024×1024 with transparent backgrounds. Download any file individually or take the complete batch.</p>
+          </div>
+          <a className="batch-download" href="/traits/night-shift-neon-nocturne-traits-transparent.zip" download>
+            <span>DOWNLOAD ALL 36</span><small>ZIP · TRANSPARENT PNG</small><b>↓</b>
+          </a>
+        </div>
+        <div className="trait-download-grid" aria-label="Transparent trait downloads">
+          {traitSources.map((trait) => (
+            <article className="trait-download-card" key={trait.code}>
+              <div className="trait-preview"><img src={`/traits/${trait.code}.png`} alt={`${trait.name} transparent source trait`} loading="lazy" /></div>
+              <div className="trait-download-meta">
+                <span><code>{trait.code}</code><strong>{trait.name}</strong></span>
+                <a href={`/traits/${trait.code}.png`} download={`${trait.code}.png`} aria-label={`Download ${trait.name} transparent PNG`}>PNG ↓</a>
+              </div>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="review-note">

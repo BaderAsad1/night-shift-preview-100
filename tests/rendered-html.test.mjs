@@ -79,3 +79,23 @@ test("ships both one-bit comparison sets and static gallery", async () => {
   assert.match(docsJs, /one-bit/);
   assert.match(docsJs, /folder: "studio"/);
 });
+
+test("ships the transparent source trait download library", async () => {
+  const publicTraitsRoot = new URL("../public/traits/", import.meta.url);
+  const docsTraitsRoot = new URL("../docs/traits/", import.meta.url);
+  const docsRoot = new URL("../docs/", import.meta.url);
+  const [publicFiles, docsFiles, docsHtml, docsJs] = await Promise.all([
+    readdir(publicTraitsRoot),
+    readdir(docsTraitsRoot),
+    readFile(new URL("index.html", docsRoot), "utf8"),
+    readFile(new URL("app.js", docsRoot), "utf8"),
+  ]);
+  assert.equal(publicFiles.filter((file) => /^AR\d{2}\.png$/.test(file)).length, 36);
+  assert.equal(docsFiles.filter((file) => /^AR\d{2}\.png$/.test(file)).length, 36);
+  assert.equal(publicFiles.includes("night-shift-neon-nocturne-traits-transparent.zip"), true);
+  assert.equal(docsFiles.includes("night-shift-neon-nocturne-traits-transparent.zip"), true);
+  assert.match(docsHtml, /DOWNLOAD THE/);
+  assert.match(docsHtml, /DOWNLOAD ALL 36/);
+  assert.match(docsJs, /renderTraitDownloads/);
+  assert.match(docsJs, /download=.*file/);
+});

@@ -82,6 +82,23 @@ function renderStyleSwitch() {
   }));
 }
 
+function renderTraitDownloads() {
+  const archetypes = state.studioManifest?.traitLibrary?.categories?.Archetype || [];
+  const grid = document.querySelector("#trait-download-grid");
+  grid.replaceChildren(...archetypes.map(trait => {
+    const card = document.createElement("article");
+    const file = `${trait.code}.png`;
+    card.className = "trait-download-card";
+    card.innerHTML = `
+      <div class="trait-preview"><img src="traits/${file}" alt="${trait.name} transparent source trait" loading="lazy"></div>
+      <div class="trait-download-meta">
+        <span><code>${trait.code}</code><strong>${trait.name}</strong></span>
+        <a href="traits/${file}" download="${file}" aria-label="Download ${trait.name} transparent PNG">PNG ↓</a>
+      </div>`;
+    return card;
+  }));
+}
+
 function setMode(mode) {
   state.mode = mode;
   document.body.dataset.mode = mode;
@@ -144,7 +161,7 @@ Promise.all([fetch("characters/manifest.json"), fetch("studio/manifest.json")])
     state.manifest = manifest;
     state.studioManifest = studioManifest;
     document.body.dataset.mode = state.mode;
-    renderStyleSwitch(); renderHero(); renderFilters(); renderGallery();
+    renderStyleSwitch(); renderHero(); renderFilters(); renderGallery(); renderTraitDownloads();
   })
   .catch(() => {
     gallery.innerHTML = '<div class="empty-state">The gallery could not load. Please refresh the page.</div>';
