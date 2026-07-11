@@ -1,16 +1,30 @@
 {
   "namePrefix": "Neon Nocturne Pipeline Test",
-  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "description": "Neon Nocturne character generated from individually authored registered pixel layers.",
   "baseUri": "ipfs://REPLACE_AFTER_UPLOAD",
   "editionSize": 24,
   "seed": 6666,
-  "canvas": [512, 512],
+  "canvas": [1028, 1028],
   "background": "#d0f708",
   "rarityDelimiter": "#",
+  "incompatibilities": [
+    {
+      "ifLayer": "Neck Accessories",
+      "ifCodes": ["*"],
+      "withLayer": "Clothing",
+      "withCodes": ["OF01", "OF02", "OF03", "OF06", "OF07", "OF11", "OF12", "OF15", "OF16"]
+    },
+    {
+      "ifLayer": "Hair Headwear",
+      "ifCodes": ["HH07", "HH14"],
+      "withLayer": "Eyewear",
+      "withCodes": ["*"]
+    }
+  ],
   "layerConfigurations": [
     {
       "growEditionSizeTo": 24,
-      "layersOrder": ["01-complete-character"]
+      "layersOrder": ["00-clothing", "01-base", "02-hair-headwear", "03-eyes", "04-mouths", "05-eyewear", "06-neck-accessories", "07-face-details"]
     }
   ]
 }

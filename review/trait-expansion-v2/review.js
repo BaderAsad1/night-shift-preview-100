@@ -3,15 +3,16 @@ const layerManifest = window.ISOLATED_TRAIT_MANIFEST;
 const storageKey = "neon-nocturne-v2-decisions";
 const decisions = JSON.parse(localStorage.getItem(storageKey) || "{}");
 const labels = {
-  all: "ALL 128",
-  "hair-headwear": "HAIR + HEADWEAR",
-  eyes: "EYES",
-  eyewear: "EYEWEAR",
-  mouths: "MOUTHS",
-  outfits: "OUTFITS",
-  neck: "NECK + CHEST",
-  rare: "RARE",
-  "face-details": "FACE DETAILS",
+  all: "ALL 129 LAYERS",
+  "00-base": "BASE",
+  "01-hair-headwear": "HAIR + HEADWEAR",
+  "02-eyes": "EYES",
+  "03-eyewear": "EYEWEAR",
+  "04-mouths": "MOUTHS",
+  "05-clothing": "CLOTHING",
+  "06-neck-accessories": "NECK ACCESSORIES",
+  "07-face-details": "FACE DETAILS",
+  "08-rare-overrides": "RARE OVERRIDES",
 };
 let category = "all";
 const viewModes = {};
@@ -20,6 +21,11 @@ const grid = document.querySelector("#trait-grid");
 const filters = document.querySelector("#filters");
 const template = document.querySelector("#trait-template");
 const layerByCode = new Map(layerManifest.layers.map(layer => [layer.code, layer]));
+const reviewItems = layerManifest.layers.map(layer => ({
+  code: layer.code,
+  name: layer.name,
+  category: layer.category,
+}));
 
 function save() {
   localStorage.setItem(storageKey, JSON.stringify(decisions));
@@ -46,7 +52,7 @@ function renderFilters() {
 function renderBatchActions() {
   const actions = document.querySelector("#batch-actions");
   const downloads = [
-    ["ALL 128 LAYERS", "isolated-layers/neon-nocturne-all-128-isolated-layers.zip"],
+    ["ALL 129 FILES", "isolated-layers/neon-nocturne-all-129-generator-layers.zip"],
     ...layerManifest.categories.map(value => [labels[value], `isolated-layers/neon-nocturne-${value}-layers.zip`]),
   ];
   actions.replaceChildren(...downloads.map(([label, href], index) => {
@@ -60,7 +66,7 @@ function renderBatchActions() {
 }
 
 function renderCards() {
-  const traits = category === "all" ? manifest.traits : manifest.traits.filter(trait => trait.category === category);
+  const traits = category === "all" ? reviewItems : reviewItems.filter(trait => trait.category === category);
   grid.replaceChildren(...traits.map(trait => {
     const layer = layerByCode.get(trait.code);
     const card = template.content.firstElementChild.cloneNode(true);
@@ -128,7 +134,7 @@ document.querySelector("#export-decisions").addEventListener("click", () => {
     collection: manifest.collection,
     edition: manifest.edition,
     exportedAt: new Date().toISOString(),
-    decisions: manifest.traits.map(trait => ({ code: trait.code, name: trait.name, decision: decisions[trait.code] || "pending" })),
+    decisions: reviewItems.map(trait => ({ code: trait.code, name: trait.name, category: trait.category, decision: decisions[trait.code] || "pending" })),
   };
   const link = document.createElement("a");
   link.href = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" }));

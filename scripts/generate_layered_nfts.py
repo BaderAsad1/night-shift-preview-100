@@ -53,6 +53,21 @@ def clean_layer_name(folder: str) -> str:
     return name.replace("-", " ").title()
 
 
+def code_matches(code: str, allowed: list[str]) -> bool:
+    return ("*" in allowed and code != "NONE") or code in allowed
+
+
+def selection_is_compatible(selection: list[tuple[str, Element]], rules: list[dict]) -> bool:
+    chosen = {name: element.code for name, element in selection}
+    for rule in rules:
+        if (
+            code_matches(chosen.get(rule["ifLayer"], "NONE"), rule["ifCodes"])
+            and code_matches(chosen.get(rule["withLayer"], "NONE"), rule["withCodes"])
+        ):
+            return False
+    return True
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=DEFAULT_ROOT)
@@ -101,6 +116,8 @@ def main() -> None:
         if attempts > count * 1000:
             raise RuntimeError("Could not find enough unique DNA combinations")
         selection = [(name, weighted_choice(rng, elements)) for name, elements in layers]
+        if not selection_is_compatible(selection, config.get("incompatibilities", [])):
+            continue
         signature = "|".join(f"{name}:{element.path.name}" for name, element in selection)
         dna = hashlib.sha256(signature.encode()).hexdigest()
         if dna in used:
@@ -148,8 +165,8 @@ def main() -> None:
         "layerCount": len(layers),
         "layers": [{"name": name, "elementCount": len(elements)} for name, elements in layers],
         "outputs": records,
-        "readiness": "pipeline-test",
-        "limitation": "The current 128 review assets are complete-character concepts. Isolated mix-and-match production layers are still required for a 6,666-piece collection.",
+        "readiness": "individual-layer-test",
+        "limitation": "Rare full-character overrides are reviewed separately and are excluded from normal mixed combinations.",
     }
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     (output / "manifest.js").write_text("window.NFT_GENERATOR_TEST = " + json.dumps(manifest, indent=2) + ";\n")

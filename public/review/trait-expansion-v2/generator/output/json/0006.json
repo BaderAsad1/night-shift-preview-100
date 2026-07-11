@@ -1,14 +1,49 @@
 {
   "name": "Neon Nocturne Pipeline Test #6",
-  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "description": "Neon Nocturne character generated from individually authored registered pixel layers.",
   "image": "ipfs://REPLACE_AFTER_UPLOAD/0006.png",
-  "dna": "61533d3ba1d2c7738d00c288931c9725d15469cced7457b0e9f696c3abd07ea5",
+  "dna": "b71ec77609c8fef659d472ba56671e91784e5bfd1300fbfc4e7978ad5ef6e2fe",
   "edition": 6,
   "attributes": [
     {
-      "trait_type": "Complete Character",
-      "value": "Sleepy Half Lids",
-      "code": "EY05"
+      "trait_type": "Clothing",
+      "value": "Quilted Night Jacket",
+      "code": "OF14"
+    },
+    {
+      "trait_type": "Base",
+      "value": "Locked Vampire Base",
+      "code": "BA01"
+    },
+    {
+      "trait_type": "Hair Headwear",
+      "value": "Stovepipe Hat",
+      "code": "HH16"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Mismatched Pupils",
+      "code": "EY14"
+    },
+    {
+      "trait_type": "Mouths",
+      "value": "Open Fang Laugh",
+      "code": "MO04"
+    },
+    {
+      "trait_type": "Eyewear",
+      "value": "Flip Up Welding Goggles",
+      "code": "EW13"
+    },
+    {
+      "trait_type": "Neck Accessories",
+      "value": "Circular Medallion",
+      "code": "NE08"
+    },
+    {
+      "trait_type": "Face Details",
+      "value": "Beauty Mark",
+      "code": "FD06"
     }
   ],
   "compiler": "Night Shift Layer Generator 1.0"

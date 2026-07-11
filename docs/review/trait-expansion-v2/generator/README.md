@@ -16,11 +16,10 @@ python3 scripts/generate_layered_nfts.py
 python3 scripts/audit_layered_nft_generator.py
 ```
 
-## Current limitation
+## Layer structure
 
-The 128 V2 review images are complete-character concepts, not isolated
-mix-and-match trait layers. They are packaged as one `Complete Character` layer
-to prove the generator, weighting, uniqueness, metadata, and QA pipeline without
-producing false composites. A 6,666-piece collection requires approved isolated
-layers for body, outfit, eyes, mouth, hair/headwear, accessories, and rare traits
-on the same registered canvas.
+The normal generator uses eight ordered folders: clothing, locked base,
+hair/headwear, eyes, mouths, optional eyewear, optional neck accessories, and
+optional face details. Every input is a separate 1028×1028 transparent PNG.
+Rare overrides remain in the review library as a separate full-character set
+and are intentionally excluded from mixed normal combinations.

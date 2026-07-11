@@ -38,6 +38,7 @@ def main() -> None:
             "cards",
             "cards-transparent",
             "isolated-layers",
+            "composed-layers",
             "generator/output",
             "generator/config.json",
             "generator/README.md",

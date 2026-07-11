@@ -1,14 +1,49 @@
 {
   "name": "Neon Nocturne Pipeline Test #17",
-  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "description": "Neon Nocturne character generated from individually authored registered pixel layers.",
   "image": "ipfs://REPLACE_AFTER_UPLOAD/0017.png",
-  "dna": "808524ae794bc8cba2c1cfa5e73f5f65e1ab15e770391cae2217752476948771",
+  "dna": "13801ad8de92fac451b80a4da6f14a17a83e4c386197b5756f46080882d0adaa",
   "edition": 17,
   "attributes": [
     {
-      "trait_type": "Complete Character",
-      "value": "Stitched Rag Doll",
-      "code": "RA10"
+      "trait_type": "Clothing",
+      "value": "Quilted Night Jacket",
+      "code": "OF14"
+    },
+    {
+      "trait_type": "Base",
+      "value": "Locked Vampire Base",
+      "code": "BA01"
+    },
+    {
+      "trait_type": "Hair Headwear",
+      "value": "Bowler Hat",
+      "code": "HH13"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Dramatic Lashes",
+      "code": "EY11"
+    },
+    {
+      "trait_type": "Mouths",
+      "value": "Twin Fang Smile",
+      "code": "MO01"
+    },
+    {
+      "trait_type": "Eyewear",
+      "value": "None",
+      "code": "NONE"
+    },
+    {
+      "trait_type": "Neck Accessories",
+      "value": "None",
+      "code": "NONE"
+    },
+    {
+      "trait_type": "Face Details",
+      "value": "Under Eye Stitch",
+      "code": "FD03"
     }
   ],
   "compiler": "Night Shift Layer Generator 1.0"

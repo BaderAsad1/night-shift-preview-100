@@ -1,14 +1,49 @@
 {
   "name": "Neon Nocturne Pipeline Test #8",
-  "description": "Registered Neon Nocturne character concept generated through the standard weighted layered NFT pipeline.",
+  "description": "Neon Nocturne character generated from individually authored registered pixel layers.",
   "image": "ipfs://REPLACE_AFTER_UPLOAD/0008.png",
-  "dna": "92c81041a9bf346225dbdf561231d4a4fc06025848a582f3554f8ebdaf08f42e",
+  "dna": "9a2cdfb234cfede0dd4cf2cc785a30f223fe3342b2adf437c4a46e5d0195a386",
   "edition": 8,
   "attributes": [
     {
-      "trait_type": "Complete Character",
-      "value": "Crowned Crest",
-      "code": "RA16"
+      "trait_type": "Clothing",
+      "value": "Buttoned School Shirt",
+      "code": "OF05"
+    },
+    {
+      "trait_type": "Base",
+      "value": "Locked Vampire Base",
+      "code": "BA01"
+    },
+    {
+      "trait_type": "Hair Headwear",
+      "value": "Bowler Hat",
+      "code": "HH13"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Mismatched Pupils",
+      "code": "EY14"
+    },
+    {
+      "trait_type": "Mouths",
+      "value": "Tiny Pout",
+      "code": "MO10"
+    },
+    {
+      "trait_type": "Eyewear",
+      "value": "None",
+      "code": "NONE"
+    },
+    {
+      "trait_type": "Neck Accessories",
+      "value": "Layered Cravat",
+      "code": "NE16"
+    },
+    {
+      "trait_type": "Face Details",
+      "value": "Nose Ring",
+      "code": "FD13"
     }
   ],
   "compiler": "Night Shift Layer Generator 1.0"
