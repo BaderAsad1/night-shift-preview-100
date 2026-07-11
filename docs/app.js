@@ -1,4 +1,4 @@
-const state = { manifest: null, studioManifest: null, traitManifest: null, house: "All Houses", query: "", selected: null, mode: "color", traitCategory: "All Production Traits" };
+const state = { manifest: null, studioManifest: null, traitManifest: null, house: "All Houses", query: "", selected: null, mode: "color", traitCategory: "Component Traits" };
 
 const modes = {
   color: { label: "8-BIT COLOR", alt: "8-bit color", folder: "characters" },
@@ -17,7 +17,7 @@ function padded(id) { return String(id).padStart(3, "0"); }
 function imageSource(id) { return `${modes[state.mode].folder}/${padded(id)}.png`; }
 function traitsFor(character) {
   if (state.mode === "studio" && state.studioManifest) {
-    return state.studioManifest.characters[character.id - 1].dna;
+    return state.studioManifest.characters[character.id - 1].traits;
   }
   return character.traits;
 }
@@ -84,17 +84,15 @@ function renderStyleSwitch() {
 
 function renderTraitDownloads() {
   const allTraits = state.traitManifest?.traits || [];
-  const traits = state.traitCategory === "All Production Traits"
-    ? allTraits
+  const traits = state.traitCategory === "Component Traits"
+    ? allTraits.filter(trait => trait.category !== "Master Archetype")
     : allTraits.filter(trait => trait.category === state.traitCategory);
   const grid = document.querySelector("#trait-download-grid");
   const filters = document.querySelector("#trait-category-bar");
-  const categories = ["All Production Traits", "Base", "Headwear", "Eyes", "Mouth", "Outfit", "Accessory"];
+  const categories = ["Component Traits", "Silhouette / Headwear", "Eyes", "Outfit", "Master Archetype"];
   filters.replaceChildren(...categories.map(category => {
     const button = document.createElement("button");
-    const count = category === "All Production Traits"
-      ? allTraits.length
-      : allTraits.filter(trait => trait.category === category).length;
+    const count = category === "Component Traits" ? 108 : 36;
     button.textContent = `${category} · ${count}`;
     button.className = category === state.traitCategory ? "active" : "";
     button.addEventListener("click", () => { state.traitCategory = category; renderTraitDownloads(); });

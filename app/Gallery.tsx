@@ -23,10 +23,10 @@ type Manifest = {
 };
 type TraitSource = {
   category: string;
+  folder: string;
   code: string;
   name: string;
   file: string;
-  rarity: string;
 };
 
 function PixelMark() {
@@ -42,7 +42,7 @@ export function Gallery({ manifest, traitSources }: { manifest: Manifest; traitS
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<Character | null>(null);
   const [copied, setCopied] = useState(false);
-  const [traitCategory, setTraitCategory] = useState("All Production Traits");
+  const [traitCategory, setTraitCategory] = useState("Component Traits");
 
   const visible = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -60,8 +60,8 @@ export function Gallery({ manifest, traitSources }: { manifest: Manifest; traitS
   }, [house, manifest.characters, query]);
 
   const downloadableTraits = useMemo(() => (
-    traitCategory === "All Production Traits"
-      ? traitSources
+    traitCategory === "Component Traits"
+      ? traitSources.filter((trait) => trait.category !== "Master Archetype")
       : traitSources.filter((trait) => trait.category === traitCategory)
   ), [traitCategory, traitSources]);
 
@@ -113,7 +113,7 @@ export function Gallery({ manifest, traitSources }: { manifest: Manifest; traitS
 
       <section className="metrics" aria-label="Collection overview">
         <div><strong>100</strong><span>CHARACTERS</span></div>
-        <div><strong>128</strong><span>PRODUCTION TRAITS</span></div>
+        <div><strong>36</strong><span>SOURCE ARCHETYPES</span></div>
         <div><strong>6</strong><span>NIGHT HOUSES</span></div>
         <div><strong>0</strong><span>BACKGROUND OBJECTS</span></div>
       </section>
@@ -169,28 +169,25 @@ export function Gallery({ manifest, traitSources }: { manifest: Manifest; traitS
           <div>
             <span className="kicker">PRODUCTION FILES / TRANSPARENT PNG</span>
             <h2>DOWNLOAD THE<br />TRAIT LIBRARY</h2>
-            <p>128 genuine interchangeable production layers across six registered categories: 8 bases, 30 headwear traits, 24 eye treatments, 16 mouths, 30 outfits, and 20 anchored accessories. Every file is a transparent 1024×1024 PNG on the same canonical grid.</p>
+            <p>108 individual Neon Nocturne component traits—36 headwear and silhouettes, 36 eye treatments, and 36 outfits—at 1024×1024 with transparent backgrounds. The 36 complete masters remain available as a separate reference set.</p>
           </div>
-          <a className="batch-download" href="/traits/night-shift-128-production-traits.zip" download>
-            <span>DOWNLOAD ALL 128 TRAITS</span><small>ZIP · PRODUCTION LAYERS</small><b>↓</b>
+          <a className="batch-download" href="/traits/night-shift-108-component-traits-transparent.zip" download>
+            <span>DOWNLOAD ALL 108 TRAITS</span><small>ZIP · TRANSPARENT PNG</small><b>↓</b>
           </a>
         </div>
         <div className="trait-category-bar" aria-label="Filter trait downloads">
-          {["All Production Traits", "Base", "Headwear", "Eyes", "Mouth", "Outfit", "Accessory"].map((category) => (
+          {["Component Traits", "Silhouette / Headwear", "Eyes", "Outfit", "Master Archetype"].map((category) => (
             <button className={traitCategory === category ? "active" : ""} key={category} onClick={() => setTraitCategory(category)}>
-              {category} · {category === "All Production Traits" ? traitSources.length : traitSources.filter((trait) => trait.category === category).length}
+              {category} · {category === "Component Traits" ? 108 : 36}
             </button>
           ))}
         </div>
         <div className="trait-batch-links">
-          <a href="/traits/night-shift-base-traits.zip" download>BASES 8 ↓</a>
-          <a href="/traits/night-shift-headwear-traits.zip" download>HEADWEAR 30 ↓</a>
-          <a href="/traits/night-shift-eyes-traits.zip" download>EYES 24 ↓</a>
-          <a href="/traits/night-shift-mouth-traits.zip" download>MOUTHS 16 ↓</a>
-          <a href="/traits/night-shift-outfit-traits.zip" download>OUTFITS 30 ↓</a>
-          <a href="/traits/night-shift-accessory-traits.zip" download>ACCESSORIES 20 ↓</a>
-          <a href="/characters-one-bit-studio/night-shift-100-test-renders.zip" download>TEST RENDERS 100 ↓</a>
-          <a href="/characters-one-bit-studio/night-shift-100-test-metadata.zip" download>TEST METADATA 100 ↓</a>
+          <a href="/traits/night-shift-headwear-36-transparent.zip" download>HEADWEAR 36 ↓</a>
+          <a href="/traits/night-shift-eyes-36-transparent.zip" download>EYES 36 ↓</a>
+          <a href="/traits/night-shift-outfits-36-transparent.zip" download>OUTFITS 36 ↓</a>
+          <a href="/traits/night-shift-masters-36-transparent.zip" download>MASTERS 36 ↓</a>
+          <a href="/traits/night-shift-144-trait-library-transparent.zip" download>EVERY FILE 144 ↓</a>
         </div>
         <div className="trait-download-grid" aria-label="Transparent trait downloads">
           {downloadableTraits.map((trait) => (
