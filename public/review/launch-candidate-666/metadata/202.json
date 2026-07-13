@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #202",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/202.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=202",
+  "dna": "75716fafe3af4efdc77c9f6dcee7568026bb725daaedc3d03faf4f1438d7b260",
+  "edition": 202,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Velvet Count Detective"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Asymmetric Batwing Bob"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Dot Near Eye / Plain Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Tiny O Mouth"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Detective Trench"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Blank Name Badge"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "029",
+    "variant": {
+      "eyes": "dot-plain"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "d041289c93ab24232823438aba4c765a2f7ff1000a44703d975e3a47d75a4b8b",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

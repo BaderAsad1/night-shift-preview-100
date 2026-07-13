@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #109",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/109.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=109",
+  "dna": "61b2a49202c6fa1e8f5fe3c9ebde848582e62bb17665064a98a8236828340550",
+  "edition": 109,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Crypt Tailor Streetwear"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Curled Forelock Sweep"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Diamond Near Eye / Plain Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Determined Twin-Fang Bite"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Sleeveless Hoodie"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Pixel Choker and Attached Drawcords"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "015",
+    "variant": {
+      "eyes": "diamond-plain"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "0b99fe88506faea6d29a86151642b4ebc09136b739c528e60f831501c4cef917",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

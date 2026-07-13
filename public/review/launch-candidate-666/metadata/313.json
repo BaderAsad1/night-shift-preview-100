@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #313",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/313.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=313",
+  "dna": "767925610312d9711b4b3533c589f5c61dde0e66cefa8236978e49c60b17545e",
+  "edition": 313,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Crypt Tailor Night Rider"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Cutout-Band Velvet Top Hat"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Inward Spiral Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Tiny O Mouth"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Double-Zip Biker Jacket"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Diagonal Shoulder Strap"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "041",
+    "variant": {
+      "eyes": "spiral"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "90ea7f75e6334000677c71aed0cffc0d12a70a2dbca540c92feb86f1734c34a5",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

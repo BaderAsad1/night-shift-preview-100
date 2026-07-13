@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #585",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/585.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=585",
+  "dna": "421864d23ed12ce2f15795df8aabf3c2f8f11a5293143a376761cf8df1ceef8b",
+  "edition": 585,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Midnight Punk Bob"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Batwing-Flare Bob"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Narrow Vertical Diamond Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Tiny O Mouth"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Faux-Fur Collar Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Lapel Rose"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "026",
+    "variant": {
+      "eyes": "diamond"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "499040e43f3ac99642b2a9d03e5fc99e224b4fc53a95dc8f17dc6fa289582a93",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

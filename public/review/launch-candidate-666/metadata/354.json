@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #354",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/354.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=354",
+  "dna": "f4a10181840a48be4bb2b4d8a9a974d784a5f54f3c3e7e2de88ed2fc8f534599",
+  "edition": 354,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Midnight Punk Bob"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Batwing-Flare Bob"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Plain Near Eye / Diamond Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Tiny O Mouth"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Faux-Fur Collar Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Lapel Rose"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "026",
+    "variant": {
+      "eyes": "plain-diamond"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "21d5bee3b380d6f3527d3d05e0e3409744cb341cff366c0a33e45cf14b9f164f",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #610",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/610.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=610",
+  "dna": "7f5da0f4f7ef4b9636cd2c47fe31893a1c621c635552d87f8d296450a4492c4c",
+  "edition": 610,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Crypt Tailor Utility"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Short Two-Tuft Tousle"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Diamond Near Eye / Plain Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Mischievous Twin-Fang Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Two-Pocket Utility Jumpsuit"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Linked Chain Necklace"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "038",
+    "variant": {
+      "eyes": "diamond-plain"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "7a9aff984895a6fd47f5b3f2e531086db2b615a42ce7dbc08153247aec899137",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

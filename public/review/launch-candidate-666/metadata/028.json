@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #028",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/028.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=028",
+  "dna": "9b1be4810650fc54e91d5c16a4840af487f2c171adb14c1772a086c1161d5e79",
+  "edition": 28,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Velvet Count Punk"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Tall Split-Ridge Mohawk"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Diagonal X Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Surprised Twin-Fang O Mouth"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Faux-Fur Dinner Jacket"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Lapel Rose"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "011",
+    "variant": {
+      "eyes": "x"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "bf4038e6225f9816bf9eeb63fe3d7c6ec3f2aa68e10acc466506f129ba6b8cb1",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

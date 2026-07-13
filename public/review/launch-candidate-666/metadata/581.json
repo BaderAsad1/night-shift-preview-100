@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #581",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/581.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=581",
+  "dna": "15801d6d76ddb184ab96b308c0f7b482f0fadcbba90a712c92ce1c2b5f81e976",
+  "edition": 581,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Midnight Punk"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Three-Tuft Tousled Quiff"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Vertical Cat-Slit Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Tiny O Mouth with One Upper Fang"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Arcade Varsity Jacket with Blank Patch"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Compact Scarf Knot"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "050",
+    "variant": {
+      "eyes": "slit"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "df15ddc631e1cd0e44512222b9127d9c9fe1da903a8d59828f33632f979c0453",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

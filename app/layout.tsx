@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Night Shift Society — Preview 100",
-  description: "Team review gallery for 100 Night Shift Society 8-bit concepts.",
+  title: "Night Shift Society — 666 Launch Review",
+  description: "The audited 666-piece Neon Nocturne launch collection with one-to-one metadata.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

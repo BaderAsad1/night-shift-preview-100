@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #144",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/144.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=144",
+  "dna": "08f69af6b235881ccf93f7d2ab5302b6dd08579168c9ed697632f2e9c76579b7",
+  "edition": 144,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Classic Night Shift"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Widow’s Peak Pompadour"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Plain Luminous Ovals"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Twin Fangs Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "High-Collar Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Round Clasp"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "001",
+    "variant": {
+      "eyes": "plain"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "4c13cca60b1fd9c0e6345b6336a61639d800da2f297bec4a913c191e540b6d02",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

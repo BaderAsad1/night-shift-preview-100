@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #374",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/374.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=374",
+  "dna": "dbed17948d3f5884fcb53d1eb5d147a889bf4d29a13901bcddffa68a1ba73864",
+  "edition": 374,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Neon Aristocrat Aviator"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Seamed Aviator Cap with Short Flaps"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Vertical Cat-Slit Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Twin-Fang Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Faux-Fur Collar Formal Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "None"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "018",
+    "variant": {
+      "eyes": "slit"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "ac747a3932469b11ef316f6476997705e39479a6c6b572cf407c1a14676f5dd4",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

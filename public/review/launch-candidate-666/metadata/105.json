@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #105",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/105.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=105",
+  "dna": "7853d74ea8a7cc6b9ebda82a0ccc6d7c23e8363f9c515d0e5f9a2e9d5009610f",
+  "edition": 105,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Arcade Immortal"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Glossy Curled Forelock"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Inward Spiral Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Surprised Open Mouth with Twin Upper Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Diagonal Mummy-Wrap Tunic"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Slim Black Necktie"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "049",
+    "variant": {
+      "eyes": "spiral"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "f9d49dcb6511aeaaa6bb968c57987510202d4a77a0d35e94bdc03de36059dbe7",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

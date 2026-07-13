@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-07-13",
+  "method": "11 numbered contact sheets plus per-image mechanical pixel audit",
+  "pages": [
+    "contact-sheets/page-1.png",
+    "contact-sheets/page-2.png",
+    "contact-sheets/page-3.png",
+    "contact-sheets/page-4.png",
+    "contact-sheets/page-5.png",
+    "contact-sheets/page-6.png",
+    "contact-sheets/page-7.png",
+    "contact-sheets/page-8.png",
+    "contact-sheets/page-9.png",
+    "contact-sheets/page-10.png",
+    "contact-sheets/page-11.png"
+  ],
+  "editions_reviewed": 666,
+  "systemic_defects_found_and_removed": [
+    "generated mouth overlays"
+  ],
+  "final_status": "contact-sheet-pass"
+}

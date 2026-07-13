@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #161",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/161.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=161",
+  "dna": "9791ad3902c4b2c428128b467dfcf328ef7ccdc59dbad99749ccdbfe3e0b78f2",
+  "edition": 161,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Night Rebel Pumpkin Form"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "S-Curved-Stem Six-Rib Pumpkin Helm"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Plain Near Eye / Slit Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Proud Jagged Grin"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Velvet Dinner Jacket"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Linked Chain Necklace"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "033",
+    "variant": {
+      "eyes": "plain-slit"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "07706121ec41ab885274f810e8ea752809d4f997de6c11e9f1a9e9c987836ee9",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

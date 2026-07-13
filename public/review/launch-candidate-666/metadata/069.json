@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #069",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/069.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=069",
+  "dna": "05acfc781f408ec229ac219e55d1d4da2c3249f0bf3fe18b736d413d4ca504d3",
+  "edition": 69,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Velvet Count Detective"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Asymmetric Batwing Bob"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Star Near Eye / Dot Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Tiny O Mouth"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Detective Trench"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Blank Name Badge"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "029",
+    "variant": {
+      "eyes": "star-dot"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "beb05351ee1f71ea86a181d25ca6cc39824ac7e656b3235b67e5fd2e7f585449",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #314",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/314.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=314",
+  "dna": "88e58bb96b1778aecfc8bf039a13679d49337dbbc6673a626d3d86218aa86d2b",
+  "edition": 314,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Night Rebel Pumpkin Form"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "S-Curved-Stem Six-Rib Pumpkin Helm"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Plain Near Eye / Dot Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Proud Jagged Grin"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Velvet Dinner Jacket"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Linked Chain Necklace"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "033",
+    "variant": {
+      "eyes": "plain-dot"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "fb9f79ff910f9a47b4a8133a9846756d621c7591e8a3f93d92dfa17652fec456",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

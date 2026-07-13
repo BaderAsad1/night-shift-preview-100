@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #173",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/173.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=173",
+  "dna": "d363f209d4cd6170f0b6279a2000ad1152e3be0a9c79cc71d7cb5750dcfe8601",
+  "edition": 173,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Arcade Immortal"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Lightning-Part Sweep"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Slit Near Eye / Diamond Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Sleepy Twin-Fang Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Faux-Fur Collar Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Slim Tie"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "010",
+    "variant": {
+      "eyes": "slit-diamond"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "b2804828f410fc7c25087c3c930300ec0f930dd4b1d6bb2a67498b051e3c43a9",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

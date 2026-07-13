@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #267",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/267.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=267",
+  "dna": "12aafa96ca6cc44dc493d53c3f9b58fdc93d6051d8584279015b82124d3ac3ca",
+  "edition": 267,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Midnight Punk"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Three-Tuft Tousled Quiff"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Dot Near Eye / Plain Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Tiny O Mouth with One Upper Fang"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Arcade Varsity Jacket with Blank Patch"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Compact Scarf Knot"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "050",
+    "variant": {
+      "eyes": "dot-plain"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "f057da37a53d7f21212bf8ff86a363fbc8582a930e121ec2e361d2c062ee2d9f",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

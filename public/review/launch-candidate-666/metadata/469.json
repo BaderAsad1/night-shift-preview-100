@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #469",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/469.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=469",
+  "dna": "5f6935aa7911b6c2fcb2b966e80ebc32ce364df07a24c3a2d5a0a8337ba05624",
+  "edition": 469,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Nocturne Utility Detective"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Three-Tuft Tousled Quiff"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Narrow Vertical Diamond Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Twin-Fang Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Two-Pocket Utility Jumpsuit"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Horizontal Collar Fastener"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "030",
+    "variant": {
+      "eyes": "diamond"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "7852e9b23c68965548edf895b5a728a225f570ae329cb24f4df594d09cbd6b47",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

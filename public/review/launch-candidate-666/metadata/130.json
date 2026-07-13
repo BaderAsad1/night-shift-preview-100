@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #130",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/130.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=130",
+  "dna": "771221bcac5b27024d9dbc5cf5fad639606a70a6546d81be4be6c9ef69787926",
+  "edition": 130,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Silent Film Star Night Watch"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Cutout-Cuff Night Beanie"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Plain Luminous Ovals"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Tiny O Mouth with One Side Fang"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Asymmetric Capelet"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Round Clasp"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "025",
+    "variant": {
+      "eyes": "plain"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "b72b072c8a5800c0b2536b6cd8c3bb4c572c478ad1bafea64a3589f33d010c2b",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

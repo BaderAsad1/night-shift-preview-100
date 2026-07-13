@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #389",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/389.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=389",
+  "dna": "3d2d2cf6a3641c97cf878bbb525c984284a5cffd208a6eaf76555536310d46b2",
+  "edition": 389,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Underground Magician"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Slick Wave"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Spiral Near Eye / Dot Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Cheeky Tongue with Twin Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Detective Trench"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Lapel Rose and Monocle Cord"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "004",
+    "variant": {
+      "eyes": "spiral-dot"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "606cd67c1e122e72441731913b8a49bac8ee1488a250a5f497073078989c0710",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

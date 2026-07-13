@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #651",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/651.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=651",
+  "dna": "b11b8aab1fd317a4d1d1a7843b1dcff5ed98d3078e6ea64438f4aa8807c5220e",
+  "edition": 651,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Crypt Tailor Streetwear"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Curled Forelock Sweep"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Plain Near Eye / Dot Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Determined Twin-Fang Bite"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Sleeveless Hoodie"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Pixel Choker and Attached Drawcords"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "015",
+    "variant": {
+      "eyes": "plain-dot"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "0ae537d3c42528bc405536892096e709068554f7a5f1425d29b2db7a273630f9",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

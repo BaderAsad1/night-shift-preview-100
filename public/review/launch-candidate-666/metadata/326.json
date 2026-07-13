@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #326",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/326.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=326",
+  "dna": "acfe6b1963c5f23caef5289acdbc7b9d9966a3643973c031d878c31ddf0637c7",
+  "edition": 326,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Silent Film Star Detective"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Slick Wave"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Plain Luminous Ovals"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Crooked Twin-Fang Grin"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Detective Trench"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Collar Studs"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "021",
+    "variant": {
+      "eyes": "plain"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "3d9980b5021f303f8f52adfce72e5340e15a765fa8ef98a1345d41e0f85831b5",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

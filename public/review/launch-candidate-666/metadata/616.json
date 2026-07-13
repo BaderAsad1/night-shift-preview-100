@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #616",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/616.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=616",
+  "dna": "7152a6bb203dfccdf300504a79bfd0e0288c1d97920b5e46cbbe50172da37c5f",
+  "edition": 616,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Neon Aristocrat Aviator"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Seamed Aviator Cap with Short Flaps"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Small Round Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Twin-Fang Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Faux-Fur Collar Formal Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "None"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "018",
+    "variant": {
+      "eyes": "dot"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "a20c31279a71c69d125600edc77d6bd0e078971cd051dab7434e5b57ca1ae935",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

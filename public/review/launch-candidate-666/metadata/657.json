@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #657",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/657.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=657",
+  "dna": "24c9358f29d36c52ddb0676d58463f5450a81b3a9d4ea51cc4129b60777e3bc4",
+  "edition": 657,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Crypt Tailor Streetwear"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Curled Forelock Sweep"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Vertical Cat-Slit Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Determined Twin-Fang Bite"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Sleeveless Hoodie"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Pixel Choker and Attached Drawcords"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "015",
+    "variant": {
+      "eyes": "slit"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "2e1a8df756b7c372490202bf4516245d5de8b7a813004de1de8e2650e6538327",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

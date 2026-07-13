@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #065",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/065.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=065",
+  "dna": "915c6d13741796db2f19e4aad7ac2d09911ba59de3c689b191544ccb1e36ed3c",
+  "edition": 65,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Classic Night Shift Beret"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Low Tilted Beret with Short Stem"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Star Near Eye / Dot Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Proud Twin-Fang Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Striped Night Tee"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Three Collar Studs"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "034",
+    "variant": {
+      "eyes": "star-dot"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "dff8ade8fb398b488f3e6e26b61379d44383edb218de94c8b2e1e33fa7a40ac5",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

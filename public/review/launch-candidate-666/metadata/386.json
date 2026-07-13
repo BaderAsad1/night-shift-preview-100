@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #386",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/386.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=386",
+  "dna": "81e33772d307b0395d276eb1e8f16eb7cf0bd7ad6c5ed88b60379115cd2f3da8",
+  "edition": 386,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Velvet Count Punk"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Tall Split-Ridge Mohawk"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Dot Near Eye / Spiral Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Surprised Twin-Fang O Mouth"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Faux-Fur Dinner Jacket"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Lapel Rose"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "011",
+    "variant": {
+      "eyes": "dot-spiral"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "f996f48a32c8b5a51158b7127b86beb096fe7aaacb59221ee5e75febf6ec6e89",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

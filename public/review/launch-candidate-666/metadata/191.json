@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #191",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/191.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=191",
+  "dna": "dfc9df3e28dd87176bb9564e79f0b892e4ed2ed9a285be12eea14b5e158ffeba",
+  "edition": 191,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Midnight Punk"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Three-Tuft Tousled Quiff"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Dot Near Eye / X Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Tiny O Mouth with One Upper Fang"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Arcade Varsity Jacket with Blank Patch"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Compact Scarf Knot"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "050",
+    "variant": {
+      "eyes": "dot-x"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "3b286defffe8873389181a1a0c12eef01e38192bddf13a9bfb8a7ffe43d7331a",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

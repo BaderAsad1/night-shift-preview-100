@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #295",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/295.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=295",
+  "dna": "502753c3e5e414eefd75215ea4754f93e65f8bdb36c0339f8d5bba5c5d353be8",
+  "edition": 295,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Arcade Immortal Formal"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Left-Tilted Beret"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Dot Near Eye / Star Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Deadpan Twin Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Velvet Dinner Jacket"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Slim Tie"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "036",
+    "variant": {
+      "eyes": "dot-star"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "c612629d1a28dad8f4cd1f40fc8125297331b0f1d1f15b430838b1c12f4e0cad",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

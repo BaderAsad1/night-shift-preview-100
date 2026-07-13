@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #623",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/623.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=623",
+  "dna": "1d2d99365e9ec430c862bcf6bda31df5712346d445fb7ae76041890a5b14fe27",
+  "edition": 623,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Midnight Punk"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Wide-Brim Buckled Night Hat"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Slit Near Eye / Diamond Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Deadpan Twin Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "High-Collar Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Collar Studs"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "008",
+    "variant": {
+      "eyes": "slit-diamond"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "8acda5449804f69e94842b533d564388a3457b47f1be18f090d22c5b3cf101d6",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

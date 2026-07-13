@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #169",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/169.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=169",
+  "dna": "ed1fbc06cf85f6382f7bd8c6f656eb8e7669d58cfd7450220b71ad967740e7fc",
+  "edition": 169,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Neon Aristocrat Winter Streetwear"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Fur-Brow Earflap Hat"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Small Round Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Deadpan Twin Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Sleeveless Hoodie"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Three Collar Studs"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "023",
+    "variant": {
+      "eyes": "dot"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "36815e348c6ee4dae5c34dea47aa9d6cfc61824b55b9b5e59f3d87e04ad917a1",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

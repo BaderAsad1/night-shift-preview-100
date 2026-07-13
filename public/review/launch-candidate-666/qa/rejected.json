@@ -1,0 +1,856 @@
+[
+  {
+    "master": 7,
+    "eye": "x-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "plain-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "diamond-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "slit-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "star-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "plain-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "dot-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "slit-diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "spiral-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "dot-spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "dot-x",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "x-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "x",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "spiral-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "plain-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "slit-diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "slit-diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "diamond-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "diamond-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "diamond-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "plain-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "slit-diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "diamond-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "x-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "dot-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "plain-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "spiral-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "slit-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "dot-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "plain-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "plain-diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "plain-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "dot-spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "slit-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "spiral-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "slit-diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "slit-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "dot-star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "x",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "slit-diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "star-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "spiral-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "x-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "dot-x",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "x",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "dot-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "plain-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "dot-x",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "dot-x",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "dot-star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "diamond-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "plain-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "plain-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "dot-star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "dot-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "x-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "x-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "diamond-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "plain-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "dot-spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "x",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "dot-spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "star-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "dot-star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "diamond-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "diamond-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "star-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "dot-spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "star-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "plain-diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "x",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "spiral-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "x",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "dot-star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "dot-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "dot-star",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "slit-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 9,
+    "eye": "dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "dot-x",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 7,
+    "eye": "plain-diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "diamond-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "plain-diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 2,
+    "eye": "dot-spiral",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "diamond-slit",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "slit-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 32,
+    "eye": "plain-diamond",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 22,
+    "eye": "plain-dot",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  },
+  {
+    "master": 42,
+    "eye": "diamond-plain",
+    "errors": [
+      "yellow-outside-eyes"
+    ]
+  }
+]

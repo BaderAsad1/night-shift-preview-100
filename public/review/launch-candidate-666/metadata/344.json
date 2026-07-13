@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #344",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/344.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=344",
+  "dna": "56685e2e7855a2008ed0581ebc7da77bc7a97d7b291c15bf889dfa882e742e33",
+  "edition": 344,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Classic Night Shift"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Widow’s Peak Pompadour"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Spiral Near Eye / Dot Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Twin Fangs Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "High-Collar Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Round Clasp"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "001",
+    "variant": {
+      "eyes": "spiral-dot"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "d747d0be7dae20e6030a583e6b4c5b32ed3267d84f7384b0d5c8b66841abefcf",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

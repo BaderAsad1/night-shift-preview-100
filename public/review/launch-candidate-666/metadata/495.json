@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #495",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/495.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=495",
+  "dna": "d90b192bda10d9642400087892ee534e0babed474c1bb817adaafa36075439fa",
+  "edition": 495,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Velvet Count Pumpkin Form"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Curled-Stem Pumpkin Helm"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Diagonal X Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Jagged Twin-Fang Mouth"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Tailored Vest and Formal Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Cravat"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "006",
+    "variant": {
+      "eyes": "x"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "bd5271f3da1578a09911da9d043e1721278f1f5b05d7ade51ee4716306e4bb33",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

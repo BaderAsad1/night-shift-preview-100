@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #002",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/002.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=002",
+  "dna": "8c39944807a516b68cc200d049746e6bbbb71ed7229553fc7a1667fb38120a3a",
+  "edition": 2,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Arcade Immortal"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Glossy Curled Forelock"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Diagonal X Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Surprised Open Mouth with Twin Upper Fangs"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Diagonal Mummy-Wrap Tunic"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Slim Black Necktie"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "049",
+    "variant": {
+      "eyes": "x"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "4b8d83ee4f9eac300838f6be97acdecf61ae43590a8ed9a871e15a796f854ef5",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #194",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/194.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=194",
+  "dna": "59affdb3206ae34492a14354b09e15ab3727d7404a34b100db5c261eb725be5a",
+  "edition": 194,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Velvet Count Winter"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Center-Seam Fur Trapper Hat"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Narrow Vertical Diamond Pupils"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Sleepy Twin-Fang Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Faux-Fur Collar Formal Coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Blank Name Badge"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "040",
+    "variant": {
+      "eyes": "diamond"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "d4a0303f49026b268bf0bf46fd81bbc71a294c6a71254afb33bdff63e8a631f1",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #039",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/039.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=039",
+  "dna": "142252ed0dc84fe9b96b25f35a6d932d5cf0860d241e3cc4fe81b1fdf1136d25",
+  "edition": 39,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Wrapped Wanderer"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Mummy Crown Wrap"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Dot Near Eye / Spiral Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Twin Fangs Smile"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Mummy Wrap Tunic"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Wrapped Scarf Collar"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "003",
+    "variant": {
+      "eyes": "dot-spiral"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "c805e66f7b7d30ad12003ac28031f1c377a6fd043a03531ad6f920cb02f12bd9",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Neon Nocturne #248",
+  "description": "A deterministic launch-candidate Neon Nocturne generated from a curated complete master with a contained eye variant. Original face, mouth, anatomy, hair, clothing and accessories are preserved.",
+  "image": "../images/248.png",
+  "external_url": "https://baderasad1.github.io/night-shift-preview-100/review/launch-candidate-666/?edition=248",
+  "dna": "0ef8f92918021f5c69b58bbff05e02174e064ccee6ebb3ed4ab657cebf6ccea6",
+  "edition": 248,
+  "attributes": [
+    {
+      "trait_type": "Archetype",
+      "value": "Classic Night Shift Pumpkin Form"
+    },
+    {
+      "trait_type": "Hair / Headwear",
+      "value": "Bent-Stem Five-Rib Pumpkin Helm"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Spiral Near Eye / Dot Far Eye"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "Surprised O Mouth with Upper Fang Notches"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "Formal Coat and Layered Ruffled Shirt"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Round Throat Clasp"
+    },
+    {
+      "trait_type": "Direction",
+      "value": "Screen-Right Three-Quarter"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Electric Lime #d0f708"
+    }
+  ],
+  "properties": {
+    "generation_method": "deterministic-complete-master-variant",
+    "source_master": "028",
+    "variant": {
+      "eyes": "spiral-dot"
+    },
+    "canvas": "1028x1028",
+    "background_hex": "#d0f708",
+    "image_sha256": "d551c8b35ae923ac749fdcf7bed0f98d54a42cb836919c1f8e3ffff70cfcd13e",
+    "mechanical_verification": {
+      "dimensions": true,
+      "strict_palette": true,
+      "two_by_two_grid": true,
+      "body_touches_bottom": true,
+      "yellow_confined_to_eyes": true,
+      "unique_image_hash": true
+    },
+    "visual_verification": {
+      "passed": true,
+      "status": "contact-sheet-pass",
+      "notes": "All 11 numbered contact sheets visually reviewed after final rebuild; original source face, mouth, anatomy, hair, clothing and accessories preserved."
+    }
+  }
+}
