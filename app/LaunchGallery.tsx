@@ -39,6 +39,7 @@ type Metadata = {
 };
 
 const ROOT = "/review/launch-candidate-666";
+const RELEASES = "https://raw.githubusercontent.com/BaderAsad1/night-shift-preview-100/main/downloads";
 
 export function LaunchGallery({ manifest, audit }: { manifest: Manifest; audit: Audit }) {
   const [query, setQuery] = useState("");
@@ -92,7 +93,7 @@ export function LaunchGallery({ manifest, audit }: { manifest: Manifest; audit: 
           <p>Six hundred and sixty-six individually rendered 1028×1028 pixel artworks with one-to-one mint metadata, fixed three-quarter direction, exact palette, and a completed collection audit.</p>
           <div className="launch-actions">
             <a href="#collection">REVIEW ALL 666 ↓</a>
-            <a className="ghost" href={`${ROOT}/night-shift-666-complete.zip`} download>COMPLETE BATCH ↓</a>
+            <a className="ghost" href={`${RELEASES}/night-shift-666-complete.zip`}>COMPLETE BATCH ↓</a>
           </div>
         </div>
         <div className="launch-hero-art" aria-hidden="true">
@@ -115,9 +116,9 @@ export function LaunchGallery({ manifest, audit }: { manifest: Manifest; audit: 
       <section className="launch-downloads">
         <div><span className="launch-kicker">DELIVERY PACKAGES</span><h2>READY FOR THE TEAM</h2></div>
         <div className="launch-download-grid">
-          <a href={`${ROOT}/night-shift-666-images.zip`} download><strong>666 IMAGES</strong><small>1028×1028 PNG · ZIP</small><b>↓</b></a>
-          <a href={`${ROOT}/night-shift-666-metadata.zip`} download><strong>666 METADATA</strong><small>ONE-TO-ONE JSON · ZIP</small><b>↓</b></a>
-          <a href={`${ROOT}/night-shift-666-complete.zip`} download><strong>COMPLETE PACKAGE</strong><small>ART + JSON + QA · ZIP</small><b>↓</b></a>
+          <a href={`${RELEASES}/night-shift-666-images.zip`}><strong>666 IMAGES</strong><small>1028×1028 PNG · ZIP</small><b>↓</b></a>
+          <a href={`${RELEASES}/night-shift-666-metadata.zip`}><strong>666 METADATA</strong><small>ONE-TO-ONE JSON · ZIP</small><b>↓</b></a>
+          <a href={`${RELEASES}/night-shift-666-complete.zip`}><strong>COMPLETE PACKAGE</strong><small>ART + JSON + QA · ZIP</small><b>↓</b></a>
           <a href={`${ROOT}/qa/final-audit.json`}><strong>AUDIT REPORT</strong><small>666 / 666 PASSED · JSON</small><b>↗</b></a>
         </div>
       </section>
