@@ -1,181 +1,55 @@
-const state = { manifest: null, studioManifest: null, traitManifest: null, house: "All Houses", query: "", selected: null, mode: "color", traitCategory: "Component Traits" };
+const REPO = "https://raw.githubusercontent.com/BaderAsad1/night-shift-preview-100/main";
+const ROOT = `${REPO}/public/review/launch-candidate-666`;
+const RELEASES = `${REPO}/downloads`;
+const pad = value => String(value).padStart(3, "0");
 
-const modes = {
-  color: { label: "8-BIT COLOR", alt: "8-bit color", folder: "characters" },
-  "one-bit": { label: "1-BIT BLACK", alt: "one-bit black", folder: "one-bit" },
-  studio: { label: "NEON NOCTURNE", alt: "Neon Nocturne one-bit studio", folder: "studio" },
+const links = {
+  "complete-download": `${RELEASES}/night-shift-666-complete.zip`,
+  "images-download": `${RELEASES}/night-shift-666-images.zip`,
+  "metadata-download": `${RELEASES}/night-shift-666-metadata.zip`,
+  "all-download": `${RELEASES}/night-shift-666-complete.zip`,
+  "audit-download": `${ROOT}/qa/final-audit.json`,
+  "qa-link": `${ROOT}/qa/final-audit.json`,
 };
+Object.entries(links).forEach(([id, href]) => document.getElementById(id).href = href);
+[["hero-1", 1], ["hero-2", 15], ["hero-3", 24]].forEach(([id, edition]) => document.getElementById(id).src = `${ROOT}/images/${pad(edition)}.png`);
 
-const gallery = document.querySelector("#gallery");
-const filters = document.querySelector("#filters");
-const search = document.querySelector("#search");
-const shownCount = document.querySelector("#shown-count");
-const empty = document.querySelector("#empty");
-const modal = document.querySelector("#modal");
+const gallery = document.getElementById("gallery");
+const count = document.getElementById("count");
+const search = document.getElementById("search");
+const modal = document.getElementById("modal");
+let records = [];
 
-function padded(id) { return String(id).padStart(3, "0"); }
-function imageSource(id) { return `${modes[state.mode].folder}/${padded(id)}.png`; }
-function traitsFor(character) {
-  if (state.mode === "studio" && state.studioManifest) {
-    return state.studioManifest.characters[character.id - 1].traits;
-  }
-  return character.traits;
-}
-
-function matches(character) {
-  if (state.house !== "All Houses" && character.house !== state.house) return false;
-  const q = state.query.trim().toLowerCase();
-  if (!q) return true;
-  const text = [character.name, character.house, character.id, ...traitsFor(character).flatMap(t => [t.name, t.code, t.category])].join(" ").toLowerCase();
-  return text.includes(q);
-}
-
-function renderGallery() {
-  const visible = state.manifest.characters.filter(matches);
-  shownCount.textContent = `${String(visible.length).padStart(3, "0")} / ${state.manifest.count} SHOWN`;
-  empty.hidden = visible.length !== 0;
-  gallery.replaceChildren(...visible.map(character => {
+function render(items) {
+  count.textContent = `${items.length} / 666 SHOWN`;
+  gallery.replaceChildren(...items.map(item => {
+    const number = pad(item.edition);
     const card = document.createElement("button");
-    card.className = "character-card";
-    card.style.setProperty("--accent", character.accent);
-    card.setAttribute("aria-label", `Inspect ${character.name}`);
-    card.innerHTML = `<span class="image-well"><img src="${imageSource(character.id)}" alt="${character.name} — ${modes[state.mode].alt}" loading="lazy"></span><span class="card-meta"><span><b>#${padded(character.id)}</b><small>${character.house}</small></span><span class="inspect">↗</span></span>`;
-    card.addEventListener("click", () => openCharacter(character));
+    card.className = "card";
+    card.setAttribute("aria-label", `Inspect edition ${number}`);
+    card.innerHTML = `<img src="${ROOT}/images/${number}.png" alt="Neon Nocturne #${number}" loading="lazy"><span><strong>#${number}</strong><small>${item.eyes.replaceAll("-", " ")}</small><b>↗</b></span>`;
+    card.addEventListener("click", () => inspect(number));
     return card;
   }));
 }
 
-function renderFilters() {
-  const names = ["All Houses", ...state.manifest.houses.map(house => house.name)];
-  filters.replaceChildren(...names.map(name => {
-    const button = document.createElement("button");
-    button.textContent = name;
-    button.className = name === state.house ? "active" : "";
-    button.addEventListener("click", () => { state.house = name; renderFilters(); renderGallery(); });
-    return button;
-  }));
-}
-
-function renderHero() {
-  const stack = document.querySelector("#hero-stack");
-  stack.replaceChildren();
-  [7, 18, 1].forEach((id, index) => {
-    const character = state.manifest.characters[id - 1];
-    const card = document.createElement("div");
-    card.className = `stack-card stack-${index + 1}`;
-    card.style.setProperty("--accent", character.accent);
-    card.innerHTML = `<img src="${imageSource(id)}" alt=""><span>#${padded(id)}</span>`;
-    stack.append(card);
-  });
-}
-
-function renderStyleSwitch() {
-  const switcher = document.querySelector("#style-switch");
-  const options = Object.entries(modes).map(([id, mode]) => ({ id, label: mode.label }));
-  switcher.replaceChildren(...options.map(option => {
-    const button = document.createElement("button");
-    button.textContent = option.label;
-    button.className = state.mode === option.id ? "active" : "";
-    button.setAttribute("aria-pressed", state.mode === option.id ? "true" : "false");
-    button.addEventListener("click", () => setMode(option.id));
-    return button;
-  }));
-}
-
-function renderTraitDownloads() {
-  const allTraits = state.traitManifest?.traits || [];
-  const traits = state.traitCategory === "Component Traits"
-    ? allTraits.filter(trait => trait.category !== "Master Archetype")
-    : allTraits.filter(trait => trait.category === state.traitCategory);
-  const grid = document.querySelector("#trait-download-grid");
-  const filters = document.querySelector("#trait-category-bar");
-  const categories = ["Component Traits", "Silhouette / Headwear", "Eyes", "Outfit", "Master Archetype"];
-  filters.replaceChildren(...categories.map(category => {
-    const button = document.createElement("button");
-    const count = category === "Component Traits" ? 108 : 36;
-    button.textContent = `${category} · ${count}`;
-    button.className = category === state.traitCategory ? "active" : "";
-    button.addEventListener("click", () => { state.traitCategory = category; renderTraitDownloads(); });
-    return button;
-  }));
-  grid.replaceChildren(...traits.map(trait => {
-    const card = document.createElement("article");
-    card.className = "trait-download-card";
-    card.innerHTML = `
-      <div class="trait-preview"><img src="${trait.file}" alt="${trait.name} transparent ${trait.category} trait" loading="lazy"></div>
-      <div class="trait-download-meta">
-        <span><code>${trait.code}</code><strong>${trait.name}</strong></span>
-        <a href="${trait.file}" download="${trait.code}.png" aria-label="Download ${trait.name} transparent PNG">PNG ↓</a>
-      </div>`;
-    return card;
-  }));
-}
-
-function setMode(mode) {
-  state.mode = mode;
-  document.body.dataset.mode = mode;
-  document.querySelector("#mode-label").textContent = modes[mode].label;
-  renderStyleSwitch();
-  renderHero();
-  renderGallery();
-  if (state.selected) {
-    const art = document.querySelector("#detail-art");
-    art.src = imageSource(state.selected.id);
-    art.alt = `${state.selected.name} — ${modes[mode].alt}`;
-    renderTraitList(state.selected);
-  }
-}
-
-function renderTraitList(character) {
-  document.querySelector("#trait-list").innerHTML = traitsFor(character).map(trait => `<div><span>${trait.category}</span><strong>${trait.name}</strong><code>${trait.code}</code></div>`).join("");
-}
-
-function openCharacter(character) {
-  state.selected = character;
-  document.querySelector("#detail-title").textContent = character.name;
-  document.querySelector("#detail-motto").textContent = `“${character.motto}”`;
-  document.querySelector("#detail-house").textContent = character.house;
-  const image = document.querySelector("#detail-image");
-  image.style.setProperty("--accent", character.accent);
-  const art = document.querySelector("#detail-art");
-  art.src = imageSource(character.id);
-  art.alt = `${character.name} — ${modes[state.mode].alt}`;
-  renderTraitList(character);
+async function inspect(number) {
+  const metadataUrl = `${ROOT}/metadata/${number}.json`;
+  const metadata = await fetch(metadataUrl).then(response => response.json());
+  document.getElementById("modal-title").textContent = metadata.name;
+  document.getElementById("modal-image").src = `${ROOT}/images/${number}.png`;
+  document.getElementById("image-link").href = `${ROOT}/images/${number}.png`;
+  document.getElementById("metadata-link").href = metadataUrl;
+  document.getElementById("traits").innerHTML = metadata.attributes.map(item => `<div><span>${item.trait_type}</span><strong>${item.value}</strong></div>`).join("");
   modal.hidden = false;
-  document.body.style.overflow = "hidden";
-  document.querySelector("#close").focus();
 }
 
-function closeModal() {
-  modal.hidden = true;
-  document.body.style.overflow = "";
-  state.selected = null;
-}
-
-document.querySelector("#close").addEventListener("click", closeModal);
-modal.addEventListener("click", event => { if (event.target === modal) closeModal(); });
-document.addEventListener("keydown", event => { if (event.key === "Escape" && !modal.hidden) closeModal(); });
-search.addEventListener("input", event => { state.query = event.target.value; renderGallery(); });
-document.querySelector("#copy").addEventListener("click", async event => {
-  const character = state.selected;
-  const traits = traitsFor(character).map(trait => `${trait.category}: ${trait.name}`).join("; ");
-  await navigator.clipboard.writeText(`${character.name} — ${character.house}\n${traits}\nReview: `);
-  event.currentTarget.textContent = "COPIED";
-  setTimeout(() => { event.currentTarget.textContent = "COPY REVIEW NOTE"; }, 1500);
+document.getElementById("close").addEventListener("click", () => modal.hidden = true);
+modal.addEventListener("click", event => { if (event.target === modal) modal.hidden = true; });
+document.addEventListener("keydown", event => { if (event.key === "Escape") modal.hidden = true; });
+search.addEventListener("input", () => {
+  const q = search.value.trim().toLowerCase();
+  render(records.filter(item => !q || [pad(item.edition), item.edition, item.source_master, item.eyes, item.expression].join(" ").toLowerCase().includes(q)));
 });
 
-Promise.all([fetch("characters/manifest.json"), fetch("studio/manifest.json"), fetch("traits/manifest.json")])
-  .then(async responses => {
-    if (responses.some(response => !response.ok)) throw new Error("Manifest unavailable");
-    return Promise.all(responses.map(response => response.json()));
-  })
-  .then(([manifest, studioManifest, traitManifest]) => {
-    state.manifest = manifest;
-    state.studioManifest = studioManifest;
-    state.traitManifest = traitManifest;
-    document.body.dataset.mode = state.mode;
-    renderStyleSwitch(); renderHero(); renderFilters(); renderGallery(); renderTraitDownloads();
-  })
-  .catch(() => {
-    gallery.innerHTML = '<div class="empty-state">The gallery could not load. Please refresh the page.</div>';
-  });
+fetch(`${ROOT}/manifest.json`).then(response => response.json()).then(manifest => { records = manifest.records; render(records); }).catch(() => { count.textContent = "COLLECTION DATA COULD NOT LOAD — REFRESH TO RETRY"; });
